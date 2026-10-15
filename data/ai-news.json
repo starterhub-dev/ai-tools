@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T22:21:30.439Z",
+  "updatedAt": "2026-10-15T01:33:00.466Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -34,17 +34,6 @@
       "source": "Anthropic",
       "url": "https://www.anthropic.com/news/barclays-scales-claude",
       "publishedAt": "2026-10-02T00:00:00.000Z",
-      "sourceKind": "official"
-    },
-    {
-      "id": "news-dqrpgw",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats",
-      "excerpt": "Sep 23, 2026 Science Claude discovers a novel enzyme system with CRISPR-like repeats。来自 Anthropic 的公开更新，点击查看原文。",
-      "source": "Anthropic",
-      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-      "publishedAt": "2026-10-01T00:00:00.000Z",
       "sourceKind": "official"
     },
     {
@@ -139,8 +128,8 @@
       "id": "news-1w3i3xk",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 53 October 8, 2026",
-      "excerpt": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 53 October 8, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 54 October 8, 2026",
+      "excerpt": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 54 October 8, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/building-with-ml-intern",
       "publishedAt": "2026-10-13T00:00:00.000Z",
@@ -293,8 +282,8 @@
       "id": "news-911xzz",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Backpropagation on an Inference-Only NPU: Pretraining VKORE-46M-NPU From Scratch FINAL-Bench • about 16 hours ago • 12",
-      "excerpt": "Backpropagation on an Inference-Only NPU: Pretraining VKORE-46M-NPU From Scratch FINAL-Bench • about 16 hours ago • 12。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Backpropagation on an Inference-Only NPU: Pretraining VKORE-46M-NPU From Scratch FINAL-Bench • about 19 hours ago • 12",
+      "excerpt": "Backpropagation on an Inference-Only NPU: Pretraining VKORE-46M-NPU From Scratch FINAL-Bench • about 19 hours ago • 12。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/FINAL-Bench/backpropagation-on-an-inference-only-npu-pretraini",
       "publishedAt": "2026-10-14T07:45:10.533Z",
@@ -411,36 +400,69 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1ew9gyd",
+      "id": "news-k1c6dw",
       "type": "abstract",
       "label": "🗿 AI 抽象",
-      "title": "Show HN: Checkobot – Detect Deepfakes and AI Images",
-      "excerpt": "Hello HN, I am Kartikeya & we are building the best AI Slop Detector - Checkobot. Current AI Image Detectors are functionally jagged. Some are not able to detect deepfakes, some fail on the latest flux models. Some have an unacceptable false flag rate on genui",
+      "title": "Ask HN: Demonstrating Skills When Everything Is a Prompt",
+      "excerpt": "I used to (and sometimes still do) love really thinking about a problem - pen and paper, whiteboards, thinking on the tornado throne, you name it. And before AI, the projects I came up with might not have been the BEST or life-changing but they were the result",
       "source": "Hacker News",
-      "url": "https://checkobot.ai/",
-      "publishedAt": "2026-10-14T19:52:36Z",
+      "url": "https://news.ycombinator.com/item?id=50097092",
+      "publishedAt": "2026-10-14T23:31:56Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-135v40m",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Show HN: Run AI-generated logic safely inside your app",
-      "excerpt": "Stof is an open-source runtime for logic you don&#x27;t own or fully trust. Imagine a JSON document with functions inside, scoped to just the document that contains them. Stof instantiates this doc as a small wasm env, and makes these functions safe to call. T",
-      "source": "Hacker News",
-      "url": "https://stof.dev/",
-      "publishedAt": "2026-10-14T19:18:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-7lfncw",
+      "id": "news-cddd9d",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
-      "excerpt": "Hacker News 社区讨论：We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
+      "excerpt": "Hacker News 社区讨论：LFM2.5-24B-A2B: Built for fast on-device agents",
       "source": "Hacker News",
-      "url": "https://typesafe.ai/blog/jev-1-14",
-      "publishedAt": "2026-10-14T21:11:03Z",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "publishedAt": "2026-10-14T23:59:37Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-8r97ra",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "ICE Wants to Use AI to Monitor Detainee Calls and Movements",
+      "excerpt": "Hacker News 社区讨论：ICE Wants to Use AI to Monitor Detainee Calls and Movements",
+      "source": "Hacker News",
+      "url": "https://www.washingtonsun.com/immigration/ice-ai-monitor-detainees",
+      "publishedAt": "2026-10-14T23:06:24Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1buo31u",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Chaos ensues when AI interviewer meets AI interviewee",
+      "excerpt": "Hacker News 社区讨论：Chaos ensues when AI interviewer meets AI interviewee",
+      "source": "Hacker News",
+      "url": "https://www.theregister.com/offbeat/2026/10/14/chaos-ensues-when-ai-interviewer-meets-ai-interviewee/5303144",
+      "publishedAt": "2026-10-14T23:32:32Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1h29dm0",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Bank of America added 1k contractors to patch AI-exposed software flaws",
+      "excerpt": "Hacker News 社区讨论：Bank of America added 1k contractors to patch AI-exposed software flaws",
+      "source": "Hacker News",
+      "url": "https://runtimewire.com/article/bank-of-america-mythos-contractors-software-patching",
+      "publishedAt": "2026-10-14T23:25:06Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-wdhd6g",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Frontier models score under 2/100 controlling a simulated humanoid",
+      "excerpt": "Hacker News 社区讨论：Frontier models score under 2/100 controlling a simulated humanoid",
+      "source": "Hacker News",
+      "url": "https://www.vals.ai/benchmarks/robo_bench",
+      "publishedAt": "2026-10-14T23:20:51Z",
       "sourceKind": "community"
     },
     {
@@ -455,6 +477,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-f6hy8a",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "What If AI Is the End of the World?",
+      "excerpt": "Hacker News 社区讨论：What If AI Is the End of the World?",
+      "source": "Hacker News",
+      "url": "https://www.theatlantic.com/ideas/2026/10/ai-end-of-world-meaning/688977/",
+      "publishedAt": "2026-10-14T23:04:17Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-15t27mf",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -466,14 +499,223 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-euugzx",
+      "id": "news-aenbtz",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Nvidia reportedly halts GeForce RTX 5090 production",
+      "excerpt": "Hacker News 社区讨论：Nvidia reportedly halts GeForce RTX 5090 production",
+      "source": "Hacker News",
+      "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-halts-geforce-rtx-5090-production-in-favor-of-ai-data-center-and-professional-gpus-impending-supply-drought-expected-to-drive-up-prices-rtx-5080-24gb-rumored-as-new-gaming-flagship",
+      "publishedAt": "2026-10-14T23:44:41Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1jiwdbv",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Nvidia's China AI-chip share falls to 34% as Huawei reaches 28%",
+      "excerpt": "Hacker News 社区讨论：Nvidia's China AI-chip share falls to 34% as Huawei reaches 28%",
+      "source": "Hacker News",
+      "url": "https://technode.com/2026/10/14/nvidias-china-ai-chip-share-falls-to-34-as-huawei-reaches-28/",
+      "publishedAt": "2026-10-14T22:30:47Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-19jfefl",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Safety Is Not a Corporate Plot",
+      "excerpt": "Hacker News 社区讨论：AI Safety Is Not a Corporate Plot",
+      "source": "Hacker News",
+      "url": "https://www.astralcodexten.com/p/ai-safety-is-not-a-corporate-plot",
+      "publishedAt": "2026-10-15T01:22:03Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-2lwsxl",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Ricursive Intelligence bets on AI-designed chips to solve the compute crisis",
+      "excerpt": "Hacker News 社区讨论：Ricursive Intelligence bets on AI-designed chips to solve the compute crisis",
+      "source": "Hacker News",
+      "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/",
+      "publishedAt": "2026-10-15T01:08:07Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-ph4js2",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Capsem – a Rust hypervisor sandboxing AI agents in air-gapped Linux VMs",
+      "excerpt": "Hacker News 社区讨论：Capsem – a Rust hypervisor sandboxing AI agents in air-gapped Linux VMs",
+      "source": "Hacker News",
+      "url": "https://capsem.org/",
+      "publishedAt": "2026-10-15T00:58:26Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-d0s3ta",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The AI boom is threatened by an epidemic of unreliable numbers",
+      "excerpt": "Hacker News 社区讨论：The AI boom is threatened by an epidemic of unreliable numbers",
+      "source": "Hacker News",
+      "url": "https://www.economist.com/business/2026/10/14/the-ai-boom-is-threatened-by-an-epidemic-of-unreliable-numbers",
+      "publishedAt": "2026-10-15T00:23:03Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1n5thdg",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "Show HN: Dub Anything – Dub videos in each actor's own voice",
-      "excerpt": "There are many movies and shows out there with neither subtitles or dubs in English (or any other language). Pretty much impossible to watch. With SOTA AI now directing the process, you can do it locally on your machine. You basically just clone the repo, open",
+      "title": "New Material Acquired by Mistral",
+      "excerpt": "Hacker News 社区讨论：New Material Acquired by Mistral",
       "source": "Hacker News",
-      "url": "https://github.com/swax/dub-anything",
-      "publishedAt": "2026-10-14T19:49:55Z",
+      "url": "https://newmaterial.ai/stories/newmaterial-joins-mistral",
+      "publishedAt": "2026-10-15T00:15:35Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-ivcmik",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Adobe Software Engineer Interview: Process, AI Rules and How to Prepare",
+      "excerpt": "Hacker News 社区讨论：Adobe Software Engineer Interview: Process, AI Rules and How to Prepare",
+      "source": "Hacker News",
+      "url": "https://nokku.payanai.com/interview-prep/adobe",
+      "publishedAt": "2026-10-14T22:43:52Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-145x955",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Fantastic Canvas",
+      "excerpt": "Fantastic is my own harness. It runs on an Erlang-like, OS-like meta-runtime instead of agent loops or agent graphs. I believe this is the right design for an AI runtime: it puts humans, AI agents and tools on equal footing. It will grow into a convenient mult",
+      "source": "Hacker News",
+      "url": "https://github.com/aisixteen/fantastic",
+      "publishedAt": "2026-10-14T22:33:25Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1emwhqa",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Moondream is joining Prime Intellect",
+      "excerpt": "Hacker News 社区讨论：Moondream is joining Prime Intellect",
+      "source": "Hacker News",
+      "url": "https://www.primeintellect.ai/blog/moondream",
+      "publishedAt": "2026-10-14T21:55:31Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-dftgbj",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Call for stories: human–AI collaboration in recent mathematics",
+      "excerpt": "Hacker News 社区讨论：Call for stories: human–AI collaboration in recent mathematics",
+      "source": "Hacker News",
+      "url": "https://terrytao.wordpress.com/2026/10/14/call-for-stories-human-ai-collaboration-in-recent-mathematics/",
+      "publishedAt": "2026-10-15T01:26:36Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1m3owc1",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Ben Affleck Sold His AI Company for $587M [video]",
+      "excerpt": "Hacker News 社区讨论：Ben Affleck Sold His AI Company for $587M [video]",
+      "source": "Hacker News",
+      "url": "https://www.youtube.com/watch?v=MzXEWrT3Ld8",
+      "publishedAt": "2026-10-14T23:31:01Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1jxx4in",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "TezGrid: AI inference on idle computers",
+      "excerpt": "Hacker News 社区讨论：TezGrid: AI inference on idle computers",
+      "source": "Hacker News",
+      "url": "https://tezgrid.com/",
+      "publishedAt": "2026-10-14T23:21:47Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1t984u3",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Things we wish we'd known before building an AI chat agent",
+      "excerpt": "Hacker News 社区讨论：Things we wish we'd known before building an AI chat agent",
+      "source": "Hacker News",
+      "url": "https://trigger.dev/blog/seven-tips-for-building-better-chat-agents",
+      "publishedAt": "2026-10-14T23:10:06Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-xa55e6",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Helix World: A Real-Time Audio-Visual World Model",
+      "excerpt": "Hacker News 社区讨论：Helix World: A Real-Time Audio-Visual World Model",
+      "source": "Hacker News",
+      "url": "https://noiz.ai/lp/blog/meet-helix-world",
+      "publishedAt": "2026-10-14T22:39:04Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-dxh7v2",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Coding with AI stopped feeling like craft, so I built a tiny desk radio",
+      "excerpt": "Hacker News 社区讨论：Coding with AI stopped feeling like craft, so I built a tiny desk radio",
+      "source": "Hacker News",
+      "url": "https://radiowaveshare.vercel.app/",
+      "publishedAt": "2026-10-14T22:30:18Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-11tmmas",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Atelier – Watch AI Learn to Paint (Sometimes, Live)",
+      "excerpt": "Hacker News 社区讨论：Atelier – Watch AI Learn to Paint (Sometimes, Live)",
+      "source": "Hacker News",
+      "url": "https://atelier.randomdrake.com/",
+      "publishedAt": "2026-10-14T22:26:30Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-cnw4zt",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Apple announces HomeView, a $299 smart display to push Siri AI into homes",
+      "excerpt": "Hacker News 社区讨论：Apple announces HomeView, a $299 smart display to push Siri AI into homes",
+      "source": "Hacker News",
+      "url": "https://www.cnn.com/2026/10/13/tech/apple-homeview-siri-ai",
+      "publishedAt": "2026-10-14T22:18:17Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-62u9fq",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The Art of Building AI Coding Agents: The book that builds itself",
+      "excerpt": "Hacker News 社区讨论：The Art of Building AI Coding Agents: The book that builds itself",
+      "source": "Hacker News",
+      "url": "https://github.com/waywardgeek/ensemble",
+      "publishedAt": "2026-10-14T21:44:37Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1jbsk2s",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Volantis – Our $88M Series A: Demolishing the Memory Wall with Photonics",
+      "excerpt": "Hacker News 社区讨论：Volantis – Our $88M Series A: Demolishing the Memory Wall with Photonics",
+      "source": "Hacker News",
+      "url": "https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post",
+      "publishedAt": "2026-10-14T21:43:37Z",
       "sourceKind": "community"
     },
     {
@@ -488,50 +730,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-11q2j5f",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "We should reject AI in academia",
-      "excerpt": "Hacker News 社区讨论：We should reject AI in academia",
-      "source": "Hacker News",
-      "url": "https://aeporreca.org/blog/why-we-should-reject-ai-in-academia/",
-      "publishedAt": "2026-10-14T19:54:43Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1w5f5t7",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Epic Games is bragging about their new store being vibe-coded",
-      "excerpt": "Hacker News 社区讨论：Epic Games is bragging about their new store being vibe-coded",
-      "source": "Hacker News",
-      "url": "https://www.destructoid.com/epic-games-store-ai-vibe-coded/",
-      "publishedAt": "2026-10-14T19:40:37Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-11zfk22",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI safety money floods into politics",
-      "excerpt": "Hacker News 社区讨论：AI safety money floods into politics",
-      "source": "Hacker News",
-      "url": "https://www.axios.com/2026/10/14/ai-safety-regulation-election-spending-50-million",
-      "publishedAt": "2026-10-14T19:34:32Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1vd6vne",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Why Does AI Write Like Yoda?",
-      "excerpt": "Hacker News 社区讨论：Why Does AI Write Like Yoda?",
-      "source": "Hacker News",
-      "url": "https://www.oreilly.com/radar/why-does-ai-write-like-yoda/",
-      "publishedAt": "2026-10-14T19:26:04Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-z2k6ha",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -543,6 +741,28 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1jkwl12",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Steering AI Beyond Automation: A Research Agenda and Plan for Action",
+      "excerpt": "Hacker News 社区讨论：Steering AI Beyond Automation: A Research Agenda and Plan for Action",
+      "source": "Hacker News",
+      "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+      "publishedAt": "2026-10-14T21:14:57Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-7lfncw",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "excerpt": "Hacker News 社区讨论：We’re releasing Jev 1.14.0 along with experimental features for dreamers",
+      "source": "Hacker News",
+      "url": "https://typesafe.ai/blog/jev-1-14",
+      "publishedAt": "2026-10-14T21:11:03Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1sdpq4t",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -551,6 +771,17 @@
       "source": "Hacker News",
       "url": "https://www.justice.gov/usao-sdny/pr/north-carolina-man-sentenced-18-months-prison-super-intelligence-assisted-music",
       "publishedAt": "2026-10-14T21:08:55Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-d4ucmh",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Veda – An AI-Native Operating System Built from the Ground Up",
+      "excerpt": "Hacker News 社区讨论：Veda – An AI-Native Operating System Built from the Ground Up",
+      "source": "Hacker News",
+      "url": "https://github.com/vahmoh25/Veda/commit/4ff28a2a4530799f72117057c428a4eed3392bb4",
+      "publishedAt": "2026-10-14T20:53:20Z",
       "sourceKind": "community"
     },
     {
@@ -609,91 +840,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-193qmjf",
+      "id": "news-11q2j5f",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "AI agents overstate their results and remain far from autonomous",
-      "excerpt": "Hacker News 社区讨论：AI agents overstate their results and remain far from autonomous",
+      "title": "We should reject AI in academia",
+      "excerpt": "Hacker News 社区讨论：We should reject AI in academia",
       "source": "Hacker News",
-      "url": "https://www.renascence.io/news/104630/ai-agents-overstate-their-results-and-remain-far-from-autonomous-research-study-",
-      "publishedAt": "2026-10-14T19:37:54Z",
+      "url": "https://aeporreca.org/blog/why-we-should-reject-ai-in-academia/",
+      "publishedAt": "2026-10-14T19:54:43Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-1p59qw6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "How to Convert Pipedream Workflows to FlowRunner, with Real Examples",
-      "excerpt": "Hacker News 社区讨论：How to Convert Pipedream Workflows to FlowRunner, with Real Examples",
+      "id": "news-1ew9gyd",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Show HN: Checkobot – Detect Deepfakes and AI Images",
+      "excerpt": "Hello HN, I am Kartikeya & we are building the best AI Slop Detector - Checkobot. Current AI Image Detectors are functionally jagged. Some are not able to detect deepfakes, some fail on the latest flux models. Some have an unacceptable false flag rate on genui",
       "source": "Hacker News",
-      "url": "https://flowrunner.ai/blog/pipedream-to-flowrunner-conversions",
-      "publishedAt": "2026-10-14T19:36:14Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-jua05m",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI sector wipeout risks global financial contagion, IMF report warns",
-      "excerpt": "Hacker News 社区讨论：AI sector wipeout risks global financial contagion, IMF report warns",
-      "source": "Hacker News",
-      "url": "https://www.tomshardware.com/tech-industry/big-tech/the-imf-highlights-how-a-financial-wipeout-in-the-ai-sector-could-become-a-global-contagion-agency-report-shines-light-on-circular-economics-and-leveraged-loans",
-      "publishedAt": "2026-10-14T19:18:55Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1emwhqa",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Moondream is joining Prime Intellect",
-      "excerpt": "Hacker News 社区讨论：Moondream is joining Prime Intellect",
-      "source": "Hacker News",
-      "url": "https://www.primeintellect.ai/blog/moondream",
-      "publishedAt": "2026-10-14T21:55:31Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-62u9fq",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "The Art of Building AI Coding Agents: The book that builds itself",
-      "excerpt": "Hacker News 社区讨论：The Art of Building AI Coding Agents: The book that builds itself",
-      "source": "Hacker News",
-      "url": "https://github.com/waywardgeek/ensemble",
-      "publishedAt": "2026-10-14T21:44:37Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1jbsk2s",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Volantis – Our $88M Series A: Demolishing the Memory Wall with Photonics",
-      "excerpt": "Hacker News 社区讨论：Volantis – Our $88M Series A: Demolishing the Memory Wall with Photonics",
-      "source": "Hacker News",
-      "url": "https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post",
-      "publishedAt": "2026-10-14T21:43:37Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1jkwl12",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Steering AI Beyond Automation: A Research Agenda and Plan for Action",
-      "excerpt": "Hacker News 社区讨论：Steering AI Beyond Automation: A Research Agenda and Plan for Action",
-      "source": "Hacker News",
-      "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
-      "publishedAt": "2026-10-14T21:14:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-d4ucmh",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Veda – An AI-Native Operating System Built from the Ground Up",
-      "excerpt": "Hacker News 社区讨论：Veda – An AI-Native Operating System Built from the Ground Up",
-      "source": "Hacker News",
-      "url": "https://github.com/vahmoh25/Veda/commit/4ff28a2a4530799f72117057c428a4eed3392bb4",
-      "publishedAt": "2026-10-14T20:53:20Z",
+      "url": "https://checkobot.ai/",
+      "publishedAt": "2026-10-14T19:52:36Z",
       "sourceKind": "community"
     },
     {
@@ -719,179 +884,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1pchny7",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: AI Interview Index – which companies allow AI in coding interviews",
-      "excerpt": "Hacker News 社区讨论：Show HN: AI Interview Index – which companies allow AI in coding interviews",
-      "source": "Hacker News",
-      "url": "https://aiinterviewindex.com/",
-      "publishedAt": "2026-10-14T19:35:52Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-xolerl",
+      "id": "news-euugzx",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "Researchers cig-nal their faith in AI by taking up smoking",
-      "excerpt": "Hacker News 社区讨论：Researchers cig-nal their faith in AI by taking up smoking",
+      "title": "Show HN: Dub Anything – Dub videos in each actor's own voice",
+      "excerpt": "There are many movies and shows out there with neither subtitles or dubs in English (or any other language). Pretty much impossible to watch. With SOTA AI now directing the process, you can do it locally on your machine. You basically just clone the repo, open",
       "source": "Hacker News",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/14/researchers-cig-nal-their-faith-in-ai-by-taking-up-smoking/5303118",
-      "publishedAt": "2026-10-14T18:36:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-yufqzy",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Banks are now trying to offload the AI data center debt they just underwrote",
-      "excerpt": "Hacker News 社区讨论：Banks are now trying to offload the AI data center debt they just underwrote",
-      "source": "Hacker News",
-      "url": "https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/",
-      "publishedAt": "2026-10-14T18:32:52Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-bjys7v",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Zero-shot classifier on scale-to-zero GPUs, one forward pass per call",
-      "excerpt": "Hacker News 社区讨论：Show HN: Zero-shot classifier on scale-to-zero GPUs, one forward pass per call",
-      "source": "Hacker News",
-      "url": "https://console.runpod.io/hub/listing/lateos-ai/reflex",
-      "publishedAt": "2026-10-14T18:26:24Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1eucprk",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Through the Visual Language of AI",
-      "excerpt": "Hacker News 社区讨论：Through the Visual Language of AI",
-      "source": "Hacker News",
-      "url": "https://blog.criti.ca/posts/through-the-visual-language-of-ai",
-      "publishedAt": "2026-10-14T18:20:29Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1ik5b7m",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "A Turing Test for Physical Engineering",
-      "excerpt": "Hacker News 社区讨论：A Turing Test for Physical Engineering",
-      "source": "Hacker News",
-      "url": "https://www.spectrallabs.ai/research/cswp-turing-test",
-      "publishedAt": "2026-10-14T18:18:53Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1n2aogw",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Cerebras CEO pushes back on AI doomsday warnings",
-      "excerpt": "Hacker News 社区讨论：Cerebras CEO pushes back on AI doomsday warnings",
-      "source": "Hacker News",
-      "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-pushes-back-on-ai-doomsday-warnings/",
-      "publishedAt": "2026-10-14T18:16:09Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1pb7ml2",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Europe's leaders abandon the race for frontier AI",
-      "excerpt": "Hacker News 社区讨论：Europe's leaders abandon the race for frontier AI",
-      "source": "Hacker News",
-      "url": "https://www.politico.eu/article/europe-ai-strategy-frontier-models-us-china/",
-      "publishedAt": "2026-10-14T18:15:05Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-16rhfxz",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "I spent 48 hours in SF hanging out with billionaires, data labs and AI execs",
-      "excerpt": "Hacker News 社区讨论：I spent 48 hours in SF hanging out with billionaires, data labs and AI execs",
-      "source": "Hacker News",
-      "url": "https://twitter.com/gregisenberg/status/2110414696037716372",
-      "publishedAt": "2026-10-14T18:12:19Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-bz15bf",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Cal Newport: The AI Industry Is Betting on the Wrong Kind of AI [video]",
-      "excerpt": "Hacker News 社区讨论：Cal Newport: The AI Industry Is Betting on the Wrong Kind of AI [video]",
-      "source": "Hacker News",
-      "url": "https://www.youtube.com/watch?v=WuIITyh_Q4g",
-      "publishedAt": "2026-10-14T18:11:23Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-pi7kd8",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Arguments About AI Consciousness Remain Highly Motivated and Overconfident",
-      "excerpt": "Hacker News 社区讨论：Arguments About AI Consciousness Remain Highly Motivated and Overconfident",
-      "source": "Hacker News",
-      "url": "https://thezvi.wordpress.com/2026/10/13/arguments-about-ai-consciousness-remain-highly-motivated-and-at-best-overconfident/",
-      "publishedAt": "2026-10-14T17:57:47Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1j10si3",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Where AI slop comes from, and how to turn it down inside the model",
-      "excerpt": "Hacker News 社区讨论：Where AI slop comes from, and how to turn it down inside the model",
-      "source": "Hacker News",
-      "url": "https://100toolkit.com/blog/where-ai-slop-comes-from/",
-      "publishedAt": "2026-10-14T17:57:27Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-vyrcgv",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Can superintelligent AI be banned?",
-      "excerpt": "Hacker News 社区讨论：Can superintelligent AI be banned?",
-      "source": "Hacker News",
-      "url": "https://www.machinesociety.ai/p/can-superintelligent-ai-be-banned",
-      "publishedAt": "2026-10-14T17:55:29Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-12s77a2",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Golang DL/ML primitives with inference, diffusion, vision, systemone",
-      "excerpt": "I created a DL inference engine that slowly grew to have more and functionality. - Inference for a bunch of open weights architectures - Diffusion image generation fir Z ai turbo - Vision input into LLM for inference - Vulkan&#x2F;fast CPU, optimized kernels -",
-      "source": "Hacker News",
-      "url": "https://github.com/computerex/dlgo",
-      "publishedAt": "2026-10-14T17:53:56Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-vva8s1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI agents aren't 'going rogue.' Frontier labs are skipping security basics",
-      "excerpt": "Hacker News 社区讨论：AI agents aren't 'going rogue.' Frontier labs are skipping security basics",
-      "source": "Hacker News",
-      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
-      "publishedAt": "2026-10-14T17:45:23Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1cmay6o",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Goldigging gals are flocking to Silicon Valley to land rich husbands in AI",
-      "excerpt": "Hacker News 社区讨论：Goldigging gals are flocking to Silicon Valley to land rich husbands in AI",
-      "source": "Hacker News",
-      "url": "https://nypost.com/2026/10/13/tech/goldigging-gals-are-flocking-to-silicon-valley-to-land-rich-husbands-in-ai/",
-      "publishedAt": "2026-10-14T17:42:22Z",
+      "url": "https://github.com/swax/dub-anything",
+      "publishedAt": "2026-10-14T19:49:55Z",
       "sourceKind": "community"
     }
   ]
