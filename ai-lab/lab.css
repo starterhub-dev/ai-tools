@@ -143,3 +143,16 @@ html,body{max-width:100%;overflow-x:clip}
  .sleeping-bot{min-height:130px}
  .sleeping-bot img{width:min(190px,68%);max-height:145px}
 }
+
+
+/* Cinematic AI brand nebula artwork generated for the actual hero, while all page controls stay live HTML. */
+.hero-art{height:auto;min-height:0;display:flex;align-items:center;justify-content:center;position:relative;isolation:isolate;transform:none;margin:0;padding:0;overflow:visible}
+.hero-nebula-image{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;border-radius:16px;filter:drop-shadow(0 14px 28px #1ac9ff22);animation:nebula-settle .8s ease-out both}
+@keyframes nebula-settle{from{opacity:.35;transform:translateY(8px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:1080px){.hero-nebula-image{max-height:300px}}
+@media(max-width:860px){.hero-art{height:auto;min-height:0;width:100%;margin:0;transform:none}.hero-nebula-image{width:100%;max-height:300px}}
+@media(max-width:620px){
+  .hero-art{height:auto;min-height:0;width:100%;margin:0;overflow:hidden;transform:none}
+  .hero-nebula-image{width:100%;height:auto;max-height:none;max-width:100%;border-radius:12px;filter:drop-shadow(0 8px 18px #1ac9ff1b)}
+}
+@media(prefers-reduced-motion:reduce){.hero-nebula-image{animation:none}}
