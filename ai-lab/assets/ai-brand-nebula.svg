@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="550" viewBox="0 0 1800 550" fill="none" role="img" aria-labelledby="title desc">
 <title id="title">AI Starter Hub luminous model constellation</title>
-<desc id="desc">A crisp vector sci-fi scene with a radiant crystalline AI core, orbital light paths, floating glass tiles and stars against a deep navy nebula.</desc>
+<desc id="desc">A crisp vector sci-fi scene with a radiant crystalline AI core, orbital light paths, orbital light paths, stars, and a radiant crystalline AI core against a deep navy nebula.</desc>
 <defs>
   <radialGradient id="nebulaA" cx="0" cy="0" r="1" gradientTransform="matrix(630 140 -92 415 1265 260)" gradientUnits="userSpaceOnUse"><stop stop-color="#184D78" stop-opacity=".56"/><stop offset=".55" stop-color="#17285D" stop-opacity=".22"/><stop offset="1" stop-color="#07152A" stop-opacity="0"/></radialGradient>
   <radialGradient id="nebulaB" cx="0" cy="0" r="1" gradientTransform="matrix(420 62 -75 505 1600 24)" gradientUnits="userSpaceOnUse"><stop stop-color="#5034A2" stop-opacity=".55"/><stop offset=".62" stop-color="#143C71" stop-opacity=".24"/><stop offset="1" stop-color="#061327" stop-opacity="0"/></radialGradient>
@@ -51,27 +51,7 @@
 <path d="M1136 311 1170 331V355L1136 335Z" fill="#48DFFF" fill-opacity=".8"/>
 <path d="M1204 311 1170 331V355L1204 335Z" fill="#7C8BFF" fill-opacity=".8"/>
 </g>
-<g transform="translate(900 106) rotate(-11 69 60)" filter="url(#glowCyan)">
-<use href="#tileBase"/><path d="M48 62c0-18 14-31 31-31 12 0 23 7 28 18M109 63c0 18-14 31-31 31-12 0-23-7-28-18M56 46l-7 7 7 7M101 80l7-7-7-7" stroke="#6DF5F0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<g transform="translate(1234 74) rotate(8 69 60)" filter="url(#glowPurple)">
-<use href="#tileBase"/><path d="M39 79 65 42 79 59 97 36 112 78 86 68 74 84 61 65Z" fill="#E8DFFF"/><path d="M57 89 78 75 91 84" stroke="#B6AAFF" stroke-width="3" stroke-linecap="round"/>
-</g>
-<g transform="translate(1490 177) rotate(9 69 60)" filter="url(#glowCyan)">
-<use href="#tileBase"/><path d="M42 60C48 37 70 36 79 51C94 37 111 49 106 67C101 84 80 88 66 79C54 87 35 78 42 60Z" fill="#56AFFF"/><path d="M52 65 61 74 72 59 83 72 96 59" stroke="#D7F6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<g transform="translate(1360 300) rotate(-9 69 60)" filter="url(#glowPurple)">
-<use href="#tileBase"/><path d="M69 34V88M42 47 96 75M42 75 96 47M52 36 85 86M85 36 52 86" stroke="#FFB88E" stroke-width="5" stroke-linecap="round"/><circle cx="69" cy="62" r="16" stroke="#FFF0E3" stroke-width="3" stroke-opacity=".7"/>
-</g>
-<g transform="translate(1516 353) rotate(7 69 60)">
-<use href="#tileBase"/><path d="M41 79 64 43 77 63 91 51 106 79Z" fill="#54E4C5"/><path d="M41 83H107" stroke="#B7FFF0" stroke-width="3" stroke-linecap="round"/>
-</g>
-<g transform="translate(870 326) rotate(5 69 60)" filter="url(#glowPurple)">
-<use href="#tileBase"/><path d="M42 75 69 36 96 75 69 65Z" stroke="#7DE9FF" stroke-width="3" stroke-linejoin="round"/><path d="M69 36V94M42 75H96M55 56 83 84M83 56 55 84" stroke="#7DE9FF" stroke-opacity=".65" stroke-width="2"/>
-</g>
-<g transform="translate(1280 420) rotate(-7 69 60)">
-<use href="#tileBase"/><path d="M42 63C42 43 65 34 79 48C97 38 111 53 104 69C97 87 73 90 60 77C49 82 40 74 42 63Z" stroke="#199DFF" stroke-width="6" stroke-linejoin="round"/><path d="M54 64C64 52 79 57 81 70" stroke="#92D7FF" stroke-width="3" stroke-linecap="round"/>
-</g>
+<!-- Real brand marks are layered above this artwork by ai-lab/index.html. -->
 <g opacity=".9" filter="url(#glowCyan)">
 <circle cx="770" cy="228" r="4" fill="#6DF9FF"/><circle cx="1400" cy="120" r="4" fill="#C1B2FF"/><circle cx="1462" cy="412" r="3" fill="#79F5E7"/><circle cx="1008" cy="482" r="3.5" fill="#7EEBFF"/><circle cx="1540" cy="244" r="3" fill="#F9B6FF"/>
 </g>
