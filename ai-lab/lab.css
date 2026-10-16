@@ -981,3 +981,227 @@ body{
   box-shadow:0 14px 30px #d19c2048,inset 0 1px #fff8!important;
 }
 .hero-brand-hf b{color:#4a2d0b!important;text-shadow:none!important}
+
+
+/* Mobile client composition pass.
+   The 4K artwork becomes its own flow section on portrait touch devices.
+   This prevents a natural-ratio image from sitting across the middle of the text. */
+@media (max-device-width: 720px) and (orientation: portrait),
+       (max-width: 680px) and (orientation: portrait) and (pointer: coarse) {
+  html, body { overflow-x: clip; }
+  html { scroll-padding-top: 72px; }
+  :root { --page: min(1480px, calc(100% - 28px)); }
+
+  .topbar { height: 66px; }
+  .topbar-inner { width: var(--page); gap: 10px; }
+  .brand { gap: 8px; }
+  .brand img { width: 31px; height: 31px; }
+  .brand strong { font-size: 11px; letter-spacing: .08em; }
+  .brand small { font-size: 9px; margin-top: 3px; }
+  .top-links { gap: 0; font-size: 10px; }
+  .top-links a:not(.back-link) { display: none !important; }
+  .top-links .back-link { padding: 9px 10px; border-radius: 12px; font-size: 10px; }
+
+  .page-shell { width: var(--page); }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 12px 0 16px;
+    padding: clamp(18px, 3.2vw, 26px);
+    gap: 0;
+    border-radius: 21px;
+    overflow: hidden;
+  }
+  .hero:before {
+    background:
+      radial-gradient(ellipse at 96% 0%, #4c348b45 0, transparent 44%),
+      linear-gradient(135deg, #061120 0%, #07162a 68%, #0b1730 100%);
+  }
+  .hero:after { box-shadow: inset 0 0 0 1px #d2f6ff10; }
+  .hero-copy {
+    position: relative;
+    z-index: 4;
+    width: 100% !important;
+    max-width: none;
+    flex: none;
+  }
+  .eyebrow { gap: 7px; font-size: 9px; letter-spacing: .085em; }
+  .eyebrow-dot { width: 7px; height: 7px; flex: none; }
+  .eyebrow-cn { font-size: 10px; }
+  .hero h1 {
+    margin: 15px 0 11px;
+    font-size: clamp(30px, 6vw, 43px) !important;
+    line-height: 1.12;
+    letter-spacing: -.04em;
+    text-wrap: pretty;
+  }
+  .hero-lede {
+    max-width: 48rem;
+    font-size: clamp(13px, 1.8vw, 15px);
+    line-height: 1.72;
+    color: #cedbeb;
+  }
+  .hero-points {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+    margin: 16px 0 10px;
+  }
+  .hero-points > span {
+    min-width: 0;
+    min-height: 45px;
+    justify-content: center;
+    gap: 6px;
+    padding: 7px 6px;
+    border-radius: 11px;
+    font-size: clamp(9px, 1.3vw, 11px);
+    white-space: nowrap;
+  }
+  .point-icon { width: 23px; height: 23px; border-radius: 7px; font-size: 12px; flex: none; }
+  .hero-caveat { max-width: 46rem; margin: 0; font-size: 10px; line-height: 1.55; color: #91a6bd; }
+
+  /* Crucial fix: art is now a real row under the copy, not an absolute overlay on the whole card. */
+  .hero-art {
+    position: relative !important;
+    inset: auto !important;
+    z-index: 1;
+    display: block;
+    width: calc(100% + 2 * clamp(18px, 3.2vw, 26px));
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 3840 / 1371;
+    flex: none;
+    margin:
+      18px calc(-1 * clamp(18px, 3.2vw, 26px))
+      calc(-1 * clamp(18px, 3.2vw, 26px));
+    overflow: hidden;
+    border-radius: 0 0 18px 18px;
+    background: #07172b;
+  }
+  .hero-nebula-image {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none;
+    max-height: none;
+    transform: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal;
+    filter: saturate(1.08) contrast(1.04);
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+  .hero-brand-cloud { position: absolute !important; inset: 0 !important; }
+  .hero-brand-tile {
+    display: flex !important;
+    width: clamp(36px, 7vw, 58px) !important;
+    height: clamp(38px, 7.25vw, 62px) !important;
+    padding: 5px 3px 4px !important;
+    gap: 3px !important;
+    border-radius: 12px !important;
+    transform-origin: center;
+  }
+  .hero-brand-tile:before { border-radius: 11px !important; }
+  .hero-brand-tile img {
+    width: 52% !important;
+    height: auto !important;
+    aspect-ratio: 1;
+    max-height: 58%;
+    object-fit: contain;
+  }
+  .hero-brand-tile b {
+    width: 100%;
+    font-size: clamp(5px, 1.1vw, 8px) !important;
+    letter-spacing: -.02em;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  /* Position percentages are relative to the 4K artwork itself now. */
+  .hero-brand-chatgpt { left: 54.1% !important; right: auto !important; top: 8.2% !important; transform: rotate(-8deg) !important; }
+  .hero-brand-gemini { left: 44.2% !important; right: auto !important; top: 25.7% !important; transform: rotate(9deg) !important; }
+  .hero-brand-qwen { left: 66.5% !important; right: auto !important; top: 8.2% !important; transform: rotate(7deg) !important; }
+  .hero-brand-deepseek { left: 83.8% !important; right: auto !important; top: 18.3% !important; transform: rotate(8deg) !important; }
+  .hero-brand-claude { left: 76% !important; right: auto !important; top: 40% !important; transform: rotate(-8deg) !important; }
+  .hero-brand-mistral { left: 84.6% !important; right: auto !important; top: 47.7% !important; transform: rotate(7deg) !important; }
+  .hero-brand-perplexity { left: 50.8% !important; right: auto !important; top: 41.1% !important; transform: rotate(5deg) !important; }
+  .hero-brand-meta { left: 66.4% !important; right: auto !important; top: 69.5% !important; transform: rotate(-6deg) !important; }
+  .hero-brand-hf { left: 54.4% !important; right: auto !important; top: 69.5% !important; transform: rotate(6deg) !important; }
+
+  .privacy-strip {
+    align-items: flex-start;
+    gap: 11px;
+    margin-bottom: 20px;
+    padding: 13px;
+    border-radius: 15px;
+  }
+  .privacy-mark { width: 38px; height: 38px; border-radius: 12px; font-size: 23px; }
+  .privacy-strip > div { flex: 1; min-width: 0; }
+  .privacy-strip strong { font-size: 12px; }
+  .privacy-strip p { font-size: 10px; line-height: 1.6; }
+  .privacy-strip > a { margin-left: 48px; font-size: 10px; }
+
+  .lab-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+  .model-side { min-width: 0; }
+  .section-topline {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .section-heading h2 { font-size: 21px; }
+  .model-tools {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    min-width: 0;
+  }
+  .model-count { font-size: 8px; white-space: nowrap; }
+  .model-search { min-width: 0; width: 100%; }
+  .model-search input { width: 100%; min-width: 0; max-width: none; }
+  .model-sort { min-width: 0; }
+  .model-sort select { width: 100%; max-width: 120px; }
+  .model-filters { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 7px; scrollbar-width: none; }
+  .model-filters::-webkit-scrollbar { display: none; }
+  .model-filter { flex: 0 0 auto; min-height: 34px; padding: 6px 10px; font-size: 10px; }
+  .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 9px; }
+  .model-card { min-width: 0; min-height: 0; }
+  .model-card-select { padding: 11px 10px 9px; }
+  .model-name { font-size: 11px; overflow-wrap: anywhere; }
+  .model-desc { font-size: 10px; line-height: 1.5; }
+  .model-meta { gap: 4px; flex-wrap: wrap; }
+  .model-meta span { font-size: 8px; }
+  .download-button, .load-model-button, .head-load-button, .send-button { min-height: 38px; }
+  .chat-panel { position: relative !important; top: auto !important; max-width: none; min-width: 0; }
+  .chat-head { gap: 8px; }
+  .chat-messages { max-height: 380px; }
+  .starter-prompts { gap: 7px; }
+  .starter-prompts button { min-height: 34px; font-size: 10px; }
+  .composer textarea { min-height: 72px; }
+  .site-footer { align-items: flex-start; flex-direction: column; gap: 8px; }
+}
+@media (max-width: 430px) and (orientation: portrait) and (pointer: coarse) {
+  .hero { padding: 17px; }
+  .hero h1 { font-size: clamp(28px, 7.8vw, 35px) !important; }
+  .hero-points { gap: 5px; }
+  .hero-points > span { gap: 4px; padding: 6px 4px; font-size: 9px; }
+  .point-icon { width: 20px; height: 20px; }
+  .hero-art { width: calc(100% + 34px); margin-left: -17px; margin-right: -17px; margin-bottom: -17px; }
+  .model-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  .model-tools { grid-template-columns: auto minmax(0, 1fr); }
+  .model-sort { grid-column: 1 / -1; }
+  .model-sort select { max-width: none; }
+  .privacy-strip > a { margin-left: 0; }
+}
