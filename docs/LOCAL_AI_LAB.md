@@ -38,4 +38,4 @@
 
 ## 许可证注意
 
-Qwen 系列模型卡标注 Apache-2.0；DeepSeek-R1-Distill-Qwen-7B 模型卡标注 MIT。具体权重与其许可来源应以各自官方模型仓库当前提供的 LICENSE 和模型说明为准。页面的图标为 AI Starter Hub 自绘界面图形，不代表模型厂商的官方品牌标识。
+Qwen 系列模型卡标注 Apache-2.0；DeepSeek-R1-Distill-Qwen-7B 模型卡标注 MIT。具体权重与其许可来源应以各自官方模型仓库当前提供的 LICENSE 和模型说明为准。本页使用的品牌标识只用于识别所选模型系列：Qwen 标识取自 [Qwen 官方仓库 README 所引用的资源](https://qianwen-res.oss-cn-beijing.aliyuncs.com/logo_qwen.jpg)，DeepSeek 图形取自 [DeepSeek 官方品牌素材仓库](https://github.com/deepseek-ai/awesome-deepseek-integration/tree/main/docs/_logo%20svg)。请遵守 [DeepSeek 品牌素材使用规范](https://github.com/deepseek-ai/awesome-deepseek-integration/blob/main/docs/_logo%20svg/guidelines.md)。这些标识不表示 AI Starter Hub 与相关厂商存在合作、背书或官方关系。
