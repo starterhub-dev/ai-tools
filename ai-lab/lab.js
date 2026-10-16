@@ -45,6 +45,8 @@ let loadPromise = null;
 let webgpuReady = false;
 let chatHistory = [];
 let currentFilter = "all";
+let currentSearch = "";
+let currentSort = "recommended";
 let modelStates = new Map();
 
 function selectedModel() {
@@ -132,29 +134,50 @@ function createModelCard(model) {
   return card;
 }
 
-function applyModelFilter(filter) {
+function getSortedModels() {
+  const models = [...MODELS];
+  const memoryOf = (model) => Number.parseFloat(model.vram) || 0;
+  if (currentSort === "memory") models.sort((a, b) => memoryOf(a) - memoryOf(b));
+  if (currentSort === "large") models.sort((a, b) => memoryOf(b) - memoryOf(a));
+  if (currentSort === "name") models.sort((a, b) => a.name.localeCompare(b.name, "zh-CN"));
+  return models;
+}
+
+function applyModelFilter(filter = currentFilter) {
   currentFilter = filter;
   document.querySelectorAll(".model-filter").forEach((button) => {
     const active = button.dataset.filter === filter;
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-pressed", String(active));
   });
+  const query = currentSearch.trim().toLocaleLowerCase("zh-CN");
   let visibleCount = 0;
   modelCards.forEach((card) => {
     const model = MODELS.find((item) => item.id === card.dataset.modelId);
-    const visible = filter === "all"
-      || (filter === "light" && model.tier === "light")
-      || model.category === filter;
+    const categoryVisible = filter === "all" || (filter === "light" && model.tier === "light") || model.category === filter;
+    const searchText = [model.name, model.detail, model.kind, model.brand, model.desc, model.license, model.id].join(" ").toLocaleLowerCase("zh-CN");
+    const visible = categoryVisible && (!query || searchText.includes(query));
     card.hidden = !visible;
     if (visible) visibleCount += 1;
   });
-  $("#modelCount").textContent = (filter === "all" ? MODELS.length : visibleCount + " / " + MODELS.length) + " MODELS";
+  $("#modelCount").textContent = (visibleCount === MODELS.length ? MODELS.length : visibleCount + " / " + MODELS.length) + " MODELS";
+  let empty = $("#modelEmptyState");
+  if (visibleCount === 0) {
+    if (!empty) {
+      empty = document.createElement("div");
+      empty.id = "modelEmptyState";
+      empty.className = "model-empty-state";
+      empty.textContent = "没找到匹配的模型，试试其他关键词或分类。";
+      $("#modelGrid").after(empty);
+    }
+    empty.hidden = false;
+  } else if (empty) empty.hidden = true;
 }
 
 function renderModelCards() {
   const grid = $("#modelGrid");
   const fragment = document.createDocumentFragment();
-  MODELS.forEach((model) => fragment.appendChild(createModelCard(model)));
+  getSortedModels().forEach((model) => fragment.appendChild(createModelCard(model)));
   grid.replaceChildren(fragment);
   modelCards = Array.from(grid.querySelectorAll(".model-card"));
   $("#allModelCount").textContent = String(MODELS.length);
@@ -532,5 +555,14 @@ updateControls();
 renderWelcome();
 document.querySelectorAll(".model-filter").forEach((button) => {
   button.addEventListener("click", () => applyModelFilter(button.dataset.filter || "all"));
+});
+$("#modelSearch").addEventListener("input", (event) => {
+  currentSearch = event.currentTarget.value || "";
+  applyModelFilter(currentFilter);
+});
+$("#modelSort").addEventListener("change", (event) => {
+  currentSort = event.currentTarget.value || "recommended";
+  renderModelCards();
+  updateControls();
 });
 checkWebGPU();
