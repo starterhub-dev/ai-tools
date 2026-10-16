@@ -45,6 +45,7 @@ let loadPromise = null;
 let webgpuReady = false;
 let chatHistory = [];
 let currentFilter = "all";
+let modelStates = new Map();
 
 function selectedModel() {
   return MODELS.find((model) => model.id === selectedId) || MODELS[0];
@@ -69,13 +70,18 @@ function createLogoNode(model, className) {
 }
 
 function createModelCard(model) {
-  const card = document.createElement("button");
-  card.type = "button";
+  const card = document.createElement("article");
   card.className = "model-card" + (model.featured ? " model-card-featured" : "") + (model.heavy ? " model-card-heavy" : "");
   card.dataset.modelId = model.id;
   card.dataset.category = model.category;
   card.dataset.tier = model.tier;
-  card.setAttribute("aria-pressed", String(model.id === selectedId));
+  card.classList.toggle("is-active", model.id === selectedId);
+
+  const select = document.createElement("button");
+  select.type = "button";
+  select.className = "model-card-select";
+  select.dataset.selectModelId = model.id;
+  select.setAttribute("aria-pressed", String(model.id === selectedId));
 
   const top = document.createElement("span");
   top.className = "model-card-top";
@@ -98,7 +104,6 @@ function createModelCard(model) {
   const description = document.createElement("span");
   description.className = "model-desc";
   description.textContent = model.desc;
-
   const meta = document.createElement("span");
   meta.className = "model-meta";
   const license = document.createElement("span");
@@ -106,9 +111,24 @@ function createModelCard(model) {
   const memory = document.createElement("span");
   memory.textContent = "显存 ≈ " + model.vram;
   meta.append(license, memory);
+  select.append(top, name, kind, description, meta);
+  select.addEventListener("click", () => selectModel(model.id));
 
-  card.append(top, name, kind, description, meta);
-  card.addEventListener("click", () => selectModel(model.id));
+  const actions = document.createElement("div");
+  actions.className = "model-card-actions";
+  const download = document.createElement("button");
+  download.type = "button";
+  download.className = "model-download";
+  download.dataset.downloadModelId = model.id;
+  download.title = "仅点击后才下载并加载这个模型";
+  download.textContent = "↓ 下载";
+  download.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    downloadModelForCard(model.id);
+  });
+  actions.appendChild(download);
+  card.append(select, actions);
   return card;
 }
 
@@ -140,6 +160,7 @@ function renderModelCards() {
   $("#allModelCount").textContent = String(MODELS.length);
   applyModelFilter(currentFilter);
   updateSelectedModelDisplay();
+  updateDownloadButtons();
 }
 
 function updateSelectedModelDisplay() {
@@ -151,7 +172,18 @@ function updateSelectedModelDisplay() {
   }
 }
 
-
+function updateDownloadButtons() {
+  document.querySelectorAll("[data-download-model-id]").forEach((button) => {
+    const id = button.dataset.downloadModelId;
+    const state = modelStates.get(id) || "idle";
+    button.textContent = state === "loading" ? "加载中…" :
+      state === "loaded" && id === engineModelId ? "已就绪" :
+      state === "used" ? "再加载" :
+      state === "error" ? "重试" : "↓ 下载";
+    button.disabled = loading || generating || !webgpuReady;
+    button.setAttribute("aria-label", (state === "idle" ? "下载并加载 " : "加载 ") + (MODELS.find((model) => model.id === id)?.name || "模型"));
+  });
+}
 function setStatus(message, kind = "") {
   statusText.textContent = message;
   statusBox.classList.remove("is-ready", "is-loading", "is-error");
@@ -174,17 +206,24 @@ function hideProgress() {
 function updateControls() {
   const locked = loading || generating;
   modelCards.forEach((card) => {
-    card.disabled = locked;
-    card.setAttribute("aria-pressed", String(card.dataset.modelId === selectedId));
+    const active = card.dataset.modelId === selectedId;
+    card.classList.toggle("is-active", active);
+    const select = card.querySelector("[data-select-model-id]");
+    if (select) {
+      select.disabled = locked;
+      select.setAttribute("aria-pressed", String(active));
+    }
   });
   if (launchButton) launchButton.disabled = locked || !webgpuReady;
   sendButton.disabled = locked || !webgpuReady;
   promptInput.disabled = locked || !webgpuReady;
   $("#clearChat").disabled = locked;
   document.querySelectorAll("[data-prompt]").forEach((button) => { button.disabled = locked; });
+  updateDownloadButtons();
 }
 
 function addMessage(role, content) {
+  if (role === "user") chatMessages.querySelector(".sleeping-bot")?.remove();
   const article = document.createElement("article");
   article.className = "message " + (role === "user" ? "message-user" : "message-assistant");
   const avatar = role === "user"
@@ -237,12 +276,29 @@ function renderWelcome() {
   wrapper.append(label, body);
   article.append(avatar, wrapper);
   chatMessages.appendChild(article);
+
+  const sleeping = document.createElement("div");
+  sleeping.className = "sleeping-bot";
+  const bedImage = document.createElement("img");
+  bedImage.src = "assets/ai-bed.webp";
+  bedImage.alt = "";
+  bedImage.loading = "eager";
+  bedImage.decoding = "async";
+  const bedLabel = document.createElement("strong");
+  bedLabel.textContent = "AI 待机舱";
+  const bedCaption = document.createElement("span");
+  bedCaption.textContent = "还没开始聊，先在小床上眯一会儿。";
+  sleeping.append(bedImage, bedLabel, bedCaption);
+  chatMessages.appendChild(sleeping);
 }
 
 async function releaseEngine() {
   const oldEngine = engine;
+  const oldModelId = engineModelId;
   engine = null;
   engineModelId = "";
+  if (oldEngine && oldModelId) modelStates.set(oldModelId, "used");
+  updateDownloadButtons();
   if (oldEngine && typeof oldEngine.unload === "function") {
     try { await oldEngine.unload(); } catch (error) { console.warn("释放模型时遇到提示：", error); }
   }
@@ -260,15 +316,35 @@ async function selectModel(id) {
     await releaseEngine();
     chatHistory = [];
     renderWelcome();
-    modelCards.forEach((card) => {
-      const active = card.dataset.modelId === selectedId;
-      card.classList.toggle("is-active", active);
-      card.setAttribute("aria-pressed", String(active));
-    });
     setStatus("已选择 " + selectedModel().name + "，尚未加载");
   } finally {
     loading = false;
     updateControls();
+  }
+}
+
+async function downloadModelForCard(id) {
+  if (loading || generating) return;
+  if (!webgpuReady) {
+    setStatus("当前设备暂时不能加载本地模型", "is-error");
+    supportNote.textContent = "需要支持 WebGPU 的浏览器与 GPU。选择模型不会下载；请先检查浏览器硬件加速和设备兼容性。";
+    supportNote.classList.add("is-error");
+    return;
+  }
+  try {
+    if (id !== selectedId) await selectModel(id);
+    if (loading || generating) return;
+    if (engine && engineModelId === id) {
+      setStatus(selectedModel().name + " 已就绪，可开始聊天", "is-ready");
+      return;
+    }
+    modelStates.set(id, "loading");
+    updateDownloadButtons();
+    await loadModel();
+  } catch (error) {
+    modelStates.set(id, "error");
+    updateDownloadButtons();
+    console.warn("下载或加载模型失败：", error);
   }
 }
 
@@ -278,8 +354,9 @@ async function loadModel() {
   if (!webgpuReady) throw new Error("当前浏览器没有可用的 WebGPU 设备。请尝试最新版 Chrome 或 Edge，并确认设备支持硬件加速。");
 
   loading = true;
+  modelStates.set(selectedId, "loading");
   updateControls();
-  setStatus("正在启动本地模型…", "is-loading");
+  setStatus("正在下载并启动本地模型…", "is-loading");
   setProgress(0, "正在连接开源推理引擎…");
 
   loadPromise = (async () => {
@@ -300,6 +377,8 @@ async function loadModel() {
     }
     engine = created;
     engineModelId = modelId;
+    modelStates.set(modelId, "loaded");
+    updateDownloadButtons();
     setProgress(1, "模型已准备就绪");
     setStatus(selectedModel().name + " 已就绪 · 推理在本地运行", "is-ready");
     window.setTimeout(hideProgress, 900);
@@ -309,6 +388,8 @@ async function loadModel() {
   try {
     return await loadPromise;
   } catch (error) {
+    modelStates.set(selectedId, "error");
+    updateDownloadButtons();
     hideProgress();
     setStatus("模型加载失败", "is-error");
     const detail = error instanceof Error ? error.message : String(error);
