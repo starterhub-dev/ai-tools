@@ -740,3 +740,66 @@ body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; te
   }
 }
 
+/* Mobile correction: the artwork is the hero's background board, not a separate image section. */
+@media (max-device-width:720px) and (orientation:portrait),
+       (max-width:680px) and (orientation:portrait) and (pointer:coarse) {
+  .hero {
+    position:relative; display:block; isolation:isolate;
+    width:100%; min-height:0; height:auto; aspect-ratio:1.72;
+    padding:15px 14px; margin:12px 0 16px;
+    overflow:hidden; border-radius:20px;
+    background:#061120;
+  }
+  .hero:before {
+    z-index:2; pointer-events:none;
+    background:
+      linear-gradient(90deg,#04101ef7 0%,#04101ee8 28%,#04101ebd 42%,#04101e70 55%,#04101e18 75%,transparent 100%),
+      linear-gradient(0deg,#04101e70 0%,transparent 38%);
+  }
+  .hero:after { z-index:3; pointer-events:none; }
+  .hero-copy {
+    position:relative; z-index:4; display:block;
+    width:54%; max-width:none; margin:0; padding:0;
+  }
+  .hero-art {
+    position:absolute; inset:0; z-index:1; display:block;
+    width:100%; height:100%; min-height:0; margin:0;
+    aspect-ratio:auto; overflow:hidden; border-radius:inherit;
+    background:#061120; pointer-events:none;
+  }
+  .hero-main-visual {
+    position:absolute; inset:0; display:block;
+    width:100%; height:100%; max-width:none; max-height:none;
+    transform:none; object-fit:cover; object-position:50% center;
+    opacity:1; filter:saturate(1.06) contrast(1.04);
+    -webkit-mask-image:none; mask-image:none;
+  }
+  .hero .eyebrow {
+    display:flex; flex-wrap:wrap; align-items:center; gap:4px;
+    margin-bottom:8px; font-size:7px; letter-spacing:.08em; line-height:1.35;
+  }
+  .hero .eyebrow-cn { font-size:7px; letter-spacing:0; }
+  .hero h1 {
+    max-width:none; margin:0 0 8px;
+    font-size:clamp(23px,6.2vw,29px); line-height:1.12; letter-spacing:-.055em;
+  }
+  .hero-lede { margin:0 0 8px; max-width:100%; font-size:8px; line-height:1.55; }
+  .hero-points { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; margin:8px 0 0; }
+  .hero-points>span {
+    display:flex; flex-direction:column; align-items:flex-start; justify-content:center;
+    min-width:0; min-height:34px; gap:3px; padding:5px 4px;
+    border-radius:7px; font-size:7px; line-height:1.2;
+    white-space:normal; background:#0b1d30d9; border:1px solid #c7f6ff18;
+  }
+  .point-icon { width:15px; height:15px; font-size:8px; }
+  .hero-caveat { margin:7px 0 0; max-width:100%; font-size:6.5px; line-height:1.35; }
+}
+@media (max-width:430px) and (orientation:portrait) {
+  .hero { aspect-ratio:1.68; padding:13px 12px; }
+  .hero-copy { width:55%; }
+  .hero h1 { font-size:clamp(22px,6vw,26px); }
+  .hero-lede { font-size:7.5px; }
+  .hero-points>span { font-size:6.5px; }
+  .hero-caveat { font-size:6px; }
+}
+
