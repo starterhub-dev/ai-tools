@@ -368,3 +368,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   .hero-brand-perplexity{left:56%;top:60%}
   .hero-brand-hf{left:62%;top:78%}
 }
+
+/* Runtime controls are inserted by lab.js after the chat header mounts. */
+.load-model-button{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:none;min-height:40px;padding:8px 14px;border:1px solid #63ead9;border-radius:11px;background:linear-gradient(120deg,#8af3e2,#6fe2f4);color:#06283b;font-size:11px;font-weight:900;box-shadow:0 0 22px #4ce5d31f;cursor:pointer;transition:filter .18s,transform .18s,border-color .18s}
+.load-model-button:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.load-model-button:disabled{opacity:.48;filter:none;transform:none;cursor:not-allowed}
+.head-load-button{margin-left:0}
+.message-assistant{align-self:stretch}
+.welcome-message{margin-bottom:1px}
+.model-card-heavy .model-logo{background:linear-gradient(145deg,#30284d,#17243d)}
+@media(max-width:680px){
+ .load-model-button{min-height:34px;padding:6px 10px;font-size:9px;border-radius:9px}
+}
