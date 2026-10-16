@@ -756,3 +756,30 @@ body{
   .hero-brand-tile img { width: 22px !important; height: 22px !important; }
   .hero-brand-tile b { font-size: 6px !important; }
 }
+
+
+/* Final brand placement pass: align real HTML logos with the floating tiles in the 4K hero art. */
+@media (max-width: 680px) and (orientation: portrait),
+       (max-device-width: 720px) and (orientation: portrait) {
+  .hero-brand-tile {
+    display: flex !important;
+    width: 45px !important;
+    height: 47px !important;
+    padding: 4px 2px 3px !important;
+    gap: 3px !important;
+    border-radius: 10px !important;
+  }
+  .hero-brand-tile:before { border-radius: 9px !important; }
+  .hero-brand-tile img { width: 20px !important; height: 20px !important; }
+  .hero-brand-tile b { font-size: 5.8px !important; letter-spacing: -.02em !important; }
+
+  .hero-brand-chatgpt { left: 52% !important; right: auto !important; top: 12% !important; transform: rotate(-8deg) !important; }
+  .hero-brand-gemini { left: 41% !important; right: auto !important; top: 33% !important; transform: rotate(8deg) !important; }
+  .hero-brand-qwen { left: 67% !important; right: auto !important; top: 5% !important; transform: rotate(7deg) !important; }
+  .hero-brand-deepseek { left: 83% !important; right: auto !important; top: 22% !important; transform: rotate(8deg) !important; }
+  .hero-brand-claude { left: 80% !important; right: auto !important; top: 44% !important; transform: rotate(-7deg) !important; }
+  .hero-brand-mistral { left: 83% !important; right: auto !important; top: 65% !important; transform: rotate(7deg) !important; }
+  .hero-brand-meta { left: 68% !important; right: auto !important; top: 76% !important; transform: rotate(-6deg) !important; }
+  .hero-brand-perplexity { left: 48% !important; right: auto !important; top: 57% !important; transform: rotate(5deg) !important; }
+  .hero-brand-hf { left: 54% !important; right: auto !important; top: 76% !important; transform: rotate(6deg) !important; }
+}
