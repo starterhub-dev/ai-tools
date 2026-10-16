@@ -836,7 +836,8 @@ body{
 @media (min-width:721px) and (max-device-width:720px) and (orientation:portrait) {
   .hero-brand-tile { width:68px !important; height:70px !important; gap:4px !important; padding:6px 3px 5px !important; border-radius:14px !important; }
   .hero-brand-tile:before { border-radius:12px !important; }
-  .hero-brand-tile img { width:30px !important; height:30px !important; filter:brightness(0) invert(1) drop-shadow(0 0 8px #6bcaff4a); }
+  .hero-brand-tile img { width:30px !important; height:30px !important; }
+  .hero-brand-chatgpt img { filter:brightness(0) invert(1) drop-shadow(0 0 8px #6bcaff4a); }
   .hero-brand-tile b { font-size:7.8px !important; letter-spacing:-.01em !important; }
   .hero-brand-chatgpt { left:51.3% !important; right:auto !important; top:9.3% !important; transform:rotate(-8deg) !important; }
   .hero-brand-gemini { left:40.6% !important; right:auto !important; top:26.8% !important; transform:rotate(8deg) !important; }
