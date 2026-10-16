@@ -877,3 +877,107 @@ body{
 
 /* OpenAI mark: preserve the official silhouette; no extra glow or brand-shape effects. */
 .hero-brand-chatgpt img { filter:brightness(0) invert(1) !important; }
+
+
+/* Native-app-inspired brand tiles.
+   Use each app's visual language and original logomark rather than one universal glass tile. */
+.hero-brand-tile{
+  background:linear-gradient(145deg,#14263d,#071323)!important;
+  border-width:1.25px!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  box-shadow:0 15px 32px #0007,0 4px 14px #0004,inset 0 1px #ffffff36!important;
+  overflow:hidden;
+}
+.hero-brand-tile:before{
+  inset:0!important;
+  border-radius:inherit!important;
+  background:linear-gradient(145deg,#ffffff22 0%,#ffffff04 38%,transparent 65%)!important;
+  pointer-events:none;
+}
+.hero-brand-tile img{
+  position:relative;
+  z-index:1;
+  object-fit:contain;
+  filter:none!important;
+  flex:none;
+}
+.hero-brand-tile b{
+  position:relative;
+  z-index:1;
+  text-shadow:0 1px 3px #0003;
+}
+
+/* ChatGPT's official iOS icon is a black knot on a white app tile. */
+.hero-brand-chatgpt{
+  background:linear-gradient(145deg,#ffffff,#f0f2f5)!important;
+  border-color:#ffffff!important;
+  box-shadow:0 12px 30px #0007,0 0 22px #ffffff20,inset 0 1px #fff!important;
+}
+.hero-brand-chatgpt:before{background:linear-gradient(145deg,#ffffffb8,#ffffff00 65%)!important}
+.hero-brand-chatgpt b{color:#101318!important;text-shadow:none!important}
+.hero-brand-chatgpt img{filter:none!important}
+
+/* Gemini: light app surface + four-colour sparkle. */
+.hero-brand-gemini{
+  background:linear-gradient(145deg,#ffffff,#eff2ff 60%,#d9e3ff)!important;
+  border-color:#b8caff!important;
+  box-shadow:0 14px 30px #536ed94a,inset 0 1px #fff!important;
+}
+.hero-brand-gemini b{color:#1b2746!important;text-shadow:none!important}
+
+/* Qwen: cool violet / indigo app surface. */
+.hero-brand-qwen{
+  background:linear-gradient(145deg,#fbf9ff,#e8e0ff 56%,#c9b8ff)!important;
+  border-color:#c3b4ff!important;
+  box-shadow:0 14px 30px #7653ff42,inset 0 1px #fff!important;
+}
+.hero-brand-qwen b{color:#2b205b!important;text-shadow:none!important}
+
+/* DeepSeek: clean ice-blue surface and its blue whale mark. */
+.hero-brand-deepseek{
+  background:linear-gradient(145deg,#ffffff,#edf7ff 56%,#c5e2ff)!important;
+  border-color:#a7d0ff!important;
+  box-shadow:0 14px 30px #238bff3b,inset 0 1px #fff!important;
+}
+.hero-brand-deepseek b{color:#0c315e!important;text-shadow:none!important}
+
+/* Claude: warm off-white and Anthropic terracotta. */
+.hero-brand-claude{
+  background:linear-gradient(145deg,#fffdfb,#fff1e9 58%,#f4d7ca)!important;
+  border-color:#f0bba7!important;
+  box-shadow:0 14px 30px #d9775733,inset 0 1px #fff!important;
+}
+.hero-brand-claude b{color:#542d20!important;text-shadow:none!important}
+
+/* Mistral / Le Chat: deep ink surface with the pixel mark's warm gradient. */
+.hero-brand-mistral{
+  background:linear-gradient(145deg,#27222f,#121522 65%,#351b2d)!important;
+  border-color:#a76cbb!important;
+  box-shadow:0 14px 34px #0009,0 0 22px #ef61951c,inset 0 1px #ffffff4a!important;
+}
+.hero-brand-mistral b{color:#fff7fb!important}
+
+/* Meta AI: airy blue-violet app gradient. */
+.hero-brand-meta{
+  background:linear-gradient(145deg,#ffffff,#eef3ff 52%,#cddcff)!important;
+  border-color:#a7c4ff!important;
+  box-shadow:0 14px 30px #3979ff3b,inset 0 1px #fff!important;
+}
+.hero-brand-meta b{color:#17346d!important;text-shadow:none!important}
+
+/* Perplexity: cool porcelain surface with cyan logomark. */
+.hero-brand-perplexity{
+  background:linear-gradient(145deg,#ffffff,#edfcff 58%,#c8f0f4)!important;
+  border-color:#99e4ed!important;
+  box-shadow:0 14px 30px #16a9c533,inset 0 1px #fff!important;
+}
+.hero-brand-perplexity b{color:#123a48!important;text-shadow:none!important}
+
+/* Hugging Face: sunflower app surface, dark mark and readable label. */
+.hero-brand-hf{
+  background:linear-gradient(145deg,#fffbe9,#ffe98c 61%,#ffd21e)!important;
+  border-color:#ffe05d!important;
+  box-shadow:0 14px 30px #d19c2048,inset 0 1px #fff8!important;
+}
+.hero-brand-hf b{color:#4a2d0b!important;text-shadow:none!important}

@@ -1,0 +1,6 @@
+<!-- Vector brand mark sourced from Simple Icons; trademarks remain with their owners. -->
+<svg width="128" height="128" fill="#F2A13A" role="img" aria-labelledby="brand-title" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="brand-title">Mistral AI app mark</title>
+  <defs><linearGradient id="mistralAppGradient" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#FFCF45"/><stop offset=".35" stop-color="#FF8158"/>
+  <stop offset=".68" stop-color="#E94788"/><stop offset="1" stop-color="#8B5CF6"/>
+  </linearGradient></defs><path fill="url(#mistralAppGradient)" d="M17.143 3.429v3.428h-3.429v3.429h-3.428V6.857H6.857V3.43H3.43v13.714H0v3.428h10.286v-3.428H6.857v-3.429h3.429v3.429h3.429v-3.429h3.428v3.429h-3.428v3.428H24v-3.428h-3.43V3.429z"/></svg>
