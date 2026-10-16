@@ -783,3 +783,93 @@ body{
   .hero-brand-perplexity { left: 48% !important; right: auto !important; top: 57% !important; transform: rotate(5deg) !important; }
   .hero-brand-hf { left: 54% !important; right: auto !important; top: 76% !important; transform: rotate(6deg) !important; }
 }
+
+
+/* Geometry-based alignment pass against the 3840x1371 hero artwork. */
+@media (min-width:1181px) {
+  .hero-brand-tile { width:100px; height:104px; border-radius:24px; gap:8px; padding:10px 6px 8px; }
+  .hero-brand-tile:before { border-radius:22px; }
+  .hero-brand-tile img { width:42px; height:42px; }
+  .hero-brand-tile b { font-size:11.5px; }
+  .hero-brand-chatgpt { left:54.1%; top:8.2%; }
+  .hero-brand-gemini { left:44.2%; top:25.7%; }
+  .hero-brand-qwen { left:66.5%; top:8.2%; }
+  .hero-brand-deepseek { left:83.8%; right:auto; top:18.3%; }
+  .hero-brand-claude { left:76%; top:40%; }
+  .hero-brand-mistral { left:84.6%; right:auto; top:47.7%; }
+  .hero-brand-perplexity { left:50.8%; top:41.1%; }
+  .hero-brand-meta { left:66.4%; top:69.5%; }
+  .hero-brand-hf { left:54.4%; top:69.5%; }
+}
+@media (max-width:1180px) and (min-width:921px) {
+  .hero-brand-tile { width:78px; height:82px; border-radius:16px; gap:5px; padding:7px 4px 6px; }
+  .hero-brand-tile:before { border-radius:14px; }
+  .hero-brand-tile img { width:31px; height:31px; }
+  .hero-brand-tile b { font-size:9px; }
+  .hero-brand-chatgpt { left:50.1%; top:9.3%; }
+  .hero-brand-gemini { left:36.7%; top:26.8%; }
+  .hero-brand-qwen { left:66.6%; top:9.3%; }
+  .hero-brand-deepseek { left:90.1%; right:auto; top:19.5%; }
+  .hero-brand-claude { left:79.2%; top:41%; }
+  .hero-brand-mistral { left:90.8%; right:auto; top:48.7%; }
+  .hero-brand-perplexity { left:45.8%; top:42.2%; }
+  .hero-brand-meta { left:70.4%; top:70%; }
+  .hero-brand-hf { left:51.2%; top:70%; }
+}
+@media (max-width:920px) and (min-width:721px) {
+  .hero-brand-tile { width:72px; height:75px; border-radius:14px; gap:4px; padding:6px 3px 5px; }
+  .hero-brand-tile:before { border-radius:12px; }
+  .hero-brand-tile img { width:29px; height:29px; }
+  .hero-brand-tile b { font-size:8px; }
+  .hero-brand-chatgpt { left:44.3%; top:9.5%; }
+  .hero-brand-gemini { left:29%; top:27.1%; }
+  .hero-brand-qwen { left:63.2%; top:9.5%; }
+  .hero-brand-deepseek { left:90.8%; right:auto; top:19.8%; }
+  .hero-brand-claude { left:78.1%; top:41.3%; }
+  .hero-brand-mistral { left:91.5%; right:auto; top:48.9%; }
+  .hero-brand-perplexity { left:39.3%; top:42.3%; }
+  .hero-brand-meta { left:63.9%; top:70%; }
+  .hero-brand-hf { left:45.6%; top:70%; }
+}
+
+/* Narrow physical phone running a desktop-style layout viewport. */
+@media (min-width:721px) and (max-device-width:720px) and (orientation:portrait) {
+  .hero-brand-tile { width:68px !important; height:70px !important; gap:4px !important; padding:6px 3px 5px !important; border-radius:14px !important; }
+  .hero-brand-tile:before { border-radius:12px !important; }
+  .hero-brand-tile img { width:30px !important; height:30px !important; filter:brightness(0) invert(1) drop-shadow(0 0 8px #6bcaff4a); }
+  .hero-brand-tile b { font-size:7.8px !important; letter-spacing:-.01em !important; }
+  .hero-brand-chatgpt { left:51.3% !important; right:auto !important; top:9.3% !important; transform:rotate(-8deg) !important; }
+  .hero-brand-gemini { left:40.6% !important; right:auto !important; top:26.8% !important; transform:rotate(8deg) !important; }
+  .hero-brand-qwen { left:65.5% !important; right:auto !important; top:9.3% !important; transform:rotate(7deg) !important; }
+  .hero-brand-deepseek { left:86.2% !important; right:auto !important; top:19.6% !important; transform:rotate(8deg) !important; }
+  .hero-brand-claude { left:76.9% !important; right:auto !important; top:41.1% !important; transform:rotate(-7deg) !important; }
+  .hero-brand-mistral { left:86.5% !important; right:auto !important; top:48.6% !important; transform:rotate(7deg) !important; }
+  .hero-brand-perplexity { left:48.4% !important; right:auto !important; top:42.1% !important; transform:rotate(5deg) !important; }
+  .hero-brand-meta { left:66.3% !important; right:auto !important; top:73% !important; transform:rotate(-6deg) !important; }
+  .hero-brand-hf { left:52.8% !important; right:auto !important; top:73% !important; transform:rotate(6deg) !important; }
+}
+
+/* Normal-width mobile browsers: retain the source artwork ratio rather than zoom-cropping. */
+@media (max-width:720px) and (orientation:portrait) and (pointer:coarse) {
+  .hero { min-height:385px; }
+  .hero-nebula-image {
+    inset:auto 0 auto 0; top:50%; bottom:auto; width:100%; height:auto;
+    transform:translateY(-50%); object-fit:contain; object-position:center; opacity:.88;
+    -webkit-mask-image:none; mask-image:none;
+  }
+  .hero-copy { width:46%; max-width:350px; }
+  .hero h1 { font-size:clamp(27px,7vw,37px); }
+  .hero-brand-tile { width:clamp(24px,7vw,48px) !important; height:clamp(25px,7.25vw,50px) !important; padding:3px 2px !important; gap:2px !important; border-radius:8px !important; }
+  .hero-brand-tile:before { border-radius:7px !important; }
+  .hero-brand-tile img { width:clamp(12px,3.2vw,22px) !important; height:clamp(12px,3.2vw,22px) !important; }
+  .hero-brand-tile b { font-size:clamp(4.5px,1.15vw,7.8px) !important; letter-spacing:-.02em !important; }
+  .hero-brand-chatgpt { left:54.1% !important; right:auto !important; top:23.9% !important; }
+  .hero-brand-gemini { left:44.5% !important; right:auto !important; top:34.8% !important; }
+  .hero-brand-qwen { left:66.7% !important; right:auto !important; top:23.9% !important; }
+  .hero-brand-deepseek { left:84.2% !important; right:auto !important; top:30.2% !important; }
+  .hero-brand-claude { left:76% !important; right:auto !important; top:43.6% !important; }
+  .hero-brand-mistral { left:84.4% !important; right:auto !important; top:48.5% !important; }
+  .hero-brand-perplexity { left:51.3% !important; right:auto !important; top:44.5% !important; }
+  .hero-brand-meta { left:66% !important; right:auto !important; top:73% !important; }
+  .hero-brand-hf { left:52.5% !important; right:auto !important; top:73% !important; }
+}
