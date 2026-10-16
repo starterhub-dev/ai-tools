@@ -342,3 +342,29 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Final alignment pass: keep the model constellation clear of copy at every breakpoint. */
+@media(min-width:1181px){
+  .hero-copy{width:min(43%,620px)}
+  .hero-brand-gemini{left:46%;top:34%}
+}
+@media(max-width:1180px) and (min-width:921px){
+  .hero-copy{width:46%}
+  .hero-brand-chatgpt{left:54%;top:10%}
+  .hero-brand-gemini{left:50%;top:36%}
+  .hero-brand-qwen{left:70%;top:6%}
+  .hero-brand-deepseek{right:3%;top:24%}
+  .hero-brand-claude{left:74%;top:50%}
+  .hero-brand-perplexity{left:53%;top:60%}
+  .hero-brand-hf{left:59%;top:78%}
+}
+@media(max-width:920px) and (min-width:681px){
+  .hero-copy{width:49%}
+  .hero-brand-chatgpt{left:57%;top:9%}
+  .hero-brand-gemini{left:53%;top:37%}
+  .hero-brand-qwen{left:71%;top:5%}
+  .hero-brand-deepseek{right:3%;top:24%}
+  .hero-brand-claude{left:75%;top:49%}
+  .hero-brand-perplexity{left:56%;top:60%}
+  .hero-brand-hf{left:62%;top:78%}
+}
