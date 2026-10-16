@@ -197,7 +197,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* Laptop */
 @media(max-width:1180px){
-  :root{--page:min(100% - 36px,1480px)}
+  :root{--page:min(calc(100% - 36px),1480px)}
   .lab-layout{grid-template-columns:minmax(0,1.3fr) minmax(310px,.9fr);gap:16px}
   .model-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .model-tools{gap:6px}
