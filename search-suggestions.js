@@ -27,7 +27,9 @@ function chipBrandIcons(q){
   }).join("");
 }
 
-function draw(){
+function draw(options){
+  const keepVisibility=options?.preserveVisibility===true;
+  const wasHidden=box.hidden;
   const q=input.value||"";
   const result=window.SearchCore.search(q,{tools,limit:6});
   const ctx=result.context;
@@ -45,7 +47,7 @@ function draw(){
     box.innerHTML='<div class="suggest-empty">'+(window.ASHI18n?.t("suggestEmpty")||"暂时没找到合适的工具。换一种说法试试。")+'</div>';
   }
 
-  box.hidden=false;
+  box.hidden=keepVisibility?wasHidden:false;
   box.querySelectorAll("[data-q]").forEach(b=>b.onclick=function(){
     input.value=this.dataset.q;
     draw();
@@ -70,5 +72,5 @@ function draw(){
 ["input","compositionend","search"].forEach(e=>input.addEventListener(e,draw));
 input.addEventListener("focus",draw);
 input.addEventListener("blur",function(){setTimeout(function(){box.hidden=true},180)});
-window.SearchSuggestions={refresh:draw};
+window.SearchSuggestions={refresh:()=>draw({preserveVisibility:true})};
 })();
