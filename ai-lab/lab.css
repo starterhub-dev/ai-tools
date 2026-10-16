@@ -548,3 +548,154 @@ body{
   .chat-messages{max-height:390px}
   .site-footer{align-items:flex-start;flex-direction:column;gap:10px}
 }
+
+
+/* Neon showcase pass · visual reference alignment.
+   Keep brand cards as HTML and preserve all interaction behavior in lab.js. */
+.hero{
+  min-height:clamp(470px,36vw,555px);
+  border-color:#2e5c79a1;
+  box-shadow:inset 0 1px #d7ffff13,0 24px 70px #0005;
+  background:
+    radial-gradient(ellipse at 70% 48%,#0b639b80 0%,transparent 40%),
+    radial-gradient(ellipse at 91% 8%,#5b35ac70 0%,transparent 36%),
+    linear-gradient(112deg,#061120 0%,#07172a 48%,#091a32 100%);
+}
+.hero:before{
+  background:
+    linear-gradient(90deg,#061120 0%,#061120f7 15%,#061120d9 32%,#06112075 48%,#06112010 71%),
+    linear-gradient(0deg,#06112082 0%,transparent 31%);
+}
+.hero-nebula-image{
+  opacity:1;
+  mix-blend-mode:screen;
+  filter:saturate(1.25) contrast(1.1) brightness(1.08);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#00000025 14%,#000000c2 34%,#000 48%);
+  mask-image:linear-gradient(90deg,transparent 0%,#00000025 14%,#000000c2 34%,#000 48%);
+}
+.hero-brand-tile{
+  border-width:1.5px;
+  border-color:#b9efffb5;
+  background:
+    linear-gradient(145deg,#1b3b56f5 0%,#0b1c34fa 52%,#061324fb 100%);
+  box-shadow:
+    0 18px 44px #0008,
+    0 0 30px #30cfff2c,
+    0 0 3px #9bf8ff70,
+    inset 0 1px 1px #ffffff65,
+    inset 0 -10px 22px #0005;
+  backdrop-filter:blur(14px) saturate(1.2);
+  -webkit-backdrop-filter:blur(14px) saturate(1.2);
+}
+.hero-brand-tile:before{
+  background:
+    linear-gradient(137deg,#ffffff25 0%,#ffffff06 27%,transparent 54%),
+    radial-gradient(ellipse at 50% 0%,#85efff16,transparent 70%);
+}
+.hero-brand-tile:after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  left:16%;
+  right:16%;
+  bottom:1px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#9ef8ffdd,transparent);
+  box-shadow:0 0 12px #52e8ff8c;
+}
+.hero-brand-tile img{
+  width:clamp(31px,2.95vw,46px);
+  height:clamp(31px,2.95vw,46px);
+  filter:drop-shadow(0 0 10px #64dcff5c);
+}
+.hero-brand-tile b{
+  font-size:clamp(9px,.78vw,12px);
+  letter-spacing:0;
+  color:#f4fbff;
+  text-shadow:0 2px 7px #000e;
+}
+.hero-brand-chatgpt{border-color:#69f7e7dc;box-shadow:0 18px 44px #0008,0 0 32px #40ffdf42,inset 0 1px 1px #ffffff75,inset 0 -10px 22px #0005}
+.hero-brand-qwen{border-color:#a994ffeb;box-shadow:0 18px 44px #0008,0 0 38px #7b64ff5a,inset 0 1px 1px #ffffff75,inset 0 -10px 22px #0005}
+.hero-brand-deepseek{border-color:#58caffeb;box-shadow:0 18px 44px #0008,0 0 40px #2b9eff4d,inset 0 1px 1px #ffffff75,inset 0 -10px 22px #0005}
+.hero-brand-gemini{border-color:#a99affdf;box-shadow:0 18px 44px #0008,0 0 34px #8e65ff4d,inset 0 1px 1px #ffffff75,inset 0 -10px 22px #0005}
+.privacy-strip{
+  border-color:#58e2ddb0;
+  background:
+    radial-gradient(ellipse at 0% 50%,#0f6c6a3a,transparent 42%),
+    linear-gradient(100deg,#0b2a3cfa,#10263cf5);
+  box-shadow:inset 0 1px #e1ffff18,0 8px 28px #0002;
+}
+.lab-layout{grid-template-columns:minmax(0,1.62fr) minmax(340px,.9fr);gap:27px}
+.model-card{
+  background:
+    radial-gradient(ellipse at 100% 0%,#17345a26,transparent 50%),
+    linear-gradient(145deg,#10263c,#081827 90%);
+}
+.model-card:hover{border-color:#5a90b2;box-shadow:0 15px 34px #0004,inset 0 1px #ffffff10}
+.chat-panel{
+  border-color:#2b4562;
+  background:
+    radial-gradient(ellipse at 0% 0%,#203a6331,transparent 42%),
+    linear-gradient(160deg,#0d1e32,#091625 85%);
+  box-shadow:0 20px 55px #0003,inset 0 1px #ffffff0a;
+}
+.chat-head{border-bottom-color:#293f57}
+.load-model-button{box-shadow:0 0 24px #4ce5d340,inset 0 1px #ffffff80}
+.model-filter.is-active{box-shadow:0 0 25px #5acfff35}
+
+@media(min-width:1181px){
+  .hero{min-height:clamp(500px,36vw,555px);padding:clamp(46px,4.2vw,66px) clamp(36px,4vw,64px)}
+  .hero-copy{width:min(43%,640px)}
+  .hero h1{font-size:clamp(48px,4.25vw,65px);line-height:1.12}
+  .hero-lede{max-width:510px;font-size:clamp(15px,1.15vw,17px)}
+  .hero-brand-tile{width:clamp(96px,7.45vw,128px);height:clamp(99px,7.7vw,132px);border-radius:25px;gap:9px;padding:12px 8px 9px}
+  .hero-brand-tile:before{border-radius:23px}
+  .hero-brand-tile img{width:clamp(38px,3.25vw,54px);height:clamp(38px,3.25vw,54px)}
+  .hero-brand-tile b{font-size:clamp(11px,.9vw,14px)}
+  .hero-brand-chatgpt{left:47%;top:9%}
+  .hero-brand-gemini{left:39%;top:31%}
+  .hero-brand-qwen{left:62%;top:5%}
+  .hero-brand-deepseek{right:4%;top:20%}
+  .hero-brand-claude{left:72%;top:39%}
+  .hero-brand-mistral{right:11%;top:60%}
+  .hero-brand-meta{left:66%;top:68%}
+  .hero-brand-perplexity{left:44%;top:57%}
+  .hero-brand-hf{left:52%;top:70%}
+}
+@media(max-width:1180px) and (min-width:921px){
+  .hero{min-height:clamp(460px,43vw,520px)}
+  .hero-brand-tile{width:clamp(78px,7.7vw,92px);height:clamp(80px,7.9vw,96px);border-radius:18px}
+  .hero-brand-tile:before{border-radius:16px}
+  .hero-brand-tile img{width:32px;height:32px}
+  .hero-brand-tile b{font-size:9px}
+}
+@media(max-width:920px) and (min-width:721px){
+  .hero{min-height:430px}
+  .hero-brand-tile{width:72px;height:75px}
+  .hero-brand-tile img{width:29px;height:29px}
+  .hero-brand-tile b{font-size:8px}
+  .lab-layout{grid-template-columns:minmax(0,1fr)}
+  .chat-panel{position:relative;top:auto}
+}
+@media(max-width:680px){
+  .hero{min-height:385px}
+  .hero-brand-tile{width:49px;height:51px;border-radius:10px}
+  .hero-brand-tile img{width:22px;height:22px}
+  .hero-brand-tile b{font-size:6px}
+  .lab-layout{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-device-width:720px) and (orientation:portrait){
+  .hero{min-height:385px!important;padding:27px 17px 22px!important}
+  .hero-copy{width:75%!important;max-width:350px}
+  .hero h1{font-size:clamp(28px,7.6vw,37px)!important}
+  .hero-lede{font-size:12px!important}
+  .hero-brand-tile{width:49px!important;height:51px!important;border-radius:10px;padding:4px 2px 3px}
+  .hero-brand-tile img{width:22px!important;height:22px!important}
+  .hero-brand-tile b{font-size:6px!important}
+  .lab-layout{grid-template-columns:minmax(0,1fr)!important;gap:20px!important}
+  .chat-panel{position:relative!important;top:auto!important;max-width:none}
+  .model-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-brand-tile{animation:none;will-change:auto}
+}
