@@ -485,3 +485,27 @@ body{background:radial-gradient(ellipse at 72% 0%,#10304b55,transparent 44%),rad
  .hero-brand-deepseek{right:17%;top:25%}
  .hero-brand-mistral{right:17%;top:63%}
 }
+
+
+/* Keep logo cards clear of the headline at tablet and mobile widths. */
+.hero-brand-gemini{left:46%}
+@media(max-width:960px){
+ .hero-copy{width:min(48%,560px)}
+ .hero-brand-chatgpt{left:51%}
+ .hero-brand-gemini{left:53%}
+ .hero-brand-perplexity{left:50%}
+ .hero-brand-hf{left:55%}
+}
+@media(max-width:760px){
+ .hero-copy{width:68%;max-width:320px}
+ .hero-brand-chatgpt,.hero-brand-gemini,.hero-brand-perplexity,.hero-brand-hf{display:none}
+ .hero-brand-qwen{left:auto;right:2%;top:5%}
+ .hero-brand-deepseek{left:auto;right:3%;top:25%}
+ .hero-brand-claude{left:auto;right:2%;top:44%}
+ .hero-brand-mistral{left:auto;right:3%;top:63%}
+ .hero-brand-meta{left:auto;right:2%;top:79%}
+}
+@media(max-width:420px){
+ .hero-copy{width:66%;max-width:300px}
+ .hero h1{font-size:clamp(24px,7.1vw,28px)}
+}
