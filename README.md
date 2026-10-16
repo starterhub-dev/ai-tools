@@ -29,6 +29,13 @@
 
 教程视频由自动化脚本定期校验，发现明显失效的嵌入地址时会在 GitHub Actions 中报警。
 
+## 用户反馈与基础统计
+
+- 网站页脚提供“报告问题”和“推荐工具”入口，直接打开 GitHub Issue 表单，不需要新数据库。
+- Cloudflare Web Analytics 接入代码已准备好，但默认关闭。只有在 `analytics-config.js` 配置站点 beacon token 后才会加载统计脚本。
+- 统计接入步骤、启用条件和隐私范围见 [docs/ANALYTICS_SETUP.md](docs/ANALYTICS_SETUP.md)。
+- 当前方案不跟踪搜索词、收藏内容或账号身份，不添加自建分析数据库。
+
 ## 自动化
 
 仓库通过 GitHub Actions 维护：
