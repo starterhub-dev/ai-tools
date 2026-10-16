@@ -45,7 +45,7 @@ const progressBar = $("#progressBar");
 const chatMessages = $("#chatMessages");
 const promptInput = $("#promptInput");
 const sendButton = $("#sendButton");
-const launchButton = $("#loadModel");
+let launchButton = $("#loadModel");
 const chatForm = $("#chatForm");
 const supportNote = $("#supportNote");
 
@@ -183,7 +183,7 @@ async function loadModel() {
   setProgress(0, "正在连接开源推理引擎…");
 
   loadPromise = (async () => {
-    const webllm = await import("https://esm.run/@mlc-ai/web-llm");
+    const webllm = await import("https://esm.run/@mlc-ai/web-llm@0.2.86");
     const modelId = selectedId;
     const available = webllm.prebuiltAppConfig?.model_list?.some((model) => model.model_id === modelId);
     if (!available) {
