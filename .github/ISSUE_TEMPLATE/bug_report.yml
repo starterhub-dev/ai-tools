@@ -9,20 +9,20 @@ body:
   - type: dropdown
     id: issue_type
     attributes:
-      label: What needs attention?
+      label: 遇到了什么问题？ / What needs attention?
       options:
-        - Broken official link
-        - Outdated pricing or free-tier information
-        - Tutorial or video problem
-        - Search or category issue
-        - Mobile layout or accessibility issue
-        - Other
+        - 官网链接失效 / Broken official link
+        - 价格或免费额度信息过期 / Outdated pricing or free-tier information
+        - 教程或视频问题 / Tutorial or video problem
+        - 搜索或分类问题 / Search or category issue
+        - 手机布局或无障碍问题 / Mobile layout or accessibility issue
+        - 其他 / Other
     validations:
       required: true
   - type: input
     id: page_url
     attributes:
-      label: Affected page URL
+      label: 受影响的页面链接 / Affected page URL
       description: Paste the AI Starter Hub page where you noticed the issue.
       placeholder: https://starterhub-dev.github.io/ai-tools/...
     validations:
@@ -30,7 +30,7 @@ body:
   - type: textarea
     id: details
     attributes:
-      label: What did you notice?
+      label: 你发现了什么？ / What did you notice?
       description: Tell us what happened and how we can reproduce it.
       placeholder: Steps to reproduce, what you expected, and what happened instead.
     validations:
@@ -38,7 +38,7 @@ body:
   - type: input
     id: device
     attributes:
-      label: Device or browser (optional)
+      label: 设备或浏览器（可选） / Device or browser (optional)
       placeholder: Android + Chrome, Windows + Firefox, etc.
     validations:
       required: false
