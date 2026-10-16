@@ -14,7 +14,7 @@
   <meta property="og:title" content="本地 AI 实验室 · AI Starter Hub">
   <meta property="og:description" content="不登录、不填 API Key，直接在浏览器里体验开源 AI 模型。">
   <meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/ai-lab/">
-  <link rel="stylesheet" href="lab.css?v=20261016-models">
+  <link rel="stylesheet" href="lab.css?v=20261016-bed-load-ui">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"AI Starter Hub 本地 AI 实验室","url":"https://starterhub-dev.github.io/ai-tools/ai-lab/","applicationCategory":"AIApplication","operatingSystem":"Modern browser with WebGPU","description":"在浏览器端运行开源语言模型的免费体验页。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
@@ -46,18 +46,18 @@
         </div>
         <p class="hero-caveat">第一次使用需要下载模型文件；回答速度取决于你的设备和浏览器。</p>
       </div>
-      <div class="hero-art" aria-hidden="true">
+      <div class="hero-art" aria-label="主流 AI 应用图标墙">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="orb-core"><svg viewBox="0 0 100 100"><path d="M50 13 82 31v38L50 87 18 69V31Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 40h36M32 50h36M32 60h24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="74" cy="68" r="5" fill="#72e1c2"/></svg></div>
-        <span class="brand-float brand-qwen"><img src="https://cdn.simpleicons.org/qwen/615EFF" alt="">Qwen</span>
-        <span class="brand-float brand-deepseek"><img src="https://raw.githubusercontent.com/deepseek-ai/awesome-deepseek-integration/main/docs/_logo%20svg/ICON.svg" alt="">DeepSeek</span>
-        <span class="brand-float brand-gemini"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="">Gemini</span>
-        <span class="brand-float brand-meta"><img src="https://cdn.simpleicons.org/meta/0866FF" alt="">Meta AI</span>
-        <span class="brand-float brand-anthropic"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="">Claude</span>
-        <span class="brand-float brand-mistral"><img src="https://cdn.simpleicons.org/mistralai/F2A13A" alt="">Mistral</span>
-        <span class="brand-float brand-hf"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="">Hugging Face</span>
-        <span class="brand-float brand-perplexity"><img src="https://cdn.simpleicons.org/perplexity/1FB8CD" alt="">Perplexity</span>
-        <span class="brand-cloud-note">模型生态展示 · 聊天使用下方所选本地模型</span>
+        <div class="orb-core" aria-hidden="true"><svg viewBox="0 0 100 100"><path d="M50 13 82 31v38L50 87 18 69V31Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 40h36M32 50h36M32 60h24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="74" cy="68" r="5" fill="#72e1c2"/></svg></div>
+        <span class="brand-float brand-qwen" title="Qwen" aria-label="Qwen"><img src="https://cdn.simpleicons.org/qwen/615EFF" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-deepseek" title="DeepSeek" aria-label="DeepSeek"><img src="https://raw.githubusercontent.com/deepseek-ai/awesome-deepseek-integration/main/docs/_logo%20svg/ICON.svg" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-gemini" title="Google Gemini" aria-label="Google Gemini"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-meta" title="Meta AI" aria-label="Meta AI"><img src="https://cdn.simpleicons.org/meta/0866FF" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-anthropic" title="Claude" aria-label="Claude"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-mistral" title="Mistral AI" aria-label="Mistral AI"><img src="https://cdn.simpleicons.org/mistralai/F2A13A" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-hf" title="Hugging Face" aria-label="Hugging Face"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-float brand-perplexity" title="Perplexity" aria-label="Perplexity"><img src="https://cdn.simpleicons.org/perplexity/1FB8CD" alt="" loading="lazy" decoding="async"></span>
+        <span class="brand-cloud-note">主流 AI 应用 · 当前对话使用下方选中的本地模型</span>
       </div>
     </section>
 
@@ -142,6 +142,6 @@
   </footer>
   <script src="../analytics-config.js"></script>
   <script src="../analytics.js" defer></script>
-  <script type="module" src="lab.js?v=20261016-models"></script>
+  <script type="module" src="lab.js?v=20261016-bed-load-ui"></script>
 </body>
 </html>
