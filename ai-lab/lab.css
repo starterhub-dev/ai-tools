@@ -874,3 +874,6 @@ body{
   .hero-brand-meta { left:66% !important; right:auto !important; top:73% !important; }
   .hero-brand-hf { left:52.5% !important; right:auto !important; top:73% !important; }
 }
+
+/* OpenAI mark: preserve the official silhouette; no extra glow or brand-shape effects. */
+.hero-brand-chatgpt img { filter:brightness(0) invert(1) !important; }

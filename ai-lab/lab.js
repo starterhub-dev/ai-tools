@@ -1,9 +1,9 @@
 const LOGOS = {
-  qwen: "https://cdn.simpleicons.org/qwen/615EFF",
-  deepseek: "https://raw.githubusercontent.com/deepseek-ai/awesome-deepseek-integration/main/docs/_logo%20svg/ICON.svg",
-  huggingface: "https://cdn.simpleicons.org/huggingface/FFD21E",
+  qwen: "assets/logos/qwen.svg",
+  deepseek: "assets/logos/deepseek.svg",
+  huggingface: "assets/logos/huggingface.svg",
   microsoft: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
-  mistral: "https://cdn.simpleicons.org/mistralai/F2A13A"
+  mistral: "assets/logos/mistral.svg"
 };
 
 const MODELS = [
