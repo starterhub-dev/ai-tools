@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101a31">
+  <meta name="robots" content="index,follow">
+  <title>本地 AI 实验室 · 免费体验开源模型 | AI Starter Hub</title>
+  <meta name="description" content="无需注册、无需 API Key，直接在浏览器中体验开源 AI 模型。包含中文通用、代码、数学和深度推理模型，推理在本地设备运行。">
+  <link rel="canonical" href="https://starterhub-dev.github.io/ai-tools/ai-lab/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AI Starter Hub">
+  <meta property="og:title" content="本地 AI 实验室 · AI Starter Hub">
+  <meta property="og:description" content="不登录、不填 API Key，直接在浏览器里体验开源 AI 模型。">
+  <meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/ai-lab/">
+  <link rel="stylesheet" href="lab.css?v=20261016-1">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"AI Starter Hub 本地 AI 实验室","url":"https://starterhub-dev.github.io/ai-tools/ai-lab/","applicationCategory":"AIApplication","operatingSystem":"Modern browser with WebGPU","description":"在浏览器端运行开源语言模型的免费体验页。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../" aria-label="返回 AI Starter Hub 首页">
+        <img src="../ai-starter-hub-mark.svg" alt="" width="38" height="38">
+        <span><strong>AI STARTER HUB</strong><small>开源模型 · 本地体验</small></span>
+      </a>
+      <nav class="top-links" aria-label="页面导航">
+        <a href="#models">模型库</a>
+        <a href="#chat">体验区</a>
+        <a href="https://github.com/mlc-ai/web-llm" target="_blank" rel="noopener noreferrer">技术引擎 ↗</a>
+        <a class="back-link" href="../">返回导航站 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> OPEN MODEL PLAYGROUND <span class="eyebrow-cn">开源模型体验场</span></div>
+        <h1>不登录，<br><span>也能和 AI 聊两句。</span></h1>
+        <p class="hero-lede">挑一个合适的模型，直接开始。这里不需要账号、不需要 API Key，也没有按次计费。</p>
+        <div class="hero-points">
+          <span><i class="point-icon point-shield">✓</i> 本地推理</span>
+          <span><i class="point-icon point-key">⌁</i> 无需密钥</span>
+          <span><i class="point-icon point-open">⌘</i> 开源权重</span>
+        </div>
+        <p class="hero-caveat">第一次使用需要下载模型文件；回答速度取决于你的设备和浏览器。</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orb-core"><svg viewBox="0 0 100 100" role="img"><path d="M50 13 82 31v38L50 87 18 69V31Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 40h36M32 50h36M32 60h24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="74" cy="68" r="5" fill="#72e1c2"/></svg></div>
+        <span class="float-tag tag-one">LOCAL FIRST</span><span class="float-tag tag-two">NO API KEY</span><span class="float-tag tag-three">OPEN WEIGHTS</span>
+      </div>
+    </section>
+
+    <section class="privacy-strip" aria-label="隐私与运行方式">
+      <span class="privacy-mark" aria-hidden="true">◎</span>
+      <div><strong>对话留在你的设备上</strong><p>模型推理在浏览器本地完成，不会把聊天内容发给 AI 推理服务器。模型权重首次加载时，会从模型托管平台下载并由浏览器缓存。</p></div>
+      <a href="#how-it-works">运行方式 <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="lab-layout" id="models">
+      <div class="model-side">
+        <div class="section-heading">
+          <div><span class="section-kicker">01 / PICK YOUR MODEL</span><h2>挑一位 AI 搭档</h2></div>
+          <span class="model-count">04 MODELS</span>
+        </div>
+        <p class="section-intro">不同模型各有专长。先从轻量款开始，重型推理模型会占用更多显存和下载流量。</p>
+
+        <div class="model-grid" role="group" aria-label="选择本地 AI 模型">
+          <button class="model-card is-active" type="button" data-model-id="Qwen2.5-0.5B-Instruct-q4f16_1-MLC" aria-pressed="true">
+            <span class="model-card-top"><span class="model-logo logo-qwen" aria-hidden="true"><svg viewBox="0 0 48 48"><defs><linearGradient id="qwenGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4c83ff"/><stop offset="1" stop-color="#42d9c5"/></linearGradient></defs><rect x="4" y="4" width="40" height="40" rx="13" fill="url(#qwenGlow)"/><path d="M15 18a9 9 0 1 1 14.6 7L34 30l-4 3-4.8-6.1" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="20" r="2" fill="#fff"/></svg></span><span class="recommend-tag">推荐起步</span></span>
+            <span class="model-name">Qwen2.5 <small>0.5B · Instruct</small></span>
+            <span class="model-type">中文通用 · 日常问答</span>
+            <span class="model-desc">轻量入门款，适合解释概念、润色文字、整理思路和简单翻译。</span>
+            <span class="model-meta"><span>Apache 2.0</span><span>显存约 0.95 GB</span></span>
+          </button>
+
+          <button class="model-card" type="button" data-model-id="Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC" aria-pressed="false">
+            <span class="model-card-top"><span class="model-logo logo-code" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" rx="13" fill="#172238"/><path d="m19 17-7 7 7 7M29 17l7 7-7 7M27 14l-6 20" fill="none" stroke="#79e1c7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="type-tag">DEV MODE</span></span>
+            <span class="model-name">Qwen Coder <small>0.5B · Code</small></span>
+            <span class="model-type">代码助手 · 编程入门</span>
+            <span class="model-desc">写代码、读报错、解释函数、生成小工具。适合让 AI 陪你练手。</span>
+            <span class="model-meta"><span>Apache 2.0</span><span>显存约 0.95 GB</span></span>
+          </button>
+
+          <button class="model-card" type="button" data-model-id="Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC" aria-pressed="false">
+            <span class="model-card-top"><span class="model-logo logo-math" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" rx="13" fill="#7b61d7"/><path d="M15 15h18M24 15v19M15 24h18M15 33h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="15" cy="15" r="2" fill="#bff6ed"/><circle cx="33" cy="33" r="2" fill="#bff6ed"/></svg></span><span class="type-tag">MATH MODE</span></span>
+            <span class="model-name">Qwen Math <small>1.5B · Math</small></span>
+            <span class="model-type">数学题 · 公式与步骤</span>
+            <span class="model-desc">面向数学题的专用模型，可要求它列步骤、检查中间结果和解释公式。</span>
+            <span class="model-meta"><span>Apache 2.0</span><span>显存约 1.63 GB</span></span>
+          </button>
+
+          <button class="model-card model-card-heavy" type="button" data-model-id="DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC" aria-pressed="false">
+            <span class="model-card-top"><span class="model-logo logo-reason" aria-hidden="true"><svg viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" rx="13" fill="#122d52"/><path d="M24 11v8m0 10v8M11 24h8m10 0h8M15 15l5.5 5.5m7 7L33 33M33 15l-5.5 5.5m-7 7L15 33" stroke="#8fc8ff" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="5.5" fill="#75e1c1"/><circle cx="24" cy="11" r="2.4" fill="#fff"/><circle cx="37" cy="24" r="2.4" fill="#fff"/><circle cx="24" cy="37" r="2.4" fill="#fff"/><circle cx="11" cy="24" r="2.4" fill="#fff"/></svg></span><span class="heavy-tag">高显存 · 进阶</span></span>
+            <span class="model-name">DeepSeek R1 <small>Distill · 7B</small></span>
+            <span class="model-type">复杂问题 · 深度推理</span>
+            <span class="model-desc">更大的推理模型，适合多步骤分析。运行门槛高，不建议老旧设备尝试。</span>
+            <span class="model-meta"><span>MIT</span><span>显存约 5.1 GB</span></span>
+          </button>
+        </div>
+        <div class="model-footnote"><span class="footnote-icon" aria-hidden="true">i</span><p>显存数值是 WebLLM 配置中的估算值，不等于首次下载大小，也不保证所有设备都能成功启动。实际需求还受浏览器、上下文和系统占用影响。</p></div>
+      </div>
+
+      <section class="chat-panel" id="chat" aria-labelledby="chat-title">
+        <div class="chat-head">
+          <div class="chat-heading">
+            <span class="chat-mark" aria-hidden="true"><svg viewBox="0 0 42 42"><path d="M21 4 36 12.5v17L21 38 6 29.5v-17Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 17h16M13 22h16M13 27h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <div><span class="section-kicker">02 / CHAT LOCALLY</span><h2 id="chat-title">对话体验区</h2></div>
+          </div>
+          <button class="quiet-button" id="clearChat" type="button" title="清空当前对话">重置对话 ↺</button>
+        </div>
+
+        <div class="runtime-status" id="runtimeStatus" role="status" aria-live="polite">
+          <span class="status-light"></span><span id="statusText">模型尚未加载</span><span class="status-spacer"></span><span id="gpuBadge">正在检查 WebGPU…</span>
+        </div>
+        <div class="progress-wrap" id="progressWrap" hidden><div class="progress-label"><span id="progressText">准备模型资源…</span><strong id="progressPercent">0%</strong></div><div class="progress-track"><span id="progressBar"></span></div></div>
+
+        <div class="chat-messages" id="chatMessages" aria-live="polite" aria-relevant="additions text">
+          <article class="message message-assistant welcome-message">
+            <span class="message-avatar avatar-ai" aria-hidden="true">✦</span>
+            <div class="message-content"><div class="message-label">LOCAL AI <span>本地模型</span></div><div class="message-body">你好！先在左边选一个模型，再给我一个小任务。第一次加载需要一点耐心，下载完成后浏览器会尽量缓存模型文件。</div></div>
+          </article>
+        </div>
+
+        <div class="starter-prompts" aria-label="试试这些问题">
+          <button type="button" data-prompt="用通俗易懂的中文解释什么是人工智能，并举一个生活中的例子。">解释一个概念 <span>↗</span></button>
+          <button type="button" data-prompt="请写一个简单的 HTML + CSS 按钮示例，并解释每一部分的作用。">写段代码 <span>↗</span></button>
+          <button type="button" data-prompt="请出一道适合初学者的比例应用题，并一步一步讲解解题方法。">练一道数学题 <span>↗</span></button>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <label class="sr-only" for="promptInput">输入问题</label>
+          <textarea id="promptInput" rows="2" placeholder="给本地 AI 发条消息…" maxlength="6000" required></textarea>
+          <div class="composer-bottom"><span>Shift + Enter 换行 · 最多 6,000 字符</span><button class="send-button" id="sendButton" type="submit"><span>发送</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12 20 4l-5 16-3-7-8-1Zm8 1 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+        </form>
+        <div class="chat-disclaimer">本地模型也会犯错。请核对重要信息，不要把密码、身份证号等敏感信息发给任何 AI。</div>
+      </section>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="section-heading"><div><span class="section-kicker">03 / HOW IT WORKS</span><h2>为什么这里可以免费用？</h2></div></div>
+      <div class="how-grid">
+        <article><span class="how-number">01</span><h3>算力在你自己的设备上</h3><p>浏览器借助 WebGPU 调用设备 GPU 进行推理，不是把每条消息发到我们的模型服务器。</p></article>
+        <article><span class="how-number">02</span><h3>不需要账号与 API Key</h3><p>页面没有接入付费推理 API。模型文件从公开模型托管平台获取，首次下载需要网络流量。</p></article>
+        <article><span class="how-number">03</span><h3>开源项目，模型许可透明</h3><p>本页使用 WebLLM 作为浏览器推理引擎。每个模型卡都链接到对应模型说明，模型权重遵循各自许可证。</p></article>
+      </div>
+      <p class="support-note" id="supportNote">准备检查运行环境…</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="../"><img src="../ai-starter-hub-mark.svg" alt="" width="28" height="28"> AI Starter Hub</a>
+    <p>一个免费开放的本地 AI 实验。模型由各自团队维护，本页面与模型团队没有官方隶属关系。</p>
+    <div><a href="https://github.com/starterhub-dev/ai-tools/issues/new/choose" target="_blank" rel="noopener noreferrer">报告问题</a><a href="https://github.com/starterhub-dev/ai-tools" target="_blank" rel="noopener noreferrer">查看源代码 ↗</a></div>
+  </footer>
+  <script src="../analytics-config.js"></script>
+  <script src="../analytics.js" defer></script>
+  <script type="module" src="lab.js?v=20261016-1"></script>
+</body>
+</html>
