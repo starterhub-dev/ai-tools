@@ -380,3 +380,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 @media(max-width:680px){
  .load-model-button{min-height:34px;padding:6px 10px;font-size:9px;border-radius:9px}
 }
+
+/* Subtle independent drift makes the brand constellation feel suspended in space. */
+.hero-brand-tile{animation:brand-drift 6.8s ease-in-out infinite;will-change:translate}
+.hero-brand-gemini{animation-delay:-2.2s}
+.hero-brand-qwen{animation-delay:-4.1s}
+.hero-brand-deepseek{animation-delay:-1.3s}
+.hero-brand-claude{animation-delay:-3.3s}
+.hero-brand-mistral{animation-delay:-5.2s}
+.hero-brand-meta{animation-delay:-2.8s}
+.hero-brand-perplexity{animation-delay:-4.8s}
+.hero-brand-hf{animation-delay:-.8s}
+@keyframes brand-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@media(max-width:680px){.hero-brand-tile{animation-duration:7.8s}}
+@media(prefers-reduced-motion:reduce){.hero-brand-tile{animation:none;will-change:auto}}
