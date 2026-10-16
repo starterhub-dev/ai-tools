@@ -680,3 +680,63 @@ body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; te
   .hero-brand-tile img { width:24px; height:24px; }
 }
 @media (prefers-reduced-motion: reduce) { .hero-brand-tile { animation:none; will-change:auto; } }
+
+/* Cinematic hero: one strong image, copy on the left, no duplicate floating logo cards. */
+.hero {
+  position:relative; isolation:isolate;
+  min-height:clamp(410px,36vw,530px);
+  padding:clamp(34px,4vw,58px) clamp(26px,3.4vw,52px);
+  background:#061120;
+}
+.hero:before {
+  z-index:2; pointer-events:none;
+  background:
+    linear-gradient(90deg,#04101e 0%,#04101ef2 20%,#04101ecc 36%,#04101e66 48%,#04101e05 68%,transparent 100%),
+    linear-gradient(0deg,#04101e40 0%,transparent 36%);
+}
+.hero:after { z-index:3; pointer-events:none; }
+.hero-copy { position:relative; z-index:4; width:min(48%,640px); max-width:640px; }
+.hero-art {
+  position:absolute; inset:0; z-index:1; display:block;
+  width:100%; height:100%; margin:0; overflow:hidden;
+  border-radius:inherit; background:#061120; pointer-events:none;
+}
+.hero-main-visual {
+  display:block; position:absolute; inset:0;
+  width:100%; height:100%; max-width:none; max-height:none;
+  object-fit:cover; object-position:center center;
+  opacity:1; filter:saturate(1.06) contrast(1.04);
+  -webkit-mask-image:none; mask-image:none;
+}
+.hero-brand-cloud { display:none !important; }
+
+@media (max-device-width:720px) and (orientation:portrait),
+       (max-width:680px) and (orientation:portrait) and (pointer:coarse) {
+  :root { --page:calc(100% - 24px); }
+  html,body { overflow-x:clip; }
+  .hero {
+    display:flex; flex-direction:column; align-items:stretch;
+    min-height:0; height:auto; padding:18px 17px 0;
+    margin:12px 0 16px; gap:0; border-radius:21px; overflow:hidden;
+    background:linear-gradient(145deg,#061120,#07172b);
+  }
+  .hero:before {
+    z-index:0;
+    background:
+      radial-gradient(ellipse at 100% 0%,#4c348b30 0%,transparent 44%),
+      linear-gradient(135deg,#061120 0%,#07162a 68%,#0b1730 100%);
+  }
+  .hero:after { z-index:3; box-shadow:inset 0 0 0 1px #d2f6ff10; }
+  .hero-copy { position:relative; z-index:4; width:100%; max-width:none; flex:none; }
+  .hero-art {
+    position:relative; inset:auto; z-index:1; display:block; flex:none;
+    width:calc(100% + 34px); height:auto; min-height:0; aspect-ratio:16 / 9;
+    margin:18px -17px 0; overflow:hidden; border-radius:0;
+  }
+  .hero-main-visual {
+    position:absolute; inset:0; width:100%; height:100%;
+    transform:none; object-fit:cover; object-position:78% center;
+    opacity:1; -webkit-mask-image:none; mask-image:none;
+  }
+}
+
