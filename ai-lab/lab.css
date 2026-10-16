@@ -728,3 +728,31 @@ body{
   .hero-brand-tile b { font-size: 6px; }
   .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
+
+
+/* Portrait/touch devices: prefer a real mobile composition even if the browser
+   reports a desktop-like CSS viewport (e.g. Android's desktop-site mode). */
+@media (orientation: portrait) and (pointer: coarse),
+       (orientation: portrait) and (hover: none) {
+  .lab-layout { grid-template-columns: minmax(0, 1fr) !important; gap: 22px !important; }
+  .chat-panel { position: relative !important; top: auto !important; max-width: none !important; }
+  .chat-messages { max-height: 420px; }
+  .section-topline { align-items: flex-start; flex-direction: column; gap: 11px; }
+  .model-tools { width: 100%; justify-content: flex-start; }
+  .model-search { flex: 1; min-width: 0; }
+  .model-search input { width: 100%; max-width: none; }
+  .model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px; }
+  .hero { min-height: 390px !important; }
+  .hero-copy { width: 75% !important; max-width: 370px; }
+  .hero h1 { font-size: clamp(30px, 5.4vw, 43px) !important; }
+  .hero-nebula-image { opacity: .8; }
+}
+@media (max-width: 680px) and (orientation: portrait) {
+  .hero { min-height: 385px !important; padding: 27px 17px 22px !important; }
+  .hero-copy { width: 75% !important; max-width: 350px; }
+  .hero h1 { font-size: clamp(28px, 7.6vw, 37px) !important; }
+  .hero-lede { max-width: 290px; font-size: 12px; }
+  .hero-brand-tile { width: 49px !important; height: 51px !important; border-radius: 10px; }
+  .hero-brand-tile img { width: 22px !important; height: 22px !important; }
+  .hero-brand-tile b { font-size: 6px !important; }
+}
