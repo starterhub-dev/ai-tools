@@ -1,0 +1,44 @@
+name: Website feedback / 网站问题反馈
+description: Report a broken link, outdated information, or a site issue.
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve AI Starter Hub. Please report one issue per submission. Do not include passwords, API keys, or other private information.
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: What needs attention?
+      options:
+        - Broken official link
+        - Outdated pricing or free-tier information
+        - Tutorial or video problem
+        - Search or category issue
+        - Mobile layout or accessibility issue
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Affected page URL
+      description: Paste the AI Starter Hub page where you noticed the issue.
+      placeholder: https://starterhub-dev.github.io/ai-tools/...
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What did you notice?
+      description: Tell us what happened and how we can reproduce it.
+      placeholder: Steps to reproduce, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device or browser (optional)
+      placeholder: Android + Chrome, Windows + Firefox, etc.
+    validations:
+      required: false
