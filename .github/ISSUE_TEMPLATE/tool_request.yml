@@ -1,0 +1,45 @@
+name: Suggest an AI tool / 推荐 AI 工具
+description: Suggest an AI tool that should be considered for the directory.
+title: "[Tool suggestion] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are reviewed before being added. Please provide the official website, not an affiliate or download mirror. Do not include private information.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool name
+      placeholder: Example: Example AI
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official website
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Main category
+      options:
+        - Chat and assistants
+        - Search and research
+        - Writing and productivity
+        - Image and design
+        - Video and audio
+        - Coding and development
+        - Models and open source
+        - Local AI
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why should it be included?
+      description: What is useful or different about this tool? Mention free access or limitations only if you know them.
+    validations:
+      required: true
