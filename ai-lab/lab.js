@@ -156,20 +156,25 @@ async function releaseEngine() {
 
 async function selectModel(id) {
   if (loading || generating || id === selectedId) return;
+  loading = true;
   selectedId = id;
   updateControls();
   setStatus("正在切换模型…", "is-loading");
   hideProgress();
-  await releaseEngine();
-  chatHistory = [];
-  renderWelcome();
-  modelCards.forEach((card) => {
-    const active = card.dataset.modelId === selectedId;
-    card.classList.toggle("is-active", active);
-    card.setAttribute("aria-pressed", String(active));
-  });
-  setStatus("已选择 " + selectedModel().name + "，尚未加载");
-  updateControls();
+  try {
+    await releaseEngine();
+    chatHistory = [];
+    renderWelcome();
+    modelCards.forEach((card) => {
+      const active = card.dataset.modelId === selectedId;
+      card.classList.toggle("is-active", active);
+      card.setAttribute("aria-pressed", String(active));
+    });
+    setStatus("已选择 " + selectedModel().name + "，尚未加载");
+  } finally {
+    loading = false;
+    updateControls();
+  }
 }
 
 async function loadModel() {
@@ -338,13 +343,6 @@ document.querySelectorAll("[data-prompt]").forEach((button) => {
   });
 });
 
-const loadButton = document.createElement("button");
-loadButton.type = "button";
-loadButton.className = "load-model-button";
-loadButton.id = "loadModel";
-loadButton.textContent = "加载所选模型";
-loadButton.addEventListener("click", () => loadModel().catch((error) => console.warn("模型启动失败：", error)));
-const composer = $("#chatForm");
 const chatHead = document.querySelector(".chat-head");
 const headAction = document.createElement("button");
 headAction.type = "button";
