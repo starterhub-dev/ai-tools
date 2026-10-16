@@ -498,3 +498,53 @@ body{
   .hero h1{font-size:28px}
   .hero-points>span{font-size:8px}
 }
+
+
+/* Mobile-device guard:
+   Some Android browsers keep a ~980px layout viewport in desktop-site mode.
+   Prefer the usable one-column layout on narrow portrait devices anyway. */
+@media (max-device-width:720px) and (orientation:portrait){
+  :root{--page:calc(100% - 24px)}
+  .topbar{height:62px}
+  .topbar-inner{gap:10px}
+  .brand{gap:8px}
+  .brand img{width:31px;height:31px}
+  .brand strong{font-size:11px;letter-spacing:.08em}
+  .brand small{font-size:9px;margin-top:3px}
+  .top-links{gap:0}
+  .top-links a:not(.back-link){display:none}
+  .top-links .back-link{padding:9px 10px;font-size:10px}
+  .hero{min-height:385px;margin:10px 0 14px;padding:27px 17px 22px;border-radius:20px}
+  .hero-copy{width:75%;max-width:350px}
+  .hero h1{font-size:clamp(28px,7.6vw,37px);line-height:1.13;letter-spacing:-.035em}
+  .hero-lede{max-width:290px;font-size:12px;line-height:1.75}
+  .hero-points{gap:6px;margin:16px 0 11px}
+  .hero-points>span{min-height:36px;gap:6px;padding:5px 7px;border-radius:9px;font-size:9px}
+  .hero-caveat{max-width:250px;font-size:9px}
+  .hero-nebula-image{object-position:73% center;opacity:.76}
+  .hero-brand-tile{width:49px;height:51px;padding:4px 2px 3px;gap:3px;border-radius:10px}
+  .hero-brand-tile img{width:22px;height:22px}
+  .hero-brand-tile b{font-size:6px}
+  .hero-brand-chatgpt,.hero-brand-gemini,.hero-brand-perplexity,.hero-brand-hf{display:none}
+  .hero-brand-qwen{left:auto;right:3%;top:5%;transform:rotate(7deg)}
+  .hero-brand-deepseek{left:auto;right:3%;top:27%;transform:rotate(8deg)}
+  .hero-brand-claude{left:auto;right:3%;top:49%;transform:rotate(-8deg)}
+  .hero-brand-mistral{right:3%;top:70%;transform:rotate(7deg)}
+  .hero-brand-meta{left:auto;right:19%;top:78%;transform:rotate(-6deg)}
+  .lab-layout{grid-template-columns:minmax(0,1fr)!important;gap:20px}
+  .chat-panel{position:relative;top:auto;max-width:none}
+  .section-topline{align-items:flex-start;flex-direction:column;gap:11px}
+  .section-heading h2{font-size:22px}
+  .model-tools{width:100%;justify-content:flex-start;gap:6px}
+  .model-count{font-size:8px}
+  .model-search{flex:1;min-width:0}
+  .model-search input{width:100%;max-width:none}
+  .model-sort select{max-width:112px}
+  .model-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .model-card{min-height:205px}
+  .model-card-select{padding:10px 10px 7px}
+  .model-name{font-size:11px}
+  .model-desc{font-size:9px;line-height:1.5}
+  .chat-messages{max-height:390px}
+  .site-footer{align-items:flex-start;flex-direction:column;gap:10px}
+}
