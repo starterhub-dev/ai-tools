@@ -14,7 +14,7 @@
   <meta property="og:title" content="本地 AI 实验室 · AI Starter Hub">
   <meta property="og:description" content="不登录、不填 API Key，直接在浏览器里体验开源 AI 模型。">
   <meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/ai-lab/">
-  <link rel="stylesheet" href="lab.css?v=20261016-nebula-hero">
+  <link rel="stylesheet" href="lab.css?v=20261016-dark-reference">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"AI Starter Hub 本地 AI 实验室","url":"https://starterhub-dev.github.io/ai-tools/ai-lab/","applicationCategory":"AIApplication","operatingSystem":"Modern browser with WebGPU","description":"在浏览器端运行开源语言模型的免费体验页。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
@@ -59,9 +59,26 @@
 
     <section class="lab-layout" id="models">
       <div class="model-side">
-        <div class="section-heading">
-          <div><span class="section-kicker">01 / PICK YOUR MODEL</span><h2>挑一位 AI 搭档</h2></div>
-          <span class="model-count" id="modelCount">11 MODELS</span>
+        <div class="section-topline">
+          <div class="section-heading">
+            <div><span class="section-kicker">01 / PICK YOUR MODEL</span><h2>挑一位 AI 搭档</h2></div>
+          </div>
+          <div class="model-tools">
+            <span class="model-count" id="modelCount">11 MODELS</span>
+            <label class="model-search" for="modelSearch">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <input id="modelSearch" type="search" placeholder="搜索模型…" autocomplete="off" spellcheck="false">
+            </label>
+            <label class="model-sort" for="modelSort">
+              <span class="sr-only">模型排序</span>
+              <select id="modelSort">
+                <option value="recommended">推荐优先</option>
+                <option value="memory">显存从低到高</option>
+                <option value="large">显存从高到低</option>
+                <option value="name">按名称排序</option>
+              </select>
+            </label>
+          </div>
         </div>
         <p class="section-intro">不同模型各有专长。先从轻量款开始，重型推理模型会占用更多显存和下载流量。</p>
 
@@ -132,6 +149,6 @@
   </footer>
   <script src="../analytics-config.js"></script>
   <script src="../analytics.js" defer></script>
-  <script type="module" src="lab.js?v=20261016-nebula-hero"></script>
+  <script type="module" src="lab.js?v=20261016-dark-reference"></script>
 </body>
 </html>
