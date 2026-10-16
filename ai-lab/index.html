@@ -14,7 +14,7 @@
   <meta property="og:title" content="本地 AI 实验室 · AI Starter Hub">
   <meta property="og:description" content="不登录、不填 API Key，直接在浏览器里体验开源 AI 模型。">
   <meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/ai-lab/">
-  <link rel="stylesheet" href="lab.css?v=20261016-1">
+  <link rel="stylesheet" href="lab.css?v=20261016-models">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"AI Starter Hub 本地 AI 实验室","url":"https://starterhub-dev.github.io/ai-tools/ai-lab/","applicationCategory":"AIApplication","operatingSystem":"Modern browser with WebGPU","description":"在浏览器端运行开源语言模型的免费体验页。","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
@@ -48,8 +48,16 @@
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="orb-core"><svg viewBox="0 0 100 100" role="img"><path d="M50 13 82 31v38L50 87 18 69V31Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 40h36M32 50h36M32 60h24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="74" cy="68" r="5" fill="#72e1c2"/></svg></div>
-        <span class="float-tag tag-one">LOCAL FIRST</span><span class="float-tag tag-two">NO API KEY</span><span class="float-tag tag-three">OPEN WEIGHTS</span>
+        <div class="orb-core"><svg viewBox="0 0 100 100"><path d="M50 13 82 31v38L50 87 18 69V31Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 40h36M32 50h36M32 60h24" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><circle cx="74" cy="68" r="5" fill="#72e1c2"/></svg></div>
+        <span class="brand-float brand-qwen"><img src="https://cdn.simpleicons.org/qwen/615EFF" alt="">Qwen</span>
+        <span class="brand-float brand-deepseek"><img src="https://raw.githubusercontent.com/deepseek-ai/awesome-deepseek-integration/main/docs/_logo%20svg/ICON.svg" alt="">DeepSeek</span>
+        <span class="brand-float brand-gemini"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="">Gemini</span>
+        <span class="brand-float brand-meta"><img src="https://cdn.simpleicons.org/meta/0866FF" alt="">Meta AI</span>
+        <span class="brand-float brand-anthropic"><img src="https://cdn.simpleicons.org/anthropic/D97757" alt="">Claude</span>
+        <span class="brand-float brand-mistral"><img src="https://cdn.simpleicons.org/mistralai/F2A13A" alt="">Mistral</span>
+        <span class="brand-float brand-hf"><img src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="">Hugging Face</span>
+        <span class="brand-float brand-perplexity"><img src="https://cdn.simpleicons.org/perplexity/1FB8CD" alt="">Perplexity</span>
+        <span class="brand-cloud-note">模型生态展示 · 聊天使用下方所选本地模型</span>
       </div>
     </section>
 
@@ -63,50 +71,27 @@
       <div class="model-side">
         <div class="section-heading">
           <div><span class="section-kicker">01 / PICK YOUR MODEL</span><h2>挑一位 AI 搭档</h2></div>
-          <span class="model-count">04 MODELS</span>
+          <span class="model-count" id="modelCount">11 MODELS</span>
         </div>
         <p class="section-intro">不同模型各有专长。先从轻量款开始，重型推理模型会占用更多显存和下载流量。</p>
 
-        <div class="model-grid" role="group" aria-label="选择本地 AI 模型">
-          <button class="model-card is-active" type="button" data-model-id="Qwen2.5-0.5B-Instruct-q4f16_1-MLC" aria-pressed="true">
-            <span class="model-card-top"><span class="model-logo logo-qwen" aria-hidden="true"><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/logo_qwen.jpg" alt="" loading="lazy" decoding="async"></span><span class="recommend-tag">推荐起步</span></span>
-            <span class="model-name">Qwen2.5 <small>0.5B · Instruct</small></span>
-            <span class="model-type">中文通用 · 日常问答</span>
-            <span class="model-desc">轻量入门款，适合解释概念、润色文字、整理思路和简单翻译。</span>
-            <span class="model-meta"><span>Apache 2.0</span><span>显存约 0.95 GB</span></span>
-          </button>
-
-          <button class="model-card" type="button" data-model-id="Qwen2.5-Coder-0.5B-Instruct-q4f16_1-MLC" aria-pressed="false">
-            <span class="model-card-top"><span class="model-logo logo-qwen" aria-hidden="true"><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/logo_qwen.jpg" alt="" loading="lazy" decoding="async"></span><span class="type-tag">DEV MODE</span></span>
-            <span class="model-name">Qwen Coder <small>0.5B · Code</small></span>
-            <span class="model-type">代码助手 · 编程入门</span>
-            <span class="model-desc">写代码、读报错、解释函数、生成小工具。适合让 AI 陪你练手。</span>
-            <span class="model-meta"><span>Apache 2.0</span><span>显存约 0.95 GB</span></span>
-          </button>
-
-          <button class="model-card" type="button" data-model-id="Qwen2.5-Math-1.5B-Instruct-q4f16_1-MLC" aria-pressed="false">
-            <span class="model-card-top"><span class="model-logo logo-qwen" aria-hidden="true"><img src="https://qianwen-res.oss-cn-beijing.aliyuncs.com/logo_qwen.jpg" alt="" loading="lazy" decoding="async"></span><span class="type-tag">MATH MODE</span></span>
-            <span class="model-name">Qwen Math <small>1.5B · Math</small></span>
-            <span class="model-type">数学题 · 公式与步骤</span>
-            <span class="model-desc">面向数学题的专用模型，可要求它列步骤、检查中间结果和解释公式。</span>
-            <span class="model-meta"><span>Apache 2.0</span><span>显存约 1.63 GB</span></span>
-          </button>
-
-          <button class="model-card model-card-heavy" type="button" data-model-id="DeepSeek-R1-Distill-Qwen-7B-q4f16_1-MLC" aria-pressed="false">
-            <span class="model-card-top"><span class="model-logo logo-deepseek" aria-hidden="true"><img src="https://raw.githubusercontent.com/deepseek-ai/awesome-deepseek-integration/main/docs/_logo%20svg/ICON.svg" alt="" loading="lazy" decoding="async"></span><span class="heavy-tag">高显存 · 进阶</span></span>
-            <span class="model-name">DeepSeek R1 <small>Distill · 7B</small></span>
-            <span class="model-type">复杂问题 · 深度推理</span>
-            <span class="model-desc">更大的推理模型，适合多步骤分析。运行门槛高，不建议老旧设备尝试。</span>
-            <span class="model-meta"><span>MIT</span><span>显存约 5.1 GB</span></span>
-          </button>
+        <div class="model-filters" id="modelFilters" role="group" aria-label="筛选本地模型">
+          <button type="button" class="model-filter is-active" data-filter="all" aria-pressed="true">全部 <span id="allModelCount">11</span></button>
+          <button type="button" class="model-filter" data-filter="light" aria-pressed="false">轻量</button>
+          <button type="button" class="model-filter" data-filter="coding" aria-pressed="false">编程</button>
+          <button type="button" class="model-filter" data-filter="math" aria-pressed="false">数学</button>
+          <button type="button" class="model-filter" data-filter="reasoning" aria-pressed="false">推理</button>
+          <button type="button" class="model-filter" data-filter="global" aria-pressed="false">海外开源</button>
         </div>
+        <div class="model-grid" id="modelGrid" role="group" aria-label="选择本地 AI 模型"></div>
+
         <div class="model-footnote"><span class="footnote-icon" aria-hidden="true">i</span><p>显存数值是 WebLLM 配置中的估算值，不等于首次下载大小，也不保证所有设备都能成功启动。实际需求还受浏览器、上下文和系统占用影响。</p></div>
       </div>
 
       <section class="chat-panel" id="chat" aria-labelledby="chat-title">
         <div class="chat-head">
           <div class="chat-heading">
-            <span class="chat-mark" aria-hidden="true"><svg viewBox="0 0 42 42"><path d="M21 4 36 12.5v17L21 38 6 29.5v-17Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 17h16M13 22h16M13 27h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <span class="chat-mark" id="chatModelLogo" aria-hidden="true" title="当前模型"><img src="https://cdn.simpleicons.org/qwen/615EFF" alt=""></span>
             <div><span class="section-kicker">02 / CHAT LOCALLY</span><h2 id="chat-title">对话体验区</h2></div>
           </div>
           <button class="quiet-button" id="clearChat" type="button" title="清空当前对话">重置对话 ↺</button>
@@ -157,6 +142,6 @@
   </footer>
   <script src="../analytics-config.js"></script>
   <script src="../analytics.js" defer></script>
-  <script type="module" src="lab.js?v=20261016-1"></script>
+  <script type="module" src="lab.js?v=20261016-models"></script>
 </body>
 </html>
