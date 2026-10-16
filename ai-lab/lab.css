@@ -89,3 +89,57 @@
   .chat-mark{width:40px;height:34px}
 }
 @media(max-width:370px){.model-card{padding:7px}.model-meta span{font-size:7px;letter-spacing:-.015em}.brand-float{font-size:7px}}
+
+/* App-like icon constellation, resting artwork, and explicit model downloads */
+html,body{max-width:100%;overflow-x:clip}
+.hero{min-width:0;overflow:hidden}
+.hero-art{width:100%;min-width:0;overflow:hidden}
+.brand-float{display:grid;place-items:center;width:46px;height:46px;padding:7px;border-radius:15px;background:linear-gradient(145deg,#fff,#eef3ff);border:1px solid #ffffffb5;box-shadow:0 9px 22px #0003;backdrop-filter:blur(8px)}
+.brand-float img{width:100%;height:100%;max-width:31px;max-height:31px;object-fit:contain;filter:drop-shadow(0 1px 1px #0001)}
+.brand-qwen{left:2%;top:12%;transform:rotate(-11deg)}
+.brand-deepseek{right:2%;top:6%;transform:rotate(9deg)}
+.brand-gemini{left:1%;top:43%;transform:rotate(7deg)}
+.brand-meta{right:0;top:38%;transform:rotate(-8deg)}
+.brand-anthropic{left:9%;bottom:13%;transform:rotate(11deg)}
+.brand-mistral{right:7%;bottom:10%;transform:rotate(-9deg)}
+.brand-hf{left:25%;top:5%;transform:rotate(-4deg)}
+.brand-perplexity{right:21%;bottom:23%;transform:rotate(6deg)}
+.brand-cloud-note{max-width:95%;overflow:hidden;text-overflow:ellipsis;text-align:center}
+.model-card{display:flex;flex-direction:column;min-width:0;padding:0;cursor:default;overflow:hidden}
+.model-card.is-active:after{display:none}
+.model-card-select{display:flex;flex:1;flex-direction:column;align-items:stretch;width:100%;min-width:0;padding:9px 9px 0;border:0;border-radius:0;background:transparent;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.model-card-select:hover{background:#f8faff}
+.model-card-select:focus-visible{outline:2px solid #7c91f4;outline-offset:-3px}
+.model-card-select:disabled{cursor:wait;opacity:.78}
+.model-meta{padding-bottom:6px}
+.model-card-actions{display:flex;justify-content:flex-end;padding:0 9px 8px}
+.model-download{display:inline-flex;align-items:center;justify-content:center;gap:4px;padding:5px 9px;min-height:26px;border:1px solid #dbe3f1;border-radius:8px;background:#f5f7fc;color:#4c6086;font-size:9px;line-height:1;font-weight:800;white-space:nowrap;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.model-download:hover:not(:disabled){background:#e9f5f2;border-color:#bbe6da;color:#167b69}
+.model-download:disabled{opacity:.48;cursor:not-allowed}
+.model-card.is-active .model-download{background:#e8f6f1;border-color:#cbeee3;color:#157d69}
+.chat-messages{display:flex;flex-direction:column}
+.sleeping-bot{display:flex;flex:1;min-height:170px;align-items:center;justify-content:center;flex-direction:column;gap:4px;margin:5px 0 0;text-align:center;color:#7986a0;animation:bed-arrive .45s ease-out both}
+.sleeping-bot img{display:block;width:min(230px,72%);height:auto;max-height:180px;object-fit:contain;margin:0 auto -2px}
+.sleeping-bot strong{font-size:11px;line-height:1.4;letter-spacing:.04em;color:#6b7893}
+.sleeping-bot span{font-size:9px;line-height:1.6;color:#9aa5b7}
+@keyframes bed-arrive{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1080px){.model-card-select{padding:8px 8px 0}.model-card-actions{padding:0 8px 7px}}
+@media(max-width:860px){.hero-art{min-width:0;width:100%;min-height:190px}.brand-float{width:42px;height:42px;border-radius:13px}.brand-float img{max-width:29px;max-height:29px}}
+@media(max-width:620px){
+ .hero{grid-template-columns:minmax(0,1fr);width:100%;max-width:100%;box-sizing:border-box}
+ .hero-copy,.hero-art{min-width:0;max-width:100%}
+ .hero-art{height:174px;min-height:174px;transform:none;margin:0;overflow:hidden}
+ .orb-core{width:65px;height:65px;border-radius:22px}.orb-core svg{width:43px;height:43px}
+ .brand-float{width:36px;height:36px;padding:5px;border-radius:11px}
+ .brand-float img{max-width:25px;max-height:25px}
+ .brand-qwen{left:0;top:12%}.brand-deepseek{right:0;top:7%}
+ .brand-gemini{left:0;top:45%}.brand-meta{right:0;top:42%}
+ .brand-anthropic{left:7%;bottom:10%}.brand-mistral{right:6%;bottom:8%}
+ .brand-hf{left:25%;top:1%}.brand-perplexity{right:21%;bottom:22%}
+ .brand-cloud-note{font-size:7px;bottom:-1px}
+ .model-card-select{padding:7px 7px 0}
+ .model-card-actions{padding:0 7px 7px}
+ .model-download{font-size:8px;min-height:24px;padding:5px 7px}
+ .sleeping-bot{min-height:130px}
+ .sleeping-bot img{width:min(190px,68%);max-height:145px}
+}
