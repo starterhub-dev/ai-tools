@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="AI sparkle mark">
+  <defs>
+    <linearGradient id="spark" x1="8" y1="6" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B0FFF3"/>
+      <stop offset="1" stop-color="#5FCDC9"/>
+    </linearGradient>
+  </defs>
+  <path d="M24 4.5 29.2 18.8 43.5 24 29.2 29.2 24 43.5 18.8 29.2 4.5 24 18.8 18.8Z" fill="url(#spark)" fill-opacity=".16" stroke="url(#spark)" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="4.1" fill="#B0FFF3"/>
+  <circle cx="37.5" cy="10.5" r="2.1" fill="#78C8FF"/>
+  <circle cx="10.5" cy="37.5" r="2.1" fill="#78C8FF"/>
+</svg>

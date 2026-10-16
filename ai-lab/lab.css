@@ -394,3 +394,107 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 @keyframes brand-drift{0%,100%{translate:0 0}50%{translate:0 -6px}}
 @media(max-width:680px){.hero-brand-tile{animation-duration:7.8s}}
 @media(prefers-reduced-motion:reduce){.hero-brand-tile{animation:none;will-change:auto}}
+
+
+/* Reference polish · 2026-10-16
+   Sharpen the typography, strengthen reading contrast, and give the hero a little more air.
+   The model runtime and interaction logic remain in lab.js. */
+body{
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+.brand strong{font-size:15px;letter-spacing:.095em}
+.brand small{font-size:11px;color:#a4b8ce}
+.top-links{font-size:13px}
+.top-links .back-link{padding:12px 18px;border-radius:14px}
+.hero{
+  min-height:clamp(430px,34.5vw,530px);
+  border-color:#29465f82;
+  box-shadow:inset 0 1px #d6f7ff08,0 18px 58px #00000020;
+}
+.hero:before{
+  background:
+    linear-gradient(90deg,#061120 0%,#061120f5 17%,#061120d9 34%,#06112070 51%,transparent 73%),
+    linear-gradient(0deg,#06112070 0%,transparent 36%);
+}
+.hero-copy{width:min(44%,620px)}
+.eyebrow{font-size:11px;letter-spacing:.115em}
+.eyebrow-cn{font-size:12px}
+.hero h1{
+  font-size:clamp(38px,4.05vw,61px);
+  letter-spacing:-.035em;
+  text-shadow:0 2px 24px #0005;
+}
+.hero h1 span{text-shadow:none}
+.hero-lede{
+  max-width:490px;
+  color:#d0deed;
+  font-size:clamp(14px,1.12vw,16.5px);
+  line-height:1.82;
+}
+.hero-points{gap:9px;margin-top:23px}
+.hero-points>span{
+  min-height:50px;
+  padding:9px 14px;
+  font-size:12px;
+  border-color:#759ab72f;
+  background:linear-gradient(135deg,#172d43e8,#0b1b2eeF);
+}
+.hero-caveat{max-width:470px;color:#9bb1c8;font-size:11px;line-height:1.65}
+.hero-nebula-image{opacity:.92;filter:saturate(1.08) contrast(1.08)}
+.hero-brand-tile{
+  width:clamp(72px,6.25vw,98px);
+  height:clamp(74px,6.4vw,100px);
+  border-color:#b7eaff9a;
+  box-shadow:0 14px 30px #0006,0 0 24px #28cfff22,inset 0 1px #e6ffff35;
+}
+.hero-brand-tile img{width:clamp(30px,2.65vw,41px);height:clamp(30px,2.65vw,41px)}
+.hero-brand-tile b{font-size:clamp(9px,.74vw,11.5px);text-shadow:0 1px 4px #000b}
+.privacy-strip{border-color:#5eead43b}
+.privacy-strip p{color:#a5bbcf;font-size:12px}
+.section-intro{color:#a8bdd2}
+.model-footnote p{color:#91a8bf}
+.chat-disclaimer{color:#91a8bf}
+.site-footer{color:#829ab3}
+
+@media(max-width:1180px){
+  .hero{min-height:clamp(420px,42vw,510px)}
+  .hero-copy{width:47%}
+  .hero h1{font-size:clamp(35px,4.55vw,54px)}
+  .hero-brand-tile{width:72px;height:75px}
+  .hero-brand-tile img{width:30px;height:30px}
+  .hero-brand-tile b{font-size:8.5px}
+}
+@media(max-width:920px){
+  .hero{min-height:420px}
+  .hero-copy{width:53%}
+  .hero h1{font-size:clamp(34px,5.15vw,47px)}
+  .hero-lede{font-size:13px}
+  .hero-caveat{max-width:300px}
+}
+@media(max-width:680px){
+  .brand strong{font-size:12px}
+  .brand small{font-size:9px}
+  .top-links{font-size:11px}
+  .hero{min-height:390px}
+  .hero-copy{width:75%;max-width:350px}
+  .eyebrow{font-size:9px;letter-spacing:.09em;gap:7px}
+  .eyebrow-cn{font-size:10px}
+  .hero h1{font-size:clamp(28px,7.6vw,37px);letter-spacing:-.035em}
+  .hero-lede{max-width:290px;font-size:12px;color:#d1ddeb}
+  .hero-points{gap:6px;margin-top:16px}
+  .hero-points>span{min-height:36px;padding:5px 7px;font-size:9px}
+  .hero-caveat{max-width:250px;font-size:9px;color:#a1b4c9}
+  .hero-nebula-image{opacity:.72;filter:saturate(1.02) contrast(1.05)}
+  .hero-brand-tile{width:49px;height:51px;padding:4px 2px 3px;gap:3px}
+  .hero-brand-tile img{width:22px;height:22px}
+  .hero-brand-tile b{font-size:6px}
+  .privacy-strip p{font-size:10px;color:#a5bbcf}
+}
+@media(max-width:390px){
+  .hero{min-height:375px}
+  .hero-copy{width:78%}
+  .hero h1{font-size:28px}
+  .hero-points>span{font-size:8px}
+}
