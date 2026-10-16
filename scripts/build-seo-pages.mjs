@@ -116,7 +116,7 @@ for(const tool of tools){
     '<meta property="og:title" content="'+attr(title+" 新手教程 | AI Starter Hub")+'"><meta property="og:description" content="'+attr(desc)+'">'+
     '<meta property="og:url" content="'+attr(canonical)+'"><meta name="twitter:card" content="summary">'+
     '<meta name="twitter:title" content="'+attr(title+" 新手教程")+'"><meta name="twitter:description" content="'+attr(desc)+'">'+
-    '<link rel="stylesheet" href="../../style.css?v=20261004-19"><link rel="stylesheet" href="../../tutorials/tutorial.css?v=20261007-2">'+
+    '<link rel="stylesheet" href="../../style.css?v=20261016-1"><link rel="stylesheet" href="../../tutorials/tutorial.css?v=20261016-1">'+
     '<script type="application/ld+json">'+ld(jsonLd)+'</script></head><body>'+
     '<header class="seo-top topbar"><div class="wrap"><a href="../../" class="seo-brand brand"><img class="tutorial-brand-mark" src="../../ai-starter-hub-mark.svg" alt="" aria-hidden="true"><span id="pageBrand">AI Starter Hub</span></a><a href="../../tutorials/" class="seo-back back" id="pageBack">全部教程 / Guides</a></div></header>'+
     '<main class="wrap content" id="app"><nav class="seo-breadcrumb"><a href="../../">AI 新手导航</a><span>›</span><a href="../../tutorials/">AI 工具教程</a><span>›</span><strong>'+esc(title)+'</strong></nav>'+
