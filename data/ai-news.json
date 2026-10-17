@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T14:15:13.597Z",
+  "updatedAt": "2026-10-17T17:19:09.567Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -117,8 +117,8 @@
       "id": "news-22ndh9",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 22 October 16, 2026",
-      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 22 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 24 October 16, 2026",
+      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 24 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/reflection-beam",
       "publishedAt": "2026-10-16T00:00:00.000Z",
@@ -139,8 +139,8 @@
       "id": "news-upb567",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "meta muse-spark open-source Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta +4 51 October 15, 2026",
-      "excerpt": "meta muse-spark open-source Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta +4 51 October 15, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "meta muse-spark open-source Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta +4 52 October 15, 2026",
+      "excerpt": "meta muse-spark open-source Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta +4 52 October 15, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/meta-muse-spark-open",
       "publishedAt": "2026-10-15T00:00:00.000Z",
@@ -161,8 +161,8 @@
       "id": "news-1w3i3xk",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 56 October 8, 2026",
-      "excerpt": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 56 October 8, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 57 October 8, 2026",
+      "excerpt": "ml-intern datasets spaces The model that didn't exist, so you made it yourself 57 October 8, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/building-with-ml-intern",
       "publishedAt": "2026-10-13T00:00:00.000Z",
@@ -202,28 +202,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-59auyc",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "autotrust/JEV-27B-VL: a decision model that learned to see without a single image of training autotrust • 17 days ago • 132",
-      "excerpt": "autotrust/JEV-27B-VL: a decision model that learned to see without a single image of training autotrust • 17 days ago • 132。来自 Hugging Face 的公开更新，点击查看原文。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/autotrust/autotrustjev-27b-vl-a-decision-model-that-learned",
-      "publishedAt": "2026-10-04T19:41:35.567Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1jc69lv",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "New in llama.cpp: Decision Models ggml-org • 15 days ago • 102",
-      "excerpt": "New in llama.cpp: Decision Models ggml-org • 15 days ago • 102。来自 Hugging Face 的公开更新，点击查看原文。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
-      "publishedAt": "2026-10-04T15:51:35.989Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-gaj2ca",
       "type": "abstract",
       "label": "🗿 AI 抽象",
@@ -233,6 +211,17 @@
       "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-real-time-voice-applications-gemini-audio/",
       "publishedAt": "2026-10-04T15:51:35.989Z",
       "sourceKind": "official"
+    },
+    {
+      "id": "news-1b5xsxh",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Sparseup-fr: A French replication of Linkup's sparse embedding model alphaedge-ai • 5 days ago • 10",
+      "excerpt": "Sparseup-fr: A French replication of Linkup's sparse embedding model alphaedge-ai • 5 days ago • 10。来自 Hugging Face 的公开更新，点击查看原文。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/alphaedge-ai/french-sparseup",
+      "publishedAt": "2026-10-17T17:19:09.567Z",
+      "sourceKind": "community"
     },
     {
       "id": "news-pz1now",
@@ -370,8 +359,8 @@
       "id": "news-6uf2nk",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B 62 October 13, 2026",
-      "excerpt": "Run fast, private agents on-device with LFM2.5-24B-A2B 62 October 13, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B 63 October 13, 2026",
+      "excerpt": "Run fast, private agents on-device with LFM2.5-24B-A2B 63 October 13, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "publishedAt": "2026-10-14T00:00:00.000Z",
@@ -422,69 +411,36 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-x3iv91",
+      "id": "news-1bxhbsl",
       "type": "abstract",
       "label": "🗿 AI 抽象",
-      "title": "Show HN: Animated step-by-step hints for any cryptic crossword clue",
-      "excerpt": "Cryptic crosswords are fun AND hard, and I&#x27;ve recently been introducing easier ones to my 11y&#x2F;o daughter. It made me realise that when you&#x27;re stuck, all you can do is hope you somehow come up with the way to crack it, or look at the answer and h",
+      "title": "Why the Creators of AI Do Not Understand Their Own Creations",
+      "excerpt": "Just citations. Dario Amodei (CEO of Anthropic, 2025): \"People outside the field are often surprised and alarmed to learn that we do not understand how our own AI creations work. This lack of understanding is essentially unprecedented in the history of technol",
       "source": "Hacker News",
-      "url": "https://crypticinkling.co.uk/",
-      "publishedAt": "2026-10-17T12:21:49Z",
+      "url": "https://news.ycombinator.com/item?id=50132747",
+      "publishedAt": "2026-10-17T16:54:50Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-y9vnsq",
+      "id": "news-ojhtj4",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "DeepSeek-v4.1-Flash-1017 is here",
-      "excerpt": "Hacker News 社区讨论：DeepSeek-v4.1-Flash-1017 is here",
+      "title": "Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses",
+      "excerpt": "Hacker News 社区讨论：Amazon uses union-busting AI surveillance to monitor union risk in UK warehouses",
       "source": "Hacker News",
-      "url": "https://twitter.com/deepseek_ai/status/2111375640717033777",
-      "publishedAt": "2026-10-17T08:39:15Z",
+      "url": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
+      "publishedAt": "2026-10-17T16:04:23Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-nm124i",
+      "id": "news-hl05jn",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "The first vibe-coded gun is here",
-      "excerpt": "Hacker News 社区讨论：The first vibe-coded gun is here",
+      "title": "AI lab offers free plumbing and HVAC repairs to train AI robots",
+      "excerpt": "Hacker News 社区讨论：AI lab offers free plumbing and HVAC repairs to train AI robots",
       "source": "Hacker News",
-      "url": "https://www.theverge.com/tech/1011950/vibe-coded-3d-printed-gun-ai-generated-cody-wilson",
-      "publishedAt": "2026-10-17T11:38:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-74nf1s",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Aviation superfan installs an Airbus A380 suite in his apartment",
-      "excerpt": "Hacker News 社区讨论：Aviation superfan installs an Airbus A380 suite in his apartment",
-      "source": "Hacker News",
-      "url": "https://www.cnn.com/travel/aviation-superfan-a380-etihad-residence-suite",
-      "publishedAt": "2026-10-17T08:47:54Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-hxfycc",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "As AI triggers a tsunami, computer science conferences impose caps",
-      "excerpt": "Hacker News 社区讨论：As AI triggers a tsunami, computer science conferences impose caps",
-      "source": "Hacker News",
-      "url": "https://www.science.org/content/article/ai-triggers-tsunami-submissions-computer-science-conferences-impose-caps",
-      "publishedAt": "2026-10-17T11:44:09Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1toh67t",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "The fastest DeepSeek v4.1 flash 1017 – Day 0",
-      "excerpt": "Hacker News 社区讨论：The fastest DeepSeek v4.1 flash 1017 – Day 0",
-      "source": "Hacker News",
-      "url": "https://runinfra.ai/inference-api/deepseek-v4-1-flash-1017",
-      "publishedAt": "2026-10-17T11:07:08Z",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-lab-offers-free-plumbing-and-hvac-repairs-across-three-cities-to-train-ai-robots-wearable-sensors-record-video-of-repair-work-for-robotics-training-free-services-also-include-electrical-work-air-duct-cleaning-and-carpet-cleaning",
+      "publishedAt": "2026-10-17T16:35:35Z",
       "sourceKind": "community"
     },
     {
@@ -499,36 +455,102 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1ovhaw",
+      "id": "news-4v30k",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Strip Digital Signatures from PDFs Before Feeding Them to AI (LinuxGuide)",
-      "excerpt": "Hacker News 社区讨论：Strip Digital Signatures from PDFs Before Feeding Them to AI (LinuxGuide)",
+      "title": "He Wants AI Benchmarking to Be a Science, Not a Dark Art",
+      "excerpt": "Hacker News 社区讨论：He Wants AI Benchmarking to Be a Science, Not a Dark Art",
       "source": "Hacker News",
-      "url": "https://medium.com/@GiovambattistaVieri/strip-digital-signatures-from-pdfs-before-feeding-them-to-ai-linux-guide-611a023f8d7e",
-      "publishedAt": "2026-10-17T12:39:09Z",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "publishedAt": "2026-10-17T15:14:07Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-zva7sg",
+      "id": "news-1r7dps2",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "The AI Expectations Gap",
-      "excerpt": "Hacker News 社区讨论：The AI Expectations Gap",
+      "title": "Decompilations, AI, and the Chase for Clout",
+      "excerpt": "Hacker News 社区讨论：Decompilations, AI, and the Chase for Clout",
       "source": "Hacker News",
-      "url": "https://www.anthropic.com/research/ai-expectations-gap",
-      "publishedAt": "2026-10-17T11:06:19Z",
+      "url": "https://jpeisach.github.io/blog/ai/legoisland/decompilation/porting/reverse-engineering/2026/10/16/decomps-clout-consoom.html",
+      "publishedAt": "2026-10-17T14:53:05Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-khkdc2",
+      "id": "news-8one3",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Amazon's Bee AI devices have a bystander problem, says former security engineer",
-      "excerpt": "Hacker News 社区讨论：Amazon's Bee AI devices have a bystander problem, says former security engineer",
+      "title": "Proactive AI for Superintelligent Agents",
+      "excerpt": "Hacker News 社区讨论：Proactive AI for Superintelligent Agents",
       "source": "Hacker News",
-      "url": "https://www.geekwire.com/2026/amazons-new-bee-ai-devices-have-a-bystander-problem-says-former-aws-security-engineer/",
-      "publishedAt": "2026-10-17T14:08:03Z",
+      "url": "https://research.google/pubs/proactive-ai-for-superintelligent-agents/",
+      "publishedAt": "2026-10-17T14:44:38Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1k82c1s",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Would You Merge It? – 24 bugs AI assistants write, as fix-it katas",
+      "excerpt": "Hacker News 社区讨论：Show HN: Would You Merge It? – 24 bugs AI assistants write, as fix-it katas",
+      "source": "Hacker News",
+      "url": "https://github.com/SohailKhan0525/would-you-merge",
+      "publishedAt": "2026-10-17T17:10:01Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-b279sv",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The AI-Native Large-Scale Agile Software Development Manifesto",
+      "excerpt": "Hacker News 社区讨论：The AI-Native Large-Scale Agile Software Development Manifesto",
+      "source": "Hacker News",
+      "url": "https://arxiv.org/abs/2605.07717",
+      "publishedAt": "2026-10-17T16:57:41Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-tj50zf",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Alexandr Wang, Meta's Gen Z billionaire AI whizz",
+      "excerpt": "Hacker News 社区讨论：Alexandr Wang, Meta's Gen Z billionaire AI whizz",
+      "source": "Hacker News",
+      "url": "https://www.economist.com/the-world-in-brief",
+      "publishedAt": "2026-10-17T16:55:36Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-l00n8k",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Ship Your Interpreter",
+      "excerpt": "Hacker News 社区讨论：Ship Your Interpreter",
+      "source": "Hacker News",
+      "url": "https://www.basis.ai/blog/ship-your-interpreters/",
+      "publishedAt": "2026-10-17T16:02:16Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-4qihrf",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Meta shakes up the frontiers, open and closed",
+      "excerpt": "Hacker News 社区讨论：Meta shakes up the frontiers, open and closed",
+      "source": "Hacker News",
+      "url": "https://www.interconnects.ai/p/meta-shakes-up-the-frontiers-open",
+      "publishedAt": "2026-10-17T16:00:37Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1y54jin",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Websites are closing their doors to AI agents",
+      "excerpt": "Hacker News 社区讨论：Websites are closing their doors to AI agents",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-17T15:47:38Z",
       "sourceKind": "community"
     },
     {
@@ -543,17 +565,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-oce9kq",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Illustrating the AI proof of the Mahler conjecture",
-      "excerpt": "Hacker News 社区讨论：Illustrating the AI proof of the Mahler conjecture",
-      "source": "Hacker News",
-      "url": "https://chessapig.github.io/Mahler",
-      "publishedAt": "2026-10-17T14:04:40Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-15rr9pg",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -562,6 +573,116 @@
       "source": "Hacker News",
       "url": "https://www.businessinsider.com/microsoft-ai-ceo-new-model-beats-openai-using-less-compute-2026-10",
       "publishedAt": "2026-10-17T13:37:39Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-82bnla",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Baa – find and free what your AI agents left running on your Mac",
+      "excerpt": "Hacker News 社区讨论：Show HN: Baa – find and free what your AI agents left running on your Mac",
+      "source": "Hacker News",
+      "url": "https://github.com/selviarora/baa",
+      "publishedAt": "2026-10-17T16:46:48Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-t81uyd",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: AegisKernel – Test prompt injection attacks on AI agents in the browser",
+      "excerpt": "Hacker News 社区讨论：Show HN: AegisKernel – Test prompt injection attacks on AI agents in the browser",
+      "source": "Hacker News",
+      "url": "https://adikshatriyag-crypto.github.io/aegis-kernel/",
+      "publishedAt": "2026-10-17T16:42:53Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1mzf1bk",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "I Tested AI Cloning and It's Worse Than You Think",
+      "excerpt": "Hacker News 社区讨论：I Tested AI Cloning and It's Worse Than You Think",
+      "source": "Hacker News",
+      "url": "https://www.youtube.com/watch?v=KC31K-CUC5Y",
+      "publishedAt": "2026-10-17T15:52:30Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1mi4df8",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: I built an AI cycling coach",
+      "excerpt": "My friends and I have been toying with the idea of personalized (cycling indoor) training using AI to assist with planning and tailoring workouts around a busy schedule and ambitious goals, so I decided to build an experiment to see how it would work. Cycling ",
+      "source": "Hacker News",
+      "url": "https://cuore.fit/",
+      "publishedAt": "2026-10-17T15:27:31Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-9r1rd7",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Perceptors AI – turning clinical expertise into reviewed courses",
+      "excerpt": "Hacker News 社区讨论：Perceptors AI – turning clinical expertise into reviewed courses",
+      "source": "Hacker News",
+      "url": "https://www.perceptors.ai/",
+      "publishedAt": "2026-10-17T15:08:19Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-xpag0m",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Meta Opens Muse Spark's Weights with Strings Attached",
+      "excerpt": "Hacker News 社区讨论：Meta Opens Muse Spark's Weights with Strings Attached",
+      "source": "Hacker News",
+      "url": "https://ailately.com/articles/meta-muse-spark-open-weights",
+      "publishedAt": "2026-10-17T14:42:48Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-gld6hf",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "ConvyCanvas – AI Tutor for Euclid's Elements",
+      "excerpt": "Hacker News 社区讨论：ConvyCanvas – AI Tutor for Euclid's Elements",
+      "source": "Hacker News",
+      "url": "https://convycanvas.com/elements/reader/",
+      "publishedAt": "2026-10-17T14:37:28Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-nwtkaj",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Ask HN: How are you all ensuring your AI code isn't slop?",
+      "excerpt": "Hacker News 社区讨论：Ask HN: How are you all ensuring your AI code isn't slop?",
+      "source": "Hacker News",
+      "url": "https://github.com/trypando/pando",
+      "publishedAt": "2026-10-17T14:29:57Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-khkdc2",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Amazon's Bee AI devices have a bystander problem, says former security engineer",
+      "excerpt": "Hacker News 社区讨论：Amazon's Bee AI devices have a bystander problem, says former security engineer",
+      "source": "Hacker News",
+      "url": "https://www.geekwire.com/2026/amazons-new-bee-ai-devices-have-a-bystander-problem-says-former-aws-security-engineer/",
+      "publishedAt": "2026-10-17T14:08:03Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-oce9kq",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Illustrating the AI proof of the Mahler conjecture",
+      "excerpt": "Hacker News 社区讨论：Illustrating the AI proof of the Mahler conjecture",
+      "source": "Hacker News",
+      "url": "https://chessapig.github.io/Mahler",
+      "publishedAt": "2026-10-17T14:04:40Z",
       "sourceKind": "community"
     },
     {
@@ -598,6 +719,28 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1ovhaw",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Strip Digital Signatures from PDFs Before Feeding Them to AI (LinuxGuide)",
+      "excerpt": "Hacker News 社区讨论：Strip Digital Signatures from PDFs Before Feeding Them to AI (LinuxGuide)",
+      "source": "Hacker News",
+      "url": "https://medium.com/@GiovambattistaVieri/strip-digital-signatures-from-pdfs-before-feeding-them-to-ai-linux-guide-611a023f8d7e",
+      "publishedAt": "2026-10-17T12:39:09Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-x3iv91",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Show HN: Animated step-by-step hints for any cryptic crossword clue",
+      "excerpt": "Cryptic crosswords are fun AND hard, and I&#x27;ve recently been introducing easier ones to my 11y&#x2F;o daughter. It made me realise that when you&#x27;re stuck, all you can do is hope you somehow come up with the way to crack it, or look at the answer and h",
+      "source": "Hacker News",
+      "url": "https://crypticinkling.co.uk/",
+      "publishedAt": "2026-10-17T12:21:49Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1lkzo0i",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -606,6 +749,17 @@
       "source": "Hacker News",
       "url": "https://www.ft.com/content/45ea3dd0-080d-49a2-86e9-df0148929bf4",
       "publishedAt": "2026-10-17T12:18:14Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-hxfycc",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "As AI triggers a tsunami, computer science conferences impose caps",
+      "excerpt": "Hacker News 社区讨论：As AI triggers a tsunami, computer science conferences impose caps",
+      "source": "Hacker News",
+      "url": "https://www.science.org/content/article/ai-triggers-tsunami-submissions-computer-science-conferences-impose-caps",
+      "publishedAt": "2026-10-17T11:44:09Z",
       "sourceKind": "community"
     },
     {
@@ -620,6 +774,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-nm124i",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The first vibe-coded gun is here",
+      "excerpt": "Hacker News 社区讨论：The first vibe-coded gun is here",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/tech/1011950/vibe-coded-3d-printed-gun-ai-generated-cody-wilson",
+      "publishedAt": "2026-10-17T11:38:46Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1m3szhk",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -628,6 +793,28 @@
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=50130038",
       "publishedAt": "2026-10-17T11:13:50Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1toh67t",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The fastest DeepSeek v4.1 flash 1017 – Day 0",
+      "excerpt": "Hacker News 社区讨论：The fastest DeepSeek v4.1 flash 1017 – Day 0",
+      "source": "Hacker News",
+      "url": "https://runinfra.ai/inference-api/deepseek-v4-1-flash-1017",
+      "publishedAt": "2026-10-17T11:07:08Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-zva7sg",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The AI Expectations Gap",
+      "excerpt": "Hacker News 社区讨论：The AI Expectations Gap",
+      "source": "Hacker News",
+      "url": "https://www.anthropic.com/research/ai-expectations-gap",
+      "publishedAt": "2026-10-17T11:06:19Z",
       "sourceKind": "community"
     },
     {
@@ -705,193 +892,6 @@
       "source": "Hacker News",
       "url": "https://news.research.gatech.edu/2026/10/13/deleted-ai-chats-may-leave-clues-behind",
       "publishedAt": "2026-10-17T09:38:18Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-3jshn1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: CiteLadder – open-source AI search visibility tracker",
-      "excerpt": "Hacker News 社区讨论：Show HN: CiteLadder – open-source AI search visibility tracker",
-      "source": "Hacker News",
-      "url": "https://github.com/abhij1306/CiteLadder",
-      "publishedAt": "2026-10-17T08:49:44Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-15ci02z",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Ask HN: Local AI product situation",
-      "excerpt": "Right now it seems every company wants you to buy their fancy new expensive computer to run local AI models. Why would we want to buy a whole new computer to run local AI models? Why not create a device which has its own memory and chip designed specifically t",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50129150",
-      "publishedAt": "2026-10-17T08:46:16Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1rmjxpc",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
-      "excerpt": "Hacker News 社区讨论：DeepSeek: DeepSeek v4.1 Flash 1017",
-      "source": "Hacker News",
-      "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
-      "publishedAt": "2026-10-17T08:37:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-10xflvo",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "DeepSeek-v4.1-Flash-1017",
-      "excerpt": "Hacker News 社区讨论：DeepSeek-v4.1-Flash-1017",
-      "source": "Hacker News",
-      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-      "publishedAt": "2026-10-17T08:21:25Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-jquw9v",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: Sys2txt – transcribe system audio to text in the CLI with a local LLM",
-      "excerpt": "sys2txt is a command line tool that records whatever audio your Linux machine is playing (via PulseAudio&#x2F;PipeWire&#x27;s monitor source) and transcribes it live with Whisper, OpenAI&#x27;s AI-based speech-to-text model. I use it to caption meetings, video",
-      "source": "Hacker News",
-      "url": "https://joe-heffer.github.io/sys2txt/",
-      "publishedAt": "2026-10-17T08:14:12Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1wviups",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Meta to scrape content from business customers for model training",
-      "excerpt": "Hacker News 社区讨论：Meta to scrape content from business customers for model training",
-      "source": "Hacker News",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/16/meta-grants-itself-right-to-scrape-content-from-business-customers-for-model-training/5303658",
-      "publishedAt": "2026-10-17T08:14:06Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1auqutj",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Researchers Stranded an AI Agent on a Virtual Island",
-      "excerpt": "Hacker News 社区讨论：Researchers Stranded an AI Agent on a Virtual Island",
-      "source": "Hacker News",
-      "url": "https://gizmodo.com/researchers-stranded-an-ai-agent-on-a-virtual-island-things-got-very-weird-2000825998",
-      "publishedAt": "2026-10-17T07:45:09Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-waagly",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "I built an open-source Kubernetes dashboard where AI agents ask before they act",
-      "excerpt": "Hacker News 社区讨论：I built an open-source Kubernetes dashboard where AI agents ask before they act",
-      "source": "Hacker News",
-      "url": "https://lumovi.dev/",
-      "publishedAt": "2026-10-17T07:09:02Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-15b6t3g",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Glimpse: Visual thinking that stays grounded",
-      "excerpt": "Hacker News 社区讨论：Glimpse: Visual thinking that stays grounded",
-      "source": "Hacker News",
-      "url": "https://elorian.ai/blog/introducing-glimpse",
-      "publishedAt": "2026-10-17T07:04:23Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-14xm0e0",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Decomp.dev Shuts Down Because AI Has Made It Too Easy to Decompile Games",
-      "excerpt": "Hacker News 社区讨论：Decomp.dev Shuts Down Because AI Has Made It Too Easy to Decompile Games",
-      "source": "Hacker News",
-      "url": "https://www.404media.co/video-game-reverse-engineering-community-shuts-down-because-ai-has-made-it-too-easy/",
-      "publishedAt": "2026-10-17T06:44:13Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-4xs5y6",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: I built a free collection of browser-based 3D tools",
-      "excerpt": "I built 3DValley, a collection of free tools for generating and editing 3D models. You can turn images into 3D models using AI, retexture existing models, remesh geometry, and use other 3D utilities. Some tools run entirely in your browser, while the more comp",
-      "source": "Hacker News",
-      "url": "https://3dvalley.com/",
-      "publishedAt": "2026-10-17T06:29:17Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-8tq8mn",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Ask HN: What is the most useful thing AI has done for you?",
-      "excerpt": "I had a deep conversation with a friend about what is the most useful thing AI has created&#x2F;done for either of us. For my private life, AI helped me to diagnose and root caused a running toilet, and avoided the high cost of a plumber. It even help to selec",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50128412",
-      "publishedAt": "2026-10-17T06:06:44Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-pnctay",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "How an agentic chat interface can break",
-      "excerpt": "Hacker News 社区讨论：How an agentic chat interface can break",
-      "source": "Hacker News",
-      "url": "https://astralbeam.ai/blog/ten-agentic-chat-interface-failures",
-      "publishedAt": "2026-10-17T05:56:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-z51rb",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Existential Risk from AI: An Exposition for Mathematicians",
-      "excerpt": "Hacker News 社区讨论：Existential Risk from AI: An Exposition for Mathematicians",
-      "source": "Hacker News",
-      "url": "https://alkjash.github.io/ai-risk/",
-      "publishedAt": "2026-10-17T05:52:06Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-c033rb",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Claude CRISPR-like sequence may be a parallel discovery of unpublished research",
-      "excerpt": "Hacker News 社区讨论：Claude CRISPR-like sequence may be a parallel discovery of unpublished research",
-      "source": "Hacker News",
-      "url": "https://recul.ai/news/claude-viral-dna-pattern-priority-dispute/",
-      "publishedAt": "2026-10-17T05:49:12Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1gbrlnl",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Mapping the China AI Ecosystem with Rui Ma [video]",
-      "excerpt": "Hacker News 社区讨论：Mapping the China AI Ecosystem with Rui Ma [video]",
-      "source": "Hacker News",
-      "url": "https://www.youtube.com/watch?v=-RDpqweadlE",
-      "publishedAt": "2026-10-17T05:35:59Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-12sxw1x",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Zeabur discontinues AI Hub after its August security breach",
-      "excerpt": "Hacker News 社区讨论：Zeabur discontinues AI Hub after its August security breach",
-      "source": "Hacker News",
-      "url": "https://zeabur.com/changelogs/aihub-shutdown",
-      "publishedAt": "2026-10-17T04:14:58Z",
       "sourceKind": "community"
     }
   ]
