@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T18:41:21.510Z",
+  "updatedAt": "2026-10-18T21:33:45.275Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -139,8 +139,8 @@
       "id": "news-1lm20wo",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "One Decision Model Instead of a Ranking Team: Short-Video and News Recommendation with autotrust/JEV-27B-VL autotrust • 5 days ago • 22",
-      "excerpt": "One Decision Model Instead of a Ranking Team: Short-Video and News Recommendation with autotrust/JEV-27B-VL autotrust • 5 days ago • 22。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "One Decision Model Instead of a Ranking Team: Short-Video and News Recommendation with autotrust/JEV-27B-VL autotrust • 6 days ago • 22",
+      "excerpt": "One Decision Model Instead of a Ranking Team: Short-Video and News Recommendation with autotrust/JEV-27B-VL autotrust • 6 days ago • 22。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/autotrust/one-decision-model-instead-of-a-ranking-team-short",
       "publishedAt": "2026-10-16T07:18:00.203Z",
@@ -150,8 +150,8 @@
       "id": "news-22ndh9",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 35 October 16, 2026",
-      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 35 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 36 October 16, 2026",
+      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 36 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/reflection-beam",
       "publishedAt": "2026-10-16T00:00:00.000Z",
@@ -161,8 +161,8 @@
       "id": "news-xlnxe",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "Apertus 1.5 Release Notes swiss-ai • 3 days ago • 35",
-      "excerpt": "Apertus 1.5 Release Notes swiss-ai • 3 days ago • 35。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Apertus 1.5 Release Notes swiss-ai • 4 days ago • 35",
+      "excerpt": "Apertus 1.5 Release Notes swiss-ai • 4 days ago • 35。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
       "publishedAt": "2026-10-15T00:00:00.000Z",
@@ -304,8 +304,8 @@
       "id": "news-uthuwd",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance tiiuae • 12 days ago • 30",
-      "excerpt": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance tiiuae • 12 days ago • 30。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance tiiuae • 13 days ago • 30",
+      "excerpt": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance tiiuae • 13 days ago • 30。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
       "publishedAt": "2026-10-16T13:19:01.883Z",
@@ -422,17 +422,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1y54jin",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Websites are closing their doors to AI agents",
-      "excerpt": "Hacker News 社区讨论：Websites are closing their doors to AI agents",
-      "source": "Hacker News",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-18T14:58:10Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-1qilzbb",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -459,21 +448,43 @@
       "type": "update",
       "label": "🟣 AI 动态",
       "title": "'I'm on a War Footing': Terry Tao and the Crisis in Math",
-      "excerpt": "Hacker News 社区讨论：'I'm on a War Footing': Terry Tao and the Crisis in Math",
+      "excerpt": "https:&#x2F;&#x2F;archive.ph&#x2F;bid95",
       "source": "Hacker News",
       "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
       "publishedAt": "2026-10-18T16:35:46Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-1u5pqo8",
+      "id": "news-1m6b4hc",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Microsoft drops AI datacentre project in Essex over power supply concerns",
-      "excerpt": "Hacker News 社区讨论：Microsoft drops AI datacentre project in Essex over power supply concerns",
+      "title": "Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
+      "excerpt": "Hacker News 社区讨论：Consumer apprehension grows as US retailers adopt AI-assisted pricing tools",
       "source": "Hacker News",
-      "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
-      "publishedAt": "2026-10-18T15:48:32Z",
+      "url": "https://apnews.com/article/ai-prices-dynamic-customers-technology-64c446cd117d3be664de4ab570fb9857",
+      "publishedAt": "2026-10-18T19:39:36Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1jzxb23",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Chinese researchers solve 3D Ghys conjecture with homegrown AI model",
+      "excerpt": "Hacker News 社区讨论：Chinese researchers solve 3D Ghys conjecture with homegrown AI model",
+      "source": "Hacker News",
+      "url": "https://news.cgtn.com/news/2026-10-15/Chinese-researchers-solve-3D-Ghys-conjecture-with-homegrown-AI-model-1RgD8zQ3Z3a/p.html",
+      "publishedAt": "2026-10-18T20:19:01Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-y5opox",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Top Mathematician Announces New Institute for A.I. Safety",
+      "excerpt": "Hacker News 社区讨论：Top Mathematician Announces New Institute for A.I. Safety",
+      "source": "Hacker News",
+      "url": "https://www.nytimes.com/2026/09/08/science/jacob-tsimerman-math-ai-safety.html",
+      "publishedAt": "2026-10-18T19:54:49Z",
       "sourceKind": "community"
     },
     {
@@ -499,6 +510,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1sd6xf",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "excerpt": "Hacker News 社区讨论：LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "source": "Hacker News",
+      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
+      "publishedAt": "2026-10-18T16:45:35Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-117us4n",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -521,69 +543,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-dn33s4",
+      "id": "news-1algtl8",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Artifacts Driven Development",
-      "excerpt": "Hacker News 社区讨论：Artifacts Driven Development",
+      "title": "United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
+      "excerpt": "Hacker News 社区讨论：United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
       "source": "Hacker News",
-      "url": "https://kosuke.ai/blog/manifesto",
-      "publishedAt": "2026-10-18T17:11:44Z",
+      "url": "https://www.nytimes.com/2026/10/18/business/scott-kirby-united-airlines.html",
+      "publishedAt": "2026-10-18T19:52:18Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-1sd6xf",
+      "id": "news-1o59ow9",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
-      "excerpt": "Hacker News 社区讨论：LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "title": "Self-hosted workspace where notes, tasks and AI chats are all items",
+      "excerpt": "Hacker News 社区讨论：Self-hosted workspace where notes, tasks and AI chats are all items",
       "source": "Hacker News",
-      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
-      "publishedAt": "2026-10-18T16:45:35Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-uu6nw0",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
-      "excerpt": "Hacker News 社区讨论：Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
-      "source": "Hacker News",
-      "url": "https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9",
-      "publishedAt": "2026-10-18T16:07:52Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-amynsk",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Building a Compositor for a Userbase of One",
-      "excerpt": "Hacker News 社区讨论：Building a Compositor for a Userbase of One",
-      "source": "Hacker News",
-      "url": "https://onewireout.com/writeups/resonance/",
-      "publishedAt": "2026-10-18T15:59:38Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-t8ngnm",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI-Assisted Product Discovery: When Code Is Cheap, Judgment Is the Job",
-      "excerpt": "Hacker News 社区讨论：AI-Assisted Product Discovery: When Code Is Cheap, Judgment Is the Job",
-      "source": "Hacker News",
-      "url": "https://age-of-product.com/ai-assisted-product-discovery/",
-      "publishedAt": "2026-10-18T15:55:35Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1vwd7e6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Why we decided to open source Relate",
-      "excerpt": "Hacker News 社区讨论：Why we decided to open source Relate",
-      "source": "Hacker News",
-      "url": "https://viablesystems.ai/writing/why-we-decided-to-open-source-relate",
-      "publishedAt": "2026-10-18T15:12:53Z",
+      "url": "https://github.com/sianachi/nixsites",
+      "publishedAt": "2026-10-18T18:39:42Z",
       "sourceKind": "community"
     },
     {
@@ -595,6 +573,83 @@
       "source": "Hacker News",
       "url": "https://thezvi.substack.com/p/leaked-anthropic-draft-ai-regulatory",
       "publishedAt": "2026-10-18T18:28:58Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-dn33s4",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Artifacts Driven Development",
+      "excerpt": "Hacker News 社区讨论：Artifacts Driven Development",
+      "source": "Hacker News",
+      "url": "https://kosuke.ai/blog/manifesto",
+      "publishedAt": "2026-10-18T17:11:44Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1uxvehu",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Subvert.fm AI Policy",
+      "excerpt": "Hacker News 社区讨论：Subvert.fm AI Policy",
+      "source": "Hacker News",
+      "url": "https://www.subvert.fm/pages/ai-policy",
+      "publishedAt": "2026-10-18T21:29:08Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1glkji5",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Beating Warcraft III's insane AI with self-play reinforcement learning on one PC",
+      "excerpt": "Hacker News 社区讨论：Beating Warcraft III's insane AI with self-play reinforcement learning on one PC",
+      "source": "Hacker News",
+      "url": "https://warlock.ai/blog/warcraftsim-1/",
+      "publishedAt": "2026-10-18T19:32:10Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-6hdo3j",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Aircraft gyroscopic instruments modeled from M series MacBook IMU",
+      "excerpt": "Hacker News 社区讨论：Aircraft gyroscopic instruments modeled from M series MacBook IMU",
+      "source": "Hacker News",
+      "url": "https://github.com/photon-cat/gyro-instruments-mac",
+      "publishedAt": "2026-10-18T19:21:21Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-9aug6w",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Trustbut checks if an AI agent's new tests fail without its change",
+      "excerpt": "Hacker News 社区讨论：Trustbut checks if an AI agent's new tests fail without its change",
+      "source": "Hacker News",
+      "url": "https://github.com/isAlmogK/trustbut",
+      "publishedAt": "2026-10-18T19:07:31Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-g1ah2g",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Expose the digital body language of Bluetooth Low Energy devices",
+      "excerpt": "Hacker News 社区讨论：Expose the digital body language of Bluetooth Low Energy devices",
+      "source": "Hacker News",
+      "url": "https://blog.stormvault.net/airtell-a-bluetooth-5-security-cli-streamlit-interface-to-sniffle-b486ffee419d",
+      "publishedAt": "2026-10-18T18:58:21Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1m8aaz1",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Snitch – see every connection your computer makes",
+      "excerpt": "Hacker News 社区讨论：Show HN: Snitch – see every connection your computer makes",
+      "source": "Hacker News",
+      "url": "https://github.com/aixisstudio/Snitch",
+      "publishedAt": "2026-10-18T18:52:27Z",
       "sourceKind": "community"
     },
     {
@@ -697,6 +752,50 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-uu6nw0",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
+      "excerpt": "Hacker News 社区讨论：Replacing an LLM judge with a deterministic model: 9.2x faster, 4.5x cheaper",
+      "source": "Hacker News",
+      "url": "https://medium.com/@gbenga-awodokun/building-clinical-ai-agents-with-langchain-and-jev-decision-healthcare-trustworthy-ai-lab-v2-1b81e271f1c9",
+      "publishedAt": "2026-10-18T16:07:52Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-amynsk",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Building a Compositor for a Userbase of One",
+      "excerpt": "Hacker News 社区讨论：Building a Compositor for a Userbase of One",
+      "source": "Hacker News",
+      "url": "https://onewireout.com/writeups/resonance/",
+      "publishedAt": "2026-10-18T15:59:38Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-t8ngnm",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI-Assisted Product Discovery: When Code Is Cheap, Judgment Is the Job",
+      "excerpt": "Hacker News 社区讨论：AI-Assisted Product Discovery: When Code Is Cheap, Judgment Is the Job",
+      "source": "Hacker News",
+      "url": "https://age-of-product.com/ai-assisted-product-discovery/",
+      "publishedAt": "2026-10-18T15:55:35Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1u5pqo8",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Microsoft drops AI datacentre project in Essex over power supply concerns",
+      "excerpt": "Hacker News 社区讨论：Microsoft drops AI datacentre project in Essex over power supply concerns",
+      "source": "Hacker News",
+      "url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+      "publishedAt": "2026-10-18T15:48:32Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-ywv2k7",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -719,6 +818,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1vwd7e6",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Why we decided to open source Relate",
+      "excerpt": "Hacker News 社区讨论：Why we decided to open source Relate",
+      "source": "Hacker News",
+      "url": "https://viablesystems.ai/writing/why-we-decided-to-open-source-relate",
+      "publishedAt": "2026-10-18T15:12:53Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1jjlkwn",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -727,6 +837,17 @@
       "source": "Hacker News",
       "url": "https://github.com/GhostOS-ai/GhostOS",
       "publishedAt": "2026-10-18T15:08:54Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1y54jin",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Websites are closing their doors to AI agents",
+      "excerpt": "Hacker News 社区讨论：Websites are closing their doors to AI agents",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+      "publishedAt": "2026-10-18T14:58:10Z",
       "sourceKind": "community"
     },
     {
@@ -771,127 +892,6 @@
       "source": "Hacker News",
       "url": "https://joinhandshake.com/research/ai/deepswe-reward-hacking/",
       "publishedAt": "2026-10-18T14:28:33Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-gefj63",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: DocuMemory – Persistent memory and context for AI coding tools",
-      "excerpt": "Hacker News 社区讨论：Show HN: DocuMemory – Persistent memory and context for AI coding tools",
-      "source": "Hacker News",
-      "url": "https://www.documemory.dev/",
-      "publishedAt": "2026-10-18T14:22:54Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-189xuq4",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Software is recursive and AI is the base case",
-      "excerpt": "Hacker News 社区讨论：Software is recursive and AI is the base case",
-      "source": "Hacker News",
-      "url": "https://t3.at/blog/2026-10-06-ai-base-case/",
-      "publishedAt": "2026-10-18T14:18:09Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-jkpxvz",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "The Model Is the Company",
-      "excerpt": "Hacker News 社区讨论：The Model Is the Company",
-      "source": "Hacker News",
-      "url": "https://alexwang.ai/posts/the-model-is-the-company/",
-      "publishedAt": "2026-10-18T14:12:34Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1vphcch",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "In 23 of 24 categories, AI answer engines recommend one brand in every query",
-      "excerpt": "Hacker News 社区讨论：In 23 of 24 categories, AI answer engines recommend one brand in every query",
-      "source": "Hacker News",
-      "url": "https://noniner.io/report/state-of-ai-brand-visibility-2026",
-      "publishedAt": "2026-10-18T13:49:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1a87r34",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "What Firecrawl's $75M raise is telling us about the AI stack",
-      "excerpt": "Hacker News 社区讨论：What Firecrawl's $75M raise is telling us about the AI stack",
-      "source": "Hacker News",
-      "url": "https://www.enconvert.com/blog/the-real-story-behind-firecrawl-s-75m-raise",
-      "publishedAt": "2026-10-18T13:13:19Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-zcpik7",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Hyper Optimizing Kimi K3 in vLLM",
-      "excerpt": "Hacker News 社区讨论：Hyper Optimizing Kimi K3 in vLLM",
-      "source": "Hacker News",
-      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
-      "publishedAt": "2026-10-18T13:08:50Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1jwl3vi",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "US Air Force pilots used malware-laden USB drives to plan Afghanistan missions",
-      "excerpt": "Hacker News 社区讨论：US Air Force pilots used malware-laden USB drives to plan Afghanistan missions",
-      "source": "Hacker News",
-      "url": "https://www.theregister.com/security/2026/10/15/us-air-force-pilots-used-malware-laden-usb-drives-to-plan-afghanistan-missions/5303156",
-      "publishedAt": "2026-10-18T12:44:37Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-gt0nkh",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "How the AI boom might end: 5 scenarios",
-      "excerpt": "Hacker News 社区讨论：How the AI boom might end: 5 scenarios",
-      "source": "Hacker News",
-      "url": "https://martinalderson.com/posts/how-the-ai-boom-might-really-end/",
-      "publishedAt": "2026-10-18T12:37:42Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1eajtu1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: CallSitter – bot that answers my calls and wastes scammers' time",
-      "excerpt": "Anyone else get a lot of dumb scam calls? These days I mostly get them on my mobile. I used to just ignore them, but then I got fed up and built a bot that answers my calls and wastes their time. It runs on OpenAI Live 1. Jev classifies each call as spam, scam",
-      "source": "Hacker News",
-      "url": "https://github.com/szerintedmi/callsitter",
-      "publishedAt": "2026-10-18T12:24:53Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1t38gio",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "excerpt": "Hacker News 社区讨论：How Far Will AI Assistants Go for a Refund They Can't Get?",
-      "source": "Hacker News",
-      "url": "https://www.vals.ai/blogs/impossible-refund",
-      "publishedAt": "2026-10-18T12:22:58Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1wimg7n",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "How to Make Your Own Flying Car AI Video (Make a Tesla Roadster AI Video)",
-      "excerpt": "Hacker News 社区讨论：How to Make Your Own Flying Car AI Video (Make a Tesla Roadster AI Video)",
-      "source": "Hacker News",
-      "url": "https://roadster-ai.net/blog/how-to-make-roadster-ai-video",
-      "publishedAt": "2026-10-18T12:17:30Z",
       "sourceKind": "community"
     }
   ]
