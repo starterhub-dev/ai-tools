@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T21:33:45.275Z",
+  "updatedAt": "2026-10-19T00:14:12.708Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -150,8 +150,8 @@
       "id": "news-22ndh9",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 36 October 16, 2026",
-      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 36 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 37 October 16, 2026",
+      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 37 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/reflection-beam",
       "publishedAt": "2026-10-16T00:00:00.000Z",
@@ -315,8 +315,8 @@
       "id": "news-1q81rrx",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline 30 October 16, 2026",
-      "excerpt": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline 30 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline 31 October 16, 2026",
+      "excerpt": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline 31 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "publishedAt": "2026-10-16T00:00:00.000Z",
@@ -444,17 +444,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-ldv4na",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "'I'm on a War Footing': Terry Tao and the Crisis in Math",
-      "excerpt": "https:&#x2F;&#x2F;archive.ph&#x2F;bid95",
-      "source": "Hacker News",
-      "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
-      "publishedAt": "2026-10-18T16:35:46Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-1m6b4hc",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -463,6 +452,28 @@
       "source": "Hacker News",
       "url": "https://apnews.com/article/ai-prices-dynamic-customers-technology-64c446cd117d3be664de4ab570fb9857",
       "publishedAt": "2026-10-18T19:39:36Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1sd6xf",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "excerpt": "Hacker News 社区讨论：LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "source": "Hacker News",
+      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
+      "publishedAt": "2026-10-18T16:45:35Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1svg5kj",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Three strategies for protecting human spaces from bots",
+      "excerpt": "Hacker News 社区讨论：Three strategies for protecting human spaces from bots",
+      "source": "Hacker News",
+      "url": "https://jilltxt.net/three-strategies-for-protecting-human-spaces-from-bots-inspired-by-ai-agent-velvet-vales-email-to-the-aoir-mailing-list/",
+      "publishedAt": "2026-10-18T18:04:05Z",
       "sourceKind": "community"
     },
     {
@@ -488,14 +499,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1svg5kj",
+      "id": "news-1algtl8",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Three strategies for protecting human spaces from bots",
-      "excerpt": "Hacker News 社区讨论：Three strategies for protecting human spaces from bots",
+      "title": "United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
+      "excerpt": "Hacker News 社区讨论：United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
       "source": "Hacker News",
-      "url": "https://jilltxt.net/three-strategies-for-protecting-human-spaces-from-bots-inspired-by-ai-agent-velvet-vales-email-to-the-aoir-mailing-list/",
-      "publishedAt": "2026-10-18T18:04:05Z",
+      "url": "https://www.nytimes.com/2026/10/18/business/scott-kirby-united-airlines.html",
+      "publishedAt": "2026-10-18T19:52:18Z",
       "sourceKind": "community"
     },
     {
@@ -510,47 +521,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1sd6xf",
+      "id": "news-6itxg5",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
-      "excerpt": "Hacker News 社区讨论：LLM analyzed 150k Reddit posts to identify side effects of unapproved new GLP-1",
+      "title": "Anthropic proposes AI safety bill with $1B / 50-death treshold",
+      "excerpt": "Hacker News 社区讨论：Anthropic proposes AI safety bill with $1B / 50-death treshold",
       "source": "Hacker News",
-      "url": "https://www.engineering.upenn.edu/stories/penn-engineers-use-ai-reddit-to-identify-potential-side-effects-of-unapproved-new-glp-1/",
-      "publishedAt": "2026-10-18T16:45:35Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-117us4n",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Tell HN: I picked up knitting while waiting for my AI agent to complete",
-      "excerpt": "Any new hobbies you are willing to share that AI made you start?",
-      "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50142650",
-      "publishedAt": "2026-10-18T16:39:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-5yj4y1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Firmendaten: Parsed balance sheets for every Austrian company",
-      "excerpt": "Ever since January 2025 the Austrian Ministry of Justice has made the Firmenbuch public (and free!) as part of the EUs Open Data Directive. Firmendaten builds on that: we ingest the filings, extract the balance sheet figures (which, luckily, mostly come as an ",
-      "source": "Hacker News",
-      "url": "https://firmendaten.researchly.at/bilanzen/vergleichen",
-      "publishedAt": "2026-10-18T16:41:14Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1algtl8",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
-      "excerpt": "Hacker News 社区讨论：United's CEO Says It Should Cost More Not to Sit in the Middle Seat",
-      "source": "Hacker News",
-      "url": "https://www.nytimes.com/2026/10/18/business/scott-kirby-united-airlines.html",
-      "publishedAt": "2026-10-18T19:52:18Z",
+      "url": "https://www.politico.com/news/2026/10/16/anthropic-ai-safety-01124654",
+      "publishedAt": "2026-10-18T22:46:19Z",
       "sourceKind": "community"
     },
     {
@@ -573,17 +551,6 @@
       "source": "Hacker News",
       "url": "https://thezvi.substack.com/p/leaked-anthropic-draft-ai-regulatory",
       "publishedAt": "2026-10-18T18:28:58Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-dn33s4",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Artifacts Driven Development",
-      "excerpt": "Hacker News 社区讨论：Artifacts Driven Development",
-      "source": "Hacker News",
-      "url": "https://kosuke.ai/blog/manifesto",
-      "publishedAt": "2026-10-18T17:11:44Z",
       "sourceKind": "community"
     },
     {
@@ -620,17 +587,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-9aug6w",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Trustbut checks if an AI agent's new tests fail without its change",
-      "excerpt": "Hacker News 社区讨论：Trustbut checks if an AI agent's new tests fail without its change",
-      "source": "Hacker News",
-      "url": "https://github.com/isAlmogK/trustbut",
-      "publishedAt": "2026-10-18T19:07:31Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-g1ah2g",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -639,17 +595,6 @@
       "source": "Hacker News",
       "url": "https://blog.stormvault.net/airtell-a-bluetooth-5-security-cli-streamlit-interface-to-sniffle-b486ffee419d",
       "publishedAt": "2026-10-18T18:58:21Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1m8aaz1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Snitch – see every connection your computer makes",
-      "excerpt": "Hacker News 社区讨论：Show HN: Snitch – see every connection your computer makes",
-      "source": "Hacker News",
-      "url": "https://github.com/aixisstudio/Snitch",
-      "publishedAt": "2026-10-18T18:52:27Z",
       "sourceKind": "community"
     },
     {
@@ -675,14 +620,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1qwi63j",
+      "id": "news-dn33s4",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "AI Is the Uber Moment for Mathematics",
-      "excerpt": "Hacker News 社区讨论：AI Is the Uber Moment for Mathematics",
+      "title": "Artifacts Driven Development",
+      "excerpt": "Hacker News 社区讨论：Artifacts Driven Development",
       "source": "Hacker News",
-      "url": "https://greyenlightenment.com/2026/09/27/ai-is-the-uber-moment-for-mathematics/",
-      "publishedAt": "2026-10-18T17:18:59Z",
+      "url": "https://kosuke.ai/blog/manifesto",
+      "publishedAt": "2026-10-18T17:11:44Z",
       "sourceKind": "community"
     },
     {
@@ -694,6 +639,94 @@
       "source": "Hacker News",
       "url": "https://www.cio.com/article/4236023/ai-wont-kill-jobs-bad-team-design-will.html",
       "publishedAt": "2026-10-18T17:10:26Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-lhvl0c",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Hybro – an open interoperability engine for AI agents",
+      "excerpt": "I built an open interoperability engine for AI agents. Connect your favorite agents and harnesses. Work together. Appreciate for any feedback.",
+      "source": "Hacker News",
+      "url": "https://github.com/hybroai/hybro",
+      "publishedAt": "2026-10-18T23:41:45Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-4v30k",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "He Wants AI Benchmarking to Be a Science, Not a Dark Art",
+      "excerpt": "Hacker News 社区讨论：He Wants AI Benchmarking to Be a Science, Not a Dark Art",
+      "source": "Hacker News",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "publishedAt": "2026-10-18T23:19:00Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-x7kmg4",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Eight-Dimension Audit for AI Governance: Anthropic, EU, China, UK",
+      "excerpt": "Hacker News 社区讨论：Eight-Dimension Audit for AI Governance: Anthropic, EU, China, UK",
+      "source": "Hacker News",
+      "url": "https://sergemso.substack.com/p/ai-governance-eight-dimension-audit",
+      "publishedAt": "2026-10-18T22:40:23Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-vr9g1g",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Tkmd – A local CLI task manager and MCP server with AI agent review gates`",
+      "excerpt": "Hacker News 社区讨论：Tkmd – A local CLI task manager and MCP server with AI agent review gates`",
+      "source": "Hacker News",
+      "url": "https://github.com/ktreharrison/tkmd",
+      "publishedAt": "2026-10-18T22:27:30Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-w3u5co",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Meta Built a New App with AI-Native Engineering",
+      "excerpt": "Hacker News 社区讨论：Meta Built a New App with AI-Native Engineering",
+      "source": "Hacker News",
+      "url": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+      "publishedAt": "2026-10-18T22:27:23Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-9aug6w",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Trustbut checks if an AI agent's new tests fail without its change",
+      "excerpt": "Hacker News 社区讨论：Trustbut checks if an AI agent's new tests fail without its change",
+      "source": "Hacker News",
+      "url": "https://github.com/isAlmogK/trustbut",
+      "publishedAt": "2026-10-18T19:07:31Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1m8aaz1",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Snitch – see every connection your computer makes",
+      "excerpt": "Hacker News 社区讨论：Show HN: Snitch – see every connection your computer makes",
+      "source": "Hacker News",
+      "url": "https://github.com/aixisstudio/Snitch",
+      "publishedAt": "2026-10-18T18:52:27Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1qwi63j",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Is the Uber Moment for Mathematics",
+      "excerpt": "Hacker News 社区讨论：AI Is the Uber Moment for Mathematics",
+      "source": "Hacker News",
+      "url": "https://greyenlightenment.com/2026/09/27/ai-is-the-uber-moment-for-mathematics/",
+      "publishedAt": "2026-10-18T17:18:59Z",
       "sourceKind": "community"
     },
     {
@@ -716,6 +749,39 @@
       "source": "Hacker News",
       "url": "https://taoofmac.com/space/reviews/2026/10/18/1646",
       "publishedAt": "2026-10-18T16:45:33Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-5yj4y1",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Firmendaten: Parsed balance sheets for every Austrian company",
+      "excerpt": "Ever since January 2025 the Austrian Ministry of Justice has made the Firmenbuch public (and free!) as part of the EUs Open Data Directive. Firmendaten builds on that: we ingest the filings, extract the balance sheet figures (which, luckily, mostly come as an",
+      "source": "Hacker News",
+      "url": "https://firmendaten.researchly.at/bilanzen/vergleichen",
+      "publishedAt": "2026-10-18T16:41:14Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-117us4n",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Tell HN: I picked up knitting while waiting for my AI agent to complete",
+      "excerpt": "Any new hobbies you are willing to share that AI made you start?",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50142650",
+      "publishedAt": "2026-10-18T16:39:46Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-ldv4na",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "'I'm on a War Footing': Terry Tao and the Crisis in Math",
+      "excerpt": "https:&#x2F;&#x2F;archive.ph&#x2F;bid95",
+      "source": "Hacker News",
+      "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
+      "publishedAt": "2026-10-18T16:35:46Z",
       "sourceKind": "community"
     },
     {
@@ -826,72 +892,6 @@
       "source": "Hacker News",
       "url": "https://viablesystems.ai/writing/why-we-decided-to-open-source-relate",
       "publishedAt": "2026-10-18T15:12:53Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1jjlkwn",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "GhostOS – Lightweight, Offline Desktop AI Assistant (macOS/Win/Linux)",
-      "excerpt": "Hacker News 社区讨论：GhostOS – Lightweight, Offline Desktop AI Assistant (macOS/Win/Linux)",
-      "source": "Hacker News",
-      "url": "https://github.com/GhostOS-ai/GhostOS",
-      "publishedAt": "2026-10-18T15:08:54Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1y54jin",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Websites are closing their doors to AI agents",
-      "excerpt": "Hacker News 社区讨论：Websites are closing their doors to AI agents",
-      "source": "Hacker News",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-      "publishedAt": "2026-10-18T14:58:10Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-6iu81m",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: TaskPocket, a to-do app with an MCP server instead of built-in AI",
-      "excerpt": "Hacker News 社区讨论：Show HN: TaskPocket, a to-do app with an MCP server instead of built-in AI",
-      "source": "Hacker News",
-      "url": "https://taskpocket.io/",
-      "publishedAt": "2026-10-18T14:39:55Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1t6qys3",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "World Bank says 'small AI' could transform developing countries",
-      "excerpt": "Hacker News 社区讨论：World Bank says 'small AI' could transform developing countries",
-      "source": "Hacker News",
-      "url": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
-      "publishedAt": "2026-10-18T14:37:55Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1f44tvh",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "excerpt": "Hacker News 社区讨论：Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "source": "Hacker News",
-      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
-      "publishedAt": "2026-10-18T14:30:27Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1mn918c",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Coding Agents Build For The Grader They Imagine, Not The User",
-      "excerpt": "Hacker News 社区讨论：Coding Agents Build For The Grader They Imagine, Not The User",
-      "source": "Hacker News",
-      "url": "https://joinhandshake.com/research/ai/deepswe-reward-hacking/",
-      "publishedAt": "2026-10-18T14:28:33Z",
       "sourceKind": "community"
     }
   ]
