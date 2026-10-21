@@ -64,7 +64,7 @@ function applyStatic(){
     menu.querySelectorAll("[data-language]").forEach(item=>{
       const key=item.dataset.language,tail=item.querySelector("span");
       const textNode=[...item.childNodes].find(node=>node.nodeType===Node.TEXT_NODE&&node.textContent.trim());
-      if(textNode)textNode.textContent=" "+(labels[key]||key);
+      if(textNode)textNode.textContent=" "+({"zh":"🇨🇳","zh-TW":"🇭🇰","en":"🇺🇸"})[key]+" "+(labels[key]||key);
       if(tail)tail.textContent=key==="zh"?"简中":(key==="zh-TW"?"繁中":"EN");
       item.setAttribute("aria-checked",String(key===lang));
       item.classList.toggle("is-selected",key===lang);
