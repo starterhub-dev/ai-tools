@@ -161,7 +161,7 @@ const $=s=>document.querySelector(s);
 const reducedMotion=window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches===true;
 let initialRender=true;
 let renderMotionTimer=0;
-function renderCats(){ $("#cats").innerHTML=cats.map(c=>`<button class="cat ${c===active?"active":""}" data-c="${c}">${window.ASHI18n?.category(c)||c}</button>`).join("");document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{active=b.dataset.c;render({animate:true})})}
+function renderCats(){ $("#cats").innerHTML=cats.map(c=>`<button class="cat ${c===active?"active":""}" data-c="${c}">${window.ASHI18n?.category(c)||c}</button>`).join("");document.querySelectorAll(".cat").forEach(b=>b.onclick=()=>{active=b.dataset.c;renderCats();render({animate:true})})}
 function esc(s){return s.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 function normalize(s){return String(s||"").toLowerCase().replace(/[\s_\-]+/g,"").trim()}
 function toolSlug(name){
