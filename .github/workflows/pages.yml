@@ -58,6 +58,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Notify IndexNow
+        if: ${{ steps.freshness.outputs.current == 'true' }}
         continue-on-error: true
         run: |
           python - <<'PY'
