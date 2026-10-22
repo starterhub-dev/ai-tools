@@ -14,7 +14,8 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+  queue: max
 
 jobs:
   deploy:
@@ -38,11 +39,27 @@ jobs:
         with:
           path: .
 
+      - name: Check deployment freshness
+        id: freshness
+        shell: bash
+        run: |
+          git fetch --no-tags origin refs/heads/main
+          latest_main_sha="$(git rev-parse FETCH_HEAD)"
+          if [[ "$GITHUB_SHA" == "$latest_main_sha" ]]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+            echo "Fresh deployment: $GITHUB_SHA is the current main commit."
+          else
+            echo "current=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping stale deployment: workflow SHA $GITHUB_SHA; latest main SHA $latest_main_sha."
+          fi
+
       - name: Deploy
+        if: ${{ steps.freshness.outputs.current == 'true' }}
         id: deployment
         uses: actions/deploy-pages@v4
 
       - name: Notify IndexNow
+        if: ${{ steps.freshness.outputs.current == 'true' }}
         continue-on-error: true
         run: |
           python - <<'PY'
