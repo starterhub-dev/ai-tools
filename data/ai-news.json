@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T22:25:50.035Z",
+  "updatedAt": "2026-10-23T01:36:10.675Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -117,8 +117,8 @@
       "id": "news-vugk21",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "In financial services, the AI question is moving from the model to where it runs Farsight-AI • about 5 hours ago • 7",
-      "excerpt": "In financial services, the AI question is moving from the model to where it runs Farsight-AI • about 5 hours ago • 7。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "In financial services, the AI question is moving from the model to where it runs Farsight-AI • about 8 hours ago • 7",
+      "excerpt": "In financial services, the AI question is moving from the model to where it runs Farsight-AI • about 8 hours ago • 7。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/Farsight-AI/hf-and-farsight",
       "publishedAt": "2026-10-22T18:36:49.131Z",
@@ -367,6 +367,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-12ookyh",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox October 22, 2026",
+      "excerpt": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox October 22, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "publishedAt": "2026-10-22T00:00:00.000Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1fxbhjo",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -466,28 +477,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1292rev",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Backdoored robot tries its hand at finger chopping and cat cooking",
-      "excerpt": "Hacker News 社区讨论：Backdoored robot tries its hand at finger chopping and cat cooking",
-      "source": "Hacker News",
-      "url": "https://www.theregister.com/ai-and-ml/2026/10/22/backdoored-robot-tries-its-hand-at-finger-chopping-and-cat-cooking/5304870",
-      "publishedAt": "2026-10-22T20:21:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1wsz1mc",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Show HN: Secure your AI agents on Mac",
-      "excerpt": "Plango is a Mac native security suite for anyone running AI coding tools. It works by running a custom local security model that evaluates threats against the lethal trifecta (data access, communication, exposure). Some cool features: - Restrict Agent access b",
-      "source": "Hacker News",
-      "url": "https://installplango.com/",
-      "publishedAt": "2026-10-22T20:15:37Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-4seajp",
       "type": "abstract",
       "label": "🗿 AI 抽象",
@@ -499,14 +488,36 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1xphzki",
+      "id": "news-o1182n",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Node2Shell: Node.js Brotli vulnerability allows remote code execution",
+      "excerpt": "Hacker News 社区讨论：Node2Shell: Node.js Brotli vulnerability allows remote code execution",
+      "source": "Hacker News",
+      "url": "https://www.aikido.dev/blog/node2shell-nodejs-brotli-rce-cve-2026-111497",
+      "publishedAt": "2026-10-23T00:54:32Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-j99jmh",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Assure – formal verification for every PR",
+      "excerpt": "Hacker News 社区讨论：Assure – formal verification for every PR",
+      "source": "Hacker News",
+      "url": "https://symbolia.ai/",
+      "publishedAt": "2026-10-23T01:21:49Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-tfmos9",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
-      "excerpt": "Hacker News 社区讨论：Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+      "title": "AI compute is the new oil–and needs a new market",
+      "excerpt": "Hacker News 社区讨论：AI compute is the new oil–and needs a new market",
       "source": "Hacker News",
-      "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
-      "publishedAt": "2026-10-22T20:51:23Z",
+      "url": "https://www.economist.com/finance-and-economics/2026/10/22/ai-compute-is-the-new-oil-and-needs-a-new-market",
+      "publishedAt": "2026-10-22T23:45:16Z",
       "sourceKind": "community"
     },
     {
@@ -532,69 +543,113 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-llz3jz",
+      "id": "news-1mdsorw",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Banks Are Struggling to Protect Customers from Their Own AI Agents",
-      "excerpt": "Hacker News 社区讨论：Banks Are Struggling to Protect Customers from Their Own AI Agents",
+      "title": "US appeals court ejects judge from case over AI errors",
+      "excerpt": "Hacker News 社区讨论：US appeals court ejects judge from case over AI errors",
       "source": "Hacker News",
-      "url": "https://www.motherjones.com/politics/2026/10/banks-ai-axios-agents-rogue-financial-decisions-security/",
-      "publishedAt": "2026-10-22T19:23:44Z",
+      "url": "https://www.reuters.com/legal/government/appeals-court-lifts-block-mississippis-dei-ban-ejects-judge-over-ai-errors-2026-10-22/",
+      "publishedAt": "2026-10-22T23:11:19Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-1l2lo9n",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Linear A decipherment open-sourced",
-      "excerpt": "Test the proposed Semitic reading yourself and see all the work behind it",
-      "source": "Hacker News",
-      "url": "https://www.plasma.ai/research/linear-a",
-      "publishedAt": "2026-10-22T20:06:01Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-12dd169",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "US Banks Blocking AI Agents in Accounts",
-      "excerpt": "Hacker News 社区讨论：US Banks Blocking AI Agents in Accounts",
-      "source": "Hacker News",
-      "url": "https://the-decoder.com/major-us-banks-are-locking-out-ai-agents-that-log-in-with-customer-credentials/",
-      "publishedAt": "2026-10-22T19:22:23Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-tf5ng7",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Amazon is buying billions in Nvidia AI systems it can't yet turn on",
-      "excerpt": "Hacker News 社区讨论：Amazon is buying billions in Nvidia AI systems it can't yet turn on",
-      "source": "Hacker News",
-      "url": "https://www.businessinsider.com/amazon-nvidia-ai-gpu-data-centers-power-shortages-2026-10",
-      "publishedAt": "2026-10-22T19:33:50Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-zwsdcf",
+      "id": "news-19oxwu8",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "New prize launches for books co-written with AI",
-      "excerpt": "Hacker News 社区讨论：New prize launches for books co-written with AI",
+      "title": "Canva's first in-house AI image model plans designs before generating them",
+      "excerpt": "Hacker News 社区讨论：Canva's first in-house AI image model plans designs before generating them",
       "source": "Hacker News",
-      "url": "https://www.theguardian.com/books/2026/oct/21/new-prize-launches-books-co-written-with-ai-france",
-      "publishedAt": "2026-10-22T19:29:38Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+      "publishedAt": "2026-10-23T01:04:26Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-b69x13",
+      "id": "news-1jy1gqv",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Show HN: Forked – Git for AI agent state",
-      "excerpt": "Hacker News 社区讨论：Show HN: Forked – Git for AI agent state",
+      "title": "Scoop: Unvetted AI agents are accessing U.S. bank accounts",
+      "excerpt": "Hacker News 社区讨论：Scoop: Unvetted AI agents are accessing U.S. bank accounts",
       "source": "Hacker News",
-      "url": "https://github.com/clibequilibrium/forked",
-      "publishedAt": "2026-10-22T19:17:12Z",
+      "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access",
+      "publishedAt": "2026-10-23T00:06:50Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-3zdx18",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "GM Aims to Bring 'Eyes-Off' Driving to AI-Powered Cars Within 2 Years",
+      "excerpt": "Hacker News 社区讨论：GM Aims to Bring 'Eyes-Off' Driving to AI-Powered Cars Within 2 Years",
+      "source": "Hacker News",
+      "url": "https://www.nytimes.com/2026/10/21/business/gm-ai-electric-vehicles-china.html",
+      "publishedAt": "2026-10-23T00:06:18Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1hdp51e",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "From Eyeballs to ARR: Buzzy Pricing Metrics and the AI Trade",
+      "excerpt": "Hacker News 社区讨论：From Eyeballs to ARR: Buzzy Pricing Metrics and the AI Trade",
+      "source": "Hacker News",
+      "url": "https://aswathdamodaran.substack.com/p/from-eyeballs-to-arr-buzzy-pricing",
+      "publishedAt": "2026-10-23T00:05:56Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-jauto3",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "WolfSentry: WolfSSL's Embedded Intrusion Detection and Prevention System (IDPS)",
+      "excerpt": "Hacker News 社区讨论：WolfSentry: WolfSSL's Embedded Intrusion Detection and Prevention System (IDPS)",
+      "source": "Hacker News",
+      "url": "https://github.com/wolfSSL/wolfsentry",
+      "publishedAt": "2026-10-22T23:36:12Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1aa9vuk",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The Next Bottleneck in AI for Science",
+      "excerpt": "Hacker News 社区讨论：The Next Bottleneck in AI for Science",
+      "source": "Hacker News",
+      "url": "https://www.mixtureofexperts.co/p/the-next-bottleneck-in-ai-for-science",
+      "publishedAt": "2026-10-22T23:28:17Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-yg17r7",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Geoffrey Hinton: 'I think there's a 1% chance it will destroy us'",
+      "excerpt": "Hacker News 社区讨论：Geoffrey Hinton: 'I think there's a 1% chance it will destroy us'",
+      "source": "Hacker News",
+      "url": "https://english.elpais.com/science-tech/2026-10-21/geoffrey-hinton-the-godfather-of-ai-im-not-a-doomer-i-think-theres-a-1-chance-it-will-destroy-us.html",
+      "publishedAt": "2026-10-22T23:12:29Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-188dnbp",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Is Changing Everything About Hacking. No One Knows What Happens Next",
+      "excerpt": "Hacker News 社区讨论：AI Is Changing Everything About Hacking. No One Knows What Happens Next",
+      "source": "Hacker News",
+      "url": "https://www.404media.co/php2shell-black-october-ai-is-changing-everything-about-hacking-no-one-knows-what-happens-next/",
+      "publishedAt": "2026-10-22T23:07:16Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-otsf7n",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "A Surprise Map of a Book",
+      "excerpt": "Hacker News 社区讨论：A Surprise Map of a Book",
+      "source": "Hacker News",
+      "url": "https://phasefield.ai/blog_entry_2.html",
+      "publishedAt": "2026-10-22T22:33:40Z",
       "sourceKind": "community"
     },
     {
@@ -609,25 +664,58 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1u1lk2i",
+      "id": "news-tlp4wu",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Show HN: AI for Group Chats",
-      "excerpt": "Hacker News 社区讨论：Show HN: AI for Group Chats",
+      "title": "Show HN: GrillMyProfile – AI roast of your LinkedIn, scored against a job",
+      "excerpt": "Hacker News 社区讨论：Show HN: GrillMyProfile – AI roast of your LinkedIn, scored against a job",
       "source": "Hacker News",
-      "url": "https://boba.app/",
-      "publishedAt": "2026-10-22T21:08:25Z",
+      "url": "https://www.grillmyprofile.com/",
+      "publishedAt": "2026-10-23T01:20:10Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-mmpi58",
+      "id": "news-11v5t03",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "UPDATE: Anthropic's non-existant customer support",
-      "excerpt": "I know most people here are likely power users with ample token budgets but I am not. I use claude-cli (the 22$&#x2F;€ plan) for code in thesis related work in varying ways and a reset I had banked (valid until today) vanished from my account without warning o",
+      "title": "1Password launches a way for AI to log in for you without seeing your password",
+      "excerpt": "Hacker News 社区讨论：1Password launches a way for AI to log in for you without seeing your password",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50200555",
-      "publishedAt": "2026-10-22T20:27:50Z",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "publishedAt": "2026-10-23T01:08:49Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1d4megs",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Twitch Plays: Interpretability of Bonsai-8B",
+      "excerpt": "Hacker News 社区讨论：Twitch Plays: Interpretability of Bonsai-8B",
+      "source": "Hacker News",
+      "url": "https://www.lesswrong.com/posts/ozbbzsh49wvgfbCDp/twitch-plays-ai-interpretability-of-bonsai-8b",
+      "publishedAt": "2026-10-23T00:44:24Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-x9bspn",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "GPUs from stolen $500k Nvidia shipment at Brazil airport appear for sale online",
+      "excerpt": "Hacker News 社区讨论：GPUs from stolen $500k Nvidia shipment at Brazil airport appear for sale online",
+      "source": "Hacker News",
+      "url": "https://www.tomshardware.com/pc-components/gpus/gpus-from-nvidia-rtx-5090-stolen-usd470-000-shipment-from-brazil-airport-appear-for-sale-online-identified-by-serial-numbers-three-employees-identified-by-police-helped-steal-equipment",
+      "publishedAt": "2026-10-22T22:45:24Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-3dv440",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Cerebras Deploys Trillion-Parameter AI Models",
+      "excerpt": "Hacker News 社区讨论：Cerebras Deploys Trillion-Parameter AI Models",
+      "source": "Hacker News",
+      "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "publishedAt": "2026-10-22T22:41:21Z",
       "sourceKind": "community"
     },
     {
@@ -643,24 +731,13 @@
     },
     {
       "id": "news-nc6gj2",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Liquid AI launches sub-20ms latency stack",
-      "excerpt": "Hacker News 社区讨论：Liquid AI launches sub-20ms latency stack",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "RIPL: Real-time Intelligence When Every Millisecond Counts",
+      "excerpt": "Hacker News 社区讨论：RIPL: Real-time Intelligence When Every Millisecond Counts",
       "source": "Hacker News",
       "url": "https://www.liquid.ai/blog/low-latency",
       "publishedAt": "2026-10-22T22:11:16Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1qcwz4n",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: MarketMee – Builds marketing material from every push to GitHub",
-      "excerpt": "I’ve shipped several SaaS products, and the largest problem has always been the same…marketing. This pain point has become even worse due to the ease of building products with AI. But now, because of AI, we can simplify the marketing process and include it in ",
-      "source": "Hacker News",
-      "url": "https://marketmee.app/",
-      "publishedAt": "2026-10-22T22:10:16Z",
       "sourceKind": "community"
     },
     {
@@ -708,6 +785,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1qcwz4n",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Show HN: MarketMee – Builds marketing material from every push to GitHub",
+      "excerpt": "I’ve shipped several SaaS products, and the largest problem has always been the same…marketing. This pain point has become even worse due to the ease of building products with AI. But now, because of AI, we can simplify the marketing process and include it in",
+      "source": "Hacker News",
+      "url": "https://marketmee.app/",
+      "publishedAt": "2026-10-22T22:10:16Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-sqlfgn",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -727,6 +815,17 @@
       "source": "Hacker News",
       "url": "https://mvndy.cl/blog/a-sort-of-declaration",
       "publishedAt": "2026-10-22T21:18:27Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1u1lk2i",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: AI for Group Chats",
+      "excerpt": "Hacker News 社区讨论：Show HN: AI for Group Chats",
+      "source": "Hacker News",
+      "url": "https://boba.app/",
+      "publishedAt": "2026-10-22T21:08:25Z",
       "sourceKind": "community"
     },
     {
@@ -752,6 +851,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-1xphzki",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+      "excerpt": "Hacker News 社区讨论：Most Americans Say AI Is Bad for Society, Oppose More Data Centers",
+      "source": "Hacker News",
+      "url": "https://abcnews.com/Politics/americans-ai-bad-society-oppose-data-centers-abcpostipsos/story?id=137414085",
+      "publishedAt": "2026-10-22T20:51:23Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1mxa2z9",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -763,135 +873,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-12kxnz6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Messaging for AI Agents",
-      "excerpt": "Hacker News 社区讨论：Messaging for AI Agents",
-      "source": "Hacker News",
-      "url": "https://trycrabmail.com/",
-      "publishedAt": "2026-10-22T19:38:13Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-ebbwjb",
+      "id": "news-mmpi58",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "Why AI Agents Need Shared Experience, Not Just Better Models",
-      "excerpt": "Hacker News 社区讨论：Why AI Agents Need Shared Experience, Not Just Better Models",
+      "title": "UPDATE: Anthropic's non-existant customer support",
+      "excerpt": "I know most people here are likely power users with ample token budgets but I am not. I use claude-cli (the 22$&#x2F;€ plan) for code in thesis related work in varying ways and a reset I had banked (valid until today) vanished from my account without warning o",
       "source": "Hacker News",
-      "url": "https://project507.substack.com/p/the-five-senses-of-artificial-intelligence",
-      "publishedAt": "2026-10-22T19:13:21Z",
+      "url": "https://news.ycombinator.com/item?id=50200555",
+      "publishedAt": "2026-10-22T20:27:50Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-uh6pgo",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: Mnemolith – AI coding memory that goes stale when your code changes",
-      "excerpt": "Hi HN, I&#x27;m Anish. I built Mnemolith because the AI coding tools I use (Claude Code, Cursor, Codex) either forget my project between sessions, or remember things that quietly stopped being true. Tell the agent \"we use Postgres\", migrate to MySQL two weeks ",
+      "id": "news-1292rev",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Backdoored robot tries its hand at finger chopping and cat cooking",
+      "excerpt": "Hacker News 社区讨论：Backdoored robot tries its hand at finger chopping and cat cooking",
       "source": "Hacker News",
-      "url": "https://github.com/anishchugh05/mnemolith",
-      "publishedAt": "2026-10-22T18:59:50Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-wss99b",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: UI micro interactions prompts for AI",
-      "excerpt": "Hacker News 社区讨论：Show HN: UI micro interactions prompts for AI",
-      "source": "Hacker News",
-      "url": "https://www.typeui.sh/micro-interactions",
-      "publishedAt": "2026-10-22T18:32:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-n6kff5",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "United Airlines CEO Calls for National Wealth Tax",
-      "excerpt": "Hacker News 社区讨论：United Airlines CEO Calls for National Wealth Tax",
-      "source": "Hacker News",
-      "url": "https://firstformoney.com/united-airlines-ceo-calls-for-national-wealth-tax-inheritance-tax-i-would-pay-them/",
-      "publishedAt": "2026-10-22T18:31:35Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1ubdg8l",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Award-Winning AI Literature",
-      "excerpt": "Hacker News 社区讨论：Award-Winning AI Literature",
-      "source": "Hacker News",
-      "url": "https://jamesyu.org/award-winning-ai-literature/",
-      "publishedAt": "2026-10-22T18:28:26Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-u218q6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI and the Enclosure of the Scientific Commons",
-      "excerpt": "Hacker News 社区讨论：AI and the Enclosure of the Scientific Commons",
-      "source": "Hacker News",
-      "url": "https://arxiv.org/abs/2610.27251",
-      "publishedAt": "2026-10-22T18:28:16Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-19cus3e",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
-      "excerpt": "Hacker News 社区讨论：Vulnerability Discovery and Exploitation Trends in the AI Era",
-      "source": "Hacker News",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
-      "publishedAt": "2026-10-22T18:26:23Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-16jhq4h",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: Decido – an open decision model that runs CPU-only on a laptop",
-      "excerpt": "Hacker News 社区讨论：Show HN: Decido – an open decision model that runs CPU-only on a laptop",
-      "source": "Hacker News",
-      "url": "https://github.com/decido-ai/decido",
-      "publishedAt": "2026-10-22T18:18:32Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1gl5ef0",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Security Sweet: Get your AI agents on a leash for security patch",
-      "excerpt": "Hacker News 社区讨论：Security Sweet: Get your AI agents on a leash for security patch",
-      "source": "Hacker News",
-      "url": "https://github.com/blencorp/security-sweep",
-      "publishedAt": "2026-10-22T18:10:38Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-16fpc5t",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Meta and chip stocks decline as AI trade comes under pressure",
-      "excerpt": "Hacker News 社区讨论：Meta and chip stocks decline as AI trade comes under pressure",
-      "source": "Hacker News",
-      "url": "https://finance.yahoo.com/markets/article/meta-and-chip-stocks-decline-as-ai-trade-comes-under-pressure-alphacheck-140107733.html",
-      "publishedAt": "2026-10-22T18:08:30Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-5gtl5j",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "I built a free library of 900 motion design techniques you can recreate with AI",
-      "excerpt": "Hacker News 社区讨论：I built a free library of 900 motion design techniques you can recreate with AI",
-      "source": "Hacker News",
-      "url": "https://oneshotprompts.com/",
-      "publishedAt": "2026-10-22T18:05:20Z",
+      "url": "https://www.theregister.com/ai-and-ml/2026/10/22/backdoored-robot-tries-its-hand-at-finger-chopping-and-cat-cooking/5304870",
+      "publishedAt": "2026-10-22T20:21:46Z",
       "sourceKind": "community"
     }
   ]
