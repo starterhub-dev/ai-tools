@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T22:33:11.586Z",
+  "updatedAt": "2026-10-25T01:15:50.669Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -14,17 +14,6 @@
     ]
   },
   "items": [
-    {
-      "id": "news-etffr5",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "No signs of AI payoff outside the tech sector",
-      "excerpt": "Hacker News 社区讨论：No signs of AI payoff outside the tech sector",
-      "source": "Hacker News",
-      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-      "publishedAt": "2026-10-24T19:47:19Z",
-      "sourceKind": "community"
-    },
     {
       "id": "news-1d0yruq",
       "type": "major",
@@ -183,8 +172,8 @@
       "id": "news-jpxq9u",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models nvidia • 3 days ago • 51",
-      "excerpt": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models nvidia • 3 days ago • 51。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models nvidia • 4 days ago • 51",
+      "excerpt": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with World-Class Retrieval Models nvidia • 4 days ago • 51。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
       "publishedAt": "2026-10-21T13:54:35.474Z",
@@ -238,8 +227,8 @@
       "id": "news-22ndh9",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 54 October 16, 2026",
-      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 54 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 55 October 16, 2026",
+      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 55 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/reflection-beam",
       "publishedAt": "2026-10-19T00:00:00.000Z",
@@ -414,8 +403,8 @@
       "id": "news-17h2vlk",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability nvidia • 3 days ago • 9",
-      "excerpt": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability nvidia • 3 days ago • 9。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability nvidia • 4 days ago • 9",
+      "excerpt": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability nvidia • 4 days ago • 9。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
       "publishedAt": "2026-10-22T01:35:48.442Z",
@@ -447,8 +436,8 @@
       "id": "news-pdniue",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories nvidia • 3 days ago • 25",
-      "excerpt": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories nvidia • 3 days ago • 25。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories nvidia • 4 days ago • 25",
+      "excerpt": "Announcing SimReady Central: An Open Library of Simulation-Ready 3D Assets for Robotics and AI Factories nvidia • 4 days ago • 25。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/nvidia/simready-central-assets-robotics-ai-factories",
       "publishedAt": "2026-10-21T22:26:21.962Z",
@@ -543,14 +532,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-10y0zg5",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "What if you could have AI applied to your brain?",
-      "excerpt": "Imagine this. You can control Alexa with your voice and ask it to play songs, remember grocery lists, add reminders to your calendar. Elon Musk&#x27;s Neuralink can interface with your brain and reduce the latency with which you can communicate with computers.",
+      "id": "news-18s2gd2",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
+      "excerpt": "Hacker News 社区讨论：America Has Lost 200k of Jobs in Media, Film and the Arts. How Much Is AI?",
       "source": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=50223726",
-      "publishedAt": "2026-10-24T18:16:47Z",
+      "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+      "publishedAt": "2026-10-24T23:11:54Z",
       "sourceKind": "community"
     },
     {
@@ -565,14 +554,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-4q9xbo",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: Narro – Read web pages and Kindle books using local AI voices",
-      "excerpt": "I wanted a read-aloud extension that could read from the Kindle Online Reader. The ones I tried used voices I did not enjoy listening to or had a UX that was too cluttered or annoying or needed a signup. So I decided to vibe code my own. It is open source and ",
+      "id": "news-d1rbc6",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Making My Blog Readable by AI Agents",
+      "excerpt": "Hacker News 社区讨论：Making My Blog Readable by AI Agents",
       "source": "Hacker News",
-      "url": "https://github.com/swrdfish/narro",
-      "publishedAt": "2026-10-24T19:37:32Z",
+      "url": "https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents",
+      "publishedAt": "2026-10-24T21:21:33Z",
       "sourceKind": "community"
     },
     {
@@ -598,47 +587,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-11jou42",
+      "id": "news-17iy5o4",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "AI: EU Member States approve \"digital expropriation\" for AI companies",
-      "excerpt": "Hacker News 社区讨论：AI: EU Member States approve \"digital expropriation\" for AI companies",
+      "title": "Your tokens aren't valuable: No more AI",
+      "excerpt": "Hacker News 社区讨论：Your tokens aren't valuable: No more AI",
       "source": "Hacker News",
-      "url": "https://noyb.eu/en/ai-eu-member-states-approve-digital-expropriation-europeans-ai-companies",
-      "publishedAt": "2026-10-24T18:33:34Z",
+      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai/",
+      "publishedAt": "2026-10-24T23:30:45Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-it4tz2",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Which AI in UX or HCI conference is in your radar for 2027?",
-      "excerpt": "Hacker News 社区讨论：Which AI in UX or HCI conference is in your radar for 2027?",
+      "id": "news-ljt1dm",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "AI Generated launch videos are starting to get insane",
+      "excerpt": "Hacker News 社区讨论：AI Generated launch videos are starting to get insane",
       "source": "Hacker News",
-      "url": "https://www.uxness.in/2026/08/top-ux-conferences-to-attend-in-2027.html",
-      "publishedAt": "2026-10-24T20:48:44Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1p6k8l4",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Who Pays for AI Data Centers?",
-      "excerpt": "Hacker News 社区讨论：Who Pays for AI Data Centers?",
-      "source": "Hacker News",
-      "url": "https://www.youtube.com/watch?v=NyOeLB0WVNE",
-      "publishedAt": "2026-10-24T19:09:16Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-cw7tnz",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "The AI Trade Is Shifting from Chip Stocks to Cybersecurity",
-      "excerpt": "Hacker News 社区讨论：The AI Trade Is Shifting from Chip Stocks to Cybersecurity",
-      "source": "Hacker News",
-      "url": "https://www.barrons.com/articles/ai-chip-stocks-cybersecurity-crowdstrike-palo-alto-056aaea8",
-      "publishedAt": "2026-10-24T18:13:39Z",
+      "url": "https://motioncrackers.com/",
+      "publishedAt": "2026-10-24T22:58:20Z",
       "sourceKind": "community"
     },
     {
@@ -650,6 +617,17 @@
       "source": "Hacker News",
       "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
       "publishedAt": "2026-10-24T21:31:16Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-it4tz2",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Which AI in UX or HCI conference is in your radar for 2027?",
+      "excerpt": "Hacker News 社区讨论：Which AI in UX or HCI conference is in your radar for 2027?",
+      "source": "Hacker News",
+      "url": "https://www.uxness.in/2026/08/top-ux-conferences-to-attend-in-2027.html",
+      "publishedAt": "2026-10-24T20:48:44Z",
       "sourceKind": "community"
     },
     {
@@ -686,25 +664,91 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-g92kng",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "The Fed Faces Its Most Confusing Economy Yet",
-      "excerpt": "Hacker News 社区讨论：The Fed Faces Its Most Confusing Economy Yet",
+      "id": "news-ie4ywh",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Forced to pick, Grok's AI model chooses Republicans. OpenAI's picks Democrats",
+      "excerpt": "Hacker News 社区讨论：Forced to pick, Grok's AI model chooses Republicans. OpenAI's picks Democrats",
       "source": "Hacker News",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-23/federal-reserve-interest-rate-decision-faces-challenges-from-ai-inflation-war",
-      "publishedAt": "2026-10-24T19:59:35Z",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "publishedAt": "2026-10-25T01:07:24Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-nf12i8",
+      "id": "news-z9pan9",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Chess Arena – Minimal chess vs. Hard AI (vanilla JavaScript, no login)",
-      "excerpt": "Hacker News 社区讨论：Chess Arena – Minimal chess vs. Hard AI (vanilla JavaScript, no login)",
+      "title": "Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
+      "excerpt": "Hacker News 社区讨论：Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
       "source": "Hacker News",
-      "url": "https://playgama.ai/play/xl6duef7p3",
-      "publishedAt": "2026-10-24T18:25:53Z",
+      "url": "https://adrs.systems/",
+      "publishedAt": "2026-10-25T00:43:47Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-o7d1aq",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Rin Chat – An Easy to Use AI Roleplay App",
+      "excerpt": "Hacker News 社区讨论：Rin Chat – An Easy to Use AI Roleplay App",
+      "source": "Hacker News",
+      "url": "https://aicharactercards.com/",
+      "publishedAt": "2026-10-24T23:32:57Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-hul7v8",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Show HN: Sparse kernel delivering 36% higher training throughput",
+      "excerpt": "I developed a custom GPU kernel in Triton to accelerate training with a sparse feed-forward network (FFN). With K=256, activating 256 of 4,096 FFN neurons per token (6.25%), the sparse model achieved 36% higher training throughput than its dense counterpart. T",
+      "source": "Hacker News",
+      "url": "https://huggingface.co/JakCwi/eugen-sparse",
+      "publishedAt": "2026-10-24T23:25:57Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-janjak",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Show HN: Omni Verify, my AI agent can't post until Kane checks every promise",
+      "excerpt": "Hacker News 社区讨论：Show HN: Omni Verify, my AI agent can't post until Kane checks every promise",
+      "source": "Hacker News",
+      "url": "https://github.com/DainoJung/omni-verify",
+      "publishedAt": "2026-10-24T23:15:01Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-nk47y4",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "What we learned making 12 apps usable by AI agents with WebMCP",
+      "excerpt": "Hacker News 社区讨论：What we learned making 12 apps usable by AI agents with WebMCP",
+      "source": "Hacker News",
+      "url": "https://mindoodb.com/blog/2026/10/27.10.2026090000KLEAGT/",
+      "publishedAt": "2026-10-24T22:59:31Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-60q2hh",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Is Planning to Kill You",
+      "excerpt": "Hacker News 社区讨论：AI Is Planning to Kill You",
+      "source": "Hacker News",
+      "url": "https://hanzo.blog/2026-10-16-your-ai-is-planning-to-kill-you/",
+      "publishedAt": "2026-10-24T22:40:45Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-alpf39",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Airbnb Sets New Rules That Limit Checkout Chores",
+      "excerpt": "Hacker News 社区讨论：Airbnb Sets New Rules That Limit Checkout Chores",
+      "source": "Hacker News",
+      "url": "https://www.airbnb.com/help/article/4168",
+      "publishedAt": "2026-10-24T22:32:46Z",
       "sourceKind": "community"
     },
     {
@@ -716,17 +760,6 @@
       "source": "Hacker News",
       "url": "https://news.ycombinator.com/item?id=50225469",
       "publishedAt": "2026-10-24T21:23:44Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-d1rbc6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Making My Blog Readable by AI Agents",
-      "excerpt": "Hacker News 社区讨论：Making My Blog Readable by AI Agents",
-      "source": "Hacker News",
-      "url": "https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents",
-      "publishedAt": "2026-10-24T21:21:33Z",
       "sourceKind": "community"
     },
     {
@@ -796,6 +829,50 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-g92kng",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The Fed Faces Its Most Confusing Economy Yet",
+      "excerpt": "Hacker News 社区讨论：The Fed Faces Its Most Confusing Economy Yet",
+      "source": "Hacker News",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-23/federal-reserve-interest-rate-decision-faces-challenges-from-ai-inflation-war",
+      "publishedAt": "2026-10-24T19:59:35Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-etffr5",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "No signs of AI payoff outside the tech sector",
+      "excerpt": "Hacker News 社区讨论：No signs of AI payoff outside the tech sector",
+      "source": "Hacker News",
+      "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+      "publishedAt": "2026-10-24T19:47:19Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-4q9xbo",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Show HN: Narro – Read web pages and Kindle books using local AI voices",
+      "excerpt": "I wanted a read-aloud extension that could read from the Kindle Online Reader. The ones I tried used voices I did not enjoy listening to or had a UX that was too cluttered or annoying or needed a signup. So I decided to vibe code my own. It is open source and",
+      "source": "Hacker News",
+      "url": "https://github.com/swrdfish/narro",
+      "publishedAt": "2026-10-24T19:37:32Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1p6k8l4",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Who Pays for AI Data Centers?",
+      "excerpt": "Hacker News 社区讨论：Who Pays for AI Data Centers?",
+      "source": "Hacker News",
+      "url": "https://www.youtube.com/watch?v=NyOeLB0WVNE",
+      "publishedAt": "2026-10-24T19:09:16Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-aeag7c",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -807,91 +884,14 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-tpj73d",
+      "id": "news-11jou42",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Local inferencing in one JVM JAR, dependency free, faster than llama.cpp",
-      "excerpt": "Hacker News 社区讨论：Local inferencing in one JVM JAR, dependency free, faster than llama.cpp",
+      "title": "AI: EU Member States approve \"digital expropriation\" for AI companies",
+      "excerpt": "Hacker News 社区讨论：AI: EU Member States approve \"digital expropriation\" for AI companies",
       "source": "Hacker News",
-      "url": "https://qxotic.ai/",
-      "publishedAt": "2026-10-24T18:11:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1wzrk17",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Why is AI generated language so hard to understand?",
-      "excerpt": "Hacker News 社区讨论：Why is AI generated language so hard to understand?",
-      "source": "Hacker News",
-      "url": "https://arxiv.org/abs/2610.29162",
-      "publishedAt": "2026-10-24T18:04:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-cvf5o4",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "I created an selfimproment AI predictions site for soccer",
-      "excerpt": "Hacker News 社区讨论：I created an selfimproment AI predictions site for soccer",
-      "source": "Hacker News",
-      "url": "https://road2sushi.com/",
-      "publishedAt": "2026-10-24T18:04:42Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1l3fn5g",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: AI Trend Video – Put your photo into viral AI video templates",
-      "excerpt": "Hacker News 社区讨论：Show HN: AI Trend Video – Put your photo into viral AI video templates",
-      "source": "Hacker News",
-      "url": "https://aitrendvideo.net/",
-      "publishedAt": "2026-10-24T18:03:05Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1vwy1tj",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Norwegian AI Championship 2027",
-      "excerpt": "Hacker News 社区讨论：Norwegian AI Championship 2027",
-      "source": "Hacker News",
-      "url": "https://ainm.no/",
-      "publishedAt": "2026-10-24T18:01:56Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-73ywak",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: A Platform to Find Essays, personally recommended to you",
-      "excerpt": "Reading a book is great, when you know it will be good. Reading news is great, when you know it will be interesting, and the same with essays. Inability to find great content to read became a huge pain point for me after I read through Paul Graham&#x27;s essay",
-      "source": "Hacker News",
-      "url": "https://essaypod.com/",
-      "publishedAt": "2026-10-24T18:01:44Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-m7y5b5",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "For the next two weeks, we're covering $1M in security scans and fixes",
-      "excerpt": "Hacker News 社区讨论：For the next two weeks, we're covering $1M in security scans and fixes",
-      "source": "Hacker News",
-      "url": "https://www.coderabbit.ai/blog/one-million-security-scans-and-fixes",
-      "publishedAt": "2026-10-24T17:58:17Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1idh7t1",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Forget Live Aid, Africa is only a broken continent in the minds of the West",
-      "excerpt": "Hacker News 社区讨论：Forget Live Aid, Africa is only a broken continent in the minds of the West",
-      "source": "Hacker News",
-      "url": "https://www.theguardian.com/global-development/2026/oct/24/forget-the-live-aid-image-africa-is-only-a-broken-continent-in-the-minds-of-the-west",
-      "publishedAt": "2026-10-24T17:52:06Z",
+      "url": "https://noyb.eu/en/ai-eu-member-states-approve-digital-expropriation-europeans-ai-companies",
+      "publishedAt": "2026-10-24T18:33:34Z",
       "sourceKind": "community"
     }
   ]
