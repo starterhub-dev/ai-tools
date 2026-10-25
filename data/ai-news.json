@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-25T17:05:17.507Z",
+  "updatedAt": "2026-10-25T19:43:30.340Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -227,8 +227,8 @@
       "id": "news-22ndh9",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 56 October 16, 2026",
-      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 56 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 57 October 16, 2026",
+      "excerpt": "open-source-collab llm transformers Welcome Beam: a 501B open model you can own, customize, and scale 57 October 16, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/reflection-beam",
       "publishedAt": "2026-10-19T00:00:00.000Z",
@@ -293,8 +293,8 @@
       "id": "news-4mz76n",
       "type": "abstract",
       "label": "🗿 AI 抽象",
-      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications 26 October 21, 2026",
-      "excerpt": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications 26 October 21, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications 28 October 21, 2026",
+      "excerpt": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications 28 October 21, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
       "publishedAt": "2026-10-21T00:00:00.000Z",
@@ -381,8 +381,8 @@
       "id": "news-121yios",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Mundo: From seeing a place to simulating what happens there Luo-Yihang • 2 days ago • 50",
-      "excerpt": "Mundo: From seeing a place to simulating what happens there Luo-Yihang • 2 days ago • 50。来自 Hugging Face 的公开更新，点击查看原文。",
+      "title": "Mundo: From seeing a place to simulating what happens there Luo-Yihang • 2 days ago • 52",
+      "excerpt": "Mundo: From seeing a place to simulating what happens there Luo-Yihang • 2 days ago • 52。来自 Hugging Face 的公开更新，点击查看原文。",
       "source": "Hugging Face",
       "url": "https://huggingface.co/blog/Luo-Yihang/mundo-world-model",
       "publishedAt": "2026-10-23T13:33:14.723Z",
@@ -521,14 +521,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-1kf9y6r",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "R/open source bans all solo projects and projects using LLMs",
-      "excerpt": "Hacker News 社区讨论：R/open source bans all solo projects and projects using LLMs",
+      "id": "news-54i7k9",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Show HN: Open Accountant – AI-customizable budgeting app for freelancers",
+      "excerpt": "This is my own very opinionated take on personal accounting &#x2F; budgeting for freelancers and small business owners operating in multiple currencies. A lot of this is influenced by my circumstances: - consultant &#x2F; freelancer &#x2F; business owner with ",
       "source": "Hacker News",
-      "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
-      "publishedAt": "2026-10-25T14:05:03Z",
+      "url": "https://github.com/finereli/open-accountant",
+      "publishedAt": "2026-10-25T18:18:13Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1spadye",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Free AI education: certifications, hands-on technical courses, and resources",
+      "excerpt": "Hacker News 社区讨论：Free AI education: certifications, hands-on technical courses, and resources",
+      "source": "Hacker News",
+      "url": "https://www.aicertificationcouncil.com/",
+      "publishedAt": "2026-10-25T18:31:23Z",
       "sourceKind": "community"
     },
     {
@@ -543,28 +554,6 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-th2jv9",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Open-Source Cybersecurity Platform Uses AI Agents to Protect Businesses",
-      "excerpt": "Hacker News 社区讨论：Show HN: Open-Source Cybersecurity Platform Uses AI Agents to Protect Businesses",
-      "source": "Hacker News",
-      "url": "https://medium.com/@thomasunise/this-open-source-cybersecurity-platform-uses-ai-agents-to-detect-threats-and-protect-businesses-762e65392b42",
-      "publishedAt": "2026-10-25T13:41:19Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-gwsx2q",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "The AI graveyard: a running list of projects and startups that didn't make it",
-      "excerpt": "Hacker News 社区讨论：The AI graveyard: a running list of projects and startups that didn't make it",
-      "source": "Hacker News",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "publishedAt": "2026-10-25T13:16:49Z",
-      "sourceKind": "community"
-    },
-    {
       "id": "news-1mzejmn",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -573,72 +562,6 @@
       "source": "Hacker News",
       "url": "https://www.theatlantic.com/ideas/2026/10/ai-math-human-future/689133/",
       "publishedAt": "2026-10-25T16:31:21Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-bdj12n",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Kolo – share your AI coding sessions with anyone",
-      "excerpt": "Hacker News 社区讨论：Show HN: Kolo – share your AI coding sessions with anyone",
-      "source": "Hacker News",
-      "url": "https://github.com/komovaar/kolo",
-      "publishedAt": "2026-10-25T13:49:15Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-14fwr3w",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Rewriting Excel, PowerPoint, and Word for Agents",
-      "excerpt": "Hacker News 社区讨论：Rewriting Excel, PowerPoint, and Word for Agents",
-      "source": "Hacker News",
-      "url": "https://getcompound.ai/blog/rewriting-excel-powerpoint-and-word-for-agents",
-      "publishedAt": "2026-10-25T16:06:14Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-sd4r3g",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "If AI Can Copy Photoshop, Why Would Anyone Build the Next Figma?",
-      "excerpt": "Hacker News 社区讨论：If AI Can Copy Photoshop, Why Would Anyone Build the Next Figma?",
-      "source": "Hacker News",
-      "url": "https://www.vincentschmalbach.com/if-ai-can-copy-photoshop-why-build-the-next-figma/",
-      "publishedAt": "2026-10-25T15:20:51Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-oz44g6",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "AI Gateway Benchmark: OpenRouter, Vercel, Ramp, Keln",
-      "excerpt": "Hacker News 社区讨论：AI Gateway Benchmark: OpenRouter, Vercel, Ramp, Keln",
-      "source": "Hacker News",
-      "url": "https://keln.ai/blog/ai-gateway-benchmark-deepseek-v4-1-flash",
-      "publishedAt": "2026-10-25T16:53:40Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-iyktjr",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Show HN: Junior – an open-source AI junior engineer that runs on your Mac",
-      "excerpt": "Hi HN, I&#x27;m Samar, a software engineer. I built Junior because I was spending more time fixing CI issues, babysitting PRs and resolving merge conflicts. I thought maybe i should automate all of it, and that&#x27;s why I started building Junior. Junior is a",
-      "source": "Hacker News",
-      "url": "https://github.com/usejunior-sh/junior",
-      "publishedAt": "2026-10-25T16:45:33Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-75vgz9",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Turning real engineering stories into HBO' Silicon Valley 2.0 AI episodes",
-      "excerpt": "Hacker News 社区讨论：Turning real engineering stories into HBO' Silicon Valley 2.0 AI episodes",
-      "source": "Hacker News",
-      "url": "https://dramadrama.ai/share-your-story/",
-      "publishedAt": "2026-10-25T16:39:48Z",
       "sourceKind": "community"
     },
     {
@@ -653,14 +576,25 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-17kdgye",
+      "id": "news-13ay82z",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Is Anybody Out There? Art in the Post-AI Era",
-      "excerpt": "Hacker News 社区讨论：Is Anybody Out There? Art in the Post-AI Era",
+      "title": "Ask HN: What is the main bottleneck facing Agentic AI today?",
+      "excerpt": "Hey guys, today I read a statistic that showed that Agentic traffic surpassed human traffic on the internet and that statistic was very shocking to me. At the same time I saw another statistic that showed only 10% of agents built, actually get into production.",
       "source": "Hacker News",
-      "url": "https://programmingattack.com/articles/is-anybody-out-there-art-in-the-post-ai-era/",
-      "publishedAt": "2026-10-25T16:24:21Z",
+      "url": "https://news.ycombinator.com/item?id=50234108",
+      "publishedAt": "2026-10-25T17:52:28Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-4cr2mg",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Boom Looks a Lot Like the Housing Bubble",
+      "excerpt": "Hacker News 社区讨论：AI Boom Looks a Lot Like the Housing Bubble",
+      "source": "Hacker News",
+      "url": "https://www.nytimes.com/2026/10/25/opinion/ai-bubble-financial-crisis-lehman.html",
+      "publishedAt": "2026-10-25T18:00:28Z",
       "sourceKind": "community"
     },
     {
@@ -675,36 +609,47 @@
       "sourceKind": "community"
     },
     {
-      "id": "news-cupgh2",
+      "id": "news-skl46m",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Subreddit R/opensource banned all AI so we made a subreddit for you to post in",
-      "excerpt": "Hacker News 社区讨论：Subreddit R/opensource banned all AI so we made a subreddit for you to post in",
+      "title": "People are using AI to 'dumb down' their smart TVs. Is that a good idea?",
+      "excerpt": "Hacker News 社区讨论：People are using AI to 'dumb down' their smart TVs. Is that a good idea?",
       "source": "Hacker News",
-      "url": "https://reddit.com/opensource_projects",
-      "publishedAt": "2026-10-25T15:03:44Z",
+      "url": "https://www.cbc.ca/news/world/ai-coding-hack-smart-tvs-9.7392179",
+      "publishedAt": "2026-10-25T19:10:53Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-16dvui5",
+      "id": "news-1yqt4ak",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "r/open source just banned AI, non-English speakers and more",
-      "excerpt": "Hacker News 社区讨论：r/open source just banned AI, non-English speakers and more",
+      "title": "AI didn't cause the tech jobs bust, but it explains why there's no recovery",
+      "excerpt": "Hacker News 社区讨论：AI didn't cause the tech jobs bust, but it explains why there's no recovery",
       "source": "Hacker News",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "publishedAt": "2026-10-25T14:06:54Z",
+      "url": "https://vithushansylvester.com/writing/the-real-impact-of-ai-on-tech-jobs",
+      "publishedAt": "2026-10-25T18:42:23Z",
       "sourceKind": "community"
     },
     {
-      "id": "news-49fl0p",
+      "id": "news-1v5dvpk",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Apollo's Slok Says AI Has Delivered Zero Payoff Outside of Tech",
-      "excerpt": "Hacker News 社区讨论：Apollo's Slok Says AI Has Delivered Zero Payoff Outside of Tech",
+      "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+      "excerpt": "Hacker News 社区讨论：AI delivers 'zero financial payoff' to most companies, Apollo economist says",
       "source": "Hacker News",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-provides-zero-payoff-to-s-p-493-outside-tech-apollo-economist-says",
-      "publishedAt": "2026-10-25T13:56:49Z",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "publishedAt": "2026-10-25T18:18:04Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-mq99bu",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "China's first AI-generated film hits cinemas but ticket sales lag",
+      "excerpt": "Hacker News 社区讨论：China's first AI-generated film hits cinemas but ticket sales lag",
+      "source": "Hacker News",
+      "url": "https://www.channelnewsasia.com/east-asia/china-first-ai-film-cinemas-ticket-sales-6485401",
+      "publishedAt": "2026-10-25T18:16:09Z",
       "sourceKind": "community"
     },
     {
@@ -716,6 +661,182 @@
       "source": "Hacker News",
       "url": "https://www.nytimes.com/interactive/2026/10/22/us/politics/ai-surveillance-cameras-border-mexico.html",
       "publishedAt": "2026-10-25T16:55:38Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-iyktjr",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Show HN: Junior – an open-source AI junior engineer that runs on your Mac",
+      "excerpt": "Hi HN, I&#x27;m Samar, a software engineer. I built Junior because I was spending more time fixing CI issues, babysitting PRs and resolving merge conflicts. I thought maybe i should automate all of it, and that&#x27;s why I started building Junior. Junior is a",
+      "source": "Hacker News",
+      "url": "https://github.com/usejunior-sh/junior",
+      "publishedAt": "2026-10-25T16:45:33Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-848vj3",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Vibe coding is turning the music gear world upside down",
+      "excerpt": "Hacker News 社区讨论：Vibe coding is turning the music gear world upside down",
+      "source": "Hacker News",
+      "url": "https://www.theverge.com/gadgets/1013493/vibe-coding-ai-music-gear-hacking-custom-firmware",
+      "publishedAt": "2026-10-25T18:52:58Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-l1kkea",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "OpenAI's isolated AI agents found ways to talk to each other through CPU cache",
+      "excerpt": "Hacker News 社区讨论：OpenAI's isolated AI agents found ways to talk to each other through CPU cache",
+      "source": "Hacker News",
+      "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+      "publishedAt": "2026-10-25T18:44:11Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-zbtdgl",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Lightning.ai October 2026 Security Incident",
+      "excerpt": "Hacker News 社区讨论：Lightning.ai October 2026 Security Incident",
+      "source": "Hacker News",
+      "url": "https://lightning.ai/security-incident/",
+      "publishedAt": "2026-10-25T18:08:32Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-oz44g6",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI Gateway Benchmark: OpenRouter, Vercel, Ramp, Keln",
+      "excerpt": "Hacker News 社区讨论：AI Gateway Benchmark: OpenRouter, Vercel, Ramp, Keln",
+      "source": "Hacker News",
+      "url": "https://keln.ai/blog/ai-gateway-benchmark-deepseek-v4-1-flash",
+      "publishedAt": "2026-10-25T16:53:40Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-75vgz9",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Turning real engineering stories into HBO' Silicon Valley 2.0 AI episodes",
+      "excerpt": "Hacker News 社区讨论：Turning real engineering stories into HBO' Silicon Valley 2.0 AI episodes",
+      "source": "Hacker News",
+      "url": "https://dramadrama.ai/share-your-story/",
+      "publishedAt": "2026-10-25T16:39:48Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-17kdgye",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Is Anybody Out There? Art in the Post-AI Era",
+      "excerpt": "Hacker News 社区讨论：Is Anybody Out There? Art in the Post-AI Era",
+      "source": "Hacker News",
+      "url": "https://programmingattack.com/articles/is-anybody-out-there-art-in-the-post-ai-era/",
+      "publishedAt": "2026-10-25T16:24:21Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1m1wmat",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Reclaim disk space with an AI agent",
+      "excerpt": "Hacker News 社区讨论：Reclaim disk space with an AI agent",
+      "source": "Hacker News",
+      "url": "https://github.com/riza/ai-disk-cleanup",
+      "publishedAt": "2026-10-25T19:31:08Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-gfn5hb",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "The Question After the Answer: AI prediction and human autonomy",
+      "excerpt": "Hacker News 社区讨论：The Question After the Answer: AI prediction and human autonomy",
+      "source": "Hacker News",
+      "url": "https://aegissolisarchive.org/the-question-after-the-answer/",
+      "publishedAt": "2026-10-25T18:58:04Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1kvfl4t",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "How to promote my non-profit edtech platform?",
+      "excerpt": "I built placeprep.app and added good learning contents covering ai inference engineering, context engineering, system designs and others but it&#x27;s not showing up much. I have growing users but it&#x27;s not growing as faster as I thought. I can&#x27;t inve",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50234850",
+      "publishedAt": "2026-10-25T18:54:58Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-15oflnz",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "AI-Powered Automatic Lockpick Machine [video]",
+      "excerpt": "Hacker News 社区讨论：AI-Powered Automatic Lockpick Machine [video]",
+      "source": "Hacker News",
+      "url": "https://www.youtube.com/watch?v=o4AUKGdScNI",
+      "publishedAt": "2026-10-25T18:53:06Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1cnwv6u",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Show HN: Optio – A self-hosted orchestration platform for AI agents",
+      "excerpt": "Hey HN! I shared Optio here back in March. Originally it was focused on getting swarms of coding agents (claude code&#x2F;codex) to drive PRs towards a merge by automatically resuming them on CI failures or PR comments. Since then, I&#x27;ve reworked the proje",
+      "source": "Hacker News",
+      "url": "https://optio.host/",
+      "publishedAt": "2026-10-25T18:37:48Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1sl8us1",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Why AI companies keep saying AI will kill us? [video]",
+      "excerpt": "Hacker News 社区讨论：Why AI companies keep saying AI will kill us? [video]",
+      "source": "Hacker News",
+      "url": "https://www.youtube.com/watch?v=Yfn8fSo9rgM",
+      "publishedAt": "2026-10-25T18:27:49Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-44q5vu",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Pulse: Fast real time speech to text",
+      "excerpt": "Hacker News 社区讨论：Pulse: Fast real time speech to text",
+      "source": "Hacker News",
+      "url": "https://smallest.ai/speech-to-text",
+      "publishedAt": "2026-10-25T18:13:42Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-1uxh00g",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Ask HN: Can superintelligent AI alignement be decentralized?",
+      "excerpt": "Hacker News 社区讨论：Ask HN: Can superintelligent AI alignement be decentralized?",
+      "source": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=50234251",
+      "publishedAt": "2026-10-25T18:05:07Z",
+      "sourceKind": "community"
+    },
+    {
+      "id": "news-14fwr3w",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Rewriting Excel, PowerPoint, and Word for Agents",
+      "excerpt": "Hacker News 社区讨论：Rewriting Excel, PowerPoint, and Word for Agents",
+      "source": "Hacker News",
+      "url": "https://getcompound.ai/blog/rewriting-excel-powerpoint-and-word-for-agents",
+      "publishedAt": "2026-10-25T16:06:14Z",
       "sourceKind": "community"
     },
     {
@@ -752,6 +873,17 @@
       "sourceKind": "community"
     },
     {
+      "id": "news-sd4r3g",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "If AI Can Copy Photoshop, Why Would Anyone Build the Next Figma?",
+      "excerpt": "Hacker News 社区讨论：If AI Can Copy Photoshop, Why Would Anyone Build the Next Figma?",
+      "source": "Hacker News",
+      "url": "https://www.vincentschmalbach.com/if-ai-can-copy-photoshop-why-build-the-next-figma/",
+      "publishedAt": "2026-10-25T15:20:51Z",
+      "sourceKind": "community"
+    },
+    {
       "id": "news-1l26nh5",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -760,138 +892,6 @@
       "source": "Hacker News",
       "url": "https://www.youtube.com/shorts/P4z9L17uEgk",
       "publishedAt": "2026-10-25T15:20:38Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1v1fvjq",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Directory 958 inspirational artisans, craftspeople, smiths, for post-AI",
-      "excerpt": "Hacker News 社区讨论：Show HN: Directory 958 inspirational artisans, craftspeople, smiths, for post-AI",
-      "source": "Hacker News",
-      "url": "https://www.worldofbuilders.com/",
-      "publishedAt": "2026-10-25T15:12:26Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1uevjfk",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Can AI Make Us So Productive That It Destroys the Economy?",
-      "excerpt": "Hacker News 社区讨论：Can AI Make Us So Productive That It Destroys the Economy?",
-      "source": "Hacker News",
-      "url": "https://www.vincentschmalbach.com/can-ai-make-us-so-productive-it-destroys-the-economy/",
-      "publishedAt": "2026-10-25T14:32:18Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-lbyaya",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "Skyl – One Go interface for 400 AI models",
-      "excerpt": "Hacker News 社区讨论：Skyl – One Go interface for 400 AI models",
-      "source": "Hacker News",
-      "url": "https://skyl-docs.vercel.app/",
-      "publishedAt": "2026-10-25T14:28:48Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1nlsrzi",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Linux 7.4 Sound Changes Merged: \"The AI Flood Continues\"",
-      "excerpt": "Hacker News 社区讨论：Linux 7.4 Sound Changes Merged: \"The AI Flood Continues\"",
-      "source": "Hacker News",
-      "url": "https://www.phoronix.com/news/Linux-7.4-Sound",
-      "publishedAt": "2026-10-25T14:10:31Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-jnfwwm",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: The fastest, most token-efficient iOS Simulator MCP for AI agents",
-      "excerpt": "Hacker News 社区讨论：Show HN: The fastest, most token-efficient iOS Simulator MCP for AI agents",
-      "source": "Hacker News",
-      "url": "https://github.com/NoMac-app/simulator-use",
-      "publishedAt": "2026-10-25T14:05:18Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-np6t1r",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Empires of AI: The Rise and Fall of a New Global Order",
-      "excerpt": "Hacker News 社区讨论：Empires of AI: The Rise and Fall of a New Global Order",
-      "source": "Hacker News",
-      "url": "https://www.foreignaffairs.com/china/empires-artificial-intelligence-niall-ferguson-eric-schmidt",
-      "publishedAt": "2026-10-25T13:41:46Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1nsgc0w",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "To make AI morally good, tech companies are turning to religion",
-      "excerpt": "Hacker News 社区讨论：To make AI morally good, tech companies are turning to religion",
-      "source": "Hacker News",
-      "url": "https://apnews.com/article/anthropic-moral-artificial-intelligence-religion-2bb91e3334fd6d732edf22288cabf4ec",
-      "publishedAt": "2026-10-25T13:29:41Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-s5dss4",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Cybersecurity bounty hunter says Samsung TVs use AI to record audio",
-      "excerpt": "Hacker News 社区讨论：Cybersecurity bounty hunter says Samsung TVs use AI to record audio",
-      "source": "Hacker News",
-      "url": "https://www.tomshardware.com/tech-industry/cyber-security/hacker-finds-own-samsung-tv-collecting-scary-amounts-of-user-information-and-gets-banned-by-openai-for-cyber-abuse-tv-runs-an-ai-model-that-collects-audio-screenshots-and-plenty-of-other-user-data-for-ad-targeting",
-      "publishedAt": "2026-10-25T12:28:43Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-x2fqa2",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Report on alpha school, AI-based education",
-      "excerpt": "Hacker News 社区讨论：Report on alpha school, AI-based education",
-      "source": "Hacker News",
-      "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html",
-      "publishedAt": "2026-10-25T12:07:40Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-2rvd36",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Find overlapping Rust tests with mutation testing",
-      "excerpt": "To tackle the ever-increasing number of tests, I built cargo-test-prune. The idea behind it is to use cargo-mutants to generate mutants, and then solve the set cover problem for those mutants to suggest which tests can be eliminated. (use a greedy algorithm to",
-      "source": "Hacker News",
-      "url": "https://github.com/yasuyuky/cargo-test-prune",
-      "publishedAt": "2026-10-25T12:02:00Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-nj2bsw",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Grok Bot: The cycle of productivity tools repeats itself in AI",
-      "excerpt": "Hacker News 社区讨论：Grok Bot: The cycle of productivity tools repeats itself in AI",
-      "source": "Hacker News",
-      "url": "https://lucasaguiar.xyz/posts/grok-bot-agentes-ciclo-ferramentas-produtividade/",
-      "publishedAt": "2026-10-25T12:00:57Z",
-      "sourceKind": "community"
-    },
-    {
-      "id": "news-1171fg",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Show HN: Echoboard where AI agents do science and humans only watch",
-      "excerpt": "Hacker News 社区讨论：Show HN: Echoboard where AI agents do science and humans only watch",
-      "source": "Hacker News",
-      "url": "https://jevontane.com/echoboard/",
-      "publishedAt": "2026-10-25T10:18:31Z",
       "sourceKind": "community"
     }
   ]
