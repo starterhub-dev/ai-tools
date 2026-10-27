@@ -5,6 +5,9 @@ const signedOut = $("signedOut");
 const signedIn = $("signedIn");
 const status = $("profileStatus");
 let currentSession = null;
+let newsFavoritesRequest = 0;
+const NEWS_FAVORITES_LOCAL_KEY = "ash:ai-news:favorites:v1";
+
 const T = (key, fallback = key, ...args) => window.ASHI18n?.t(key, ...args) ?? fallback;
 
 function setStatus(text, loggedIn = false) {
@@ -130,6 +133,74 @@ function renderRecent() {
   }
 }
 
+
+function readLocalNewsFavorites() {
+  try {
+    const items = JSON.parse(localStorage.getItem(NEWS_FAVORITES_LOCAL_KEY) || "[]");
+    return Array.isArray(items) ? items.filter(item => item && item.news_id && item.title && /^https?:\\/\\//i.test(String(item.url || ""))) : [];
+  } catch { return []; }
+}
+
+function renderNewsFavoriteRows(rows, cloud, requestId) {
+  const list = $("newsFavoritesList"), empty = $("newsFavoritesEmpty"), summary = $("newsFavoritesSummary");
+  if (!list || !empty || requestId !== newsFavoritesRequest) return;
+  list.replaceChildren();
+  if (summary) summary.textContent = T("profileFavoritesCount", rows.length + " 条资讯", rows.length);
+  empty.hidden = rows.length > 0;
+  for (const item of rows) {
+    const article = document.createElement("article"); article.className = "favorite-item";
+    const icon = document.createElement("div"); icon.className = "favorite-item-icon"; icon.textContent = "📰";
+    const copy = document.createElement("div"); copy.className = "favorite-item-copy";
+    const title = document.createElement("strong"); title.textContent = item.title || "AI News";
+    const meta = document.createElement("small");
+    const timestamp = new Date(item.published_at || item.saved_at || Date.now()).getTime();
+    meta.textContent = [item.source || "Public Source", item.region || "Global", relativeTime(timestamp)].filter(Boolean).join(" · ");
+    copy.append(title, meta);
+    const actions = document.createElement("div"); actions.className = "favorite-item-actions";
+    const url = String(item.url || "");
+    if (/^https?:\\/\\//i.test(url)) {
+      const open = document.createElement("a"); open.className = "secondary-button favorite-open"; open.href = url; open.target = "_blank"; open.rel = "noopener noreferrer"; open.textContent = T("newsOpen", "查看原文 ↗"); actions.append(open);
+    }
+    const remove = document.createElement("button"); remove.className = "danger-button favorite-remove"; remove.type = "button"; remove.textContent = T("newsRemove", "取消收藏");
+    remove.addEventListener("click", async () => {
+      if (cloud && currentSession?.user) {
+        const { error } = await supabase.from("ai_news_favorites").delete().eq("user_id", currentSession.user.id).eq("news_id", item.news_id);
+        if (error) { console.warn("News favorite removal failed", error); window.alert("取消收藏失败，请稍后重试。"); return; }
+      } else {
+        try {
+          const remaining = readLocalNewsFavorites().filter(saved => saved.news_id !== item.news_id);
+          localStorage.setItem(NEWS_FAVORITES_LOCAL_KEY, JSON.stringify(remaining));
+        } catch (error) { console.warn("Local news favorite removal failed", error); }
+      }
+      renderNewsFavorites();
+    });
+    actions.append(remove); article.append(icon, copy, actions); list.append(article);
+  }
+}
+
+async function renderNewsFavorites() {
+  const list = $("newsFavoritesList"), empty = $("newsFavoritesEmpty");
+  if (!list || !empty) return;
+  const requestId = ++newsFavoritesRequest;
+  const user = currentSession?.user || null;
+  if (!user) {
+    renderNewsFavoriteRows(readLocalNewsFavorites(), false, requestId);
+    return;
+  }
+  const { data, error } = await supabase.from("ai_news_favorites")
+    .select("news_id,title,url,source,region,published_at,saved_at")
+    .eq("user_id", user.id)
+    .order("saved_at", { ascending: false })
+    .limit(100);
+  if (requestId !== newsFavoritesRequest) return;
+  if (error) {
+    console.warn("Cloud AI news favorites unavailable", error);
+    renderNewsFavoriteRows(readLocalNewsFavorites(), false, requestId);
+    return;
+  }
+  renderNewsFavoriteRows(data || [], true, requestId);
+}
+
 function renderSession(session) {
   currentSession = session;
   const user = session?.user || null;
@@ -147,6 +218,7 @@ function renderSession(session) {
   try {
     renderFavorites();
     renderRecent();
+    renderNewsFavorites();
   } catch (error) {
     console.warn("Profile list render failed:", error);
   }
@@ -180,6 +252,8 @@ $("signOutButton")?.addEventListener("click", async () => {
 
 window.addEventListener("ash:language-changed", () => { renderFavorites(); renderRecent(); renderSession(currentSession); });
 window.addEventListener("ash:favorites-changed", renderFavorites);
+window.addEventListener("ash:news-favorites-changed", renderNewsFavorites);
+window.addEventListener("storage", event => { if (event.key === NEWS_FAVORITES_LOCAL_KEY) renderNewsFavorites(); });
 window.addEventListener("ash:recent-changed", renderRecent);
 $("clearRecentButton")?.addEventListener("click", () => window.ASHRecent?.clear());
 
