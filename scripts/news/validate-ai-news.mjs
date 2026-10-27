@@ -24,6 +24,10 @@ for (const [index, item] of feed.items.entries()) {
 
   const url = new URL(item.url);
   if (!/^https?:$/.test(url.protocol)) throw new Error(`item ${n}: invalid protocol`);
+  const published = Date.parse(item.publishedAt);
+  if (!Number.isFinite(published)) throw new Error(`item ${n}: invalid publishedAt`);
+  if (published > Date.now() + 86400000) throw new Error(`item ${n}: publishedAt is suspiciously far in the future`);
+  if (Date.now() - published > 14 * 86400000) throw new Error(`item ${n}: item is older than retention window`);
   if (!["major", "update", "abstract"].includes(item.type)) throw new Error(`item ${n}: invalid type`);
 }
 
