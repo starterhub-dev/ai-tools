@@ -28,7 +28,12 @@ const SOURCE_DEFS = [
   { id:"news-uk", name:"Google News · UK", url:"https://news.google.com/rss/search?q=artificial+intelligence+AI&hl=en-GB&gl=GB&ceid=GB:en", kind:"regional", region:"United Kingdom", weight:0.72, feed:true },
   { id:"news-germany", name:"Google News · Germany", url:"https://news.google.com/rss/search?q=K%C3%BCnstliche+Intelligenz+AI&hl=de&gl=DE&ceid=DE:de", kind:"regional", region:"Germany", weight:0.7, feed:true },
   { id:"news-france", name:"Google News · France", url:"https://news.google.com/rss/search?q=intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", kind:"regional", region:"France", weight:0.7, feed:true },
-  { id:"news-australia", name:"Google News · Australia", url:"https://news.google.com/rss/search?q=artificial+intelligence&hl=en-AU&gl=AU&ceid=AU:en", kind:"regional", region:"Australia", weight:0.68, feed:true }
+  { id:"news-australia", name:"Google News · Australia", url:"https://news.google.com/rss/search?q=artificial+intelligence&hl=en-AU&gl=AU&ceid=AU:en", kind:"regional", region:"Australia", weight:0.68, feed:true },
+  { id:"news-canada", name:"Google News · Canada", url:"https://news.google.com/rss/search?q=artificial+intelligence&hl=en-CA&gl=CA&ceid=CA:en", kind:"regional", region:"Canada", weight:0.68, feed:true },
+  { id:"news-brazil", name:"Google News · Brazil", url:"https://news.google.com/rss/search?q=intelig%C3%AAncia+artificial&hl=pt-BR&gl=BR&ceid=BR:pt-419", kind:"regional", region:"Brazil", weight:0.66, feed:true },
+  { id:"news-singapore", name:"Google News · Singapore", url:"https://news.google.com/rss/search?q=artificial+intelligence&hl=en-SG&gl=SG&ceid=SG:en", kind:"regional", region:"Singapore", weight:0.66, feed:true },
+  { id:"news-taiwan", name:"Google News · Taiwan", url:"https://news.google.com/rss/search?q=AI+%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7&hl=zh-TW&gl=TW&ceid=TW:zh-Hant", kind:"regional", region:"Taiwan", weight:0.68, feed:true },
+  { id:"news-europe", name:"Google News · Europe", url:"https://news.google.com/rss/search?q=artificial+intelligence+Europe&hl=en-GB&gl=GB&ceid=GB:en", kind:"regional", region:"Europe", weight:0.69, feed:true }
 ];
 
 const MAX_ITEMS = 80;
