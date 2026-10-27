@@ -107,9 +107,10 @@ function parseDate(value) {
 function classify(title, summary, source) {
   const text = `${title} ${summary}`.toLowerCase();
 
-  if (
-    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\bcat\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost|bizarre|ridiculous|unhinged|glitch|hallucination|cursed)/i.test(text)
-  ) return { type: "abstract", label: "🗿 AI 抽象" };
+  // Avoid labelling ordinary research papers and developer tools as absurdity.
+  const hasAiContext = /\\b(ai|artificial intelligence|llm|gpt|claude|gemini|model|agent|chatbot|robot)\\b/i.test(text);
+  const hasAbsurdSignal = /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\\bcat\\b|absurd|weird|funny|chaos|\\bai fail\\b|\\bwtf\\b|meme|shitpost|bizarre|ridiculous|unhinged|glitch|cursed|gone wrong|ai slop|embarrass|pretend|made up|nightmare)/i.test(text);
+  if (hasAiContext && hasAbsurdSignal) return { type: "abstract", label: "🗿 AI 抽象" };
 
   if (
     /(invest|acqui|fund|launch|release|introduc|announce|partnership|policy|regulation|breakthrough|unveil|debut|raises?\s+(?:\$|£|€)|\b\d+\s*(?:million|billion)\b|rolls? out|expands? into)/i.test(text)
