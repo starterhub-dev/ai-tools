@@ -137,7 +137,7 @@ function renderRecent() {
 function readLocalNewsFavorites() {
   try {
     const items = JSON.parse(localStorage.getItem(NEWS_FAVORITES_LOCAL_KEY) || "[]");
-    return Array.isArray(items) ? items.filter(item => item && item.news_id && item.title && /^https?:\\/\\//i.test(String(item.url || ""))) : [];
+    return Array.isArray(items) ? items.filter(item => item && item.news_id && item.title && /^https?:\/\//i.test(String(item.url || ""))) : [];
   } catch { return []; }
 }
 
@@ -158,7 +158,7 @@ function renderNewsFavoriteRows(rows, cloud, requestId) {
     copy.append(title, meta);
     const actions = document.createElement("div"); actions.className = "favorite-item-actions";
     const url = String(item.url || "");
-    if (/^https?:\\/\\//i.test(url)) {
+    if (/^https?:\/\//i.test(url)) {
       const open = document.createElement("a"); open.className = "secondary-button favorite-open"; open.href = url; open.target = "_blank"; open.rel = "noopener noreferrer"; open.textContent = T("newsOpen", "查看原文 ↗"); actions.append(open);
     }
     const remove = document.createElement("button"); remove.className = "danger-button favorite-remove"; remove.type = "button"; remove.textContent = T("newsRemove", "取消收藏");
