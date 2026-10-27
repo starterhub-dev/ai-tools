@@ -12,46 +12,23 @@ import { writeFile } from "node:fs/promises";
 const OUTPUT = "data/ai-news.json";
 
 const SOURCE_DEFS = [
-  {
-    id: "openai",
-    name: "OpenAI",
-    url: "https://openai.com/news/",
-    kind: "official",
-    weight: 1.0,
-    match: /openai|chatgpt|codex|model|gpt|agent|ai/i
-  },
-  {
-    id: "anthropic",
-    name: "Anthropic",
-    url: "https://www.anthropic.com/news",
-    kind: "official",
-    weight: 1.0,
-    match: /anthropic|claude|agent|ai|model/i
-  },
-  {
-    id: "google-ai",
-    name: "Google AI",
-    url: "https://blog.google/innovation-and-ai/technology/ai/",
-    kind: "official",
-    weight: 0.95,
-    match: /ai|gemini|agent|model|research/i
-  },
-  {
-    id: "huggingface",
-    name: "Hugging Face",
-    url: "https://huggingface.co/blog",
-    kind: "community",
-    weight: 0.9,
-    match: /ai|agent|model|llm|open source|llama|qwen|mcp|coding|robot/i
-  },
-  {
-    id: "hackernews",
-    name: "Hacker News",
-    url: "https://hn.algolia.com/",
-    kind: "community",
-    weight: 0.8,
-    api: "https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=30"
-  }
+  { id:"openai", name:"OpenAI", url:"https://openai.com/news/", kind:"official", region:"United States", weight:1.0, match:/openai|chatgpt|codex|model|gpt|agent|ai/i },
+  { id:"anthropic", name:"Anthropic", url:"https://www.anthropic.com/news", kind:"official", region:"United States", weight:1.0, match:/anthropic|claude|agent|ai|model/i },
+  { id:"google-ai", name:"Google AI", url:"https://blog.google/innovation-and-ai/technology/ai/", kind:"official", region:"United States", weight:0.95, match:/ai|gemini|agent|model|research/i },
+  { id:"huggingface", name:"Hugging Face", url:"https://huggingface.co/blog", kind:"community", region:"Global", weight:0.9, match:/ai|agent|model|llm|open source|llama|qwen|mcp|coding|robot/i },
+  { id:"hackernews", name:"Hacker News", url:"https://hn.algolia.com/", kind:"community", region:"Global", weight:0.8, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=30" },
+  { id:"nvidia-ai", name:"NVIDIA AI", url:"https://blogs.nvidia.com/blog/category/generative-ai/feed/", kind:"official", region:"United States", weight:0.86, feed:true },
+  { id:"microsoft-ai", name:"Microsoft AI", url:"https://blogs.microsoft.com/ai/feed/", kind:"official", region:"United States", weight:0.84, feed:true },
+  { id:"arxiv-ai", name:"arXiv cs.AI", url:"https://export.arxiv.org/rss/cs.AI", kind:"research", region:"Global", weight:0.9, feed:true },
+  { id:"news-us", name:"Google News · US", url:"https://news.google.com/rss/search?q=artificial+intelligence+AI&hl=en-US&gl=US&ceid=US:en", kind:"regional", region:"United States", weight:0.76, feed:true },
+  { id:"news-china", name:"Google News · China", url:"https://news.google.com/rss/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E6%A8%A1%E5%9E%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", kind:"regional", region:"China", weight:0.76, feed:true },
+  { id:"news-japan", name:"Google News · Japan", url:"https://news.google.com/rss/search?q=%E7%94%9F%E6%88%90AI+AI&hl=ja&gl=JP&ceid=JP:ja", kind:"regional", region:"Japan", weight:0.76, feed:true },
+  { id:"news-korea", name:"Google News · South Korea", url:"https://news.google.com/rss/search?q=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5+AI&hl=ko&gl=KR&ceid=KR:ko", kind:"regional", region:"South Korea", weight:0.72, feed:true },
+  { id:"news-india", name:"Google News · India", url:"https://news.google.com/rss/search?q=artificial+intelligence+India&hl=en-IN&gl=IN&ceid=IN:en", kind:"regional", region:"India", weight:0.72, feed:true },
+  { id:"news-uk", name:"Google News · UK", url:"https://news.google.com/rss/search?q=artificial+intelligence+AI&hl=en-GB&gl=GB&ceid=GB:en", kind:"regional", region:"United Kingdom", weight:0.72, feed:true },
+  { id:"news-germany", name:"Google News · Germany", url:"https://news.google.com/rss/search?q=K%C3%BCnstliche+Intelligenz+AI&hl=de&gl=DE&ceid=DE:de", kind:"regional", region:"Germany", weight:0.7, feed:true },
+  { id:"news-france", name:"Google News · France", url:"https://news.google.com/rss/search?q=intelligence+artificielle&hl=fr&gl=FR&ceid=FR:fr", kind:"regional", region:"France", weight:0.7, feed:true },
+  { id:"news-australia", name:"Google News · Australia", url:"https://news.google.com/rss/search?q=artificial+intelligence&hl=en-AU&gl=AU&ceid=AU:en", kind:"regional", region:"Australia", weight:0.68, feed:true }
 ];
 
 const MAX_ITEMS = 80;
@@ -121,7 +98,7 @@ function classify(title, summary, source) {
   const text = `${title} ${summary}`.toLowerCase();
 
   if (
-    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|cat|absurd|weird|funny|hell)/i.test(text)
+    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\\bcat\\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost)/i.test(text)
   ) return { type: "abstract", label: "🗿 AI 抽象" };
 
   if (
@@ -177,6 +154,7 @@ function extractAnchors(html, baseUrl, sourceDef) {
       url: stripTracking(href),
       publishedAt: publishedAt || "",
       sourceKind: sourceDef.kind,
+      region: sourceDef.region || "Global",
       score: 45 * sourceDef.weight + (classification.type === "abstract" ? 12 : classification.type === "major" ? 20 : 8)
     });
   }
@@ -196,7 +174,8 @@ async function fetchJson(url) {
     headers: {
       "user-agent": "AI-Starter-Hub-NewsBot/1.0 (public-source aggregation)",
       "accept": "application/json"
-    }
+    },
+    signal: AbortSignal.timeout(12000)
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
   return response.json();
@@ -206,14 +185,59 @@ async function fetchText(url) {
   const response = await fetch(url, {
     headers: {
       "user-agent": "AI-Starter-Hub-NewsBot/1.0 (public-source aggregation)",
-      "accept": "text/html,application/xhtml+xml"
-    }
+      "accept": "text/html,application/xhtml+xml,application/rss+xml,application/atom+xml,application/xml"
+    },
+    signal: AbortSignal.timeout(12000)
   });
   if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
   return response.text();
 }
 
+function xmlValue(block, names) {
+  for (const name of names) {
+    const escaped = name.replace(":", "\\\\:");
+    const element = new RegExp("<" + escaped + "(?:\\\\s[^>]*)?>([\\\\s\\\\S]*?)</" + escaped + ">", "i");
+    const match = block.match(element);
+    if (match) return match[1].replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/g, "$1").replace(/<[^>]*>/g, " ").replace(/&amp;/gi, "&").replace(/&quot;/gi, '"').replace(/&apos;|&#39;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">").replace(/&#(\\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/\\s+/g, " ").trim();
+  }
+  return "";
+}
+
+function extractFeedItems(xml, sourceDef) {
+  const blocks = xml.match(/<(?:item|entry)\\b[^>]*>[\\s\\S]*?<\\/(?:item|entry)>/gi) || [];
+  return blocks.slice(0, 50).map(block => {
+    const title = cleanText(xmlValue(block, ["title"]));
+    const linkMatch = block.match(/<link\\b[^>]*href=["']([^"']+)["'][^>]*\\/?\\s*>/i);
+    const linkText = xmlValue(block, ["link"]);
+    const rawUrl = linkMatch ? linkMatch[1] : linkText;
+    const url = stripTracking(absoluteUrl(sourceDef.url, rawUrl));
+    const dateText = xmlValue(block, ["pubDate", "published", "updated", "dc:date", "date"]);
+    const date = Date.parse(dateText);
+    const publishedAt = Number.isFinite(date) ? new Date(date).toISOString() : "";
+    const excerpt = cleanText(xmlValue(block, ["description", "summary", "content:encoded"])).slice(0, 260);
+    const publisher = cleanText(xmlValue(block, ["source"])) || sourceDef.name;
+    const classification = classify(title, excerpt, sourceDef.name);
+    return {
+      id: canonicalId(url, title),
+      type: classification.type,
+      label: classification.label,
+      title,
+      excerpt: excerpt || (sourceDef.name + " public update: " + title),
+      source: publisher,
+      url,
+      publishedAt,
+      sourceKind: sourceDef.kind,
+      region: sourceDef.region || "Global",
+      score: 43 * sourceDef.weight + (classification.type === "abstract" ? 12 : classification.type === "major" ? 18 : 8)
+    };
+  }).filter(item => item.title && item.url && item.publishedAt && looksUseful(item.title, item.url, sourceDef.name));
+}
+
 async function collectSource(sourceDef) {
+  if (sourceDef.feed) {
+    const xml = await fetchText(sourceDef.url);
+    return extractFeedItems(xml, sourceDef);
+  }
   if (sourceDef.api) {
     const payload = await fetchJson(sourceDef.api);
     return (payload.hits || []).map(hit => {
@@ -228,8 +252,9 @@ async function collectSource(sourceDef) {
         excerpt: cleanText(hit.story_text || "") || `Hacker News 社区讨论：${title}`,
         source: sourceDef.name,
         url,
-        publishedAt: hit.created_at || new Date().toISOString(),
+        publishedAt: hit.created_at || "",
         sourceKind: sourceDef.kind,
+        region: sourceDef.region || "Global",
         score: 35 * sourceDef.weight + Number(hit.points || 0) * 0.12 + (classification.type === "abstract" ? 18 : 0)
       };
     }).filter(item => looksUseful(item.title, item.url, sourceDef.name));
@@ -251,7 +276,8 @@ function dedupe(items) {
 
 function withinWindow(item) {
   const time = new Date(item.publishedAt).getTime();
-  if (!Number.isFinite(time)) return true;
+  if (!Number.isFinite(time)) return false;
+  if (time > Date.now() + 86400000) return false;
   return Date.now() - time <= KEEP_DAYS * 86400000;
 }
 
@@ -299,8 +325,9 @@ const merged = dedupe([...all, ...(existing.items || [])])
       excerpt: String(item.excerpt || prior?.excerpt || "").trim().slice(0, 260),
       source: String(item.source || prior?.source || "Public Source"),
       url: stripTracking(String(item.url || prior?.url || "")),
-      publishedAt: item.publishedAt || prior?.publishedAt || fetchedAt,
+      publishedAt: item.publishedAt || prior?.publishedAt || "",
       sourceKind: item.sourceKind || prior?.sourceKind || "community",
+      region: item.region || prior?.region || "Global",
       score: Number(item.score ?? prior?.score ?? 0)
     };
   })
