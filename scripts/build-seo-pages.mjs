@@ -76,6 +76,7 @@ const sitemap=[];
 sitemap.push({loc:SITE,lastmod:BUILD_DATE});
 sitemap.push({loc:SITE+"tutorials/",lastmod:BUILD_DATE});
 sitemap.push({loc:SITE+"ai-lab/",lastmod:BUILD_DATE});
+sitemap.push({loc:SITE+"news/",lastmod:BUILD_DATE});
 
 for(const tool of tools){
   const [title,icon,cat,desc,free,url,publisher]=tool;
