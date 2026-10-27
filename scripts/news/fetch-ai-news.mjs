@@ -162,11 +162,38 @@ function extractAnchors(html, baseUrl, sourceDef) {
 }
 
 function rank(items) {
-  return [...items].sort((a, b) => {
+  const sorted = [...items].sort((a, b) => {
     const scoreDiff = Number(b.score || 0) - Number(a.score || 0);
     if (scoreDiff) return scoreDiff;
     return new Date(b.publishedAt || 0).getTime() - new Date(a.publishedAt || 0).getTime();
   });
+
+  // Keep the top of the feed geographically diverse instead of letting
+  // the largest English-language sources dominate every refresh.
+  const groups = new Map();
+  for (const item of sorted) {
+    const region = item.region || "Global";
+    if (!groups.has(region)) groups.set(region, []);
+    groups.get(region).push(item);
+  }
+  const byRegion = [...groups.entries()]
+    .sort((a, b) => Number(b[1][0]?.score || 0) - Number(a[1][0]?.score || 0));
+  const picked = new Set();
+  const diverse = [];
+  const initialRounds = 2;
+  for (let round = 0; round < initialRounds; round++) {
+    for (const [, group] of byRegion) {
+      const item = group[round];
+      if (item) {
+        diverse.push(item);
+        picked.add(item.url);
+      }
+    }
+  }
+  for (const item of sorted) {
+    if (!picked.has(item.url)) diverse.push(item);
+  }
+  return diverse;
 }
 
 async function fetchJson(url) {
