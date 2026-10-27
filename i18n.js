@@ -94,8 +94,8 @@ function applyStatic(){
   const ad=document.querySelector(".spcx-ad-cta"),adLabel=document.querySelector(".spcx-ad-label");if(ad)ad.textContent=t("register");if(adLabel)adLabel.textContent=t("adLabel");
   const cards=document.querySelectorAll(".starter-card"),copy=[[t("chatTitle"),t("chatDesc")],[t("learnTitle"),t("learnDesc")],[t("writeTitle"),t("writeDesc")],[t("imageTitle"),t("imageDesc")],[t("videoTitle"),t("videoDesc")],[t("codeTitle"),t("codeDesc")]];
   cards.forEach((card,i)=>{const strong=card.querySelector("strong"),small=card.querySelector("small");if(strong)strong.textContent=copy[i]?.[0]||strong.textContent;if(small)small.innerHTML=copy[i]?.[1]||small.innerHTML;});
-  const heads=document.querySelectorAll("#categories .sectionhead small,.resultshead small");if(heads[0])heads[0].textContent=t("explore");if(heads[1])heads[1].textContent=t("directory");
-  const catTitle=document.querySelector("#categories .sectionhead h2");if(catTitle)catTitle.textContent=t("categories");
+  const heads=document.querySelectorAll("#categories > div > small,.resultshead small");if(heads[0])heads[0].textContent=t("explore");if(heads[1])heads[1].textContent=t("directory");
+  const catTitle=document.querySelector("#categories > div > h2");if(catTitle)catTitle.textContent=t("categories");
   const toolsTitle=document.querySelector(".resultshead h2");if(toolsTitle)toolsTitle.textContent=t("tools");
   const sort=document.getElementById("sort");if(sort){sort.setAttribute("aria-label",t("sort"));const keys={default:"recommended",heat:"heat",favorites:"favorites",name:"name",free:"free"};[...sort.options].forEach(o=>o.textContent=t(keys[o.value]||"sort"));}
   const empty=document.getElementById("empty");if(empty)empty.innerHTML=t("empty");
