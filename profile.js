@@ -145,7 +145,7 @@ function renderNewsFavoriteRows(rows, cloud, requestId) {
   const list = $("newsFavoritesList"), empty = $("newsFavoritesEmpty"), summary = $("newsFavoritesSummary");
   if (!list || !empty || requestId !== newsFavoritesRequest) return;
   list.replaceChildren();
-  if (summary) summary.textContent = T("profileFavoritesCount", rows.length + " 条资讯", rows.length);
+  if (summary) summary.textContent = T("newsFavoritesCount", rows.length + " 条资讯", rows.length);
   empty.hidden = rows.length > 0;
   for (const item of rows) {
     const article = document.createElement("article"); article.className = "favorite-item";
