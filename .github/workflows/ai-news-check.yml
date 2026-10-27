@@ -14,6 +14,7 @@ on:
       - "scripts/build-seo-pages.mjs"
       - "supabase/migrations/**"
       - ".github/workflows/ai-news-check.yml"
+      - ".github/workflows/ai-now.yml"
   push:
     branches: ["main"]
     paths:
@@ -28,6 +29,7 @@ on:
       - "scripts/build-seo-pages.mjs"
       - "supabase/migrations/**"
       - ".github/workflows/ai-news-check.yml"
+      - ".github/workflows/ai-now.yml"
 
 permissions:
   contents: read

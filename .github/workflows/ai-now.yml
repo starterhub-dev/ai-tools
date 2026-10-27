@@ -1,6 +1,11 @@
 name: Refresh AI NOW
 
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/news/**"
+      - ".github/workflows/ai-now.yml"
   schedule:
     - cron: "*/15 * * * *"
   workflow_dispatch:
