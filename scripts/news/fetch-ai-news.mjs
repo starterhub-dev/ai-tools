@@ -19,7 +19,9 @@ const SOURCE_DEFS = [
   { id:"hackernews", name:"Hacker News", url:"https://hn.algolia.com/", kind:"community", region:"Global", weight:0.8, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=30" },
   { id:"hn-ai-funny", name:"Hacker News · AI funny", kind:"community", region:"Global", weight:0.76, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20funny&tags=story&hitsPerPage=30" },
   { id:"hn-ai-fails", name:"Hacker News · AI fails", kind:"community", region:"Global", weight:0.76, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20fail&tags=story&hitsPerPage=30" },
-  { id:"hn-llm-weird", name:"Hacker News · LLM weird", kind:"community", region:"Global", weight:0.74, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=LLM%20weird&tags=story&hitsPerPage=30" },
+  { id:"hn-llm-weird", name:"Hacker News · LLM weird", kind:"community", region:"Global", weight:0.74, forceType:"abstract", filter:/\b(ai|llm|gpt|model|agent|bot|chatbot|robot)\b.{0,70}\b(fail|failed|fails|weird|funny|absurd|bizarre|cursed|chaos|wtf|hallucinat|derail|disaster|nightmare|unhinged|ridiculous|meme|slop)\b|\b(fail|failed|fails|weird|funny|absurd|bizarre|cursed|chaos|wtf|hallucinat|derail|disaster|nightmare|unhinged|ridiculous|meme|slop)\b.{0,70}\b(ai|llm|gpt|model|agent|bot|chatbot|robot)\b/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=LLM%20weird&tags=story&hitsPerPage=40" },
+  { id:"hn-ai-cringe", name:"Hacker News · AI gone wrong", kind:"community", region:"Global", weight:0.79, forceType:"abstract", filter:/\b(ai|llm|gpt|model|agent|bot|chatbot|robot)\b.{0,90}\b(fail|failed|fails|weird|funny|absurd|bizarre|cursed|chaos|wtf|hallucinat|derail|disaster|nightmare|unhinged|ridiculous|meme|slop|embarrass|confus|lie|lied|pretend|made up)\b|\b(fail|failed|fails|weird|funny|absurd|bizarre|cursed|chaos|wtf|hallucinat|derail|disaster|nightmare|unhinged|ridiculous|meme|slop|embarrass|confus|lie|lied|pretend|made up)\b.{0,90}\b(ai|llm|gpt|model|agent|bot|chatbot|robot)\b/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20hallucination&tags=story&hitsPerPage=40" },
+  { id:"hn-ai-slop", name:"Hacker News · AI slop", kind:"community", region:"Global", weight:0.74, forceType:"abstract", filter:/\b(ai|llm|gpt|model|agent|bot|generated|slop)\b.{0,90}\b(sl op|slop|garbage|spam|fake|nonsense|hallucinat|weird|absurd|meme|embarrass|fail|failed|fails)\b|\b(sl op|slop|garbage|spam|fake|nonsense|hallucinat|weird|absurd|meme|embarrass|fail|failed|fails)\b.{0,90}\b(ai|llm|gpt|model|agent|bot|generated)\b/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20slop&tags=story&hitsPerPage=40" },
   { id:"nvidia-ai", name:"NVIDIA AI", url:"https://blogs.nvidia.com/blog/category/generative-ai/feed/", kind:"official", region:"United States", weight:0.86, feed:true },
   { id:"microsoft-ai", name:"Microsoft AI", url:"https://www.microsoft.com/en-us/microsoft-cloud/blog/feed//", kind:"official", region:"United States", weight:0.84, feed:true, filter:/artificial intelligence|\bAI\b|Copilot|machine learning|Azure OpenAI|AI agent|AI model/i },
   { id:"arxiv-ai", name:"arXiv cs.AI", url:"https://export.arxiv.org/rss/cs.AI", kind:"research", region:"Global", weight:0.9, feed:true },
@@ -105,9 +107,10 @@ function parseDate(value) {
 function classify(title, summary, source) {
   const text = `${title} ${summary}`.toLowerCase();
 
-  if (
-    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\bcat\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost|bizarre|ridiculous|unhinged|glitch|hallucination|cursed)/i.test(text)
-  ) return { type: "abstract", label: "🗿 AI 抽象" };
+  // Avoid labelling ordinary research papers and developer tools as absurdity.
+  const hasAiContext = /\\b(ai|artificial intelligence|llm|gpt|claude|gemini|model|agent|chatbot|robot)\\b/i.test(text);
+  const hasAbsurdSignal = /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\\bcat\\b|absurd|weird|funny|chaos|\\bai fail\\b|\\bwtf\\b|meme|shitpost|bizarre|ridiculous|unhinged|glitch|cursed|gone wrong|ai slop|embarrass|pretend|made up|nightmare)/i.test(text);
+  if (hasAiContext && hasAbsurdSignal) return { type: "abstract", label: "🗿 AI 抽象" };
 
   if (
     /(invest|acqui|fund|launch|release|introduc|announce|partnership|policy|regulation|breakthrough|unveil|debut|raises?\s+(?:\$|£|€)|\b\d+\s*(?:million|billion)\b|rolls? out|expands? into)/i.test(text)
