@@ -98,7 +98,7 @@ function classify(title, summary, source) {
   const text = `${title} ${summary}`.toLowerCase();
 
   if (
-    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\\bcat\\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost)/i.test(text)
+    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\bcat\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost)/i.test(text)
   ) return { type: "abstract", label: "🗿 AI 抽象" };
 
   if (
@@ -195,19 +195,32 @@ async function fetchText(url) {
 
 function xmlValue(block, names) {
   for (const name of names) {
-    const escaped = name.replace(":", "\\\\:");
-    const element = new RegExp("<" + escaped + "(?:\\\\s[^>]*)?>([\\\\s\\\\S]*?)</" + escaped + ">", "i");
+    const escaped = name.replace(":", "\\:");
+    const element = new RegExp("<" + escaped + "(?:\\s[^>]*)?>([\\s\\S]*?)</" + escaped + ">", "i");
     const match = block.match(element);
-    if (match) return match[1].replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/g, "$1").replace(/<[^>]*>/g, " ").replace(/&amp;/gi, "&").replace(/&quot;/gi, '"').replace(/&apos;|&#39;/gi, "'").replace(/&lt;/gi, "<").replace(/&gt;/gi, ">").replace(/&#(\\d+);/g, (_, n) => String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/\\s+/g, " ").trim();
+    if (match) {
+      return match[1]
+        .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+        .replace(/<[^>]*>/g, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/&quot;/gi, '"')
+        .replace(/&apos;|&#39;/gi, "'")
+        .replace(/&lt;/gi, "<")
+        .replace(/&gt;/gi, ">")
+        .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+        .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+        .replace(/\s+/g, " ")
+        .trim();
+    }
   }
   return "";
 }
 
 function extractFeedItems(xml, sourceDef) {
-  const blocks = xml.match(/<(?:item|entry)\\b[^>]*>[\\s\\S]*?<\\/(?:item|entry)>/gi) || [];
+  const blocks = xml.match(/<(?:item|entry)\b[^>]*>[\s\S]*?<\/(?:item|entry)>/gi) || [];
   return blocks.slice(0, 50).map(block => {
     const title = cleanText(xmlValue(block, ["title"]));
-    const linkMatch = block.match(/<link\\b[^>]*href=["']([^"']+)["'][^>]*\\/?\\s*>/i);
+    const linkMatch = block.match(/<link\b[^>]*href=["']([^"']+)["'][^>]*\/?\s*>/i);
     const linkText = xmlValue(block, ["link"]);
     const rawUrl = linkMatch ? linkMatch[1] : linkText;
     const url = stripTracking(absoluteUrl(sourceDef.url, rawUrl));
