@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="全球 AI 快讯、模型发布、开源研究与 AI 社区趣闻。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI 新手导航 · AI Starter Hub">
+<meta property="og:title" content="AI 资讯中心 | AI Starter Hub">
+<meta property="og:description" content="全球 AI 快讯、模型发布、开源研究与 AI 社区趣闻。">
+<meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/news/">
+<link rel="canonical" href="https://starterhub-dev.github.io/ai-tools/news/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css?v=20261027-news-1">
+<link rel="stylesheet" href="ai-intelligence.css?v=20261027-1">
+<title>AI 资讯中心 | AI Starter Hub</title>
+</head>
+<body data-page="ai-news">
+<header class="sitebar">
+  <div class="wrap nav">
+    <a class="brand" href="../" aria-label="AI Starter Hub · AI 新手导航">
+      <img class="brand-mark" src="../ai-starter-hub-mark.svg" alt="" aria-hidden="true">
+      <span class="brand-name"><strong>AI Starter Hub</strong><em>AI 新手导航</em></span>
+    </a>
+    <div class="navlinks">
+      <a href="../#start" data-nav-key="start">新手入口 / Start</a>
+      <a href="../ai-lab/" data-nav-key="lab">免费本地 AI</a>
+      <a href="./" data-nav-key="news" aria-current="page">AI 资讯</a>
+      <a href="../#tools" data-nav-key="tools">工具 / Tools</a>
+      <a href="../#about" data-nav-key="about">关于 / About</a>
+    </div>
+    <button id="authButton" class="auth-button" type="button"><span class="google-mark" aria-hidden="true">G</span><span>使用 Google 登录</span></button>
+    <div class="language-picker" id="languagePicker">
+      <button id="languageButton" class="lang-button" type="button" aria-label="选择语言" title="选择语言" aria-haspopup="menu" aria-expanded="false">
+        <span class="lang-globe" aria-hidden="true">🌐</span><span id="languageButtonLabel">语言</span><span class="lang-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div id="languageMenu" class="language-menu" role="menu" aria-label="语言选择" hidden>
+        <button type="button" role="menuitemradio" data-language="zh" aria-checked="true">🇨🇳 简体中文<span>简中</span></button>
+        <button type="button" role="menuitemradio" data-language="zh-TW" aria-checked="false">🇭🇰 繁體中文<span>繁中</span></button>
+        <button type="button" role="menuitemradio" data-language="en" aria-checked="false">🇺🇸 English<span>EN</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="news-app">
+  <section class="news-hero">
+    <div class="news-orbit news-orbit-one" aria-hidden="true"></div>
+    <div class="news-orbit news-orbit-two" aria-hidden="true"></div>
+    <div class="wrap news-hero-inner">
+      <div class="news-kicker"><span class="news-live-dot"></span><span id="newsKicker">GLOBAL SIGNAL · 全球 AI 情报</span><span class="news-kicker-line"></span><span id="lastSync">正在读取动态…</span></div>
+      <div class="news-hero-copy">
+        <div>
+          <h1 id="newsTitle">AI，不止于头条。</h1>
+          <p id="newsLead">追踪全球模型、研究与行业变化，也留一点位置给 AI 世界的抽象瞬间。</p>
+        </div>
+        <div class="news-hero-stats" aria-live="polite">
+          <div><strong id="totalStories">--</strong><span id="storiesLabel">条资讯</span></div>
+          <div><strong id="regionCount">--</strong><span id="regionsLabel">个地区</span></div>
+          <div><strong id="sourceCount">--</strong><span id="sourcesLabel">个来源</span></div>
+        </div>
+      </div>
+      <div class="news-hero-chips">
+        <span id="chipGlobal">🌐 全球视野</span><span id="chipSerious">🧠 严肃科技</span><span id="chipAbsurd">🗿 抽象现场</span><span id="chipAuto">↻ 自动更新</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap news-main">
+    <section class="news-controls" aria-label="资讯筛选">
+      <div class="news-mode-tabs" role="tablist" aria-label="资讯排序">
+        <button type="button" class="news-mode is-active" data-mode="recommended" role="tab" aria-selected="true" id="modeRecommended">为你精选</button>
+        <button type="button" class="news-mode" data-mode="latest" role="tab" aria-selected="false" id="modeLatest">最新</button>
+        <button type="button" class="news-mode" data-mode="hot" role="tab" aria-selected="false" id="modeHot">热门</button>
+        <button type="button" class="news-mode" data-mode="shuffle" role="tab" aria-selected="false" id="modeShuffle"><span aria-hidden="true">⤨</span> 随机探索</button>
+      </div>
+      <div class="news-filter-row">
+        <label class="news-search"><span aria-hidden="true">⌕</span><input id="newsSearch" type="search" placeholder="搜索模型、公司、研究或关键词…" autocomplete="off"><kbd>/</kbd></label>
+        <label class="news-select-wrap"><span id="regionSelectLabel">地区</span><select id="regionSelect"><option value="all">所有地区</option></select></label>
+        <label class="news-select-wrap"><span id="timeSelectLabel">时间</span><select id="timeSelect"><option value="all">全部时间</option><option value="24h">最近 24 小时</option><option value="7d">最近 7 天</option><option value="14d">最近 14 天</option></select></label>
+      </div>
+      <div class="news-category-tabs" role="group" aria-label="资讯分类">
+        <button type="button" class="is-active" data-category="all" id="catAll">全部</button>
+        <button type="button" data-category="major" id="catMajor">重大事件</button>
+        <button type="button" data-category="update" id="catUpdate">模型与产品</button>
+        <button type="button" data-category="research" id="catResearch">开源与研究</button>
+        <button type="button" data-category="abstract" id="catAbstract">AI 抽象区 <span aria-hidden="true">✦</span></button>
+      </div>
+    </section>
+
+    <section class="news-feature-section" id="featureSection">
+      <div class="news-section-heading"><div><span class="news-overline" id="featureOverline">EDITOR'S SIGNAL</span><h2 id="featureHeading">今日焦点</h2></div><span class="news-heading-note" id="featureNote">重要内容先看一眼</span></div>
+      <div id="featuredStory" class="featured-story"></div>
+    </section>
+
+    <section class="news-feed-section" aria-labelledby="feedHeading">
+      <div class="news-section-heading feed-heading"><div><span class="news-overline" id="feedOverline">THE FEED</span><h2 id="feedHeading">全球动态</h2></div><span id="resultCount" class="news-result-count">正在加载…</span></div>
+      <div id="newsFeed" class="news-feed" aria-live="polite" aria-busy="true"></div>
+      <div id="newsEmpty" class="news-empty" hidden><strong id="emptyTitle">暂时没有匹配的资讯</strong><span id="emptyHint">试试其他关键词或地区。</span><button id="clearFilters" type="button">清除筛选</button></div>
+      <div class="news-feed-footer"><span id="feedFooterHint">资讯来自公开来源，点击卡片查看原文。</span><button id="loadMore" type="button">加载更多</button></div>
+      <div id="newsError" class="news-error" hidden role="alert"><strong id="errorTitle">新闻暂时无法加载</strong><span id="errorHint">请检查网络连接后重试。</span><button id="retryNews" type="button">重新加载</button></div>
+    </section>
+    <footer class="news-footer"><span id="newsDisclaimer">我们尽量核对来源和发布时间；新闻摘要仅供快速浏览，重要信息请以原文为准。</span><a href="../#about" id="footerBack">返回 AI 新手导航 ↗</a></footer>
+  </div>
+</main>
+<script src="../i18n.js?v=20261027-news-1"></script>
+<script type="module" src="../auth.js?v=20261027-news-1"></script>
+<script type="module" src="ai-intelligence.js?v=20261027-1"></script>
+</body>
+</html>
