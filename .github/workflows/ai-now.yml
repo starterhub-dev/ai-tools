@@ -2,7 +2,7 @@ name: Refresh AI NOW
 
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
