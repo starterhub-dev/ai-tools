@@ -1,0 +1,84 @@
+name: AI News Center Checks
+
+on:
+  pull_request:
+    paths:
+      - "index.html"
+      - "i18n.js"
+      - "profile.html"
+      - "profile.js"
+      - "style.css"
+      - "news/**"
+      - "data/ai-news.json"
+      - "scripts/news/**"
+      - "scripts/build-seo-pages.mjs"
+      - "supabase/migrations/**"
+      - ".github/workflows/ai-news-check.yml"
+  push:
+    branches: ["main"]
+    paths:
+      - "index.html"
+      - "i18n.js"
+      - "profile.html"
+      - "profile.js"
+      - "style.css"
+      - "news/**"
+      - "data/ai-news.json"
+      - "scripts/news/**"
+      - "scripts/build-seo-pages.mjs"
+      - "supabase/migrations/**"
+      - ".github/workflows/ai-news-check.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ai-news-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static-and-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check JavaScript syntax
+        shell: bash
+        run: |
+          node --check i18n.js
+          node --check scripts/news/fetch-ai-news.mjs
+          node --check scripts/news/validate-ai-news.mjs
+          node --check scripts/build-seo-pages.mjs
+          node --input-type=module --check < news/ai-intelligence.js
+          node --input-type=module --check < profile.js
+
+      - name: Validate the news feed
+        run: node scripts/news/validate-ai-news.mjs
+
+      - name: Build SEO pages and sitemap
+        run: node scripts/build-seo-pages.mjs
+
+      - name: Check news page wiring
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from "node:fs/promises";
+          const home = await readFile("index.html", "utf8");
+          const newsPage = await readFile("news/index.html", "utf8");
+          const newsScript = await readFile("news/ai-intelligence.js", "utf8");
+          const sitemap = await readFile("sitemap.xml", "utf8");
+          if (home.includes("data-ai-now")) throw new Error("Old AI NOW ticker is still on the homepage");
+          if (!home.includes('href="news/" data-nav-key="news"')) throw new Error("Homepage AI News navigation is missing");
+          if (!home.includes('class="ai-news-inline-cta"')) throw new Error("Homepage AI News shortcut is missing");
+          if (!newsPage.includes('data-page="ai-news"')) throw new Error("Standalone news page marker is missing");
+          if (!newsScript.includes('from("ai_news_favorites")')) throw new Error("Cloud favorites integration is missing");
+          if (!newsScript.includes('from("ai_news_likes")')) throw new Error("Cloud likes integration is missing");
+          if (!sitemap.includes("https://starterhub-dev.github.io/ai-tools/news/")) throw new Error("News page is missing from sitemap");
+          console.log("AI News Center wiring OK");
+          NODE
