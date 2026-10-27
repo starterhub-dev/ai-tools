@@ -46,10 +46,6 @@ function regionOf(item){
  if(url.includes(".cn/"))return "China";if(url.includes(".jp/"))return "Japan";return "Global";
 }
 function isResearch(item){const hay=[item.title,item.excerpt,item.source,item.url].join(" ").toLowerCase();return /open.?source|research|paper|arxiv|github|dataset|benchmark|hugging.?face|论文|开源|研究|数据集|基准测试|技术报告/.test(hay);}
-function regionLabel(value){
- const map={"Global":["全球","Global","全球"],"United States":["美国","United States","美國"],"China":["中国","China","中國"],"Japan":["日本","Japan","日本"],"South Korea":["韩国","South Korea","韓國"],"India":["印度","India","印度"],"United Kingdom":["英国","United Kingdom","英國"],"Europe":["欧洲","Europe","歐洲"],"Germany":["德国","Germany","德國"],"France":["法国","France","法國"],"Australia":["澳大利亚","Australia","澳洲"],"Canada":["加拿大","Canada","加拿大"],"Global / Community":["全球社区","Global community","全球社群"]};
- const row=map[value];return row?row[lang()==="en"?1:lang()==="zh-TW"?2:0]:(value||t("unknownRegion"));
-}
 function normalize(item,index){
  const url=safeUrl(item?.url);if(!item?.title||!url)return null;const ts=Date.parse(item.publishedAt||"");
  const out={id:String(item.id||"story-"+index),title:String(item.title).trim(),url,source:String(item.source||"Public Source"),publishedAt:Number.isFinite(ts)?new Date(ts).toISOString():"",type:["major","update","abstract"].includes(item.type)?item.type:"update",region:regionOf(item),excerpt:String(item.excerpt||"").slice(0,700),sourceKind:String(item.sourceKind||"public"),likeCount:0};
