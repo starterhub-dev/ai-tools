@@ -17,6 +17,9 @@ const SOURCE_DEFS = [
   { id:"google-ai", name:"Google AI", url:"https://blog.google/innovation-and-ai/technology/ai/", kind:"official", region:"United States", weight:0.95, match:/ai|gemini|agent|model|research/i },
   { id:"huggingface", name:"Hugging Face", url:"https://huggingface.co/blog", kind:"community", region:"Global", weight:0.9, match:/ai|agent|model|llm|open source|llama|qwen|mcp|coding|robot/i },
   { id:"hackernews", name:"Hacker News", url:"https://hn.algolia.com/", kind:"community", region:"Global", weight:0.8, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=30" },
+  { id:"hn-ai-funny", name:"Hacker News · AI funny", kind:"community", region:"Global", weight:0.76, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20funny&tags=story&hitsPerPage=30" },
+  { id:"hn-ai-fails", name:"Hacker News · AI fails", kind:"community", region:"Global", weight:0.76, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI%20fail&tags=story&hitsPerPage=30" },
+  { id:"hn-llm-weird", name:"Hacker News · LLM weird", kind:"community", region:"Global", weight:0.74, forceType:"abstract", filter:/funny|weird|absurd|meme|fail|ridiculous|strange|chaos|shitpost|wtf|hallucination|bizarre|glitch|unhinged|cursed/i, api:"https://hn.algolia.com/api/v1/search_by_date?query=LLM%20weird&tags=story&hitsPerPage=30" },
   { id:"nvidia-ai", name:"NVIDIA AI", url:"https://blogs.nvidia.com/blog/category/generative-ai/feed/", kind:"official", region:"United States", weight:0.86, feed:true },
   { id:"microsoft-ai", name:"Microsoft AI", url:"https://www.microsoft.com/en-us/microsoft-cloud/blog/feed//", kind:"official", region:"United States", weight:0.84, feed:true, filter:/artificial intelligence|\bAI\b|Copilot|machine learning|Azure OpenAI|AI agent|AI model/i },
   { id:"arxiv-ai", name:"arXiv cs.AI", url:"https://export.arxiv.org/rss/cs.AI", kind:"research", region:"Global", weight:0.9, feed:true },
@@ -103,11 +106,11 @@ function classify(title, summary, source) {
   const text = `${title} ${summary}`.toLowerCase();
 
   if (
-    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\bcat\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost)/i.test(text)
+    /(agent said it was done|database disagreed|open source hell|bug-fixing agent|\bcat\b|absurd|weird|funny|hell|chaos|AI fail|wtf|meme|shitpost|bizarre|ridiculous|unhinged|glitch|hallucination|cursed)/i.test(text)
   ) return { type: "abstract", label: "🗿 AI 抽象" };
 
   if (
-    /(invest|acqui|fund|launch|release|introduc|model|gpt|claude|gemini|breakthrough|partnership|policy|research)/i.test(text)
+    /(invest|acqui|fund|launch|release|introduc|announce|partnership|policy|regulation|breakthrough|unveil|debut|raises?\s+(?:\$|£|€)|\b\d+\s*(?:million|billion)\b|rolls? out|expands? into)/i.test(text)
   ) return { type: "major", label: "🔴 AI 大事" };
 
   return { type: "update", label: "🟣 AI 动态" };
@@ -190,6 +193,16 @@ function rank(items) {
     for (const [, group] of byRegion) {
       const item = group[round];
       if (item) {
+        diverse.push(item);
+        picked.add(item.url);
+      }
+    }
+  }
+  // Reserve a few slots for genuinely odd stories and ordinary updates,
+  // so serious announcements do not erase the site's lighter side.
+  for (const [type, limit] of [["abstract", 4], ["update", 8]]) {
+    for (const item of sorted.filter(row => row.type === type).slice(0, limit)) {
+      if (!picked.has(item.url)) {
         diverse.push(item);
         picked.add(item.url);
       }
@@ -288,21 +301,23 @@ async function collectSource(sourceDef) {
     return (payload.hits || []).map(hit => {
       const title = cleanText(hit.title || hit.story_title || "");
       const url = stripTracking(hit.url || hit.story_url || `https://news.ycombinator.com/item?id=${hit.objectID}`);
-      const classification = classify(title, cleanText(hit.story_text || ""), sourceDef.name);
+      const summary = cleanText(hit.story_text || "");
+      const classification = classify(title, summary, sourceDef.name);
+      const type = sourceDef.forceType || classification.type;
       return {
         id: canonicalId(url, title),
-        type: classification.type,
-        label: classification.label,
+        type,
+        label: type === "abstract" ? "🗿 AI 抽象" : type === "major" ? "🔴 AI 大事" : "🟣 AI 动态",
         title,
-        excerpt: cleanText(hit.story_text || "") || `Hacker News 社区讨论：${title}`,
+        excerpt: summary || `Hacker News 社区讨论：${title}`,
         source: sourceDef.name,
         url,
         publishedAt: hit.created_at || "",
         sourceKind: sourceDef.kind,
         region: sourceDef.region || "Global",
-        score: 35 * sourceDef.weight + Number(hit.points || 0) * 0.12 + (classification.type === "abstract" ? 18 : 0)
+        score: 35 * sourceDef.weight + Number(hit.points || 0) * 0.12 + (type === "abstract" ? 18 : type === "major" ? 20 : 8)
       };
-    }).filter(item => looksUseful(item.title, item.url, sourceDef.name));
+    }).filter(item => looksUseful(item.title, item.url, sourceDef.name) && (!sourceDef.filter || sourceDef.filter.test(`${item.title} ${item.excerpt}`)));
   }
 
   const html = await fetchText(sourceDef.url);
