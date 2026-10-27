@@ -353,21 +353,24 @@ if (!all.length && !(existing.items || []).length) {
 const ranked = rank(merged).slice(0, MAX_ITEMS);
 const stableItems = ranked.map(({score, ...item}) => item);
 const previousStableItems = (existing.items || []).map(({score, ...item}) => item);
+const sourceStatus = {
+  checked: SOURCE_DEFS.map(source => source.name),
+  errors
+};
+const itemsChanged = JSON.stringify(stableItems) !== JSON.stringify(previousStableItems);
+const sourceStatusChanged = JSON.stringify(sourceStatus) !== JSON.stringify(existing.sourceStatus || {});
 
-if (JSON.stringify(stableItems) === JSON.stringify(previousStableItems)) {
-  console.log("No content changes; keeping the existing feed untouched.");
+if (!itemsChanged && !sourceStatusChanged) {
+  console.log("No feed or source-status changes; keeping the existing feed untouched.");
 } else {
   const output = {
     version: 1,
-    updatedAt: fetchedAt,
-    sourceStatus: {
-      checked: SOURCE_DEFS.map(source => source.name),
-      errors
-    },
+    updatedAt: itemsChanged ? fetchedAt : (existing.updatedAt || fetchedAt),
+    sourceStatus,
     items: stableItems
   };
   await writeFile(OUTPUT, JSON.stringify(output, null, 2) + "\n", "utf8");
-  console.log(`Wrote ${stableItems.length} news items to ${OUTPUT.pathname}`);
+  console.log(`Wrote ${stableItems.length} news items to data/ai-news.json`);
 }
 
 if (errors.length) {
