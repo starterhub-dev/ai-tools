@@ -50,7 +50,7 @@ function draw(options){
   box.hidden=keepVisibility?wasHidden:false;
   box.querySelectorAll("[data-q]").forEach(b=>b.onclick=function(){
     input.value=this.dataset.q;
-    draw();
+    input.dispatchEvent(new Event("input",{bubbles:true}));
     input.focus();
   });
   box.querySelectorAll("[data-name]").forEach(b=>b.onclick=function(){
