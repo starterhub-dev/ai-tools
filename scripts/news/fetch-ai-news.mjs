@@ -12,13 +12,13 @@ import { writeFile } from "node:fs/promises";
 const OUTPUT = "data/ai-news.json";
 
 const SOURCE_DEFS = [
-  { id:"openai", name:"OpenAI", url:"https://openai.com/news/", kind:"official", region:"United States", weight:1.0, match:/openai|chatgpt|codex|model|gpt|agent|ai/i },
+  { id:"openai", name:"OpenAI", url:"https://openai.com/news/rss.xml", kind:"official", region:"United States", weight:1.0, feed:true },
   { id:"anthropic", name:"Anthropic", url:"https://www.anthropic.com/news", kind:"official", region:"United States", weight:1.0, match:/anthropic|claude|agent|ai|model/i },
   { id:"google-ai", name:"Google AI", url:"https://blog.google/innovation-and-ai/technology/ai/", kind:"official", region:"United States", weight:0.95, match:/ai|gemini|agent|model|research/i },
   { id:"huggingface", name:"Hugging Face", url:"https://huggingface.co/blog", kind:"community", region:"Global", weight:0.9, match:/ai|agent|model|llm|open source|llama|qwen|mcp|coding|robot/i },
   { id:"hackernews", name:"Hacker News", url:"https://hn.algolia.com/", kind:"community", region:"Global", weight:0.8, api:"https://hn.algolia.com/api/v1/search_by_date?query=AI&tags=story&hitsPerPage=30" },
   { id:"nvidia-ai", name:"NVIDIA AI", url:"https://blogs.nvidia.com/blog/category/generative-ai/feed/", kind:"official", region:"United States", weight:0.86, feed:true },
-  { id:"microsoft-ai", name:"Microsoft AI", url:"https://blogs.microsoft.com/ai/feed/", kind:"official", region:"United States", weight:0.84, feed:true },
+  { id:"microsoft-ai", name:"Microsoft AI", url:"https://www.microsoft.com/en-us/microsoft-cloud/blog/feed//", kind:"official", region:"United States", weight:0.84, feed:true, filter:/artificial intelligence|\\bAI\\b|Copilot|machine learning|Azure OpenAI|AI agent|AI model/i },
   { id:"arxiv-ai", name:"arXiv cs.AI", url:"https://export.arxiv.org/rss/cs.AI", kind:"research", region:"Global", weight:0.9, feed:true },
   { id:"news-us", name:"Google News · US", url:"https://news.google.com/rss/search?q=artificial+intelligence+AI&hl=en-US&gl=US&ceid=US:en", kind:"regional", region:"United States", weight:0.76, feed:true },
   { id:"news-china", name:"Google News · China", url:"https://news.google.com/rss/search?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+%E5%A4%A7%E6%A8%A1%E5%9E%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans", kind:"regional", region:"China", weight:0.76, feed:true },
@@ -275,7 +275,7 @@ function extractFeedItems(xml, sourceDef) {
       region: sourceDef.region || "Global",
       score: 43 * sourceDef.weight + (classification.type === "abstract" ? 12 : classification.type === "major" ? 18 : 8)
     };
-  }).filter(item => item.title && item.url && item.publishedAt && looksUseful(item.title, item.url, sourceDef.name));
+  }).filter(item => item.title && item.url && item.publishedAt && looksUseful(item.title, item.url, sourceDef.name) && (!sourceDef.filter || sourceDef.filter.test(`${item.title} ${item.excerpt}`)));
 }
 
 async function collectSource(sourceDef) {
