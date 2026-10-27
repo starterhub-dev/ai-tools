@@ -1,0 +1,98 @@
+name: Slack Project Notifications
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+  workflow_run:
+    workflows:
+      - "Refresh AI NOW"
+      - "AI News Center Checks"
+      - "Deploy AI Directory to GitHub Pages"
+    types: [completed]
+
+permissions:
+  contents: read
+  pull-requests: read
+  actions: read
+
+concurrency:
+  group: slack-project-notifications-${{ github.event.workflow_run.id || github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Slack notification
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          EVENT_NAME: ${{ github.event_name }}
+          REPOSITORY: ${{ github.repository }}
+          SERVER_URL: ${{ github.server_url }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          PR_ACTION: ${{ github.event.action }}
+          PR_MERGED: ${{ github.event.pull_request.merged }}
+          PR_STATE: ${{ github.event.pull_request.state }}
+          RUN_NAME: ${{ github.event.workflow_run.name }}
+          RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          BRANCH: ${{ github.event.workflow_run.head_branch || github.event.pull_request.head.ref }}
+          COMMIT_SHA: ${{ github.event.workflow_run.head_sha || github.event.pull_request.head.sha }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_URL" ]; then
+            echo "::warning::SLACK_WEBHOOK_URL secret is not configured; Slack notification skipped."
+            exit 0
+          fi
+
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          event = os.environ["EVENT_NAME"]
+          repo = os.environ["REPOSITORY"]
+          if event == "pull_request":
+              action = os.environ.get("PR_ACTION", "")
+              title = os.environ.get("PR_TITLE", "Untitled PR")
+              url = os.environ.get("PR_URL", "")
+              number = os.environ.get("PR_NUMBER", "")
+              merged = os.environ.get("PR_MERGED", "").lower() == "true"
+              state = os.environ.get("PR_STATE", "")
+              if action == "closed" and merged:
+                  status = "✅ PR merged"
+              elif action == "closed":
+                  status = "⚪ PR closed without merge"
+              elif action in ("opened", "reopened"):
+                  status = "🆕 PR opened"
+              else:
+                  status = "🔄 PR updated"
+              text = f"{status}: *{repo}* · <{url}|#{number} {title}>"
+          else:
+              name = os.environ.get("RUN_NAME", "GitHub Actions")
+              conclusion = os.environ.get("RUN_CONCLUSION", "unknown")
+              url = os.environ.get("RUN_URL", "")
+              branch = os.environ.get("BRANCH", "")
+              sha = os.environ.get("COMMIT_SHA", "")[:7]
+              if conclusion == "success":
+                  status = "✅"
+              elif conclusion == "failure":
+                  status = "🚨"
+              elif conclusion == "cancelled":
+                  status = "⚪"
+              else:
+                  status = "⚠️"
+              text = f"{status} *{name}*: *{conclusion.upper()}* · {repo} · branch `{branch}` · commit `{sha}` · <{url}|View run>"
+          payload = json.dumps({"text": text}).encode("utf-8")
+          request = urllib.request.Request(
+              os.environ["SLACK_WEBHOOK_URL"],
+              data=payload,
+              headers={"Content-Type": "application/json"},
+              method="POST",
+          )
+          with urllib.request.urlopen(request, timeout=15) as response:
+              if response.status < 200 or response.status >= 300:
+                  raise RuntimeError(f"Slack webhook returned HTTP {response.status}")
+              print("Slack notification sent.")
+          PY
