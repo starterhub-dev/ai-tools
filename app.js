@@ -2,6 +2,7 @@ const internationalNames={"豆包":"Doubao","通义千问":"Qwen","文心助手"
 
 const mainCategory=(toolOrCategory)=>window.ASHCategories?.main(toolOrCategory)||((Array.isArray(toolOrCategory)?toolOrCategory[2]:toolOrCategory)||"其他");
 const taskMap={"聊天":"聊天 / 助手","学习":"搜索 / 研究","写作":"写作 / 办公","图片":"图片 / 设计","视频":"视频 / 音频","编程":"编程 / 开发"};
+const accessNotes={"ChatGPT":"通常需要账号登录；注册要求以官网当前提示为准。","DeepSeek":"通常需要账号登录；免费规则以官网当前提示为准。","豆包":"通常需要账号登录；免费规则以官网当前提示为准。","Kimi":"通常需要账号登录；免费规则以官网当前提示为准。","通义千问":"通常需要账号登录；免费规则以官网当前提示为准。"};
 
 const tools=[
 ["ChatGPT","💬","聊天 / 综合","通用 AI 助手，可聊天、搜索、分析文件与生成图片。","免费入口","https://chatgpt.com/","OpenAI"],
@@ -47,8 +48,8 @@ const tools=[
 ["Mistral Le Chat","🌬️","聊天 / 综合","Mistral 的多功能 AI 助手，支持写作、研究和代码。","免费入口","https://chat.mistral.ai/","Mistral AI"],
 ["Google AI Studio","🧪","开发 / 模型","直接体验 Gemini 模型并制作 AI 原型。","免费额度","https://aistudio.google.com/","Google"],
 ["Groq","⚡","开发 / 模型","高速运行多种开源模型的 AI 平台。","免费额度","https://groq.com/","Groq"],
-["Grammarly","✏️","写作 / 办公","英文语法、润色、改写和写作辅助工具。","免费入口","https://www.grammarly.com/","Grammarly"],
-["QuillBot","🪶","写作 / 办公","英文改写、总结、语法检查和翻译工具。","免费入口","https://quillbot.com/","QuillBot"],
+["Grammarly","✏️","写作 / 办公","英文语法检查、拼写校正与英文写作建议工具。","免费入口","https://www.grammarly.com/","Grammarly"],
+["QuillBot","🪶","写作 / 办公","英文段落改写、英语语法检查与翻译工具。","免费入口","https://quillbot.com/","QuillBot"],
 ["DeepL","🌐","翻译","高质量文本与文档翻译工具。","免费入口","https://www.deepl.com/","DeepL"],
 ["Google Translate","🗺️","翻译","支持文字、图片、语音和网页翻译。","免费使用","https://translate.google.com/","Google"],
 ["即梦AI","🎨","图片","字节跳动即梦 AI，适合图片创作与视觉设计。","免费额度","https://jimeng.jianying.com/","ByteDance"],
@@ -260,6 +261,7 @@ function render({animate=false}={}){
       </div>
       <h2>${esc(displayName)}${intl}</h2>
       <div class="desc">${esc(desc)}</div>
+      ${accessNotes[x[0]]?`<div class="access-note"><strong>账号提示</strong> ${esc(accessNotes[x[0]])}</div>`:""}
       <div class="meta"><span class="tag">${esc(category)}</span><span class="tag">${esc(x[6])}</span></div>
       <div class="card-signal">
         <span class="popularity ${hot?"is-hot":""}">🔥 ${window.ASHI18n?.t("heatLabel",score)||("热度 "+score)}${rank?` · TOP ${rank}`:""}</span>
@@ -293,7 +295,7 @@ window.addEventListener("ash:favorites-changed",()=>document.querySelectorAll(".
 $("#sort").onchange=()=>render({animate:true});
 window.addEventListener("ash:language-changed",()=>{renderCats();render({animate:true});if(window.SearchSuggestions?.refresh)window.SearchSuggestions.refresh();});
 renderCats();render();
-function pickTask(task){const c=taskMap[task];if(c){active=c;renderCats();render({animate:true})}$("#tools").scrollIntoView({behavior:"smooth",block:"start"})}
+function pickTask(task){if(task==="工作总结润色"){$("#search").value="润色工作总结";active="全部";renderCats();render({animate:true});window.SearchSuggestions?.refresh?.();$("#tools").scrollIntoView({behavior:"smooth",block:"start"});return}const c=taskMap[task];if(c){active=c;renderCats();render({animate:true})}$("#tools").scrollIntoView({behavior:"smooth",block:"start"})}
 
 const sitebar=document.querySelector(".sitebar");
 let navTick=false;
