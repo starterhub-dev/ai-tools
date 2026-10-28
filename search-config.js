@@ -4,7 +4,7 @@ const SearchConfig = {
     { id:"image", label:"图片创作", categories:["图片","设计"], phrases:["图片","图像","照片","画图","画画","绘图","绘画","做图","做图片","生成图片","图片生成","ai绘图","ai绘画","ai图片","海报","封面","头像","壁纸","插画","艺术图","概念图","商品图","产品图","商品照片","产品照片","抠图","去背景","背景移除","修图","图片编辑","image","images","photo","poster","illustration","art","design"] },
     { id:"video", label:"视频创作", categories:["视频","视频 / 音频"], phrases:["视频","做视频","生成视频","ai视频","视频生成","视频制作","短视频","短片","宣传片","口播","剪视频","剪辑","视频剪辑","字幕","视频字幕","视频特效","动画","video","videos","editing","shorts","reels"] },
     { id:"audio", label:"音乐音频", categories:["音频","音乐","音频 / 配音","视频 / 音频"], phrases:["音乐","做音乐","生成音乐","ai音乐","音乐生成","作曲","ai作曲","歌曲","生成歌曲","写歌","写一首歌","做一首歌","创作歌曲","歌曲创作","背景音乐","配乐","音频","录音","语音","配音","声音","tts","语音合成","文字转语音","转写","语音转文字","录音转文字","录音转成文字","音频转文字","音频转成文字","播客","music","audio","song","songs","compose","composition","voice","voiceover","text to speech","speech to text"] },
-    { id:"write", label:"写作办公", categories:["写作","写作 / 办公"], phrases:["写作","写文章","文章","作文","小说","写小说","故事","邮件","写邮件","文案","广告文案","改写","润色","扩写","缩写","报告","写报告","办公","写东西","writing","write","email","copywriting"] },
+    { id:"write", label:"写作办公", categories:["写作","写作 / 办公"], phrases:["写作","写文章","文章","作文","小说","写小说","故事","邮件","写邮件","文案","广告文案","改写","润色","中文润色","润色中文","工作总结","总结润色","润色工作总结","工作汇报润色","总结改写","工作总结优化","扩写","缩写","报告","写报告","办公","写东西","writing","write","email","copywriting"] },
     { id:"learn", label:"学习研究", categories:["学习","学习 / 研究","搜索 / 研究"], phrases:["学习","学习资料","资料","查资料","研究","论文","查论文","文献","知识","学习笔记","做笔记","总结资料","读文档","看论文","数学题","作业","考试","学习英语","study","learn","research","paper","papers","math"] },
     { id:"code", label:"编程开发", categories:["编程","编程 / 开发","开发 / 模型"], phrases:["编程","代码","写代码","写程序","开发","程序","网站","做网站","网页","前端","后端","python","javascript","typescript","java","c++","程序报错","代码报错","debug","调试","coding","code","developer","development"] },
     { id:"chat", label:"聊天助手", categories:["聊天","聊天 / 综合","聊天 / 办公","聊天 / 助手"], phrases:["聊天","问问题","问答","助手","日常助手","头脑风暴","对话","陪伴","chat","assistant","brainstorm","conversation"] }
@@ -28,6 +28,7 @@ const SearchConfig = {
     {id:"copywriting",intent:"write",label:"文案",phrases:["文案","广告文案","营销文案","copywriting","marketing copy"]},
     {id:"email",intent:"write",label:"邮件",phrases:["写邮件","邮件","email"]},
     {id:"rewrite",intent:"write",label:"改写润色",phrases:["改写","润色","重写","rewrite","polish","improve writing"]},
+    {id:"work_summary_polish",intent:"write",label:"工作总结润色",phrases:["工作总结","润色工作总结","工作总结润色","总结润色","工作汇报润色","中文润色","润色中文","总结改写","工作总结优化","polish Chinese work summary","polish a work report"]},
     {id:"study_material",intent:"learn",label:"学习资料",phrases:["学习资料","学习笔记","总结资料","读文档","study notes","study material"]},
     {id:"paper_research",intent:"learn",label:"论文研究",phrases:["论文","查论文","文献","paper","papers","literature review"]},
     {id:"math",intent:"learn",label:"数学学习",phrases:["数学题","数学","math","equation"]},
@@ -40,6 +41,10 @@ const SearchConfig = {
   stopPhrases:["我想要","我想","我要","我想用","我想让ai","我想让","我要用","帮我","请帮我","请问","有没有","能不能","可不可以","可以帮我","怎么用","怎么","怎么去","怎么才能","如何用","如何","怎样用","怎样","告诉我","教我","我需要","想要","想用","使用","用ai","一下","一个","一下子","给我","帮忙"],
   toolMeta:{
     "ChatGPT":{intents:["chat","learn","write","image","code"],tasks:["chat_general"],keywords:["问答","聊天","写作","图片","代码","学习"]},
+    "DeepSeek":{intents:["chat","write","learn","code"],tasks:["work_summary_polish","rewrite","chat_general"],keywords:["中文润色","工作总结","工作汇报","改写","中文写作","保留原意","总结"]},
+    "豆包":{intents:["chat","write","learn"],tasks:["work_summary_polish","rewrite","chat_general"],keywords:["中文润色","工作总结","工作汇报","改写","中文写作","保留原意","总结"]},
+    "Kimi":{intents:["chat","write","learn"],tasks:["work_summary_polish","rewrite","chat_general"],keywords:["中文润色","工作总结","工作汇报","改写","中文写作","保留原意","总结","长文"]},
+    "通义千问":{intents:["chat","write","learn"],tasks:["work_summary_polish","rewrite","chat_general"],keywords:["中文润色","工作总结","工作汇报","改写","中文写作","保留原意","总结"]},
     "Gemini":{intents:["chat","learn","write","image","code"],tasks:["chat_general"],keywords:["问答","研究","图片","代码","学习"]},
     "Claude":{intents:["chat","write","code","learn"],tasks:["article","rewrite","coding","study_material"],keywords:["长文","分析","写作","代码"]},
     "Perplexity":{intents:["learn"],tasks:["paper_research","study_material"],keywords:["搜索","研究","论文","资料"]},
