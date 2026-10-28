@@ -2,6 +2,7 @@ const internationalNames={"豆包":"Doubao","通义千问":"Qwen","文心助手"
 
 const mainCategory=(toolOrCategory)=>window.ASHCategories?.main(toolOrCategory)||((Array.isArray(toolOrCategory)?toolOrCategory[2]:toolOrCategory)||"其他");
 const taskMap={"聊天":"聊天 / 助手","学习":"搜索 / 研究","写作":"写作 / 办公","图片":"图片 / 设计","视频":"视频 / 音频","编程":"编程 / 开发"};
+const accessNotes={"ChatGPT":"通常需要账号登录；注册要求以官网当前提示为准。","DeepSeek":"通常需要账号登录；免费规则以官网当前提示为准。","豆包":"通常需要账号登录；免费规则以官网当前提示为准。","Kimi":"通常需要账号登录；免费规则以官网当前提示为准。","通义千问":"通常需要账号登录；免费规则以官网当前提示为准。"};
 
 const tools=[
 ["ChatGPT","💬","聊天 / 综合","通用 AI 助手，可聊天、搜索、分析文件与生成图片。","免费入口","https://chatgpt.com/","OpenAI"],
@@ -260,6 +261,7 @@ function render({animate=false}={}){
       </div>
       <h2>${esc(displayName)}${intl}</h2>
       <div class="desc">${esc(desc)}</div>
+      ${accessNotes[x[0]]?`<div class="access-note"><strong>账号提示</strong> ${esc(accessNotes[x[0]])}</div>`:""}
       <div class="meta"><span class="tag">${esc(category)}</span><span class="tag">${esc(x[6])}</span></div>
       <div class="card-signal">
         <span class="popularity ${hot?"is-hot":""}">🔥 ${window.ASHI18n?.t("heatLabel",score)||("热度 "+score)}${rank?` · TOP ${rank}`:""}</span>
@@ -293,7 +295,7 @@ window.addEventListener("ash:favorites-changed",()=>document.querySelectorAll(".
 $("#sort").onchange=()=>render({animate:true});
 window.addEventListener("ash:language-changed",()=>{renderCats();render({animate:true});if(window.SearchSuggestions?.refresh)window.SearchSuggestions.refresh();});
 renderCats();render();
-function pickTask(task){const c=taskMap[task];if(c){active=c;renderCats();render({animate:true})}$("#tools").scrollIntoView({behavior:"smooth",block:"start"})}
+function pickTask(task){if(task==="工作总结润色"){$("#search").value="润色工作总结";active="全部";renderCats();render({animate:true});window.SearchSuggestions?.refresh?.();$("#tools").scrollIntoView({behavior:"smooth",block:"start"});return}const c=taskMap[task];if(c){active=c;renderCats();render({animate:true})}$("#tools").scrollIntoView({behavior:"smooth",block:"start"})}
 
 const sitebar=document.querySelector(".sitebar");
 let navTick=false;
