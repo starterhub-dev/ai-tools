@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-31T13:34:49.054Z",
+  "updatedAt": "2026-10-31T17:56:54.025Z",
   "sourceStatus": {
     "checked": [
       "OpenAI",
@@ -33,18 +33,6 @@
   },
   "items": [
     {
-      "id": "news-sa1jvf",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Amazon Is Gutting Its AI Division After Sustained Failure",
-      "excerpt": "Hacker News 社区讨论：Amazon Is Gutting Its AI Division After Sustained Failure",
-      "source": "Hacker News · AI fails",
-      "url": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-      "publishedAt": "2026-10-27T16:25:30Z",
-      "sourceKind": "community",
-      "region": "Global"
-    },
-    {
       "id": "news-1qkww3g",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -57,6 +45,30 @@
       "region": "United States"
     },
     {
+      "id": "news-1a37yll",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "open-source science datasets Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready +3 18 October 29, 2026",
+      "excerpt": "open-source science datasets Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready +3 18 October 29, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/announcing-project-protostar",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceKind": "community",
+      "region": "Global"
+    },
+    {
+      "id": "news-17zxjl0",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Gates Foundation Announces 2027 Africa AI Fellowship: Applications Open for Artificial Intelligence Innovators - Global South Opportunities",
+      "excerpt": "Gates Foundation Announces 2027 Africa AI Fellowship: Applications Open for Artificial Intelligence Innovators Global South Opportunities",
+      "source": "Global South Opportunities",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPeDU5cUVvZzZFckdSWk02WV9CN20xbnZDeThmQUotcTM4dndlZnlkOFJ0aE1lSTBPV0tOdXNBWS1qcG1QMUVHMTJ4WFFJUmxZeXM5YzBZSW5sTjIzYXpLeXJUNko4MWV2eXdMWXNKNDlsYmlu?oc=5",
+      "publishedAt": "2026-10-31T07:30:52.000Z",
+      "sourceKind": "regional",
+      "region": "United Kingdom"
+    },
+    {
       "id": "news-n4mwka",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -67,18 +79,6 @@
       "publishedAt": "2026-10-31T07:16:17.000Z",
       "sourceKind": "regional",
       "region": "India"
-    },
-    {
-      "id": "news-kgk83s",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "TPR flags pension trustee oversight gaps as AI adoption grows - Investment & Pensions Europe",
-      "excerpt": "TPR flags pension trustee oversight gaps as AI adoption grows Investment & Pensions Europe",
-      "source": "Investment & Pensions Europe",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVUl5RzNHdWVIbEd5OGtrLWxCbGk2T1lfdU9HZkpLRXk0U1QtSllwZ2ZvY3RVVDhPS3hTX2l2ZHEwbGFBa1FOR1R1QVY2eUw0YXV1a3lheFFQX1hOVkxRQkxXRWo0MjhLS2R4ZDJEbUhNT2RfTW44Tk5lY0ctNVZudV9OOWQzYWE1OERQRy05cWc4Tm1XdklHdGFRQmdsbFNMdDVwbGlR?oc=5",
-      "publishedAt": "2026-10-30T13:00:54.000Z",
-      "sourceKind": "regional",
-      "region": "United Kingdom"
     },
     {
       "id": "news-yg8rr5",
@@ -105,14 +105,14 @@
       "region": "Europe"
     },
     {
-      "id": "news-1ulam65",
+      "id": "news-zu5026",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "HealWELL AI Inc. Class A (TSX:AIDX): Why Healthcare Artificial Intelligence Is Back on the S&P/TSX Composite Index Investor Radar - kalkine.ca",
-      "excerpt": "HealWELL AI Inc. Class A (TSX:AIDX): Why Healthcare Artificial Intelligence Is Back on the S&P/TSX Composite Index Investor Radar kalkine.ca",
-      "source": "kalkine.ca",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdWxjbGwtcVdQMmR1XzZvbTFlUjcxWTN1MVFialFRXzk1cnFUSUJybF8zNkJoRkRpRFdCNVdPdzh6a3JhWkozZGhXSW9velVaSWpIR29uaVlwYVAydVNIc25mLUVfWTNDTWRaTlRucGpwUlY1MTB1aE1ESUxGS3BWcWx5VzN5N3d0WDRjREJoMVZHMGhvdndGcGx4NlhWZ2tJWGIzM0VyRXh6Q25VeXQ5b1RZQmJDMFJFQ1Y4eTczOEpza2ZxWjlHbHY2blBBbHYzNHFMUFBFZC1SczFpeTAzbGdSdHhtaVZoRFJRS1h3?oc=5",
-      "publishedAt": "2026-10-30T17:12:00.000Z",
+      "title": "Meta’s $97.5 billion AI funding plan, OpenAI’s scientific claims: This week’s tech highlights - L'Orient Today",
+      "excerpt": "Meta’s $97.5 billion AI funding plan, OpenAI’s scientific claims: This week’s tech highlights L'Orient Today",
+      "source": "L'Orient Today",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOSEpJX2h1ZzIxV2NuY2ZwdFlGOUdrN2IxNlRrT2pFcXJueDhWa0M2TWxVSV91V0ZxYzdHR1pYYVRUNmh6eThyVzVfSGVtVjR2UDFaMTRKSnczUkZoTjlIdnhmM2xSbVBFS1dmRzN3cndRd0pJSGladTVxVk82RC1UM0NzSzE3clZHaXZaRHFybUppenRXbGNScW90eFVWOEQtN3NUeE1CekpIUXdMbXh1aWFsVFktM2dPaUd5eHBUTFJSbHRKQ1VLTWZJUWtZMUZfTXV1bDhB?oc=5",
+      "publishedAt": "2026-10-31T13:40:19.000Z",
       "sourceKind": "regional",
       "region": "Canada"
     },
@@ -129,6 +129,18 @@
       "region": "Australia"
     },
     {
+      "id": "news-u86dxu",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "Uso de inteligência artificial já supera o TikTok e o Facebook para buscar informações sobre investimentos; aprenda como usar IA para investir em aula gratuita - Money Times",
+      "excerpt": "Uso de inteligência artificial já supera o TikTok e o Facebook para buscar informações sobre investimentos; aprenda como usar IA para investir em aula gratuita Money Times",
+      "source": "Money Times",
+      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPbVl0QlVtVXRYak9BaktncXV0Q3NGZk1XRTkzdDhWNDM4OGg2d19jZUJHT0FSNkV4Vnd6TVA2cEQ2eUVIMlJNMzBIRmVoNXNqeWUyUElTbWtoYmloNHc2R25OVUp6WkhKVWRKcjNKYU1vQ1lOWTdTX0JEVXcxSHZjb1dScU1zQ2RxcmI3aTd1dGw1djFMekY2RmhsOUljVWVTZWxFbkFQQ0RHQkI2d2hLSEp1VlpEMmxmVzB2c01IRmlRaGtudXRtWFNsR2lEWVVrVUNURUl2ZTVabTJxWVpPc2VoLWNBOTVBSkFkV05xOVNhVkZWRm5CVVdzZXd2S1BXeU5yOU5zV3lUNXBnM1RrTVpJcUVjSnptaXpOZWlsbktkNU8zTmc?oc=5",
+      "publishedAt": "2026-10-31T15:00:00.000Z",
+      "sourceKind": "regional",
+      "region": "Brazil"
+    },
+    {
       "id": "news-rvps0n",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -141,26 +153,14 @@
       "region": "Singapore"
     },
     {
-      "id": "news-hj2mr3",
-      "type": "abstract",
-      "label": "🗿 AI 抽象",
-      "title": "Matthew Libatique et Darren Aronofsky expérimentent l’IA pour leur prochain film - Chaos Reign",
-      "excerpt": "Matthew Libatique et Darren Aronofsky expérimentent l’IA pour leur prochain film Chaos Reign",
-      "source": "Chaos Reign",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONXVHeUp4d1hRaGZYMFYycC1JRDlBWlVaMnRZUjhFdFE3U2NLNVNFR2ptVjJKb0pOOFRIWTBMMG5abWk3N2xUREN3czVMQW9CUmxqeXZXMmpYeDNiNDQxWENrVllyYlExR1MwR0NPbE1mRDhQUWFUWDNvMnlqNW5YRGFyRnUtZXl6RWxnbnJ5V0p5czFYNFJ2bFNOdl80QkgyNmU0VDM0ZTNvZw?oc=5",
-      "publishedAt": "2026-10-31T06:52:56.000Z",
-      "sourceKind": "regional",
-      "region": "France"
-    },
-    {
-      "id": "news-1fn1gi6",
+      "id": "news-1nj84d0",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "启元机器人亮相2026世界顶尖科学家论坛，探索具身智能家庭场景落地新可能 - 搜狐网",
-      "excerpt": "启元机器人亮相2026世界顶尖科学家论坛，探索具身智能家庭场景落地新可能 搜狐网",
-      "source": "搜狐网",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSVNwQklFU2hTcmpNTGtZYnhLdE93VWs2eXc4V0NSa2VuNE44TzROcl8xTGxKTTBISE1lRTdXNjVaajNDSDJOdEhuamxFNFI3ckxKaWIwVURBVUFudGN3X1h2VUxDc2pscEZFM0xUcmZvYk5sbkxXZXh0M1lMd1BJLVV4Ym9vM0FN?oc=5",
-      "publishedAt": "2026-10-31T12:36:52.000Z",
+      "title": "最新封面报道之二｜最赚钱“AI实验室”IPO揭幕 - 财新周刊",
+      "excerpt": "最新封面报道之二｜最赚钱“AI实验室”IPO揭幕 财新周刊",
+      "source": "财新周刊",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5oR004U2l6aVpUZmdfUHpKVHRJbVVPaERBRmZHMHh1OVJKR3czSnlJUl9LdzdJNXRsQklkUEdyZk5jWFNVYmFtSVVGTnJKSlprZHFsNUp1czk4c0U3NUx6cw?oc=5",
+      "publishedAt": "2026-10-31T15:01:16.000Z",
       "sourceKind": "regional",
       "region": "China"
     },
@@ -189,6 +189,18 @@
       "region": "South Korea"
     },
     {
+      "id": "news-ajuwpp",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Elle utilisait l'IA pour rédiger son recours fiscal \"abusif\" devant la Justice : elle échappe à 10 000 euros d'amende - Actu.fr",
+      "excerpt": "Elle utilisait l'IA pour rédiger son recours fiscal \"abusif\" devant la Justice : elle échappe à 10 000 euros d'amende Actu.fr",
+      "source": "Actu.fr",
+      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOcW5IdzMycU81TUtRdkJpaUhZM0hsMTd5SzZEUXlDY0YxN2FjLVpOZzFHTExmaFlySHVuTlJWLUM1UzBfQ2tVcUg0MmpIcXJrbFlIanlMQlp5NjREcmNCWml3UEtiSXNqOUZsY3VBWjB0VUs2ZzMyN2lMaFVpeDN4MlBwNTRrRDBTNm1PNjVGSGIzNk9vcVlLMGV6TlhiUWtzeTlQNndUN2lld3NTVldxcWRjbURJMXdKdjg1dlBMbGJVRW1qdC1OeHZTMmFvQnJ5ekxrcmZ5WFN4Z3VtSk5hb094LVYwSWhlUHBTRmJiclROTHRZRnpaYQ?oc=5",
+      "publishedAt": "2026-10-31T17:32:01.000Z",
+      "sourceKind": "regional",
+      "region": "France"
+    },
+    {
       "id": "news-1hig9d8",
       "type": "update",
       "label": "🟣 AI 动态",
@@ -199,30 +211,6 @@
       "publishedAt": "2026-10-31T06:13:38.000Z",
       "sourceKind": "regional",
       "region": "Taiwan"
-    },
-    {
-      "id": "news-yb14m7",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Programa oferece cursos gratuitos sobre IA para professores - Agência Brasil",
-      "excerpt": "Programa oferece cursos gratuitos sobre IA para professores Agência Brasil",
-      "source": "Agência Brasil",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVWtta0F3YWl6ZEtyT01vak9HWkFLZno0THJkSEp2dGczV2NNX3dLQkxPWmE1c1JmazFkN1ZVUWo4NU01RWJXbTBaa1h0bFBLRVJWRk16Yks4Q2ZVYTRfcnIwUVdpU0FOclZVa0ZIVHVXMHFUZEJ2cEVEZEQ5cENsSHRYMTQ1QUVyeUEzQTdET2JBeUUwRUlvc202TlAxNFhOWFo1YzlEcnNmN2hzZHdhMzRkZ3NEc2pi?oc=5",
-      "publishedAt": "2026-10-31T13:23:00.000Z",
-      "sourceKind": "regional",
-      "region": "Brazil"
-    },
-    {
-      "id": "news-1a37yll",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "open-source science datasets Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready +3 18 October 29, 2026",
-      "excerpt": "open-source science datasets Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready +3 18 October 29, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/announcing-project-protostar",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "sourceKind": "community",
-      "region": "Global"
     },
     {
       "id": "news-yvrrai",
@@ -237,6 +225,30 @@
       "region": "United States"
     },
     {
+      "id": "news-5zs6rr",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "swift mlx coreml Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms 15 October 29, 2026",
+      "excerpt": "swift mlx coreml Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms 15 October 29, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
+      "source": "Hugging Face",
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "publishedAt": "2026-10-29T00:00:00.000Z",
+      "sourceKind": "community",
+      "region": "Global"
+    },
+    {
+      "id": "news-kgk83s",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "TPR flags pension trustee oversight gaps as AI adoption grows - Investment & Pensions Europe",
+      "excerpt": "TPR flags pension trustee oversight gaps as AI adoption grows Investment & Pensions Europe",
+      "source": "Investment & Pensions Europe",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVUl5RzNHdWVIbEd5OGtrLWxCbGk2T1lfdU9HZkpLRXk0U1QtSllwZ2ZvY3RVVDhPS3hTX2l2ZHEwbGFBa1FOR1R1QVY2eUw0YXV1a3lheFFQX1hOVkxRQkxXRWo0MjhLS2R4ZDJEbUhNT2RfTW44Tk5lY0ctNVZudV9OOWQzYWE1OERQRy05cWc4Tm1XdklHdGFRQmdsbFNMdDVwbGlR?oc=5",
+      "publishedAt": "2026-10-30T13:00:54.000Z",
+      "sourceKind": "regional",
+      "region": "United Kingdom"
+    },
+    {
       "id": "news-19egshv",
       "type": "major",
       "label": "🔴 AI 大事",
@@ -249,64 +261,64 @@
       "region": "India"
     },
     {
-      "id": "news-gvuzud",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "UK chancellor sets out £600m AI investment plan to boost British innovation and security - Open Access Government",
-      "excerpt": "UK chancellor sets out £600m AI investment plan to boost British innovation and security Open Access Government",
-      "source": "Open Access Government",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUE12aVJxV20xYy1yc2xIbndra052TFFzSUJCQlJ4QjVYMXQ2dXo5VGNETUU1M3hScUh0XzMxUHl1N3JzakZJSUl1MWROYV8xc0xlaFNOTUVybU5hY2d3anFiRU5ZSktIdXJoOFJ4Zkd3bWdTRldaMXA2QklZYzFqN1pqaTZmLW9iLS04eVU0QWhXbWVVeF9fSVE4bHp5cUlSQ0FfLW9zRmxlRm5mX0dFX05sYTNJelJnLVJFT1QyOUk1WGZxcEpmNUtINkM?oc=5",
-      "publishedAt": "2026-10-30T11:26:04.000Z",
-      "sourceKind": "regional",
-      "region": "United Kingdom"
-    },
-    {
-      "id": "news-mohv2w",
+      "id": "news-1fiww4q",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Asana AI Teammates: KI-Agenten arbeiten in zehn externen Anwendungen - ad-hoc-news.de",
-      "excerpt": "Asana AI Teammates: KI-Agenten arbeiten in zehn externen Anwendungen ad-hoc-news.de",
-      "source": "ad-hoc-news.de",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTgwY2I4bnpPQVFlWXZpRUpVbHNfeFV5YjhpX1lDRUloSTB4WnVhS1ZZNlh1RWtmcGo0TXQ3djNCSUFlcnp3b1Zabmc4emY4LW5wSGgtUDFGcU1rUkdudDRJOWFTZkpmdklNSkdET2VkWkR0YzdRZ1pGeWYwd2ZwZVlLUFFHa3dTX0NKUjRpOUdfc0xDdHhBR3ZjdDhVQmVwOEFXUlRrZndnR3F6YnJaSlVrTzU3R0U?oc=5",
-      "publishedAt": "2026-10-31T11:03:43.000Z",
+      "title": "30 Jahre Safelog: Intralogistiker setzt auf mobile Robotik und künstliche Intelligenz - Logistra.de",
+      "excerpt": "30 Jahre Safelog: Intralogistiker setzt auf mobile Robotik und künstliche Intelligenz Logistra.de",
+      "source": "Logistra.de",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNkdjWXdGRl9BelNuZ05pWGZKaDZ1LWRwSTVyWUVDT3BTNVFSM3pfRlR3aFo1eHhIYllrQzZ3UXNlUGVLOENDNmsycnBWYlYwY015RjJjeXgtRFhwZVAtWVFwak84c2FjQUkwQjBxdm5rcm1zVlpCMGZYU2V4SElDUEQza2FyejJCQWRyZ2JURXpDU29VUGpUc2dzZ0xZOUlXTnJuSmJUNGpobWJLNXZpTGZhWFlfV0RGYWphTEsxSQ?oc=5",
+      "publishedAt": "2026-10-31T14:57:00.000Z",
       "sourceKind": "regional",
       "region": "Germany"
     },
     {
-      "id": "news-x5qslu",
+      "id": "news-1yq5p0y",
       "type": "major",
       "label": "🔴 AI 大事",
-      "title": "Canada and EU launch new alliance with deals on Ukraine, minerals and AI - Le Monde.fr",
-      "excerpt": "Canada and EU launch new alliance with deals on Ukraine, minerals and AI Le Monde.fr",
-      "source": "Le Monde.fr",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNS2VEQXZOR2tPVnhsZ1plSXpUeGc1d1dDWW9Jb2JQaHMzSjdILXdELU12cU1TWF9xMnZheGc1bHdNQWR5MHEzenVaMVRIRW96ZVllTHRGVC13UTBCUHRvYTBBRVhoZFV3LXRxek9GbWhwbjZtRUtTdXA1RDQ5V0RCYjNyUTZYZEo2ZUh4d1c4N2N1eERIcGFSODVqa3ZITEhBSEZtWERadzBFWVBINl9QWFhjRlZFdlRlX2JhNzBSbnY1SlExQm8wODRPRUFGNzR6XzV0TmRROHltR0ppa1E?oc=5",
-      "publishedAt": "2026-10-30T06:26:34.000Z",
+      "title": "ECCC starts €42 million AI cybersecurity cluster with three European projects - INSIGHT EU MONITORING",
+      "excerpt": "ECCC starts €42 million AI cybersecurity cluster with three European projects INSIGHT EU MONITORING",
+      "source": "INSIGHT EU MONITORING",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbjh1UWJRWjE5Q0s5UFZPN0ljTTBrdVhKendLdXQ5UGdlVmVwUHRoa3lEbktEdVVucnZDWmVTeWE4SWtKX0VFUEJMNHhWbUt3NUNWTDV1U3FsUk5YOEFOYTZ6aHB0ZV9uQ296NlZNY2ZlcFVvLUhuVkJtU1lsUG45QjBQdmV5dkpmanVHNjlLaV94LV9wYzBweTluTUNkYmZuaHdhQW14NUt4SWxHRVNwM0FPZTdhWWxnSHBnZHVGNS04UmNsT0xaUVVUdVFjYTRNZVlEcEIwaUZzeDJV?oc=5",
+      "publishedAt": "2026-10-30T01:22:03.000Z",
       "sourceKind": "regional",
       "region": "Europe"
     },
     {
-      "id": "news-oqnqvi",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Celestica could be the AI bet you’re looking for now - The Globe and Mail",
-      "excerpt": "Celestica could be the AI bet you’re looking for now The Globe and Mail",
-      "source": "The Globe and Mail",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOYVhkdG9fbDdtU1p5VXNhNTRXaWlrTlN1VDdTRFlJTTNOODZKS2s1OXZnSmNTX29DR191VzhiMlJvXzZfSTF1dGpaM05EQjgwTHYzVmFIN3lJNW80ZHZaMUV5RmJFQ3hoTWdIVWVBS1NlVUZ3MUljdGpsdWlycGZZREVaRHkxcVhVVWRFSXBJUS1SMW55SlBFWEM2a3Q5MFFHM0pzLWUxUTFiVGxVTklGMFlpSUlQRkFVRk5LYmdWamtiMGt3d0lSVTlvZGo?oc=5",
-      "publishedAt": "2026-10-31T09:00:01.000Z",
+      "id": "news-1ulam65",
+      "type": "major",
+      "label": "🔴 AI 大事",
+      "title": "HealWELL AI Inc. Class A (TSX:AIDX): Why Healthcare Artificial Intelligence Is Back on the S&P/TSX Composite Index Investor Radar - kalkine.ca",
+      "excerpt": "HealWELL AI Inc. Class A (TSX:AIDX): Why Healthcare Artificial Intelligence Is Back on the S&P/TSX Composite Index Investor Radar kalkine.ca",
+      "source": "kalkine.ca",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOdWxjbGwtcVdQMmR1XzZvbTFlUjcxWTN1MVFialFRXzk1cnFUSUJybF8zNkJoRkRpRFdCNVdPdzh6a3JhWkozZGhXSW9velVaSWpIR29uaVlwYVAydVNIc25mLUVfWTNDTWRaTlRucGpwUlY1MTB1aE1ESUxGS3BWcWx5VzN5N3d0WDRjREJoMVZHMGhvdndGcGx4NlhWZ2tJWGIzM0VyRXh6Q25VeXQ5b1RZQmJDMFJFQ1Y4eTczOEpza2ZxWjlHbHY2blBBbHYzNHFMUFBFZC1SczFpeTAzbGdSdHhtaVZoRFJRS1h3?oc=5",
+      "publishedAt": "2026-10-30T17:12:00.000Z",
       "sourceKind": "regional",
       "region": "Canada"
     },
     {
-      "id": "news-1mzv79p",
+      "id": "news-1wc1eh3",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "How Much AI Is Too Much AI In Campaign Ads? - HuffPost",
-      "excerpt": "How Much AI Is Too Much AI In Campaign Ads? HuffPost",
-      "source": "HuffPost",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRXVwcGlZQnFiVHk5R0pKRkRtTEJ1V3JhVzZ5OW9PTzhzMHEySTR5bktLUG16bkZ5TnJVN2F1bUFKSWFpNjl0MU5pV2xJU0x2QTA5X0I4V2ZQOUVta083aVNUQVlWb1pITDdyVW5tNUZZd3FmbTNTZUNZcVFrczlqLXJva0VKMmFoS3VUdWZWRWpKbGdIOVJKb1kzNW1NdWJnY1HSAacBQVVfeXFMTjlxbHE3Zk16N2hIVzA1ZWh0M0o1QVhabG1EUlhKVEc1SzBlY0VXbUx0MG9NVkhQemlyR2pFcE9pMjNvNWlPRmNWMVJBSWJXcGx3TmRsM3hrQ0YxWWJFWWIxNm1IWFEtSGFjSWFib1pYRVZqd0k3U0ZyMEY1VVJKbU9jb0NpNVlQMXhtS2N3S0VITXMzUkt0RVJSQWg2VHlPaGpxMk13alE?oc=5",
-      "publishedAt": "2026-10-31T11:00:17.000Z",
+      "title": "How artificial intelligence is changing the meaning of human creativity - Earth.com",
+      "excerpt": "How artificial intelligence is changing the meaning of human creativity Earth.com",
+      "source": "Earth.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxONnNGY2Fab0o1cGRKMzF4UmJJTjd0MVNBdElET19YazVVdFBiUlVjQWpvZnktWVY0ZkY0TXBPUHlnMHJzUlJYb0J4WHZGbzNDM2xNWmlRanJpTmlJQUtSVDVVamNnM1kzTWdvc0VpVkZ5T3pwVC0zRTh2VGkycGpBVVA1RUI4Ny1TOURTS2tHNzFYQjFocVc2TnNweHRyQ0Zxb3dWcQ?oc=5",
+      "publishedAt": "2026-10-31T14:40:00.000Z",
       "sourceKind": "regional",
       "region": "Australia"
+    },
+    {
+      "id": "news-49isfk",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "Palestra – A arte de ensinar e a inteligência artificial - Sesc Paraná",
+      "excerpt": "Palestra – A arte de ensinar e a inteligência artificial Sesc Paraná",
+      "source": "Sesc Paraná",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdmhZdVd4OVBXMVVaMzU0dDdNRWx6SVRGVmUxamZ0WHBQODBVWnRTc2hXdHc3ZlY2OGQxV3Y1bldXUlhQRXhiY19EbGItbmV4dFFMbVlRUFJ6VE12eXRQbDh4ajAycFFGU1QxOGFZQlJ5dUF4WnVnRmxDa3hMLVF6UjJPU21TNzk5dU44SE1UeHc4Zw?oc=5",
+      "publishedAt": "2026-10-31T17:33:08.000Z",
+      "sourceKind": "regional",
+      "region": "Brazil"
     },
     {
       "id": "news-1a64qcg",
@@ -321,52 +333,52 @@
       "region": "Singapore"
     },
     {
-      "id": "news-10cmui3",
+      "id": "news-1dkui40",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "Intelligence artificielle : la facture s’alourdit et les développeurs commencent à compter leurs dépenses - Mon Carnet – de l'actualité numérique",
-      "excerpt": "Intelligence artificielle : la facture s’alourdit et les développeurs commencent à compter leurs dépenses Mon Carnet – de l'actualité numérique",
-      "source": "Mon Carnet – de l'actualité numérique",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPYVRMQWJxRFhEc19EMmUyeFdDNjZ3OTExejBYMVVTMUZ3WHJ1Y2o5cTFSZC1BdFQ2SV9sOU9vU3VwTXJHclFiVV9OQlNQSTU0RWxSV3I3amlwUi1ZREctc2ZZdElMU0JwTEc3M0VqMVJjZVZQR1N3T1lfV1Q1MkgwUHVtYVFRUmN3Y1RoeVBKOU03ZnUxMDZUT0RtOFVZOFA4Y3JOdjI5WHE5SkhtRDlyOGhuX0ZWTHdfU09tbEJ1OXRPaFRqWDg4MEpsVm1temtIOUE?oc=5",
-      "publishedAt": "2026-10-31T12:33:52.000Z",
-      "sourceKind": "regional",
-      "region": "France"
-    },
-    {
-      "id": "news-12lb42h",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "[视频]算力网加速织就 助力数字中国建设 - 国际在线",
-      "excerpt": "[视频]算力网加速织就 助力数字中国建设 国际在线",
-      "source": "国际在线",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE54ZWZsTy1YTlBVLUNFdnBQTlJGNERKY2NTbGxPbFBhcGZSRlNNWWwtLW4tNFNRU0lwVGJLNzg5UjlDS1RVdXVzelp2cWYzT1IzN2NFNzJoYklVc2Y0eEVyZEVBRWZEVG1KbUdUbGt2Vy04REd5b2NTQ1VR?oc=5",
-      "publishedAt": "2026-10-31T12:15:15.000Z",
+      "title": "海亮科技亮相教装展 懂教育的AI成焦点 - 中华网",
+      "excerpt": "海亮科技亮相教装展 懂教育的AI成焦点 中华网",
+      "source": "中华网",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Pd2ZveW9ZZUFpbkVwdmFVUHNGc19HWDZ2Y1FtdVNzMmg4LXJ5QTFkQktMUFBMT2wwQmtVZ2tBT2NrYUpTeGtkZG53aDQ1Q1k2NFZsVldVTFpCWXljZ19DNHh2RTBiMTZ2aS0tckJn?oc=5",
+      "publishedAt": "2026-10-31T14:44:14.000Z",
       "sourceKind": "regional",
       "region": "China"
     },
     {
-      "id": "news-1jxa00l",
+      "id": "news-136qn8p",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "小学生のポスターに「AIくさい」、喜多方市がしょうゆコンクールの作品公開を中止 - Pasquale Pillitteri",
-      "excerpt": "小学生のポスターに「AIくさい」、喜多方市がしょうゆコンクールの作品公開を中止 Pasquale Pillitteri",
-      "source": "Pasquale Pillitteri",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQeEJYNThpN3k5MEpQWFZfd1AzV2MyTVNvMWFNaDRvV29aQ2NXa3FYS29EUTFoQ1A5WElTSTZ1UG9HU1VuaTltQ3pLLTVRUHNnS1d0Mng2QmY4TjRZTkIyRVhvVHpqYjl4TGtsNDZVcHNCR3NIMDUwb09XWVBUSWdDVg?oc=5",
-      "publishedAt": "2026-10-31T08:39:13.000Z",
+      "title": "神経細胞の仕組みを取り入れた動画生成AI「mischief 1」登場、5秒の動画がわずか0.025ドルで可能に - XenoSpectrum",
+      "excerpt": "神経細胞の仕組みを取り入れた動画生成AI「mischief 1」登場、5秒の動画がわずか0.025ドルで可能に XenoSpectrum",
+      "source": "XenoSpectrum",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZTTN4Q2UtWGt5ZGRIcG1YR085Sl9pVkNDY3p2a21XMzQxQm11RVhsWTNGRnJYbGgzSHFUV25HMkJUUkp0aXR6SFlaWlktRHJodWlNWXpjemVpMV95V3c?oc=5",
+      "publishedAt": "2026-10-31T10:06:27.000Z",
       "sourceKind": "regional",
       "region": "Japan"
     },
     {
-      "id": "news-1hsia79",
+      "id": "news-1yf22a9",
       "type": "update",
       "label": "🟣 AI 动态",
-      "title": "NBA 스타 출신, AI 미녀 선수에 추파 망신 - 뉴시스",
-      "excerpt": "NBA 스타 출신, AI 미녀 선수에 추파 망신 뉴시스",
-      "source": "뉴시스",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9faG5ZRUs0VWk4ekNfOTdpUzVMaWxWWDNRQXRKUlZ6Y2xIZlY1MzNxZkhGT0ZZZEVhOUV0WHpxN244cTY2SXRlZm1MRklPVHlmVUJOLURoc1ctNTBNN3dFWtIBeEFVX3lxTFBYdDJHZzNFWU5EbGFhNGpkeml0NW5xYllnOENkSVRUZFJxT0lnMS1qbmpBUnBGc1RwTy13eDd1N3JQaHZSLXVLWUFvUUR1elZTZUZEZ2padnI4N3k1WmZGRFpBNlZpMExTdmJHakp4cEN3SW9WLWg3UA?oc=5",
-      "publishedAt": "2026-10-31T12:16:00.000Z",
+      "title": "최태원과 샘 올트먼의 만남, 인공지능 협력의 새로운 장을 열다 - 공감신문",
+      "excerpt": "최태원과 샘 올트먼의 만남, 인공지능 협력의 새로운 장을 열다 공감신문",
+      "source": "공감신문",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9PYXAxY2V6QUpXUkxwQkw3cDczR19aMjYtaW1OaEFGdmxfd2dYNk9leHFjQ3hMTUl3TzQ1NmRHWUlybUFBRURKaTFvWmktZl9NWWpISkpJaHd6bHdBdDdFeDcyQlBRQU9N?oc=5",
+      "publishedAt": "2026-10-31T12:46:20.000Z",
       "sourceKind": "regional",
       "region": "South Korea"
+    },
+    {
+      "id": "news-16v74in",
+      "type": "update",
+      "label": "🟣 AI 动态",
+      "title": "L’intelligence artificielle perd le contrôle dans la mine du musée des Gueules rouges près de Brignoles - Nice-Matin",
+      "excerpt": "L’intelligence artificielle perd le contrôle dans la mine du musée des Gueules rouges près de Brignoles Nice-Matin",
+      "source": "Nice-Matin",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSWZfNkZyR1FJcFJQMEVIQU02bmJVeGl5RFluOXZ1T1NPQy1SQzJFcnRsMk8wcEdRTEQ1Z2tPTGl6bENENmg0SVNMQkYwZnhwQlg2WHN2aFY3N0huYzlwa09DV2tKMlZtby1yN2k1eWJObE9GaVlISFY3TlJQRzNycFNZdGFJdkFqZmNaNWlSWnI3MW1PMkRDdEFpanYwQWp5YXFqY3JzSFB0QUQzelBObm5pelBTano1aGJoMEdwQzI2VDhDam1zV1QtVGxyMms3bHRlcG5vMGhyLVRDNXI4?oc=5",
+      "publishedAt": "2026-10-31T17:20:01.000Z",
+      "sourceKind": "regional",
+      "region": "France"
     },
     {
       "id": "news-2b1iv6",
@@ -379,18 +391,6 @@
       "publishedAt": "2026-10-31T05:58:54.000Z",
       "sourceKind": "regional",
       "region": "Taiwan"
-    },
-    {
-      "id": "news-647301",
-      "type": "update",
-      "label": "🟣 AI 动态",
-      "title": "Inteligência artificial pode criar uma geração de profissionais sem repertório - Você RH",
-      "excerpt": "Inteligência artificial pode criar uma geração de profissionais sem repertório Você RH",
-      "source": "Você RH",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ3NWNzNURE5raW9haS12TTNYRGllcnBVbV80T2xvanZ6TkdSZHA4Z1FRbTRJajNqc2hUYm1fM1JyalM2OWNzZlZxTy1DQ1o4UG5lRmhlSS1IcHZkM1podUtYdk0wOV9mZ2xybW5qSEcteHI0VUJrZlpTdWVYWDNKZmlyY0hTQjhYQnNtRFhudnN4dFdvX1JtTHRtc3FRLXlmVXJ1UlZ2RHhrTE1icmdpb0k5elg3UzgzWmVDQ1A3bFFwZXRZRXc?oc=5",
-      "publishedAt": "2026-10-31T13:11:00.000Z",
-      "sourceKind": "regional",
-      "region": "Brazil"
     },
     {
       "id": "news-1tuo3he",
@@ -415,6 +415,18 @@
       "publishedAt": "2026-10-21T10:30:02.000Z",
       "sourceKind": "official",
       "region": "United States"
+    },
+    {
+      "id": "news-1cw26ya",
+      "type": "abstract",
+      "label": "🗿 AI 抽象",
+      "title": "Show HN: Jointter – A daily word puzzle using dots and lines",
+      "excerpt": "Hello everyone. I’m a mathematician by training, and I love mathematical and logical puzzles and brain-teasers. Inspired by popular games like Sudoku and Wordle, I decided to come up with an engaging game of my own. As it turns out, that’s not so easy! I had a",
+      "source": "Hacker News",
+      "url": "https://www.jointter.com/",
+      "publishedAt": "2026-10-31T16:24:24Z",
+      "sourceKind": "community",
+      "region": "Global"
     },
     {
       "id": "news-la55n0",
@@ -619,18 +631,6 @@
       "publishedAt": "2026-10-20T00:00:00.000Z",
       "sourceKind": "official",
       "region": "United States"
-    },
-    {
-      "id": "news-5zs6rr",
-      "type": "major",
-      "label": "🔴 AI 大事",
-      "title": "swift mlx coreml Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms 13 October 29, 2026",
-      "excerpt": "swift mlx coreml Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms 13 October 29, 2026。来自 Hugging Face 的公开更新，点击查看原文。",
-      "source": "Hugging Face",
-      "url": "https://huggingface.co/blog/anydecisionmodel",
-      "publishedAt": "2026-10-29T00:00:00.000Z",
-      "sourceKind": "community",
-      "region": "Global"
     },
     {
       "id": "news-wptvjo",
