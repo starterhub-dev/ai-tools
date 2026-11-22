@@ -49,9 +49,9 @@ function task(value){if(lang==="en")return TASK_EN[value]||value;if(lang==="zh-T
 function applyStatic(){
   if(!document.getElementById("languagePicker"))return;
   document.documentElement.lang=lang==="en"?"en":(lang==="zh-TW"?"zh-TW":"zh-CN");
-  const isNewsPage=document.body.dataset.page==="ai-news";document.title=isNewsPage?(lang==="en"?"AI News | AI Starter Hub":(lang==="zh-TW"?"AI 資訊中心 | AI Starter Hub":"AI 资讯中心 | AI Starter Hub")):(lang==="en"?"AI Starter Hub | 150+ AI Tools, Guides & Free Access":(lang==="zh-TW"?"AI Starter Hub｜150+ AI 工具、教學與免費入口":"AI 新手導航 | 150+ AI 工具、教程與免費入口 · AI Starter Hub"));
+  const isNewsPage=document.body.dataset.page==="ai-news";document.title=isNewsPage?(lang==="en"?"AI News | AI Starter Hub":(lang==="zh-TW"?"AI 資訊中心 | AI Starter Hub":"AI 资讯中心 | AI Starter Hub")):(lang==="en"?"AI Starter Hub | 148 AI Tools, Guides & Free Access":(lang==="zh-TW"?"AI Starter Hub｜148 AI 工具、教學與免費入口":"AI 新手導航 | 148 AI 工具、教程與免費入口 · AI Starter Hub"));
   const meta=document.querySelector('meta[name="description"]');
-  if(meta)meta.content=isNewsPage?(lang==="en"?"Global AI news, model launches, open-source research and AI community stories.":(lang==="zh-TW"?"全球 AI 快訊、模型發布、開源研究與 AI 社群趣聞。":"全球 AI 快讯、模型发布、开源研究与 AI 社区趣闻。")):(lang==="en"?"AI Starter Hub helps beginners discover 150+ AI tools by task, with official links and practical guides.":(lang==="zh-TW"?"AI Starter Hub 收錄 150+ 主流 AI 工具，提供依用途探索、官方入口與新手教學。":"AI 新手導航（AI Starter Hub）收錄 150+ 主流 AI 工具，提供按用途發現、官方入口與新手教學。"));
+  if(meta)meta.content=isNewsPage?(lang==="en"?"Global AI news, model launches, open-source research and AI community stories.":(lang==="zh-TW"?"全球 AI 快訊、模型發布、開源研究與 AI 社群趣聞。":"全球 AI 快讯、模型发布、开源研究与 AI 社区趣闻。")):(lang==="en"?"AI Starter Hub helps beginners discover 148 AI tools by task, with official links and practical guides.":(lang==="zh-TW"?"AI Starter Hub 收錄 148 主流 AI 工具，提供依用途探索、官方入口與新手教學。":"AI 新手導航（AI Starter Hub）收錄 148 主流 AI 工具，提供按用途發現、官方入口與新手教學。"));
   const picker=document.getElementById("languagePicker"),btn=document.getElementById("languageButton"),menu=document.getElementById("languageMenu");
   if(btn&&menu){
     const label=document.getElementById("languageButtonLabel");
