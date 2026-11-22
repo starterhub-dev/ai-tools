@@ -138,7 +138,6 @@ const ALIASES = {
   "Pika": ["pika ai", "pika"],
   "Luma Dream Machine": ["luma dream machine", "dream machine"],
   "TTSMaker": ["ttsmaker"],
-  "PlayHT": ["playht"],
   "Suno": ["suno ai", "suno"],
   "Udio": ["udio"],
   "Soundraw": ["soundraw"],

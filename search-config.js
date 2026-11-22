@@ -60,7 +60,6 @@ const SearchConfig = {
     "Soundraw":{intents:["audio"],tasks:["music_creation"],keywords:["音乐","背景音乐","配乐","music","background music"]},
     "ElevenLabs":{intents:["audio"],tasks:["voice_generation"],keywords:["语音","配音","声音","TTS","voice","voiceover","text to speech"]},
     "TTSMaker":{intents:["audio"],tasks:["voice_generation"],keywords:["配音","语音合成","文字转语音","TTS","voice"]},
-    "PlayHT":{intents:["audio"],tasks:["voice_generation"],keywords:["配音","语音","语音合成","TTS","voiceover"]},
     "Adobe Podcast":{intents:["audio"],tasks:["audio_edit","transcription"],keywords:["音频","播客","降噪","转写","podcast","audio"]},
     "Descript":{intents:["audio","video"],tasks:["audio_edit","transcription","video_edit"],keywords:["音频","播客","转写","剪辑","podcast","transcription"]},
     "Otter.ai":{intents:["audio","learn"],tasks:["transcription"],keywords:["会议","转写","录音","语音转文字","transcription"]},
