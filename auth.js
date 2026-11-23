@@ -1,4 +1,11 @@
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+let createClient;
+let sdkLoadError = null;
+try {
+  ({ createClient } = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm"));
+} catch (error) {
+  sdkLoadError = error;
+  console.error("Supabase SDK failed to load:", error);
+}
 
 /*
   AI Starter Hub · Google Auth
@@ -8,15 +15,16 @@ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 const SUPABASE_URL = "https://rebwsnahwpyqahmuycri.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_TVRAm1r1Er3xBfrtA6Q8DA_eeCYqQZk";
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+export const supabase = createClient ? createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true
   }
-});
+}) : null;
 
 export async function signInWithGoogle({ redirectTo, prompt } = {}) {
+  if (!supabase) throw new Error("登录组件加载失败，请检查网络后刷新页面重试。" + (sdkLoadError?.message || ""));
   const options = {
     redirectTo: redirectTo || (window.location.origin + window.location.pathname)
   };
@@ -60,8 +68,15 @@ function renderUser(user) {
     button.append(mark, makeText("span", "使用 Google 登录"));
 
     button.onclick = async () => {
-      const { error } = await signInWithGoogle();
-      if (error) window.alert("Google 登录失败：" + error.message);
+      try {
+        const { data, error } = await signInWithGoogle();
+        if (error) throw error;
+        if (!data?.url) throw new Error("没有获取到 Google 授权地址。");
+        window.location.assign(data.url);
+      } catch (error) {
+        console.error("Google sign-in failed:", error);
+        window.alert("Google 登录无法启动：" + (error?.message || "未知错误"));
+      }
     };
     return;
   }
@@ -94,7 +109,7 @@ function renderUser(user) {
 
 window.addEventListener("ash:language-changed", () => renderUser(currentUser));
 
-if (SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY) {
+if (supabase) {
   supabase.auth.onAuthStateChange((_event, session) => {
     renderUser(session?.user || null);
   });
