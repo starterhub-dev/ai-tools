@@ -60,8 +60,29 @@ function renderUser(user) {
     button.append(mark, makeText("span", "使用 Google 登录"));
 
     button.onclick = async () => {
-      const { error } = await signInWithGoogle();
-      if (error) window.alert("Google 登录失败：" + error.message);
+      if (button.disabled) return;
+      const originalLabel = button.lastElementChild?.textContent || "使用 Google 登录";
+      button.disabled = true;
+      button.setAttribute("aria-busy", "true");
+      if (button.lastElementChild) button.lastElementChild.textContent = "正在连接 Google…";
+
+      try {
+        const { data, error } = await signInWithGoogle();
+        if (error) throw error;
+        // Supabase normally redirects the page. If it returns without redirecting,
+        // surface a useful diagnostic instead of leaving the button looking inert.
+        if (data?.url) {
+          window.location.assign(data.url);
+        } else {
+          throw new Error("Supabase 未返回 Google 授权地址，请检查 OAuth 配置。");
+        }
+      } catch (error) {
+        console.error("Google sign-in failed:", error);
+        window.alert("Google 登录暂时无法启动：" + (error?.message || "未知错误") + "\\n\\n请稍后重试；如果持续出现，请联系站点管理员检查 Supabase 与 Google OAuth 配置。");
+        button.disabled = false;
+        button.removeAttribute("aria-busy");
+        if (button.lastElementChild) button.lastElementChild.textContent = originalLabel;
+      }
     };
     return;
   }
