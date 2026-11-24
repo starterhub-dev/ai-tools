@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-24T20:03:07+08:00",
+ "fetched_at": "2026-11-24T20:10:45+08:00",
  "sources": [
   "starcoreid",
   "jichangba",
@@ -9,141 +9,81 @@
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "BrianBryant1535@outlook.com",
-   "password": "Z2XjBVrZKK",
+   "account": "shajj1234@163.com",
+   "password": "HrWnXCytVj4M",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "liuyiqing011116@163.com",
-   "password": "b75fSJwrWpvX",
+   "account": "mxrhy123@163.com",
+   "password": "9a9VXE19dRyS",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "lyong2016@163.com",
-   "password": "3NTVmJgPjnBp",
+   "account": "apple20110508@163.com",
+   "password": "DVdx2qTSUjw6",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "ymq1381@163.com",
-   "password": "zcSn18wXtuGJ",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "kgs9990@163.com",
-   "password": "HF1A74vBeNUG",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "yexiaorusw@163.com",
-   "password": "5MAsJeFuSxUQ",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
    "account": "yp12312345@163.com",
-   "password": "43hEPn689JPg",
+   "password": "UT63Qu9d31yk",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "zxl6022@163.com",
-   "password": "QSdcksV5gcyA",
+   "account": "zyx33321@163.com",
+   "password": "FmntYvXz6Wyu",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "iloveipad3@163.com",
-   "password": "DdYkbdYTMG3p",
+   "account": "ymq1381@163.com",
+   "password": "STqb36eAnEUQ",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "lxh1661@163.com",
-   "password": "AUB9xhDnkSEh",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "vex4512@163.com",
-   "password": "vUmmvzj18h4j",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "linsujuan123456@163.com",
-   "password": "esCy2s9FVr9s",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "shajj1234@163.com",
-   "password": "HrWnXCytVj4M",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
    "account": "xvs2161@163.com",
-   "password": "7z7v97sqjbBP",
+   "password": "P8SwKSTCSYXg",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "yf90112@163.com",
+   "password": "EG6nTD2eNyfP",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -153,7 +93,57 @@
    "password": "9VueXrGPTxkc",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "linsujuan123456@163.com",
+   "password": "esCy2s9FVr9s",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "wo7812170000@163.com",
+   "password": "aME2SMn1B4EN",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "wangjie086@163.com",
+   "password": "AgU6ErgrxjkD",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "vex4512@163.com",
+   "password": "vUmmvzj18h4j",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "lyong2016@163.com",
+   "password": "3NTVmJgPjnBp",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -163,107 +153,107 @@
    "password": "NkJ7Z6jckDhP",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "wo7812170000@163.com",
-   "password": "Ygff3tnX7z4R",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "benson987654321@163.com",
-   "password": "v9vwe22y72Tq",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "hjx1370168@163.com",
-   "password": "8BMSHQCCcQjD",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "ly901@163.com",
-   "password": "HP6gGbwr9vtT",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "zyx33321@163.com",
-   "password": "55JY9FhMaxQB",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "mxrhy123@163.com",
-   "password": "q4kaSdkMgduy",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
-   "source": "starcoreid"
-  },
-  {
-   "region": "us",
-   "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "yf90112@163.com",
-   "password": "b5deW9pxyg7H",
-   "software": "",
-   "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
    "account": "cra5969@163.com",
-   "password": "RNWp2PK71CKc",
+   "password": "QxAbySTn7CQM",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
-   "account": "wangjie086@163.com",
-   "password": "1b9r86aGurJv",
+   "account": "xpg3744@163.com",
+   "password": "qq3vJdNjQT2y",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "iloveipad3@163.com",
+   "password": "aDCCa8FY382c",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "zxl6022@163.com",
+   "password": "QSdcksV5gcyA",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
    "region": "us",
    "region_label": "🇺🇸 美国区 · 状态：正常",
    "account": "jdyf1234@163.com",
-   "password": "96bH8nbQNHJa",
+   "password": "F3w5Vxv7Caqe",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "liuyiqing011116@163.com",
+   "password": "H9NpacVJ8JGJ",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "xlscp2012@163.com",
+   "password": "6MrKxwzXBYTk",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "hjx1370168@163.com",
+   "password": "8SM1TddjCKg9",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "ly901@163.com",
+   "password": "4Y1fRw2gPT7u",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
+   "source": "starcoreid"
+  },
+  {
+   "region": "us",
+   "region_label": "🇺🇸 美国区 · 状态：正常",
+   "account": "kgs9990@163.com",
+   "password": "QaXcBsnu24RP",
+   "software": "",
+   "status": "正常",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -273,7 +263,7 @@
    "password": "Pnf37KnSZu",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -283,7 +273,7 @@
    "password": "SKjN3N8Rnh",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -293,7 +283,7 @@
    "password": "BGBgqHwSG1",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -303,7 +293,7 @@
    "password": "8zAT16qPjT",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
@@ -313,7 +303,7 @@
    "password": "5ZnT7MM5NZ",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-24 19:05:01",
+   "checked_at": "2026-11-24 20:05:02",
    "source": "starcoreid"
   },
   {
