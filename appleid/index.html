@@ -112,6 +112,14 @@
         color: var(--ink); text-decoration: none; min-height: 56px;
       }
       .ad-banner:hover { border-color: var(--accent); }
+      .ad-banner-img {
+        display: block; margin-top: 18px;
+        background: #000; border: 1px solid var(--line); border-radius: 12px;
+        overflow: hidden; position: relative; line-height: 0;
+      }
+      .ad-banner-img:hover { border-color: var(--accent); }
+      .ad-banner-img img { display: block; width: 100%; height: auto; }
+      .ad-banner-img .ad-tag { position: absolute; top: 8px; left: 8px; z-index: 1; }
       .ad-tag {
         flex: none; font-size: 11px; font-weight: 700; letter-spacing: .08em;
         color: var(--amber); background: var(--amber-soft);
@@ -272,13 +280,9 @@
         <p class="sync-line" id="syncLine">正在加载账号数据…</p>
       </header>
 
-      <a class="ad-banner" href="https://huing.faka24.com/" target="_blank" rel="noopener">
+      <a class="ad-banner-img" href="https://huing.faka24.com/" target="_blank" rel="noopener">
         <span class="ad-tag">广告</span>
-        <span>
-          <span class="ad-main">站长小店 · 24 小时自动发货</span><br />
-          <span class="ad-sub">小火箭租号、独享账号等数字商品，共享号不够用可以来这边看看</span>
-        </span>
-        <span class="ad-go">进店逛逛 ›</span>
+        <img src="ad-banner.jpg" alt="24H自助卡仓 · 站长小店 24 小时自动发货" />
       </a>
 
       <div class="notice">
