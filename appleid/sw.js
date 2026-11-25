@@ -1,7 +1,7 @@
 /* 免费 Apple ID 共享站 service worker：缓存应用外壳，离线也能打开。
    账号数据（accounts.json）走网络实时拉取，页面自带内置快照兜底，
    这里不拦截跨域数据请求。 */
-var CACHE = "appleid-v1";
+var CACHE = "appleid-v2";
 var CORE = [
   "./",
   "index.html",
