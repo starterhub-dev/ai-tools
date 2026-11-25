@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T09:45:02+08:00",
+ "fetched_at": "2026-11-25T10:15:04+08:00",
  "sources": [
   "starcoreid",
   "jichangba",
@@ -318,61 +318,51 @@
   {
    "region": "us",
    "region_label": "美区",
-   "account": "8kkpln855no6u7@offcg.com",
-   "password": "puHSQe3fuevd",
-   "software": "",
-   "status": "可用",
-   "checked_at": "2026-11-24 17:33:55",
-   "source": "wwkejishe"
-  },
-  {
-   "region": "us",
-   "region_label": "美区",
    "account": "infmnmm3550y85@cairua.com",
-   "password": "8djavgj5DaPx",
+   "password": "qGyfzqHzp4Dv",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:24:39",
+   "checked_at": "2026-11-25 01:54:43",
    "source": "wwkejishe"
   },
   {
    "region": "us",
    "region_label": "美区",
    "account": "g6g769zwz23m18@cairua.com",
-   "password": "RUZY1M9cKGMQ",
+   "password": "b5VRVqQcW7n2",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:07:25",
+   "checked_at": "2026-11-25 01:40:59",
    "source": "wwkejishe"
   },
   {
-   "region": "tw",
-   "region_label": "台湾",
-   "account": "18818802719@163.com",
-   "password": "xyZG9JxYqh",
+   "region": "us",
+   "region_label": "美区",
+   "account": "8kkpln855no6u7@offcg.com",
+   "password": "KcyUC6Nq4a3S",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:52:17",
+   "checked_at": "2026-11-25 00:57:56",
    "source": "wwkejishe"
   },
   {
    "region": "tw",
    "region_label": "台湾",
    "account": "15773836180@163.com",
-   "password": "BmShR6dMKD",
+   "password": "cXwVwJPSZ1",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:49:27",
+   "checked_at": "2026-11-25 01:48:19",
    "source": "wwkejishe"
   },
   {
-   "region": "tw",
-   "region_label": "台湾",
-   "account": "15038260122@163.com",
-   "password": "REXqMTvQ7M",
+   "region": "hk",
+   "region_label": "香港",
+   "account": "IvorBabbel471477@hotmail.com",
+   "password": "mH1u4MRX3nVQ",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:48:22",
+   "checked_at": "2026-11-25 01:48:14",
    "source": "wwkejishe"
   },
   {
@@ -382,37 +372,47 @@
    "password": "1Qg8w13WPB",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:43:09",
+   "checked_at": "2026-11-25 01:47:42",
+   "source": "wwkejishe"
+  },
+  {
+   "region": "tw",
+   "region_label": "台湾",
+   "account": "18818802719@163.com",
+   "password": "xyZG9JxYqh",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 01:40:34",
+   "source": "wwkejishe"
+  },
+  {
+   "region": "tw",
+   "region_label": "台湾",
+   "account": "15038260122@163.com",
+   "password": "REXqMTvQ7M",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 01:39:31",
    "source": "wwkejishe"
   },
   {
    "region": "hk",
    "region_label": "香港",
    "account": "dukeh4975@gmail.com",
-   "password": "J769KRHzWSMV",
+   "password": "QkE4WB9d135v",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:32:32",
+   "checked_at": "2026-11-25 01:01:42",
    "source": "wwkejishe"
   },
   {
    "region": "hk",
    "region_label": "香港",
    "account": "MesserPatriciaNSOA78@galaxyhit.com",
-   "password": "wwvcj7dMuPfd",
+   "password": "Kx5HaPswMFSX",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-24 17:25:12",
-   "source": "wwkejishe"
-  },
-  {
-   "region": "hk",
-   "region_label": "香港",
-   "account": "IvorBabbel471477@hotmail.com",
-   "password": "aEvnSDMqb7ah",
-   "software": "",
-   "status": "可用",
-   "checked_at": "2026-11-24 17:15:11",
+   "checked_at": "2026-11-25 00:54:30",
    "source": "wwkejishe"
   }
  ]
