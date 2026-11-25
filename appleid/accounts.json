@@ -1,9 +1,12 @@
 {
- "fetched_at": "2026-11-25T11:55:46+08:00",
+ "fetched_at": "2026-11-25T11:58:29+08:00",
  "sources": [
   "starcoreid",
   "jichangba",
-  "wwkejishe"
+  "wwkejishe",
+  "ccbaohe",
+  "taozi",
+  "zhandu"
  ],
  "accounts": [
   {
@@ -13,7 +16,7 @@
    "password": "bzX9ZhWdy8pp",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -23,7 +26,7 @@
    "password": "RuVgUm3YEp",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -33,7 +36,7 @@
    "password": "ZmaCCZmmZsF4",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -43,7 +46,7 @@
    "password": "k7hCFt1xhhZs",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -53,7 +56,7 @@
    "password": "UCmKC2gNt56J",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -63,7 +66,7 @@
    "password": "qGJgZ1eR2gc1",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -73,7 +76,7 @@
    "password": "zcgRBTDwCrB8",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -83,7 +86,7 @@
    "password": "pU5qD73X2yE1",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -93,7 +96,7 @@
    "password": "PZCz3KsRrxzs",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -103,7 +106,7 @@
    "password": "jB58xHgfUpBZ",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -113,7 +116,7 @@
    "password": "WHVE9rU2BH2P",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -123,7 +126,7 @@
    "password": "eDwJTM7QnNh9",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -133,7 +136,7 @@
    "password": "Ckce8PSJzf7T",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -143,7 +146,7 @@
    "password": "AQ9Yskfjyse2",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -153,7 +156,7 @@
    "password": "nhW589xrxCNV",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -163,7 +166,7 @@
    "password": "sD8v3JSSG35S",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -173,7 +176,7 @@
    "password": "p4ygD1Uw22Hw",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -183,7 +186,7 @@
    "password": "97HsXY1ajcxj",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -193,7 +196,7 @@
    "password": "JJDcJT7usRBp",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -203,7 +206,7 @@
    "password": "jJJ331weJDqp",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -213,7 +216,7 @@
    "password": "AZr87RWHEYRB",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -223,7 +226,7 @@
    "password": "TtW8WyBSBxQr",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -233,7 +236,7 @@
    "password": "1ZKSsg12aTmF",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -243,7 +246,7 @@
    "password": "8VqZspCYu3vy",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -253,7 +256,7 @@
    "password": "fCt8XHfkkAaa",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -263,7 +266,7 @@
    "password": "wGk13jR7zt4K",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -273,7 +276,7 @@
    "password": "5tdK9sbmPR",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -283,7 +286,7 @@
    "password": "KyPT9adUBC",
    "software": "",
    "status": "正常",
-   "checked_at": "2026-11-25 11:55:43",
+   "checked_at": "2026-11-25 11:57:30",
    "source": "starcoreid"
   },
   {
@@ -293,7 +296,7 @@
    "password": "JcBa@2026Us#81",
    "software": "已购 Shadowrocket ChatGPT / TikTok",
    "status": "🟢 正常可用 · 4分钟前解锁",
-   "checked_at": "2026-11-25 11:51:44",
+   "checked_at": "2026-11-25 11:53:31",
    "source": "jichangba"
   },
   {
@@ -303,7 +306,7 @@
    "password": "qGyfzqHzp4Dv",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -313,7 +316,7 @@
    "password": "b5VRVqQcW7n2",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -323,7 +326,7 @@
    "password": "KcyUC6Nq4a3S",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -333,7 +336,7 @@
    "password": "cXwVwJPSZ1",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -343,7 +346,7 @@
    "password": "mH1u4MRX3nVQ",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -353,7 +356,7 @@
    "password": "1Qg8w13WPB",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -363,7 +366,7 @@
    "password": "xyZG9JxYqh",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -373,7 +376,7 @@
    "password": "REXqMTvQ7M",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -383,7 +386,7 @@
    "password": "QkE4WB9d135v",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
   },
   {
@@ -393,8 +396,538 @@
    "password": "Kx5HaPswMFSX",
    "software": "",
    "status": "可用",
-   "checked_at": "2026-11-25 11:55:45",
+   "checked_at": "2026-11-25 11:57:32",
    "source": "wwkejishe"
+  },
+  {
+   "region": "hk",
+   "region_label": "香港",
+   "account": "WinesickleUreno0006@hotmail.com",
+   "password": "1CTcDuAHGH",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "kr",
+   "region_label": "韩国",
+   "account": "JoelWoodrqu@outlook.com",
+   "password": "RWGb2v3Mcz",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "jp",
+   "region_label": "日本",
+   "account": "LaytonFayed44953@outlook.com",
+   "password": "6dFCXrScYk",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美区",
+   "account": "laytonfayed44953@outlook.com",
+   "password": "6dFCXrScYk",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美区",
+   "account": "caoileczachor6200@hotmail.com",
+   "password": "KyPT9adUBC",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美区",
+   "account": "winesickleureno0006@hotmail.com",
+   "password": "1CTcDuAHGH",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美区",
+   "account": "joelwoodrqu@outlook.com",
+   "password": "RWGb2v3Mcz",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美区",
+   "account": "brianbryant1535@outlook.com",
+   "password": "RuVgUm3YEp",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "qcb8984@163.com",
+   "password": "EZD2ebdm7yhq",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "nivoci@163.com",
+   "password": "1v9K9wVrFXJq",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "luojiale1999@163.com",
+   "password": "WG77AChNa8jm",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "qrr4619@163.com",
+   "password": "8gsnFmt99Ug1",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "wyxq12345@163.com",
+   "password": "E8sjuaGAgEdU",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "1341938286@qq.com",
+   "password": "z4YK3furpcyG",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "yexiaorusw@163.com",
+   "password": "ycRWY526vhGN",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "yz19890814@163.com",
+   "password": "U5wsdbpy1jau",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "sonatawang@163.com",
+   "password": "1vAHddNdqtaN",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:34",
+   "source": "ccbaohe"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "jqxpigy8558@outlook.com",
+   "password": "PaVEw3XD8N",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "ug6gsnoic2hm2qdypg@icloud.com",
+   "password": "h57uNFjSD3",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "mollieruby793cwvy@gmail.com",
+   "password": "VBmHzu5154",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "14@kuaiyun1.com",
+   "password": "nvynZ4uj5J",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "leooscar576wbxj@gmail.com",
+   "password": "qkTJh2QEGF",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "larrySc28ilg@icloud.com",
+   "password": "kePwT6E5MP",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "samanthaking1307@outlook.com",
+   "password": "Z7c8KyWmP2N+UAgpwUYWFg==",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "fyqnnmla36148@outlook.com",
+   "password": "n61HYUtnY9",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "esmeharley260rhdy@gmail.com",
+   "password": "q8Ff617kDK",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "qadq32xcyv2i14k6@icloud.com",
+   "password": "v8r9GdDZ74",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "buddinganvil8143@icloud.com",
+   "password": "AvQ4YawSTr",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "renatahadnotqw@hotmail.com",
+   "password": "TDPywJ7Sd4sw",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "depletesolstice13615@icloud.com",
+   "password": "6vR5e8XUrN",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "loganfer1eu@hotmail.com",
+   "password": "Kw/F6wMdWr1xygCi/PMiwA==",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "myzpena@hotmail.com",
+   "password": "DkDAY9KxRB",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国",
+   "account": "sharonvzz39000@icloud.com",
+   "password": "wmPja7rvbe",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "hk",
+   "region_label": "香港",
+   "account": "bloomfilter82473@icloud.com",
+   "password": "q7B6y2ktE9",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "hk",
+   "region_label": "香港",
+   "account": "lancehri83304@icloud.com",
+   "password": "M6NJrzKU29",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "quodonnell@gmail.com",
+   "password": "Dd10096da",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "bottledroaring87957@icloud.com",
+   "password": "K3hAdhJdsF",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "tisacantara@hotmail.com",
+   "password": "vU4RrgJxnS",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "anagnos.gide94491@applechipchipkll.co.in",
+   "password": "5PwHX9QCjT",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "arwinionescu@hotmail.com",
+   "password": "PAZP7Pke9p",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "未标注地区",
+   "account": "liangqiupeiyu557334@hotmail.com",
+   "password": "wKDYHB@1",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:37",
+   "source": "taozi"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "mer2747@163.com",
+   "password": "H94dSJn9HfkR",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "laocaizhi@163.com",
+   "password": "4UDyB8wFhnsg",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "ymq1381@163.com",
+   "password": "3RFu9RQEtXp9",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "meters1011@163.com",
+   "password": "DmJGU8cjGRZC",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "axe3997@163.com",
+   "password": "ysJTZKsHUmm5",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "xuhuaxin30@163.com",
+   "password": "JXAsHcHq9DQR",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "kgs9990@163.com",
+   "password": "4312eGMr2eH7",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "yp12312345@163.com",
+   "password": "nMe3UyKswcAn",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "ly901@163.com",
+   "password": "w5E9NngvSd5n",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "cra5969@163.com",
+   "password": "Xx3UmWzqBEE3",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "haoyali123456@163.com",
+   "password": "mhUKzASNBK8a",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
+  },
+  {
+   "region": "us",
+   "region_label": "美国区",
+   "account": "chuangyuan0611@163.com",
+   "password": "X162WXUCmJjb",
+   "software": "",
+   "status": "可用",
+   "checked_at": "2026-11-25 11:57:40",
+   "source": "zhandu"
   }
  ]
 }
