@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="data:," />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#0066cc" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Apple ID" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
     <title>免费 Apple ID 共享站</title>
     <style>
       :root {
@@ -355,6 +362,13 @@
 
     <script>
       "use strict";
+
+      /* ---------- PWA: register service worker (offline app shell) ---------- */
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js").catch(function () { /* best-effort */ });
+        });
+      }
 
       /* Embedded snapshot (2026-11-24 14:47, sources: starcoreid / jichangba).
          Used instantly on load and as fallback if the live JSON fetch fails. */
