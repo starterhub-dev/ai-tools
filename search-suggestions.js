@@ -10,6 +10,7 @@ const chips=[
   {zh:"做视频",tw:"製作影片",en:"Video",q:"make a video"},
   {zh:"做音乐",tw:"製作音樂",en:"Music",q:"make music"},
   {zh:"写文章",tw:"寫文章",en:"Writing",q:"write an article"},
+  {zh:"润色工作总结",tw:"潤飾工作總結",en:"Polish a work summary",q:"润色工作总结"},
   {zh:"学习资料",tw:"學習資料",en:"Learn",q:"study material"}
 ];
 
@@ -19,6 +20,7 @@ function chipBrandIcons(q){
     "做视频":["Runway","Kling AI","Pika"],
     "做音乐":["Suno","Udio","AIVA"],
     "写文章":["ChatGPT","Claude","Gemini"],
+    "润色工作总结":["DeepSeek","豆包","Kimi"],
     "学习资料":["NotebookLM","ChatGPT","Gemini"]
   };
   return (map[q]||[]).map(name=>{
