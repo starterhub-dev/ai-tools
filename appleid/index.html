@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>免费 Apple ID 共享站 | 美区/日区/港区/台区/韩区 Apple ID 免费分享</title>
+    <meta name="description" content="免费分享美区、日区、港区、台区、韩区 Apple ID，仅供在 App Store 登录下载应用使用，每 15 分钟自动更新。点开卡片、通过验证即可查看完整账号密码。" />
+    <meta name="keywords" content="免费 Apple ID,Apple ID 共享,美区 Apple ID,日区 Apple ID,港区 Apple ID,Apple ID 免费分享" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="免费 Apple ID 共享站" />
+    <meta property="og:title" content="免费 Apple ID 共享站 | 美区/日区/港区/台区/韩区 Apple ID 免费分享" />
+    <meta property="og:description" content="免费分享各地区 Apple ID，仅供 App Store 登录下载应用，每 15 分钟自动更新。点开卡片、通过验证即可查看完整账号密码。" />
+    <meta property="og:url" content="https://starterhub-dev.github.io/ai-tools/appleid/" />
+    <meta property="og:image" content="https://starterhub-dev.github.io/ai-tools/appleid/icons/icon-512.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="免费 Apple ID 共享站 | 美区/日区/港区/台区/韩区 Apple ID 免费分享" />
+    <meta name="twitter:description" content="免费分享各地区 Apple ID，仅供 App Store 登录下载应用，每 15 分钟自动更新。" />
+    <meta name="twitter:image" content="https://starterhub-dev.github.io/ai-tools/appleid/icons/icon-512.png" />
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --surface: #ffffff;
+        --surface-2: #eef0f3;
+        --ink: #131720;
+        --ink-2: #4b5563;
+        --ink-3: #8a93a3;
+        --line: #dde1e8;
+        --accent: #0066cc;
+        --accent-ink: #ffffff;
+        --accent-soft: #e3eefb;
+        --green: #128a43;
+        --green-soft: #e2f4e9;
+        --amber: #9a6a00;
+        --amber-soft: #fdf3d7;
+        --red: #c81e1e;
+        --red-soft: #fdecec;
+        --shadow: 0 10px 34px rgba(15, 23, 42, .16);
+        --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1015;
+          --surface: #161b23;
+          --surface-2: #1e2530;
+          --ink: #eef1f6;
+          --ink-2: #a9b3c2;
+          --ink-3: #6f7a8c;
+          --line: #2a323f;
+          --accent: #4da3ff;
+          --accent-ink: #08131f;
+          --accent-soft: #16283f;
+          --green: #3ecf7c;
+          --green-soft: #123324;
+          --amber: #f2c14e;
+          --amber-soft: #38300f;
+          --red: #ff7a7a;
+          --red-soft: #3d1a1a;
+          --shadow: 0 10px 34px rgba(0, 0, 0, .55);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      button, input { font: inherit; }
+      button { cursor: pointer; }
+      a { color: var(--accent); }
+
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
+
+      /* ---------- header ---------- */
+      header.top { padding: 30px 0 6px; }
+      .title-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .title-row svg { flex: none; color: var(--ink); }
+      h1 { font-size: 27px; line-height: 1.25; margin: 0; letter-spacing: .01em; font-weight: 800; }
+      .live-pill {
+        display: inline-flex; align-items: center; gap: 6px;
+        background: var(--green-soft); color: var(--green);
+        font-size: 12.5px; font-weight: 600;
+        padding: 4px 10px; border-radius: 999px;
+      }
+      .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); flex: none; }
+      .dot.pulse { animation: pulse 2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(18,138,67,.35);} 55% { box-shadow: 0 0 0 6px rgba(18,138,67,0);} }
+      @media (prefers-reduced-motion: reduce) { .dot.pulse { animation: none; } }
+      .subtitle { margin: 8px 0 0; color: var(--ink-2); font-size: 14.5px; max-width: 640px; }
+
+      .stats {
+        display: flex; gap: 0; margin-top: 20px;
+        background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+        overflow: hidden;
+      }
+      .stat { flex: 1; padding: 14px 18px; }
+      .stat + .stat { border-left: 1px solid var(--line); }
+      .stat b { display: block; font-size: 26px; line-height: 1.15; font-weight: 800; font-variant-numeric: tabular-nums; }
+      .stat span { font-size: 13px; color: var(--ink-2); }
+      .sync-line { margin: 10px 2px 0; font-size: 12.5px; color: var(--ink-3); }
+
+      /* ---------- ad slots ---------- */
+      .ad-banner {
+        display: flex; align-items: center; gap: 14px;
+        margin-top: 18px; padding: 14px 18px;
+        background: var(--surface); border: 1px dashed var(--ink-3); border-radius: 12px;
+        color: var(--ink); text-decoration: none; min-height: 56px;
+      }
+      .ad-banner:hover { border-color: var(--accent); }
+      .ad-banner-img {
+        display: block; margin-top: 18px;
+        background: #000; border: 1px solid var(--line); border-radius: 12px;
+        overflow: hidden; position: relative; line-height: 0;
+      }
+      .ad-banner-img:hover { border-color: var(--accent); }
+      .ad-banner-img img { display: block; width: 100%; height: auto; }
+      .ad-banner-img .ad-tag { position: absolute; top: 8px; left: 8px; z-index: 1; }
+      .ad-tag {
+        flex: none; font-size: 11px; font-weight: 700; letter-spacing: .08em;
+        color: var(--amber); background: var(--amber-soft);
+        padding: 3px 8px; border-radius: 6px;
+      }
+      .ad-banner .ad-main { font-weight: 700; font-size: 15.5px; }
+      .ad-banner .ad-sub { color: var(--ink-2); font-size: 13px; }
+      .ad-banner .ad-go { margin-left: auto; flex: none; color: var(--accent); font-weight: 700; font-size: 14px; white-space: nowrap; }
+      .ad-mini {
+        display: inline-flex; align-items: center; gap: 8px;
+        border: 1px dashed var(--ink-3); border-radius: 10px;
+        padding: 8px 14px; color: var(--ink-2); text-decoration: none;
+        font-size: 13.5px; min-height: 40px;
+      }
+      .ad-mini:hover { border-color: var(--accent); color: var(--accent); }
+
+      /* ---------- notice ---------- */
+      .notice {
+        margin-top: 18px; padding: 12px 16px;
+        background: var(--amber-soft); color: var(--ink);
+        border-radius: 12px; font-size: 13.5px; line-height: 1.65;
+      }
+      .notice b { color: var(--amber); }
+
+      /* ---------- filters ---------- */
+      .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 4px; }
+      .chip {
+        border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+        border-radius: 999px; padding: 8px 16px; min-height: 40px;
+        font-size: 14.5px; font-weight: 600;
+      }
+      .chip .n { color: var(--ink-3); font-weight: 500; font-variant-numeric: tabular-nums; margin-left: 2px; }
+      .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+      .chip[aria-pressed="true"] .n { color: inherit; opacity: .65; }
+      .chip:disabled { opacity: .42; cursor: default; }
+      .count-line { margin: 12px 2px 0; font-size: 13.5px; color: var(--ink-2); }
+
+      /* ---------- grid & cards ---------- */
+      .grid {
+        display: grid; gap: 14px; margin-top: 12px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+      .card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+        padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px;
+        text-align: left; width: 100%; color: var(--ink);
+        transition: border-color .15s ease, box-shadow .15s ease;
+      }
+      .card:hover { border-color: var(--accent); box-shadow: 0 4px 18px rgba(15,23,42,.08); }
+      .card-top { display: flex; align-items: center; gap: 8px; }
+      .flag { font-size: 20px; line-height: 1; }
+      .region-name { font-weight: 700; font-size: 15px; }
+      .status { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--green); font-weight: 600; white-space: nowrap; }
+      .status.off { color: var(--red); }
+      .status.off .dot { background: var(--red); }
+      .cred { font-family: var(--mono); font-size: 14.5px; word-break: break-all; line-height: 1.5; }
+      .cred .lbl { font-family: inherit; font-size: 11.5px; color: var(--ink-3); display: block; letter-spacing: .04em; }
+      .checked { font-size: 12.5px; color: var(--ink-3); }
+      .soft {
+        font-size: 12.5px; color: var(--accent); background: var(--accent-soft);
+        border-radius: 8px; padding: 5px 9px; line-height: 1.5;
+      }
+      .card .open-hint { margin-top: auto; padding-top: 4px; font-size: 13.5px; font-weight: 700; color: var(--accent); }
+      .empty {
+        grid-column: 1 / -1; text-align: center; color: var(--ink-2);
+        background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+        padding: 36px 16px; font-size: 14.5px;
+      }
+
+      /* ---------- footer ---------- */
+      footer.bottom { margin-top: 34px; }
+      .foot-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin-top: 18px; }
+      .foot-note { font-size: 12.5px; color: var(--ink-3); line-height: 1.7; max-width: 720px; }
+
+      /* ---------- modal ---------- */
+      .overlay {
+        position: fixed; inset: 0; z-index: 50;
+        background: rgba(8, 12, 20, .55);
+        display: none; align-items: flex-end; justify-content: center;
+        padding: 0;
+      }
+      .overlay.open { display: flex; }
+      @media (min-width: 640px) { .overlay { align-items: center; padding: 20px; } }
+      .modal {
+        background: var(--surface); color: var(--ink);
+        width: 100%; max-width: 480px; max-height: 92vh; overflow-y: auto;
+        border-radius: 20px 20px 0 0; padding: 22px 22px 26px;
+        box-shadow: var(--shadow);
+      }
+      @media (min-width: 640px) { .modal { border-radius: 20px; } }
+      .modal-head { display: flex; align-items: flex-start; gap: 10px; }
+      .modal-head h2 { font-size: 19px; margin: 0; line-height: 1.35; }
+      .modal-head .sub { font-size: 13px; color: var(--ink-2); margin-top: 3px; }
+      .close-btn {
+        margin-left: auto; flex: none; width: 40px; height: 40px;
+        border: 1px solid var(--line); background: var(--surface-2); color: var(--ink);
+        border-radius: 10px; font-size: 17px; line-height: 1;
+      }
+      .warn-box {
+        margin-top: 16px; background: var(--red-soft); border-radius: 12px;
+        padding: 14px 16px; font-size: 14px; line-height: 1.7;
+      }
+      .warn-box p { margin: 0 0 8px; font-weight: 700; color: var(--red); }
+      .warn-box ul { margin: 0; padding-left: 20px; }
+      .warn-box li { margin: 3px 0; }
+      .btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        border-radius: 11px; border: 1px solid transparent;
+        padding: 11px 18px; min-height: 46px; font-weight: 700; font-size: 15px;
+        background: var(--accent); color: var(--accent-ink); width: 100%;
+      }
+      .btn:disabled { background: var(--surface-2); color: var(--ink-3); cursor: not-allowed; }
+      .btn.ghost { background: var(--surface); border-color: var(--line); color: var(--ink); }
+      .modal .actions { margin-top: 18px; display: grid; gap: 10px; }
+      .captcha-row { display: flex; gap: 12px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
+      canvas#captchaCanvas { border: 1px solid var(--line); border-radius: 10px; background: #f7f9fc; flex: none; }
+      .refresh-btn {
+        border: 1px solid var(--line); background: var(--surface-2); color: var(--ink);
+        border-radius: 10px; padding: 9px 14px; min-height: 42px; font-size: 13.5px; font-weight: 600;
+      }
+      .captcha-input {
+        width: 100%; margin-top: 14px; padding: 11px 14px; min-height: 46px;
+        border: 1px solid var(--line); border-radius: 11px;
+        background: var(--surface); color: var(--ink); font-size: 16px;
+      }
+      .err { color: var(--red); font-size: 13.5px; margin-top: 8px; min-height: 1.2em; }
+      .reveal-row {
+        display: flex; align-items: center; gap: 10px;
+        background: var(--surface-2); border-radius: 12px; padding: 12px 14px; margin-top: 12px;
+      }
+      .reveal-row .rv { flex: 1; min-width: 0; }
+      .reveal-row .rv .lbl { font-size: 11.5px; color: var(--ink-3); display: block; }
+      .reveal-row .rv .val { font-family: var(--mono); font-size: 15px; word-break: break-all; }
+      .copy-btn {
+        flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--accent);
+        border-radius: 9px; padding: 9px 13px; min-height: 40px; font-size: 13.5px; font-weight: 700;
+      }
+      .ok-note { margin-top: 14px; font-size: 13px; color: var(--ink-2); line-height: 1.65; }
+      [hidden] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div class="title-row">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.36 12.94c.03 2.9 2.54 3.86 2.57 3.87-.02.07-.4 1.37-1.32 2.71-.8 1.17-1.62 2.33-2.92 2.36-1.28.02-1.69-.76-3.15-.76-1.46 0-1.92.74-3.13.79-1.26.05-2.22-1.26-3.02-2.43C3.8 17.13 2.6 12.9 4.36 10.6a3.7 3.7 0 0 1 3.14-2.03c1.25-.03 2.43.84 3.2.84.77 0 2.21-1.04 3.73-.89.64.03 2.31.26 3.4 1.94-.09.06-2.03 1.19-2.47 3.48ZM13.9 6.6c.66-.8 1.1-1.91.98-3.02-.95.04-2.1.63-2.78 1.43-.61.7-1.14 1.83-1 2.88 1.06.08 2.14-.54 2.8-1.29Z"/></svg>
+          <h1>免费 Apple ID 共享站</h1>
+          <span class="live-pill"><span class="dot"></span>免费共享 · 无需注册</span>
+        </div>
+        <p class="subtitle">免费分享各地区 Apple ID，仅供在 App Store 登录下载应用使用。点任意一张卡片，读完提醒并通过验证后即可查看完整账号密码。</p>
+        <div class="stats" role="group" aria-label="账号池统计">
+          <div class="stat"><b id="statTotal">–</b><span>可用账号</span></div>
+          <div class="stat"><b id="statRegions">–</b><span>覆盖地区</span></div>
+          <div class="stat"><b id="statOnline">–</b><span>在线账号</span></div>
+        </div>
+        <p class="sync-line" id="syncLine">正在加载账号数据…</p>
+      </header>
+
+      <a class="ad-banner-img" href="https://huing.faka24.com/" target="_blank" rel="noopener">
+        <span class="ad-tag">广告</span>
+        <img src="ad-banner.jpg" alt="24H自助卡仓 · 站长小店 24 小时自动发货" />
+      </a>
+
+      <div class="notice">
+        <b>使用须知：</b>共享账号只在 <b>App Store</b> 里登录，<b>千万不要登录 iCloud</b>，也不要改密码、不要绑自己的手机号。用完即退，账号被锁或被找回属于正常情况，换一个继续用就好。
+      </div>
+
+      <nav class="filters" id="filters" aria-label="按地区筛选"></nav>
+      <p class="count-line" id="countLine"></p>
+
+      <main>
+        <div class="grid" id="grid"></div>
+      </main>
+
+      <footer class="bottom">
+        <a class="ad-banner" href="https://huing.faka24.com/" target="_blank" rel="noopener">
+          <span class="ad-tag">广告</span>
+          <span>
+            <span class="ad-main">需要长期稳定的独享号？</span><br />
+            <span class="ad-sub">站长小店有售，自动发货，不用跟人抢共享号</span>
+          </span>
+          <span class="ad-go">去看看 ›</span>
+        </a>
+        <div class="foot-row">
+          <p class="foot-note">本站账号均为网络公开分享的共享账号，仅供临时下载应用使用，请勿用于任何付费、绑定或长期用途；账号可用性以点开卡片时的检测状态为准。</p>
+          <a class="ad-mini" href="https://huing.faka24.com/" target="_blank" rel="noopener"><span class="ad-tag">广告</span>广告位招租 · 联系站长</a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ---------- unlock modal ---------- -->
+    <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal">
+        <div class="modal-head">
+          <div>
+            <h2 id="modalTitle">查看完整账号</h2>
+            <div class="sub" id="modalSub"></div>
+          </div>
+          <button class="close-btn" id="closeBtn" aria-label="关闭">✕</button>
+        </div>
+
+        <section id="stepWarn">
+          <div class="warn-box">
+            <p>先看完这几条，再拿账号</p>
+            <ul>
+              <li>这是多人共用的共享账号，只能在 <b>App Store</b> 里登录下载应用。</li>
+              <li><b>绝对不要登录 iCloud</b>，否则可能锁机、丢数据，后果自负。</li>
+              <li>不要改密码、不要动双重认证和救援邮箱，也不要绑定你自己的信息。</li>
+              <li>共享号随时可能被锁、被改密或被号主找回，失效了换一个即可。</li>
+              <li>使用风险自担，本站不对账号失效或由此产生的损失负责。</li>
+            </ul>
+          </div>
+          <div class="actions">
+            <button class="btn" id="agreeBtn" disabled>请仔细阅读（9 秒）</button>
+          </div>
+        </section>
+
+        <section id="stepCaptcha" hidden>
+          <p style="margin:16px 0 0;font-size:14.5px;">算出图中算式的结果，答对即可显示完整账号和密码。这一步是为了挡批量抓取，答错了会换一道题。</p>
+          <div class="captcha-row">
+            <canvas id="captchaCanvas" width="180" height="60" aria-label="算术验证码图片"></canvas>
+            <button class="refresh-btn" id="refreshCaptcha" type="button">换一题</button>
+          </div>
+          <input class="captcha-input" id="captchaInput" type="text" inputmode="numeric" autocomplete="off" placeholder="输入计算结果，例如 19" aria-label="输入计算结果" />
+          <div class="err" id="captchaErr"></div>
+          <div class="actions">
+            <button class="btn" id="verifyBtn">验证并显示账号</button>
+          </div>
+        </section>
+
+        <section id="stepReveal" hidden>
+          <div class="reveal-row">
+            <div class="rv"><span class="lbl">账号（Apple ID）</span><span class="val" id="revealAccount"></span></div>
+            <button class="copy-btn" id="copyAccount" type="button">复制账号</button>
+          </div>
+          <div class="reveal-row">
+            <div class="rv"><span class="lbl">密码</span><span class="val" id="revealPassword"></span></div>
+            <button class="copy-btn" id="copyPassword" type="button">复制密码</button>
+          </div>
+          <p class="ok-note">登录路径：打开 App Store → 点右上角头像 → 退出当前账号 → 输入上面的账号密码。只在 App Store 登录，<b>不要进 iCloud</b>。如果提示被锁或密码错误，关掉这张卡换下一个即可。</p>
+          <div class="actions">
+            <button class="btn ghost" id="doneBtn">完成</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+
+      /* Embedded snapshot (2026-11-24 14:47, sources: starcoreid / jichangba).
+         Used instantly on load and as fallback if the live JSON fetch fails. */
+      var FALLBACK = {
+        fetched_at: "2026-11-24T14:47:24+08:00",
+        sources: ["starcoreid", "jichangba"],
+        accounts: [
+          {region:"us",account:"BrianBryant1535@outlook.com",password:"4FdA68DTXS",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"liuyiqing011116@163.com",password:"7KQsawTSQFjm",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"jdyf1234@163.com",password:"GX4KHp9MtSXz",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"ymq1381@163.com",password:"9YWAtVUamxug",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"yexiaorusw@163.com",password:"zEbsr9MyA18M",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"mxrhy123@163.com",password:"26nU4eyaH59u",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"yp12312345@163.com",password:"VDTKsYG4Qqgk",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"lxh1661@163.com",password:"b8RRBzUGHZA1",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"linsujuan123456@163.com",password:"esCy2s9FVr9s",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"ly901@163.com",password:"CbgvMnJ4WTAj",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"caiboss1234@163.com",password:"8gTcfuTjPTT7",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"bsg0932@163.com",password:"5Rp89areD44d",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"weizixuan21@163.com",password:"6mXfdN2kDHH6",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"wangjie086@163.com",password:"gSGgCrc5Nj4x",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"zxl6022@163.com",password:"QSdcksV5gcyA",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"sekqy64@163.com",password:"3wVpmsX9PSWU",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"kgs9990@163.com",password:"vna14NX3bE2d",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"wo7812170000@163.com",password:"1wWv84heHFBf",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"tvo4052@163.com",password:"pU5qD73X2yE1",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"hjx1370168@163.com",password:"tRDQSkgTsv91",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"1341938286@qq.com",password:"jsChuNc76mZY",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"benson987654321@163.com",password:"fdkgxPj64Sz9",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"lyong2016@163.com",password:"rgp2vzxX4Bnd",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"iloveipad3@163.com",password:"URbNXu45Bf1m",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"us",account:"shajj1234@163.com",password:"RUSYQGuv3RMK",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"jp",account:"LaytonFayed44953@outlook.com",password:"SGJf1cwHEs",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"hk",account:"lienbay1988@gmail.com",password:"ZbdhWrxB2z",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"hk",account:"WinesickleUreno0006@hotmail.com",password:"dmge9yBh96",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"tw",account:"CaoileCzachor6200@hotmail.com",password:"R6QJ7Ex3Jh",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"kr",account:"JoelWoodrqu@outlook.com",password:"DJ6wRN5kt5",software:"",status:"正常",checked_at:"2026-11-24 14:05:02",source:"starcoreid"},
+          {region:"🇺🇸 美国区 (主力 #1)",account:"us_share01@jichangba-id.com",password:"JcBa@2026Us#81",software:"已购 Shadowrocket ChatGPT / TikTok",status:"🟢 正常可用 · 4分钟前解锁",source:"jichangba"}
+        ]
+      };
+
+      var LIVE_URL = "https://raw.githubusercontent.com/starterhub-dev/ai-tools/main/appleid/accounts.json";
+
+      var REGIONS = {
+        us: { name: "美国", flag: "🇺🇸" },
+        jp: { name: "日本", flag: "🇯🇵" },
+        hk: { name: "中国香港", flag: "🇭🇰" },
+        tw: { name: "中国台湾", flag: "🇹🇼" },
+        kr: { name: "韩国", flag: "🇰🇷" },
+        cn: { name: "中国大陆", flag: "🇨🇳" }
+      };
+      var REGION_ORDER = ["us", "jp", "hk", "tw", "kr", "cn"];
+
+      var state = { data: null, filter: "all", current: null };
+
+      function normRegion(r) {
+        if (r && REGIONS[r]) return r;
+        return "us"; /* legacy entries carry a Chinese label string */
+      }
+      function isOnline(a) {
+        return !a.status || /正常|可用/.test(String(a.status));
+      }
+      function esc(s) {
+        return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+      }
+      function maskAccount(acc) {
+        var at = acc.indexOf("@");
+        if (at < 0) return acc.slice(0, 2) + "****";
+        var local = acc.slice(0, at), domain = acc.slice(at + 1);
+        var keep = local.length > 6 ? 3 : 2;
+        return local.slice(0, keep) + "****@" + domain;
+      }
+      function maskPassword(pw) {
+        if (!pw) return "****";
+        if (pw.length <= 4) return pw.slice(0, 1) + "****";
+        return pw.slice(0, 2) + "****" + pw.slice(-2);
+      }
+      function relChecked(checkedAt) {
+        if (!checkedAt) return "";
+        /* checked_at is recorded in China time (UTC+8) with no offset — pin it. */
+        var t = new Date(String(checkedAt).replace(" ", "T") + "+08:00").getTime();
+        if (isNaN(t)) return "";
+        var diff = Math.max(0, Date.now() - t);
+        var min = Math.floor(diff / 60000);
+        if (min < 1) return "刚刚检测";
+        if (min < 60) return min + "分钟前检测";
+        var h = Math.floor(min / 60);
+        if (h < 24) return h + "小时前检测";
+        return Math.floor(h / 24) + "天前检测";
+      }
+      function fmtTime(iso) {
+        var d = new Date(iso);
+        if (isNaN(d.getTime())) return "";
+        try {
+          return new Intl.DateTimeFormat("zh-CN", {
+            timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit",
+            hour: "2-digit", minute: "2-digit", hour12: false
+          }).format(d).replace(/\//g, "-") + "（北京时间）";
+        } catch (e) { return ""; }
+      }
+
+      var gridEl = document.getElementById("grid");
+      var filtersEl = document.getElementById("filters");
+      var countLineEl = document.getElementById("countLine");
+      var syncLineEl = document.getElementById("syncLine");
+
+      function render() {
+        var accounts = state.data.accounts;
+        /* stats */
+        var regionSet = {}, online = 0, perRegion = {};
+        accounts.forEach(function (a) {
+          var r = normRegion(a.region);
+          regionSet[r] = true;
+          perRegion[r] = (perRegion[r] || 0) + 1;
+          if (isOnline(a)) online++;
+        });
+        document.getElementById("statTotal").textContent = accounts.length;
+        document.getElementById("statRegions").textContent = Object.keys(regionSet).length;
+        document.getElementById("statOnline").textContent = online;
+        var ft = fmtTime(state.data.fetched_at);
+        syncLineEl.textContent = ft ? ("本页账号数据为 " + ft + " 同步的一份快照") : "";
+
+        /* filter chips */
+        var chips = [{ code: "all", name: "全部", n: accounts.length }];
+        REGION_ORDER.forEach(function (code) {
+          chips.push({ code: code, name: REGIONS[code].name, n: perRegion[code] || 0 });
+        });
+        filtersEl.innerHTML = chips.map(function (c) {
+          var dis = c.code !== "all" && c.n === 0 ? " disabled" : "";
+          return '<button class="chip" type="button" data-region="' + c.code + '" aria-pressed="' +
+            (state.filter === c.code ? "true" : "false") + '"' + dis + ">" +
+            esc(c.name) + ' <span class="n">' + c.n + "</span></button>";
+        }).join("");
+        Array.prototype.forEach.call(filtersEl.querySelectorAll(".chip"), function (btn) {
+          btn.addEventListener("click", function () {
+            state.filter = btn.getAttribute("data-region");
+            render();
+          });
+        });
+
+        /* cards */
+        var list = accounts.filter(function (a) {
+          return state.filter === "all" || normRegion(a.region) === state.filter;
+        });
+        countLineEl.textContent = state.filter === "all"
+          ? "共 " + list.length + " 个共享账号，点卡片查看完整账号密码"
+          : REGIONS[state.filter].name + " · 共 " + list.length + " 个账号";
+        if (!list.length) {
+          gridEl.innerHTML = '<div class="empty">这个地区暂时没有可用账号，换个地区看看，或者稍后再来。</div>';
+          return;
+        }
+        gridEl.innerHTML = "";
+        list.forEach(function (a) {
+          var r = REGIONS[normRegion(a.region)];
+          var on = isOnline(a);
+          var card = document.createElement("button");
+          card.type = "button";
+          card.className = "card";
+          var rel = relChecked(a.checked_at);
+          card.innerHTML =
+            '<span class="card-top"><span class="flag" aria-hidden="true">' + r.flag + '</span>' +
+            '<span class="region-name">' + esc(r.name) + '区</span>' +
+            '<span class="status' + (on ? "" : " off") + '"><span class="dot"></span>状态：' + (on ? "正常" : "异常") + "</span></span>" +
+            '<span class="cred"><span class="lbl">账号</span>' + esc(maskAccount(a.account)) + "</span>" +
+            '<span class="cred"><span class="lbl">密码</span>' + esc(maskPassword(a.password)) + "</span>" +
+            (a.software ? '<span class="soft">' + esc(a.software) + "</span>" : "") +
+            (rel ? '<span class="checked">' + esc(rel) + "</span>" : "") +
+            '<span class="open-hint">查看完整账号 ›</span>';
+          card.addEventListener("click", function () { openModal(a); });
+          gridEl.appendChild(card);
+        });
+      }
+
+      /* ---------- modal / unlock flow ---------- */
+      var overlay = document.getElementById("overlay");
+      var stepWarn = document.getElementById("stepWarn");
+      var stepCaptcha = document.getElementById("stepCaptcha");
+      var stepReveal = document.getElementById("stepReveal");
+      var agreeBtn = document.getElementById("agreeBtn");
+      var captchaInput = document.getElementById("captchaInput");
+      var captchaErr = document.getElementById("captchaErr");
+      var countdownTimer = null;
+      var captchaAnswer = null;
+
+      function showStep(step) {
+        stepWarn.hidden = step !== "warn";
+        stepCaptcha.hidden = step !== "captcha";
+        stepReveal.hidden = step !== "reveal";
+      }
+      function openModal(a) {
+        state.current = a;
+        var r = REGIONS[normRegion(a.region)];
+        document.getElementById("modalSub").textContent = r.flag + " " + r.name + "区 · " + maskAccount(a.account);
+        showStep("warn");
+        overlay.classList.add("open");
+        document.body.style.overflow = "hidden";
+        /* 9-second countdown */
+        var left = 9;
+        agreeBtn.disabled = true;
+        agreeBtn.textContent = "请仔细阅读（" + left + " 秒）";
+        if (countdownTimer) clearInterval(countdownTimer);
+        countdownTimer = setInterval(function () {
+          left--;
+          if (left <= 0) {
+            clearInterval(countdownTimer);
+            countdownTimer = null;
+            agreeBtn.disabled = false;
+            agreeBtn.textContent = "我已了解，继续查看";
+          } else {
+            agreeBtn.textContent = "请仔细阅读（" + left + " 秒）";
+          }
+        }, 1000);
+      }
+      function closeModal() {
+        overlay.classList.remove("open");
+        document.body.style.overflow = "";
+        if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+      }
+      document.getElementById("closeBtn").addEventListener("click", closeModal);
+      document.getElementById("doneBtn").addEventListener("click", closeModal);
+      overlay.addEventListener("click", function (e) { if (e.target === overlay) closeModal(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeModal(); });
+
+      agreeBtn.addEventListener("click", function () {
+        newCaptcha();
+        showStep("captcha");
+        captchaInput.value = "";
+        captchaErr.textContent = "";
+        setTimeout(function () { captchaInput.focus(); }, 60);
+      });
+
+      /* ---------- canvas math captcha ---------- */
+      function rand(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+      function newCaptcha() {
+        var kind = rand(0, 2), a, b, op, ans;
+        if (kind === 0) { a = rand(3, 49); b = rand(2, 49); op = "+"; ans = a + b; }
+        else if (kind === 1) { a = rand(10, 60); b = rand(2, a - 1); op = "−"; ans = a - b; }
+        else { a = rand(2, 9); b = rand(2, 9); op = "×"; ans = a * b; }
+        captchaAnswer = ans;
+        drawCaptcha(a + " " + op + " " + b + " = ?");
+      }
+      function drawCaptcha(text) {
+        var cv = document.getElementById("captchaCanvas");
+        var ctx = cv.getContext("2d");
+        var W = cv.width, H = cv.height;
+        ctx.clearRect(0, 0, W, H);
+        ctx.fillStyle = "#eef2f7";
+        ctx.fillRect(0, 0, W, H);
+        /* noise dots */
+        for (var i = 0; i < 46; i++) {
+          ctx.fillStyle = "rgba(" + rand(90, 170) + "," + rand(90, 170) + "," + rand(120, 200) + ",.5)";
+          ctx.beginPath();
+          ctx.arc(rand(0, W), rand(0, H), rand(1, 2), 0, Math.PI * 2);
+          ctx.fill();
+        }
+        /* noise lines */
+        for (var j = 0; j < 4; j++) {
+          ctx.strokeStyle = "rgba(" + rand(90, 160) + "," + rand(90, 160) + "," + rand(140, 210) + ",.55)";
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(rand(0, W), rand(0, H));
+          ctx.bezierCurveTo(rand(0, W), rand(0, H), rand(0, W), rand(0, H), rand(0, W), rand(0, H));
+          ctx.stroke();
+        }
+        /* the expression, per-character jitter */
+        var colors = ["#14467c", "#7c2d12", "#14532d", "#4a1d6b", "#8a1c1c"];
+        ctx.textBaseline = "middle";
+        var x = 16;
+        for (var k = 0; k < text.length; k++) {
+          var ch = text[k];
+          ctx.save();
+          ctx.translate(x, H / 2 + rand(-3, 3));
+          ctx.rotate((Math.random() - 0.5) * 0.32);
+          ctx.font = "700 " + rand(25, 30) + "px " + 'ui-monospace, Menlo, monospace';
+          ctx.fillStyle = colors[rand(0, colors.length - 1)];
+          ctx.fillText(ch, 0, 0);
+          ctx.restore();
+          x += ch === " " ? 11 : 19;
+        }
+      }
+      document.getElementById("refreshCaptcha").addEventListener("click", function () {
+        newCaptcha();
+        captchaInput.value = "";
+        captchaErr.textContent = "";
+        captchaInput.focus();
+      });
+      function tryVerify() {
+        var v = parseInt(captchaInput.value.replace(/[^\d-]/g, ""), 10);
+        if (!isNaN(v) && v === captchaAnswer) {
+          document.getElementById("revealAccount").textContent = state.current.account;
+          document.getElementById("revealPassword").textContent = state.current.password;
+          showStep("reveal");
+        } else {
+          captchaErr.textContent = "答案不对，已为你换了一道题，再算算。";
+          newCaptcha();
+          captchaInput.value = "";
+          captchaInput.focus();
+        }
+      }
+      document.getElementById("verifyBtn").addEventListener("click", tryVerify);
+      captchaInput.addEventListener("keydown", function (e) { if (e.key === "Enter") tryVerify(); });
+
+      /* ---------- copy ---------- */
+      function copyText(text, btn) {
+        function done() {
+          var old = btn.textContent;
+          btn.textContent = "已复制 ✓";
+          setTimeout(function () { btn.textContent = old; }, 1600);
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () { legacyCopy(text); done(); });
+        } else { legacyCopy(text); done(); }
+      }
+      function legacyCopy(text) {
+        var ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand("copy"); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+      document.getElementById("copyAccount").addEventListener("click", function () {
+        copyText(state.current.account, this);
+      });
+      document.getElementById("copyPassword").addEventListener("click", function () {
+        copyText(state.current.password, this);
+      });
+
+      /* ---------- data: snapshot first, then live refresh ---------- */
+      state.data = FALLBACK;
+      render();
+      (function loadLive() {
+        var ctrl = ("AbortController" in window) ? new AbortController() : null;
+        var timer = ctrl ? setTimeout(function () { ctrl.abort(); }, 7000) : null;
+        fetch(LIVE_URL + "?t=" + Date.now(), ctrl ? { signal: ctrl.signal } : {})
+          .then(function (res) { if (!res.ok) throw new Error("http " + res.status); return res.json(); })
+          .then(function (json) {
+            if (timer) clearTimeout(timer);
+            if (json && Array.isArray(json.accounts) && json.accounts.length) {
+              state.data = json;
+              render();
+            }
+          })
+          .catch(function () { if (timer) clearTimeout(timer); /* keep snapshot */ });
+      })();
+    </script>
+  </body>
+</html>
