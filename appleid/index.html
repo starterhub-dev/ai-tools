@@ -180,6 +180,12 @@
       .cred { font-family: var(--mono); font-size: 14.5px; word-break: break-all; line-height: 1.5; }
       .cred .lbl { font-family: inherit; font-size: 11.5px; color: var(--ink-3); display: block; letter-spacing: .04em; }
       .checked { font-size: 12.5px; color: var(--ink-3); }
+      .stale-badge {
+        display: inline-flex; align-items: center; gap: 4px;
+        font-size: 12.5px; font-weight: 700; color: var(--amber);
+        background: var(--amber-soft); border-radius: 8px; padding: 5px 9px; line-height: 1.5;
+      }
+      .stale-note { font-size: 12px; color: var(--ink-3); line-height: 1.5; }
       .soft {
         font-size: 12.5px; color: var(--accent); background: var(--accent-soft);
         border-radius: 8px; padding: 5px 9px; line-height: 1.5;
@@ -531,6 +537,19 @@
         if (h < 24) return h + "小时前检测";
         return Math.floor(h / 24) + "天前检测";
       }
+      /* Freshness: accounts are re-fetched every 15 min. An account not
+         re-confirmed for over 2 hours is flagged "possibly locked".
+         This is only a staleness signal from check time — it is NOT a
+         guarantee about login success, and we cannot unlock accounts. */
+      var FRESH_WINDOW_MS = 2 * 60 * 60 * 1000;
+      function checkedMs(a) {
+        if (!a || !a.checked_at) return NaN;
+        return new Date(String(a.checked_at).replace(" ", "T") + "+08:00").getTime();
+      }
+      function isStale(a) {
+        var t = checkedMs(a);
+        return isNaN(t) || (Date.now() - t > FRESH_WINDOW_MS);
+      }
       function fmtTime(iso) {
         var d = new Date(iso);
         if (isNaN(d.getTime())) return "";
@@ -585,9 +604,16 @@
         var list = accounts.filter(function (a) {
           return state.filter === "all" || normRegion(a.region) === state.filter;
         });
+        /* newest-checked first; accounts with no usable check time go last */
+        list.sort(function (x, y) {
+          var tx = checkedMs(x), ty = checkedMs(y);
+          if (isNaN(tx)) tx = -Infinity;
+          if (isNaN(ty)) ty = -Infinity;
+          return ty - tx;
+        });
         countLineEl.textContent = state.filter === "all"
-          ? "共 " + list.length + " 个共享账号，点卡片查看完整账号密码"
-          : REGIONS[state.filter].name + " · 共 " + list.length + " 个账号";
+          ? "共 " + list.length + " 个共享账号，按最近检测时间排序，刚验过的在前面；超过 2 小时未重新确认的标“可能已锁定”（仅按检测时间判断，不保证能登录）"
+          : REGIONS[state.filter].name + " · 共 " + list.length + " 个账号，按最近检测时间排序";
         if (!list.length) {
           gridEl.innerHTML = '<div class="empty">这个地区暂时没有可用账号，换个地区看看，或者稍后再来。</div>';
           return;
@@ -608,6 +634,7 @@
             '<span class="cred"><span class="lbl">密码</span>' + esc(maskPassword(a.password)) + "</span>" +
             (a.software ? '<span class="soft">' + esc(a.software) + "</span>" : "") +
             (rel ? '<span class="checked">' + esc(rel) + "</span>" : "") +
+            (isStale(a) ? '<span class="stale-badge">⚠ 可能已锁定</span><span class="stale-note">超过 2 小时未重新确认，仅按检测时间判断，不保证能登录，也无法代为解锁。</span>' : "") +
             '<span class="open-hint">查看完整账号 ›</span>';
           card.addEventListener("click", function () { openModal(a); });
           gridEl.appendChild(card);
